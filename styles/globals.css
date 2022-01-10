@@ -9,6 +9,10 @@ body {
     background-color: #fff;
 }
 
+::selection {
+  background: rgb(225, 230, 212);
+}
+
 a {
   color: inherit;
   text-decoration: none;
