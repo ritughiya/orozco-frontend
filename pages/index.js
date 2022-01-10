@@ -45,7 +45,10 @@ const IndexPage = ({ properties }) => {
           </div>
           <div className="Imagewrapper">
           {post.images.map(({_key,asset}, image) => 
-            < Image identifier='image' image={asset}/> )}
+        <div key={post._id}> 
+            < Image identifier='image' image={asset}/> 
+            </div>    
+          )}
          
           </div>
           <div className="Imagecaption">
