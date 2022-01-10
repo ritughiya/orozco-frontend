@@ -57,7 +57,7 @@ const IndexPage = ({ properties }) => {
           </div>
 
           <div className="statusHeader">
-            <strong>CCTV Loading . . . </strong>
+            <strong>CCTV Coming Soon . . . </strong>
             <div className="ascii">
             +----------+<br></br>
             |*=.     . |<br></br>
