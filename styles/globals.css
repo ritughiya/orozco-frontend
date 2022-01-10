@@ -135,4 +135,12 @@ a {
   .statusHeader{
     display:none;
   }
+
+  .statusFooter{
+    position: initial;
+    bottom: unset;
+    left: unset;
+    width:unset;
+    margin:30px 0 20px 0;
+  }
 }
