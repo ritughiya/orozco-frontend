@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { sanityClient, urlFor} from '../sanity'
 import Image from "../components/Image"
 import PortableText from '@sanity/block-content-to-react'
+import OrozcoCircle1 from "../components/orozcoCircle1"
+import Animation from "../components/Animation"
 import Battery from "../components/Battery"
 import MobileSignal from "../components/MobileSignal"
 import Wifi from "../components/Wifi"
@@ -28,55 +30,50 @@ const IndexPage = ({ properties }) => {
     <div className="wrapper">
       <Head>
         <title>Spacetime Library</title>
+        <script type="text/javascript" src="/public/hello.js"></script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {properties.map(post => (
         <div key={post._id}>
-          <div className="email1">
-          <PortableText 
-            blocks = {post.email1}
-          />
-          </div>
-          <div className="email2">
-          <div className="innerWrapper">
-         <PortableText 
-            blocks = {post.email2}
-          />
-          </div>
-          <div className="Imagewrapper">
-          {post.images.map(({_key,asset}, image) => 
-        <div key={post._id}> 
-            < Image identifier='image' image={asset}/> 
-            </div>    
-          )}
-         
-          </div>
-          <div className="Imagecaption">
-          Live videos of the show . mp4
-          </div>
-          </div>
-
-          <div className="statusHeader">
-            <strong>CCTV Coming Soon . . . </strong>
-            <div className="ascii">
-            +----------+<br></br>
-            |*=.     . |<br></br>
-            |oEo.   . .|<br></br>
-            +----------+<br></br>
+           <div className="showLabel">
+            <div className="showTitle">
+            Spacetime
             </div>
-          </div>
-          <div className="statusFooter">
-            <div className="icons">
-          <MobileSignal />
-          <Wifi />
-          <Battery />
-          </div>
-          <div className="logo floating">
-          <Static src="/Chess.png" alt="me" width="100" height="100" />
-          <span><strong>CosmOS</strong></span>
-          </div>
-
-          </div>
+          </div> 
+          {/* <div className="showLabelbig">
+            <div className="showTitlebig">
+            Spacetime
+            </div>
+          </div> */}
+          { <div className="showLabel2">
+            <div className="showInfo">
+              <div className="showInfoMain">
+              Gabriel Orozco<br></br>
+              Spacetime<br></br>
+              24 West 57th, Room 305, New York, NY 10019<br></br>
+              June 2021 - June 2022
+              </div>
+              <div className="showInfoSub">
+                <div className="showInfoSub1">
+                <div className="showInfoHours">
+                HOURS
+                </div>
+                <div className="showInfoHours2">
+                Monday–Friday<br></br>
+                10–6PM
+                </div>
+                </div>
+                <div className="showInfoSub2">
+                <span className="Phone">212-977-7160</span><br></br>
+                <span className="emailSub">Email</span><span className="Email">alena@go-spacetime.com</span>
+                </div>
+              </div>
+            </div>
+          </div> }
+           <Animation /> 
+           <video loop autoPlay muted id="timelapse" >         
+             <source src="/Timelapse.mp4" type="video/mp4"/>       
+          </video>
         </div>
         
       ))}

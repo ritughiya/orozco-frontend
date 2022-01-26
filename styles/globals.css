@@ -1,12 +1,23 @@
+@font-face {
+  font-family: abcSimon;
+  src: url(ABCSimonMono-Regular-Trial.woff);
+}
+
+@font-face {
+  font-family: MessinaSans;
+  src: url(MessinaSans-Book.woff);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "abcSimon", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size:19px;
     line-height:27px;
     background-color: #fff;
+    overflow-y:hidden;
 }
 
 ::selection {
@@ -24,10 +35,214 @@ a {
 
 
 .wrapper{
-  margin: 15px;
+  /* margin: 15px; */
 }
 
-.Imagewrapper{
+
+.showLabel{
+  z-index:100;
+  position: fixed;
+  left: 0;
+  top: 80px;
+  background-color: #FFFDF3;
+  font-size:0.9em;
+}
+
+.showLabelbig{
+  position:fixed;
+  top:15px;
+  left:15px;
+  font-family: MessinaSans;
+  font-size:3em;
+  color: #27355d;
+}
+
+.showTitle{
+  width: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 15px;
+  height: auto;
+  line-break: anywhere;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  font-weight:700;
+}
+
+.showLabel2{
+  background-color: #FFFDF3;
+  width: fit-content;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 100px;
+}
+
+.showInfo{
+  padding: 10px 20px 10px 15px;
+  font-size: 0.75em;
+}
+
+.showInfoMain{
+  line-height: 1.4;
+  padding-bottom: 18px;
+}
+
+.showInfoSub{
+  font-family: MessinaSans;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.showInfoHours,
+.emailSub{
+  margin-right: 10px;
+    letter-spacing: 0.05em;
+    font-family: "abcSimon";
+    font-size: 0.8em;
+}
+
+.emailSub{
+  text-transform:uppercase;
+}
+
+.showInfoSub1{
+  display:flex;
+}
+
+.showInfoSub2{
+  line-height:1.3;
+}
+
+.showInfoHours2, .Email, .Phone{
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+.bgImg span:first-child{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.bgImg video {   
+  object-fit: cover;   
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1; 
+}
+
+.bgAnimation{
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  z-index:101;
+  pointer-events:none;
+}
+
+/* .Orozco1 {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
+
+#Orozcoanimation{
+  position:fixed;
+  height:100vh;
+  mix-blend-mode:color-burn;
+  animation: move 30s linear forwards;
+  z-index:2;
+}
+
+@keyframes move {
+  from {
+    left:0;
+  }
+  to {
+    left:-100vw;
+  }
+}
+
+video{
+  position:fixed;
+  z-index:1;
+  width: 115vw;
+    margin-left: -8vw;
+    /* margin-top: -12vh; */
+}
+
+.Orozco1{
+  position:absolute;
+  top:3vh;
+  left:35vw;
+}
+
+.Orozco1 .cls-1 {
+  fill: none;
+}
+
+.Orozco1 .cls-1, 
+.Orozco1 .cls-2, 
+.Orozco1 .cls-3, 
+.Orozco1 .cls-4, 
+.Orozco1 .cls-5 {
+  stroke: #000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.Orozco1 .cls-2 {
+   fill: #27355d; 
+  animation: col 10s linear infinite;
+}
+
+@keyframes col {
+  from {
+    opacity:0;
+  }
+  50% {
+    opacity:100%;
+  }
+  100% {
+    opacity:0;
+  }
+  }
+
+.Orozco1 .cls-3 {
+  fill: #712016;
+}
+
+.Orozco1 .cls-4 {
+  fill: #dfb930;
+}
+
+.Orozco1 .cls-5 {
+  fill: #cbc4b6;
+}
+
+
+
+/* .Imagewrapper{
   display:flex;
   margin-top:15px;
 }
@@ -83,7 +298,7 @@ a {
   line-height: 134.28%;
   /* or 12px */
   
-  text-align: right;
+  /* text-align: right;
   letter-spacing: 0.02em;
   
   color: #000000;
@@ -147,4 +362,4 @@ a {
     width:unset;
     margin:30px 0 20px 0;
   }
-}
+}  */
