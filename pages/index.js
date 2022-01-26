@@ -31,9 +31,9 @@ const IndexPage = ({ properties }) => {
     <div className="wrapper">
       <Head>
         <title>Spacetime Library</title>
-        <Script src="/public/hello.js"></Script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script src="/public/hello.js"></Script>
       {properties.map(post => (
         <div key={post._id}>
            <div className="showLabel">
