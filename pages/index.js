@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
 import Image from "../components/Image"
 import PortableText from '@sanity/block-content-to-react'
@@ -30,7 +31,7 @@ const IndexPage = ({ properties }) => {
     <div className="wrapper">
       <Head>
         <title>Spacetime Library</title>
-        <script type="text/javascript" src="/public/hello.js"></script>
+        <Script src="/public/hello.js"></Script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {properties.map(post => (
