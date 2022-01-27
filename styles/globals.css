@@ -244,10 +244,12 @@ video{
   position:fixed;
   z-index:1;
   width: 115vw;
-    margin-left: -8vw;
     min-height:100vh;
+    object-fit:cover;
   animation: appear 1s ease-in forwards;
-  margin-top:-5vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes appear {

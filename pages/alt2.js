@@ -14,6 +14,8 @@ import Static from 'next/image'
 import Head from 'next/head'
 import Logo from "../components/Logo"
 import Logocomplex from "../components/Logocomplex"
+import More from "../components/More"
+
 
 
 const query = `*[_type == "landingpage"] {
@@ -49,9 +51,9 @@ const Alt2 = ({ properties }) => {
           <div className="Logo2 pointer">
           <Logocomplex /> 
           </div>
+          </Link>
           <More /> 
 
-          </Link>
            <div className="showLabel2">
             <div className="showInfo">
               <div className="showInfoMain">
