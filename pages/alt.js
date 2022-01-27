@@ -6,15 +6,15 @@ import Image from "../components/Image"
 import PortableText from '@sanity/block-content-to-react'
 import OrozcoCircle1 from "../components/orozcoCircle1"
 import Animation from "../components/Animation"
+import Animation2 from "../components/Animation2"
+import Animation3 from "../components/Animation3"
 import Battery from "../components/Battery"
 import MobileSignal from "../components/MobileSignal"
 import Wifi from "../components/Wifi"
 import Showfooter from "../components/Showfooter"
+import Logo from "../components/Logo"
 import Static from 'next/image'
 import Head from 'next/head'
-import Logo from "../components/Logo"
-import More from "../components/More"
-
 
 const query = `*[_type == "landingpage"] {
   _id,
@@ -30,7 +30,7 @@ const query = `*[_type == "landingpage"] {
 
 
 
-const IndexPage = ({ properties }) => {
+const Alt1 = ({ properties }) => {
   return (
     <div className="wrapper">
       <Head>
@@ -45,13 +45,7 @@ const IndexPage = ({ properties }) => {
             Spacetime
             </div>
           </div> 
-          <Link href="/about">
-          <div className="Logo1 pointer">
-          <Logo /> 
-          </div>
-          </Link>
-          <More /> 
-
+          <Showfooter /> 
            <div className="showLabel2">
             <div className="showInfo">
               <div className="showInfoMain">
@@ -77,6 +71,9 @@ const IndexPage = ({ properties }) => {
               </div>
             </div>
           </div> 
+          <Animation /> 
+          <Animation2 /> 
+          <Animation3 /> 
            <video loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       
           </video>
@@ -108,4 +105,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default IndexPage
+export default Alt1

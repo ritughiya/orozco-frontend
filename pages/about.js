@@ -9,11 +9,11 @@ import Animation from "../components/Animation"
 import Battery from "../components/Battery"
 import MobileSignal from "../components/MobileSignal"
 import Wifi from "../components/Wifi"
-import Showfooter from "../components/Showfooter"
 import Static from 'next/image'
 import Head from 'next/head'
+import Sticky from 'react-sticky-el'
 import Logo from "../components/Logo"
-import More from "../components/More"
+
 
 
 const query = `*[_type == "landingpage"] {
@@ -30,29 +30,33 @@ const query = `*[_type == "landingpage"] {
 
 
 
-const IndexPage = ({ properties }) => {
+const About = ({ properties }) => {
   return (
-    <div className="wrapper">
+    <div className="Aboutwrapper">
       <Head>
         <title>Spacetime Library</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script src="/public/hello.js"></Script>
+      
       {properties.map(post => (
         <div key={post._id}>
            <div className="showLabel">
-            <div className="showTitle">
+            <Link href="/">
+            <div className="pointer showTitle">
             Spacetime
             </div>
+            </Link>
           </div> 
-          <Link href="/about">
-          <div className="Logo1 pointer">
+          <div className="Logo1">
           <Logo /> 
           </div>
-          </Link>
-          <More /> 
 
-           <div className="showLabel2">
+          <div className="showSpace"></div>
+<Sticky>
+<div className="showSpace2"></div>
+          <div className="showLetter" id="letter">
+            <div className="showFlex">
             <div className="showInfo">
               <div className="showInfoMain">
               Gabriel Orozco<br></br>
@@ -76,10 +80,21 @@ const IndexPage = ({ properties }) => {
                 </div>
               </div>
             </div>
-          </div> 
-           <video loop autoPlay muted id="timelapse" >         
-             <source src="/Timelapse.mp4" type="video/mp4"/>       
-          </video>
+            <div className="showLetter-logo">
+            <Static src="/notebookSketch.png" alt="me" width="150" height="150" />
+            </div>
+            </div>
+
+            <div className="showBody">
+            From: Sophie K. <span className="emailBody"> sophie @ go-spacetime.com </span><br></br>
+            Re: Show<br></br><br></br>
+                <PortableText 
+            blocks = {post.email1}
+          />
+            </div>
+            </div>
+            </Sticky>
+  
         </div>
         
       ))}
@@ -108,4 +123,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default IndexPage
+export default About

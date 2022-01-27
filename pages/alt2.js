@@ -13,7 +13,7 @@ import Showfooter from "../components/Showfooter"
 import Static from 'next/image'
 import Head from 'next/head'
 import Logo from "../components/Logo"
-import More from "../components/More"
+import Logocomplex from "../components/Logocomplex"
 
 
 const query = `*[_type == "landingpage"] {
@@ -30,7 +30,7 @@ const query = `*[_type == "landingpage"] {
 
 
 
-const IndexPage = ({ properties }) => {
+const Alt2 = ({ properties }) => {
   return (
     <div className="wrapper">
       <Head>
@@ -39,19 +39,17 @@ const IndexPage = ({ properties }) => {
       </Head>
       <Script src="/public/hello.js"></Script>
       {properties.map(post => (
-        <div key={post._id}>
+        <div className="Alt2" key={post._id}>
            <div className="showLabel">
             <div className="showTitle">
             Spacetime
             </div>
           </div> 
           <Link href="/about">
-          <div className="Logo1 pointer">
-          <Logo /> 
+          <div className="Logo2 pointer">
+          <Logocomplex /> 
           </div>
           </Link>
-          <More /> 
-
            <div className="showLabel2">
             <div className="showInfo">
               <div className="showInfoMain">
@@ -108,4 +106,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default IndexPage
+export default Alt2
