@@ -32,7 +32,7 @@ const query = `*[_type == "landingpage"] {
 
 const Alt1 = ({ properties }) => {
   return (
-    <div className="wrapper">
+    <div className="wrapper fullhog">
       <Head>
         <title>Spacetime Library</title>
         <link rel="icon" href="/favicon.ico" />

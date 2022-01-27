@@ -250,6 +250,17 @@ video{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  opacity:0;
+}
+
+.fullhog{
+  background-color:#FFFDF3 !important;
+  width:100vw;
+  height:100vh;
+}
+
+.fullhog video{
+  animation: 1s 5s appear ease-in forwards !important;
 }
 
 @keyframes appear {
