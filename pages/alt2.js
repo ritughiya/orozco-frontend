@@ -49,6 +49,8 @@ const Alt2 = ({ properties }) => {
           <div className="Logo2 pointer">
           <Logocomplex /> 
           </div>
+          <More /> 
+
           </Link>
            <div className="showLabel2">
             <div className="showInfo">
