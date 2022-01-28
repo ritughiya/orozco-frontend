@@ -546,7 +546,7 @@ bounce{
 
 .Aboutwrapper .showInfo{
   padding: 30px;
-  width:35vw;
+  /* width:35vw; */
   font-size: 0.8em;
 }
 
