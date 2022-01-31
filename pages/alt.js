@@ -72,7 +72,7 @@ const Alt1 = ({ properties }) => {
             </div>
           </div> 
           <Animation /> 
-          <Animation2 /> 
+          {/* <Animation2 />  */}
           <Animation3 /> 
            <video loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       

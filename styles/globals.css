@@ -190,7 +190,7 @@ a {
   mix-blend-mode:normal;
 }
 
-#Orozcoanimation2{
+/* #Orozcoanimation2{
   position:fixed;
   height:80vh;
   animation: 20s 10s move2  linear forwards;
@@ -206,13 +206,13 @@ a {
   to {
     top:200vh;
   }
-}
+} */
 
 #Orozcoanimation3{
   position:fixed;
   height:80vh;
   width:80vw;
-  animation: 20s 20s fade  linear infinite;
+  animation: 20s 18s fade  linear infinite;
   z-index:2;
   left:10vw;
   top:10vh;
