@@ -35,7 +35,7 @@ const About2 = ({ properties }) => {
     <div className="Aboutwrapper Aboutwrapper2">
       <Head>
         <title>Spacetime Library</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Script src="/public/hello.js"></Script>
       
