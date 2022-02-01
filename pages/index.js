@@ -35,7 +35,7 @@ const IndexPage = ({ properties }) => {
     <div className="wrapper">
       <Head>
         <title>Spacetime Library</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png"" />
       </Head>
       <Script src="/public/hello.js"></Script>
       {properties.map(post => (
