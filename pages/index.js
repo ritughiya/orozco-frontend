@@ -84,7 +84,7 @@ const IndexPage = ({ properties }) => {
           </div> 
           </Link>
           <Link href="/about">
-           <video class="pointer" loop autoPlay muted id="timelapse" >         
+           <video className="pointer" loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       
           </video>
           </Link>
