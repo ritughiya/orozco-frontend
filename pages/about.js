@@ -32,9 +32,10 @@ const query = `*[_type == "landingpage"] {
 
 const About = ({ properties }) => {
   return (
-    <div className="Aboutwrapper">
+    <div className="Aboutwrapper Aboutwrapper2">
       <Head>
         <title>Spacetime Library</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Script src="/public/hello.js"></Script>
@@ -48,9 +49,7 @@ const About = ({ properties }) => {
             </div>
             </Link>
           </div> 
-          <div className="Logo1">
-          <Logo /> 
-          </div>
+
 
           <div className="showSpace"></div>
 <Sticky>
@@ -86,19 +85,51 @@ const About = ({ properties }) => {
             </div>
 
             <div className="showBody">
+            <div className="emailPadding"> 
             From: Sophie K. <span className="emailBody"> sophie @ go-spacetime.com </span><br></br>
             Re: Show<br></br><br></br>
+            <div className="sophieIntro">
+            Bonne Année 2022 Gabriel !<br></br><br></br>
+
+I wanted to share with you the article I wrote on Spacetime which can be used for the website too. I sent it last night to Gabriel and wanted to send it to you both for your review, and if you have any comments, thoughts edits:
+ </div>
+            <div className="sophieEmail">
                 <PortableText 
             blocks = {post.email1}
           />
+          </div>
+          <div className="gabrielNote">
+          <span className="date">08/06/94</span><br></br>
+Everything is ready. <br></br>
+Everything is made.<br></br>
+Everything has happened. <br></br>
+I just want to continue it, for a moment.<br></br>
+Whatever happens to me, in a world where everything has already happened, is extraordinary. <br></br>
+It’s extraordinary that what has happened already keeps on happening. <br></br>
+It’s extraordinary to forget it, in order to discover that we can remember. <br></br>
+Invent something that we remember having seen. <br></br>
+Extend the reflections. <br></br>
+Open the closet to bring out the darkness.<br></br><br></br>
+
+<div className="cite">
+Gabriel Orozco, <i>Written Matter, Work Notebooks 1992–2012</i>, Koenig Books, 2020, Notebook 6, p.152-153
+</div>
+
+          </div><br></br>
+          <div className="sophieEmail2">
+          –Sophie Kitching
+          </div>
+                      </div>
             </div>
             </div>
+
             </Sticky>
+
   
         </div>
         
       ))}
-      
+
     </div>
   )
 

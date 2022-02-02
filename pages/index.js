@@ -13,6 +13,8 @@ import Showfooter from "../components/Showfooter"
 import Static from 'next/image'
 import Head from 'next/head'
 import Logo from "../components/Logo"
+import Logoupdated from "../components/Logoupdated"
+import Logotransparent from "../components/Logotransparent"
 import More from "../components/More"
 
 
@@ -35,24 +37,27 @@ const IndexPage = ({ properties }) => {
     <div className="wrapper">
       <Head>
         <title>Spacetime Library</title>
-        <link rel="icon" href="/favicon.png"" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Script src="/public/hello.js"></Script>
       {properties.map(post => (
         <div key={post._id}>
-           <div className="showLabel">
+           <Link href="/about">
+           <div className="showLabel pointer">
             <div className="showTitle">
             Spacetime
             </div>
           </div> 
+          </Link>
           <Link href="/about">
-          <div className="Logo1 pointer">
-          <Logo /> 
+          <div className="Logo-knight2 pointer">
+          <Logotransparent /> 
           </div>
           </Link>
-          <More /> 
 
-           <div className="showLabel2">
+          <Link href="/about">
+           <div className="showLabel2 pointer">
             <div className="showInfo">
               <div className="showInfoMain">
               Gabriel Orozco<br></br>
@@ -77,9 +82,12 @@ const IndexPage = ({ properties }) => {
               </div>
             </div>
           </div> 
-           <video loop autoPlay muted id="timelapse" >         
+          </Link>
+          <Link href="/about">
+           <video class="pointer" loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       
           </video>
+          </Link>
         </div>
         
       ))}

@@ -152,7 +152,7 @@ a {
   position: absolute;
   bottom: 5px;
   right: 15px;
-  font-size: 0.9em;
+  font-size: 1.2em;
   z-index: 300;
   color: #FFFDF3;
   font-weight:700;
@@ -180,6 +180,14 @@ a {
   }
 }
 
+.fullhogv2a #Orozcoanimation{
+  position:fixed;
+  height:100vh;
+  mix-blend-mode:color-burn;
+  animation: 30s move1 linear forwards;
+  z-index:1;
+}
+
 .Aboutwrapper2 #Orozcoanimation{
   position:fixed;
   height:100vh;
@@ -190,33 +198,20 @@ a {
   mix-blend-mode:normal;
 }
 
-/* #Orozcoanimation2{
-  position:fixed;
-  height:80vh;
-  animation: 20s 10s move2  linear forwards;
-  z-index:2;
-  left:60vw;
-  top:-100vh;
-}
-
-@keyframes move2 {
-  from {
-    top:-100vh;
-  }
-  to {
-    top:200vh;
-  }
-} */
 
 #Orozcoanimation3{
   position:fixed;
   height:80vh;
   width:80vw;
   animation: 20s 18s fade  linear infinite;
-  z-index:2;
+  z-index:3;
   left:10vw;
   top:10vh;
   opacity:0;
+}
+
+.fullhogv2a #Orozcoanimation3{
+  animation: 20s 10s fade  linear infinite;
 }
 
 @keyframes fade {
@@ -239,10 +234,13 @@ a {
     stroke-miterlimit: 10;
   }
 
+.fullhogv2 #Orozcoanimation3{
+  animation: 20s 5s fade  linear infinite; 
+}
 
 video{
   position:fixed;
-  z-index:1;
+  z-index:2;
   width: 115vw;
     min-height:100vh;
     object-fit:cover;
@@ -261,6 +259,10 @@ video{
 
 .fullhog video{
   animation: 1s 5s appear ease-in forwards !important;
+}
+
+.fullhogv2 video{
+  animation: 2s 1s appear ease-in forwards !important;
 }
 
 @keyframes appear {
@@ -436,6 +438,88 @@ bounce{
   fill: none;
 }
 
+/* Updated Logo styling */
+
+.Logo-knight svg{
+  position: absolute;
+  z-index: 300;
+  width: 8vw;
+  top: 25px;
+  right: 25px;
+  animation: 3s 1s spin, 4s 4s float infinite ease-in-out;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+}
+
+.Logo-knight .cls-1 {
+  fill: #1d2587;
+}
+
+.Logo-knight .cls-2 {
+  fill: #fa251b;
+}
+
+.Logo-knight .cls-3 {
+  fill: #a49567;
+}
+
+.Logo-knight .cls-4 {
+  fill: #fffdf3;
+}
+
+.Logo-knight .cls-5 {
+  fill: none;
+}
+
+/* Updated Logo2 styling */
+
+.Logo-knight2 svg{
+  position: absolute;
+  z-index: 300;
+  width: 10vw;
+  top: 30px;
+  right: 30px;
+  animation: 3s 1s spin, 4s 4s float infinite ease-in-out;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+}
+
+.Logo-knight2 svg:hover{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;  
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+}
+
+.Logo-knight2 .cls-1 {
+  fill: #1d2587;
+}
+
+.Logo-knight2 .cls-1:hover {
+  fill: #a49567;
+}
+
+.Logo-knight2 .cls-2 {
+  fill: #fa251b;
+}
+
+.Logo-knight2 .cls-2:hover {
+  fill: #1d2587;
+}
+
+.Logo-knight2 .cls-3 {
+  fill: #a49567;
+}
+
+.Logo-knight2 .cls-3:hover {
+  fill: #fa251b;
+}
+
+.Logo-knight2 .cls-4 {
+  fill: none;
+}
+
+
 /* Alt2 Styling */
 
 .Alt2 .showLabel2{
@@ -545,7 +629,7 @@ bounce{
 }
 
 .Aboutwrapper .showInfo{
-  padding: 30px;
+  padding: 20px;
   /* width:35vw; */
   font-size: 0.8em;
 }
@@ -564,7 +648,7 @@ bounce{
 }
 
 .showSpace2{
-  height:6vh;
+  height:5vh;
   width:100vw;
 }
 
@@ -579,6 +663,24 @@ bounce{
   box-shadow: 19.1045px 9.55224px 9.55224px rgba(0, 0, 0, 0.25);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000; 
+}
+
+/* Handle on hover */
+
+
 .showBody{
   overflow-y:scroll;
   height:70vh;
@@ -591,12 +693,36 @@ border-bottom:2px solid black;
 }
 
 .showBody{
-  padding: 30px;
-  font-size: 0.8em;
+  margin: 20px 10px 20px 20px;
+    font-size: 0.8em;
   line-height:24px;
-  width:77vw;
+}
+
+.emailPadding{
+  width:95%;
+  margin-bottom:200px;
 }
 
 .emailBody{
   color: #818181;
+}
+
+.sophieEmail{
+  text-indent: 5%;
+  margin-top: 40px;
+}
+
+.gabrielNote{
+  text-align: center;
+    width: 90%;
+    margin: 50px auto 70px auto;
+}
+
+.gabrielNote .date{
+  color: red;
+}
+
+.gabrielNote .cite{
+  width:80%;
+  margin:0 auto;
 }
