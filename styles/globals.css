@@ -749,7 +749,7 @@ border-bottom:2px solid black;
 }
 
 .sophieEmail{
-  text-indent: 5%;
+  /* text-indent: 5%; */
   margin-top: 40px;
 }
 
@@ -764,6 +764,6 @@ border-bottom:2px solid black;
 }
 
 .gabrielNote .cite{
-  width:80%;
+  /* width:80%; */
   margin:0 auto;
 }
