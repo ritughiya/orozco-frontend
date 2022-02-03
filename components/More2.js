@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 export default function More() {
   return (
-    <div className="morefooter">
-         <Link href="/about">Stay Tuned</Link>
+    <div className="moreheader">
+        Stay Tuned
     </div>
   );
 }

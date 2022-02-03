@@ -16,6 +16,8 @@ import Logo from "../components/Logo"
 import Static from 'next/image'
 import Head from 'next/head'
 import More from '../components/More'
+import More2 from '../components/More2'
+
 
 const query = `*[_type == "landingpage"] {
   _id,
@@ -50,6 +52,7 @@ const v2 = ({ properties }) => {
           </div> 
           </Link>
           <More />
+          <More2 />
           <Link href="/about">
            <div className="showLabel2 pointer">
             <div className="showInfo">

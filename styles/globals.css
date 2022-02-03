@@ -185,6 +185,18 @@ a {
   color:#222;
 }
 
+.moreheader{
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 300;
+  color: #FFFDF3;
+  font-weight: 700;
+}
+
 #Orozcoanimation{
   position:fixed;
   height:100vh;
