@@ -60,9 +60,7 @@ const About = ({ properties }) => {
               <div className="showInfoMain">
               Gabriel Orozco<br></br>
               Spacetime<br></br>
-              24 West 57th, Room 305, New York, NY 10019<br></br>
-              June 2021 - June 2022
-              </div>
+              24 West 57th, Room 305, New York, NY 10019              </div>
               <div className="showInfoSub">
                 <div className="showInfoSub1">
                 <div className="showInfoHours">
@@ -89,10 +87,8 @@ const About = ({ properties }) => {
             From: Sophie K. <span className="emailBody"> sophie @ go-spacetime.com </span><br></br>
             Re: Show<br></br><br></br>
             <div className="sophieIntro">
-            Bonne Année 2022 Gabriel !<br></br><br></br>
-
-I wanted to share with you the article I wrote on Spacetime which can be used for the website too. I sent it last night to Gabriel and wanted to send it to you both for your review, and if you have any comments, thoughts edits:
- </div>
+            Bonne Année 2022 !<br></br><br></br>
+I wanted to share with you the article I wrote on Spacetime which can be used for the website too. I sent it to Gabriel last night and also wanted to share it with you to see if you have any comments, thoughts, edits: </div>
             <div className="sophieEmail">
                 <PortableText 
             blocks = {post.email1}

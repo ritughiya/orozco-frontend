@@ -56,8 +56,7 @@ const v2 = ({ properties }) => {
               <div className="showInfoMain">
               Gabriel Orozco<br></br>
               Spacetime<br></br>
-              24 West 57th, Room 305, New York, NY 10019<br></br>
-              June 2021 - June 2022
+              24 West 57th, Room 305, New York, NY 10019
               </div>
               <div className="showInfoSub">
                 <div className="showInfoSub1">
@@ -78,10 +77,16 @@ const v2 = ({ properties }) => {
           </div> 
           </Link>
           <Animation3 /> 
-          <Link href="/about">
+          {/* <Link href="/about">
            <video className="pointer" loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       
           </video>
+          </Link> */}
+                    <Link href="/about">
+          <div class="vimeo-wrapper pointer">
+            <iframe src="https://player.vimeo.com/video/672934323?background=1&autoplay=1&loop=1&byline=0&title=0"
+              frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
           </Link>
 
         </div>

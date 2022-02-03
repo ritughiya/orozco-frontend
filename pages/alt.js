@@ -84,9 +84,11 @@ const Alt1 = ({ properties }) => {
           </div> 
           </Link>
           <More />
-           <video loop autoPlay muted id="timelapse" >         
+          <Link href="/about">
+          <video loop autoPlay muted id="timelapse" >         
              <source src="/Timelapse.mp4" type="video/mp4"/>       
           </video>
+          </Link>
         </div>
         
       ))}
