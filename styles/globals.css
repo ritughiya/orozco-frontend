@@ -408,6 +408,11 @@ a {
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
 }
 
+.Logo1 	.st0{fill:#FA251B;}
+.Logo1  .st1{fill:#EFAE07;}
+.Logo1  .st2{fill:#1D2587;}
+.Logo1  .st3{fill:none;}
+
 .Aboutwrapper .Logo1 svg{
   animation:4s 1s float infinite ease-in-out;
 }
@@ -700,17 +705,17 @@ bounce{
 }
 
 /* width */
-::-webkit-scrollbar {
+.showLetter ::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.showLetter ::-webkit-scrollbar-track {
   background: transparent; 
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+.showLetter ::-webkit-scrollbar-thumb {
   background: #000; 
 }
 
