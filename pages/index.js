@@ -89,9 +89,9 @@ const IndexPage = ({ properties }) => {
             </div>
           </Link>
           <Link href="/about">
-          <div class="vimeo-wrapper">
+          <div className="vimeo-wrapper">
             <iframe src="https://player.vimeo.com/video/672934323?background=1&autoplay=1&loop=1&byline=0&title=0"
-              frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
           </div>
           </Link>
         </div>
