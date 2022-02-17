@@ -43,10 +43,13 @@ body {
   border: none;
 }
 
-.v1 iframe,
-.v2 iframe,
-.v3 iframe,
-.v4 iframe{
+.v1 iframe.primaryView,
+.v2 iframe.primaryView,
+.v3 iframe.primaryView,
+.v4 iframe.primaryView,
+.v2 iframe.secondaryView,
+.v3 iframe.secondaryView
+{
   width:100vw;
   height:56.25vw;
   min-height:50vh;
@@ -58,21 +61,205 @@ body {
   transform:translate(-50%, -50%);
 }
 
-.v1 iframe{
+.v2 iframe.secondaryView,
+.v3 iframe.secondaryView{
+  /* opacity:0; */
+  z-index:1000;
+}
+
+@keyframes appear {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:100%;
+  }
+}
+
+.v2 iframe.secondaryView{
+  width:50vw;
+  animation: 0.25s 7s appear ease-in forwards !important;
+  opacity:0;
+
+}
+
+.v3 iframe.secondaryView{
+  width:80vw;
+  animation: 0.25s 15s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v1 iframe.primaryView{
 width: 66vw;
 }
 
-.v2 iframe{
+.v2 iframe.primaryView{
   width:100vw;
 }
 
-.v3 iframe{
+.v3 iframe.primaryView{
   width: 55vw;
 }
 
-.v4 iframe{
+.v4 iframe.primaryView{
   width: 70vw;
 }
+
+.linkWrapper{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100000;
+}
+
+.link1,
+.link2,
+.link3,
+.link4{
+  width: 50vw;
+  height: 50vh;
+}
+
+.link1 a,
+.link2 a,
+.link3 a,
+.link4 a{
+  width: 50vw;
+  height: 50vh;
+  z-index: 100000;
+}
+
+/* Room Page */
+
+.roomContainer{
+  width: 100vw;
+  height:80vh;
+  display: flex;
+}
+
+.roomDetail1 .container{
+  height: 100vh;
+}
+
+.roomDetail1 .container{
+  width: 100vw;
+  height: 100vh;
+  top: -10vh;
+}
+
+.roomContainer .container{
+  width:100vw;
+}
+
+.roomContainer iframe{
+  width: 100vw;
+}
+
+/* Row of 4 Room */
+
+.rowof4{
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #FFFDF3 !important;
+}
+
+.rowof4 div{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.rowof4 img {
+  width: 25vw;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.Mainimage {
+  width: 25vw;
+  margin: 0vh auto 2vh auto;
+  height: auto;
+}
+
+.Mainimage img{
+  width: 100%;
+}
+
+
+  .rowof8{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #FFFDF3 !important;
+  }
+
+  .rowof8 div{
+    width: 12.5vw;
+    height: 50vh;
+    object-fit: cover;
+    /* overflow: hidden; */
+  }
+  
+  .rowof8 img {
+    width: 12.5vw;
+    height: 50vh;
+    object-fit: cover;}
+
+    .Room4c .rowof8 div{
+      width: 25vw;
+      height: 25vh;
+      object-fit: cover;
+      /* overflow: hidden; */
+    }
+
+    .Room4c .rowof8 img{
+      width:25vw;
+      height:25vh;
+    
+    }
+
+    .Room4d .rowof8 div{
+      width: 12.5vw;
+      height: 25vh;
+      object-fit: cover;
+      /* overflow: hidden; */
+    }
+
+    .Room4d .rowof8 img{
+      width:12.5vw;
+      height:25vh;
+    
+    }
+
+    .rowof4{
+      display:flex;
+      flex-wrap:wrap;
+    
+    }
+    
+    .worksrow div{
+      width: 12.5vw;
+      height: 25vh;
+      object-fit: cover;
+      /* overflow: hidden; */
+    }
+    
+  
+
+    .worksrow{
+      display:flex;
+      flex-wrap:wrap;
+      background-color: #FFFDF3 !important;
+      padding-bottom:10px;
+    }
+
+    .worksrow img{
+      width:12.5vw;
+      height:25vh;
+      object-fit: cover;
+    }
 
 .vimeo-wrapper {
   position: fixed;
@@ -157,6 +344,33 @@ a {
   bottom: 0;
   left: 0px;
 }
+
+.showLabel3{
+  color: #fff;
+  width: fit-content;
+  position: fixed;
+  z-index: 100;
+  bottom: 5px;
+  left: 15px;
+    font-family: "abcSimon";
+    font-size: 0.95em;
+    filter: drop-shadow(2px 4px 6px black);
+    animation: 8s 5s fade  linear infinite; 
+    opacity:0;
+    z-index:200000;
+
+}
+
+.showLabel4{
+  padding: 10px 10px 5px 10px;
+  font-size: 0.95em;
+}
+
+.spacetime{
+  text-transform:uppercase;
+  letter-spacing:0.3em;
+}
+
 
 .showInfo{
   padding: 10px 20px 10px 15px;
@@ -296,6 +510,7 @@ a {
   left:10vw;
   top:10vh;
   opacity:0;
+  pointer-events:none;
 }
 
 .fullhogv2a #Orozcoanimation3{

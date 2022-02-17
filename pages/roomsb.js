@@ -53,7 +53,7 @@
    }
  
  
- const rooms = ({ properties }) => {
+ const roomsb = ({ properties }) => {
    return (
      <div className="wrapper fullhog fullhogv2">
        <Head>
@@ -65,9 +65,9 @@
        {properties.map(post => (
          <div key={post._id}>
            <Labelnew />
-           <Animation3 />  
+           {/* <Animation3 />   */}
             <div className="linkWrapper">
-                <div className="link1"><a href="/room1">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div className="link1"><a href="/room1a">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
                  <div className="link2"><a href="/room2">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
                  <div className="link3"><a href="/room3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
                   <div className="link4"><a href="/room4a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
@@ -121,4 +121,4 @@
    }
  }
  
- export default rooms;
+ export default roomsb;
