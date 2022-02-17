@@ -100,7 +100,9 @@
            <div className="rowof8">
             {post.rowof8.map((image) => 
             (
+              <div key={image._id}>
                 <img src={urlFor(image).url()} />
+                </div>
                 
             ))
             }

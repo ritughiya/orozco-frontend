@@ -3,7 +3,7 @@
  */
 
  import React from 'react'
- import { Link } from "react-router-dom";
+ import Link from 'next/link'
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Image from "../components/Image"
@@ -67,7 +67,7 @@
            <Label2 />
            <Animation3 />
            <div className="HomelinkWrapper">
-                <div className="link5"><a href="/roomsb">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div className="link5"><Link href="/roomsb">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
                   </div>  
             <a href="/roomsb">
               <div className="vimeo-wrapper pointer">

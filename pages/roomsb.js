@@ -3,7 +3,7 @@
  */
 
  import React from 'react'
- import { Link } from "react-router-dom";
+ import Link from 'next/link'
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Image from "../components/Image"
@@ -67,10 +67,10 @@
            <Labelnew />
            {/* <Animation3 />   */}
             <div className="linkWrapper">
-                <div className="link1"><a href="/room1a">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
-                 <div className="link2"><a href="/room2">&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
-                 <div className="link3"><a href="/room3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
-                  <div className="link4"><a href="/room4a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div className="link1"><Link href="/room1a">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+                 <div className="link2"><Link href="/room2">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+                 <div className="link3"><Link href="/room3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+                  <div className="link4"><Link href="/room4a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
               </div>
             <div className="mainContainer">
             {/* <Link to="/room1"> */}

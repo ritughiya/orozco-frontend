@@ -83,11 +83,15 @@
            <div className="rowof8">
             {post.rowof8.map((image) => 
             (
+              <div key={post._id}>
                 <img src={urlFor(image).url()} />
+                </div>
                 
-            ))
-            }
+            ))}
             </div>
+            </div>
+                
+            ))}
 
 
 
