@@ -84,7 +84,7 @@
           <div className="Room1works">
             <div className="Mainimage">
               <img src="https://cdn.sanity.io/images/cl4yzxnq/production/75e7c80fbfd2f1f47485cf98ee5631d2c8704660-800x1205.jpg"></img>
-              <div class="caption">
+              <div className="caption">
                 Roto Shaku, 2015<br></br>
                 Plastic tape and graphite on wood<br></br>
                 Height: 71 5/8 in. (182 cm) / 
