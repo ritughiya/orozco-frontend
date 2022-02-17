@@ -179,13 +179,21 @@ width: 66vw;
 }
 
 .Mainimage {
-  width: 25vw;
-  margin: 0vh auto 2vh auto;
-  height: auto;
+  margin: 5vh auto 8vh auto;
+    height: auto;
+  text-align: center;
 }
 
 .Mainimage img{
-  width: 100%;
+  width: auto;
+    max-height: 65vh;
+    margin: 0 auto;
+}
+
+.Mainimage .caption{
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-top: 3vh;
 }
 
 
@@ -362,7 +370,7 @@ a {
 }
 
 .showLabel4{
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 5px 15px;
   font-size: 0.95em;
 }
 
@@ -513,6 +521,18 @@ a {
   pointer-events:none;
 }
 
+.Animationchange #Orozcoanimation3{
+  position:fixed;
+  height:80vh;
+  width:80vw;
+  animation: 5s 5s fade  linear infinite;
+  z-index:3;
+  left:10vw;
+  top:10vh;
+  opacity:0;
+  pointer-events:none;
+}
+
 .fullhogv2a #Orozcoanimation3{
   animation: 20s 10s fade  linear infinite;
 }
@@ -537,6 +557,45 @@ a {
     stroke-miterlimit: 10;
   }
 
+  #Orozcoanimation4{
+    position:fixed;
+    height:90vh;
+    width:80vw;
+    animation: 20s 5s fade  linear infinite;
+    z-index:3;
+    left:10vw;
+    top:5vh;
+    opacity:0;
+    pointer-events:none;
+  }
+
+  #Orozcoanimation4 .cls-1,
+  #Orozcoanimation4 .cls-4 {
+      fill: #b4ad97;
+  }
+
+
+
+  #Orozcoanimation4 .cls-3 {
+      fill: none;
+      stroke: #000;
+  }
+
+  #Orozcoanimation4 .cls-3,
+  .cls-4 {
+      stroke-miterlimit: 10;
+  }
+
+  #Orozcoanimation4 .cls-4 {
+      stroke: #b4ad97;
+      stroke-width: 1px;
+  }
+
+#Orozcoanimation4 .cls-2 {
+    fill: #0b0b0a;
+}
+
+
 .fullhogv2 #Orozcoanimation3{
   animation: 20s 5s fade  linear infinite; 
 }
@@ -558,6 +617,10 @@ a {
   background-color:#FFFDF3 !important;
   width:100vw;
   height:100vh;
+}
+
+.Workspage{
+  background-color:#fff !important;
 }
 
 .fullhog .vimeo-wrapper,

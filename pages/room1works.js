@@ -11,6 +11,7 @@
  import Animation from "../components/Animation"
  import Animation2 from "../components/Animation2"
  import Animation3 from "../components/Animation3"
+ import Animation4 from "../components/Animation4"
  import Battery from "../components/Battery"
  import MobileSignal from "../components/MobileSignal"
  import Wifi from "../components/Wifi"
@@ -68,7 +69,7 @@
  
  const room1works = ({ properties }) => {
    return (
-     <div className="wrapper fullhog fullhogv2">
+     <div className="wrapper fullhog fullhogv2 Workspage">
        <Head>
          <title>Spacetime Library</title>
          <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -77,12 +78,20 @@
        <Script src="/public/hello.js"></Script>
        {properties.map(post => (
          <div key={post._id}>
-           {/* <Animation3 />   */}
+           {/* <Animation4 />   */}
            <Labelnew2 />
           
           <div className="Room1works">
-            <div className="Mainimage"><img src="https://cdn.sanity.io/images/cl4yzxnq/production/75e7c80fbfd2f1f47485cf98ee5631d2c8704660-800x1205.jpg"></img>
+            <div className="Mainimage">
+              <img src="https://cdn.sanity.io/images/cl4yzxnq/production/75e7c80fbfd2f1f47485cf98ee5631d2c8704660-800x1205.jpg"></img>
+              <div class="caption">
+                Roto Shaku, 2015<br></br>
+                Plastic tape and graphite on wood<br></br>
+                Height: 71 5/8 in. (182 cm) / 
+                Diameter: 1 9/16 in. (4 cm)
+              </div>
             </div>
+            
           <div className="worksrow">
             {post.rowof4.map((image) => 
             (

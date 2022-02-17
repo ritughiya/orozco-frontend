@@ -11,7 +11,7 @@ export default function Labelnew2() {
         <Link href="/about">
         <div className="showLabel4 pointer">
          
-           <span className="spacetime">Spacetime</span> 
+           <span className="spacetime">Spacetime 01:23:20 PM EST</span> 
            
         </div> 
         </Link>
