@@ -569,10 +569,13 @@ a {
     pointer-events:none;
   }
 
-  #Orozcoanimation4 .cls-1,
-  #Orozcoanimation4 .cls-4 {
+  #Orozcoanimation4 .cls-1{
       fill: #b4ad97;
   }
+
+  #Orozcoanimation4 .cls-4 {
+    fill: #000;
+}
 
 
 
@@ -587,7 +590,7 @@ a {
   }
 
   #Orozcoanimation4 .cls-4 {
-      stroke: #b4ad97;
+      stroke: #000;
       stroke-width: 1px;
   }
 

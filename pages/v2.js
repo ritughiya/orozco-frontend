@@ -45,8 +45,8 @@ const v2 = ({ properties }) => {
       <Script src="/public/hello.js"></Script>
       {properties.map(post => (
         <div key={post._id}>
-          <More />
-          <More2 />
+          {/* <More />
+          <More2 /> */}
           
           <Animation4 /> 
           {/* <Link href="/about">
