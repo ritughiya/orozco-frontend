@@ -93,21 +93,9 @@
                 
             ))}
 
-
-
-
-
-
-
-
          </div>
          
-       ))}
-       
-     </div>
-   )
- 
- }
+       )};
  
  export const getServerSideProps = async () => {
    const query = '*[ _type == "room1"]'
