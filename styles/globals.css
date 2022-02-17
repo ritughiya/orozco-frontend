@@ -144,17 +144,17 @@ width: 66vw;
 }
 
 .roomDetail1 .container{
-  width: 100vw;
-  height: 100vh;
   top: -10vh;
 }
 
 .roomContainer .container{
   width:100vw;
+  height:90vh;
 }
 
 .roomContainer iframe{
   width: 100vw;
+  height:100vh;
 }
 
 /* Row of 4 Room */
