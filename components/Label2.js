@@ -8,7 +8,6 @@ import PortableText from '@sanity/block-content-to-react'
 
 export default function Label2() {
     return (
-        <Link href="/about">
         <div className="showLabel2 pointer">
          <div className="showInfo">
            <div className="showInfoMain">
@@ -33,7 +32,6 @@ export default function Label2() {
            </div>
          </div>
         </div> 
-        </Link>
     );
   }
 

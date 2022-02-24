@@ -20,7 +20,8 @@ body {
     /* overflow-y:hidden; */
 }
 
-.mainContainer{
+.mainContainer,
+.roomContainer{
 	display:flex;
     flex-wrap:wrap;
     width: 100vw;
@@ -30,6 +31,80 @@ body {
   position: relative;
   width: 50%;
   overflow: hidden;
+}
+
+.mainContainer .container{
+  border: 1px solid #422b22d1;
+}
+
+.camTopleft{
+  z-index: 30000000;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  padding: 10px 20px 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  color: #fffDf3;
+  font-family: MessinaSans;
+}
+
+.camTopright{
+  z-index: 30000000;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  padding: 10px 20px 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  color: #fffDf3;
+  font-family: MessinaSans;
+}
+
+.camBottomleft{
+  z-index: 30000000;
+  top: 0;
+  position: absolute;
+  left: 0;
+  padding: 10px 20px 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  color: #fffDf3;
+  font-family: MessinaSans;
+}
+
+.camBottomleft{
+  z-index: 30000000;
+  top: 0;
+  position: absolute;
+  left: 0;
+  padding: 10px 20px 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  color: #fffDf3;
+  font-family: MessinaSans;
+}
+
+.camBottomright{
+  z-index: 30000000;
+  top: 0;
+  position: absolute;
+  left: 0;
+  padding: 10px 20px 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  color: #fffDf3;
+  font-family: MessinaSans;
 }
 
 .responsive-iframe {
@@ -44,13 +119,14 @@ body {
 }
 
 .v1 iframe.primaryView,
+.v1 iframe.secondaryView,
 .v2 iframe.primaryView,
 .v3 iframe.primaryView,
 .v4 iframe.primaryView,
 .v2 iframe.secondaryView,
 .v3 iframe.secondaryView
 {
-  width:100vw;
+  width:300vw;
   height:56.25vw;
   min-height:50vh;
   min-width:50vw;
@@ -64,7 +140,7 @@ body {
 .v2 iframe.secondaryView,
 .v3 iframe.secondaryView{
   /* opacity:0; */
-  z-index:1000;
+  z-index:100;
 }
 
 @keyframes appear {
@@ -76,21 +152,73 @@ body {
   }
 }
 
+@keyframes disappear {
+  from {
+    opacity:100%;
+  }
+  to {
+    opacity:0;
+  }
+}
+
+.v1 iframe.primaryView{
+  animation: 0.25s 20s disappear ease-in forwards !important;
+}
+
+.v1 iframe.secondaryView{
+  animation: 0.25s 20s appear ease-in forwards !important;
+  opacity:0;
+}
+
+
+.v1 .secondaryCamtitle{
+  animation: 0.25s 20s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v1 .primaryCamtitle{
+  animation: 0.25s 20s disappear ease-in forwards !important;
+}
+
+.v2 iframe.primaryView{
+  animation: 0.25s 7s disappear ease-in forwards !important;
+}
+
 .v2 iframe.secondaryView{
-  width:50vw;
   animation: 0.25s 7s appear ease-in forwards !important;
   opacity:0;
+}
 
+.v3 iframe.primaryView{
+  animation: 0.25s 15s disappear ease-in forwards !important;
 }
 
 .v3 iframe.secondaryView{
-  width:80vw;
+  width:300vw;
   animation: 0.25s 15s appear ease-in forwards !important;
   opacity:0;
 }
 
+.v2 .secondaryCamtitle{
+  animation: 0.25s 7s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v2 .primaryCamtitle{
+  animation: 0.25s 7s disappear ease-in forwards !important;
+}
+
+.v3 .secondaryCamtitle{
+  animation: 0.25s 15s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v3 .primaryCamtitle{
+  animation: 0.25s 15s disappear ease-in forwards !important;
+}
+
 .v1 iframe.primaryView{
-width: 66vw;
+/* width: 66vw; */
 }
 
 .v2 iframe.primaryView{
@@ -98,11 +226,11 @@ width: 66vw;
 }
 
 .v3 iframe.primaryView{
-  width: 55vw;
+  /* width: 55vw; */
 }
 
 .v4 iframe.primaryView{
-  width: 70vw;
+  /* width: 70vw; */
 }
 
 .linkWrapper{
@@ -120,6 +248,7 @@ width: 66vw;
 .link4{
   width: 50vw;
   height: 50vh;
+  transition: all 0.25s linear;
 }
 
 .link1 a,
@@ -129,22 +258,47 @@ width: 66vw;
   width: 50vw;
   height: 50vh;
   z-index: 100000;
+  display:flex;
+}
+
+.link1:hover,
+.link2:hover,
+.link3:hover,
+.link4:hover{
+  border: 3px solid #62d24191;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 49.5vw;
+    height: 49vh;
+    margin-left: 0.25vw;
+    margin-top: 0.5vh;
 }
 
 /* Room Page */
 
-.roomContainer{
+.roomDetail1{
   width: 100vw;
   height:80vh;
   display: flex;
 }
 
-.roomDetail1 .container{
+.roomDetail4{
+  width: 100vw;
+  height:90vh;
+  display: flex;
+}
+
+.roomDetail1 .container,
+.roomDetail4 .container{
   height: 100vh;
 }
 
 .roomDetail1 .container{
   top: -10vh;
+}
+
+.roomDetail4 .container{
+  top: 0vh;
 }
 
 .roomContainer .container{
@@ -205,14 +359,14 @@ width: 66vw;
 
   .rowof8 div{
     width: 12.5vw;
-    height: 50vh;
+    height: 25vh;
     object-fit: cover;
     /* overflow: hidden; */
   }
   
   .rowof8 img {
     width: 12.5vw;
-    height: 50vh;
+    height: 25vh;
     object-fit: cover;}
 
     .Room4c .rowof8 div{
@@ -345,12 +499,74 @@ a {
 }
 
 .showLabel2{
-  background-color: #FFFDF3;
+  z-index: 200000 !important;
+  transition: all 1s ease;
+  /* transform: rotate(15deg);
+    transform-origin: bottom left; */
+  width: fit-content;
+  padding-left: 10vw;
+  margin-left: -10vw;
+  position: fixed;
+  z-index: 100;
+  bottom: -75px;
+  left: 0px;   
+  background-color: #1a1919;
+  color: #FFFDF3;
+  filter: drop-shadow(2px 4px 6px grey);
+}
+
+.showLabel2:hover{
+  bottom:0px;
+}
+
+.showLabelold{
+  z-index: 200000 !important;
+  transition: all 1s ease;
+  /* transform: rotate(15deg);
+    transform-origin: bottom left; */
   width: fit-content;
   position: fixed;
   z-index: 100;
+  bottom: 0px;
+  left: 0px;   
+  background-color: #FFFDF3;
+  color: #000;
+  filter: drop-shadow(2px 4px 6px grey);
+}
+
+.ticker{
+  padding: 10px 20px 10px 15px;
+    font-size: 0.7em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    color: #FFFDF3;
+    letter-spacing: 0.2em;
+}
+
+.ticker svg{
+  width:0.8vw;
+  margin-right:1vw;
+  fill: #FFFDF3;
+}
+
+.Inventorycontainer{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /* width: 10vw; */
+  z-index: 1000;
+}
+
+.Inventorycontainer iframe{
+  width: 20vw;
+  height: auto;
+  /* position: absolute; */
   bottom: 0;
-  left: 0px;
+  left: 0;
+  filter: drop-shadow(0px 0px 30px #282828);
 }
 
 .showLabel3{
@@ -358,13 +574,13 @@ a {
   width: fit-content;
   position: fixed;
   z-index: 100;
-  bottom: 5px;
+  top: 5px;
   left: 15px;
     font-family: "abcSimon";
-    font-size: 0.95em;
+    font-size: 0.8em;
     filter: drop-shadow(2px 4px 6px black);
-    animation: 8s 5s fade  linear infinite; 
-    opacity:0;
+    /* animation: 8s 5s fade  linear infinite;  */
+    /* opacity:0; */
     z-index:200000;
 
 }
@@ -382,7 +598,7 @@ a {
 
 .showInfo{
   padding: 10px 20px 10px 15px;
-  font-size: 0.7em;
+  font-size: 0.65em;
 }
 
 .showInfoMain{
@@ -851,7 +1067,7 @@ bounce{
 .Logo-knight2 svg{
   position: absolute;
   z-index: 300;
-  width: 10vw;
+  width: 8vw;
   top: 30px;
   right: 30px;
   animation: 3s 1s spin, 4s 4s float infinite ease-in-out;
@@ -1102,3 +1318,34 @@ border-bottom:2px solid black;
   /* width:80%; */
   margin:0 auto;
 }
+
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.Typing1{
+  position: fixed;
+  padding: 10px 20px 10px 15px;
+  font-size: 0.7em;
+  bottom:0;
+left: 0;
+z-index: 10000;
+display: -moz-box;
+display: flex;
+color: #FFFDF3;
+letter-spacing: 0.2em;
+
+}
+

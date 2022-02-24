@@ -33,20 +33,35 @@
  import More2 from '../components/More2'
  import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
+ import TypeAnimation from 'react-type-animation';
  
  
- const query = `*[_type == "rooms"] {
-     view1,
-     view1a,
-     view1b,
-     view1c,
-     view2,
-     view2a,
-     view3,
-     view3a,
-     view4,
-     view4a,
-     title
+ 
+ 
+ const query = `*[_type == "room4"] {
+        rowof4[]{
+            asset->{
+                url,
+                caption,
+                year,
+                medium,
+                dimensions,
+                editionDetails,
+                alt,
+                slug,
+            },
+     },
+     rowof8[]{
+        asset->{
+            url,
+            caption,
+            year,
+            medium,
+            dimensions,
+            editionDetails,
+            alt,
+        },
+ }
  }
  `
  
@@ -61,7 +76,7 @@
    }
  
  
- const rooms = ({ properties }) => {
+ const room4 = ({ properties }) => {
    return (
      <div className="wrapper fullhog fullhogv2">
        <Head>
@@ -72,23 +87,68 @@
        <Script src="/public/hello.js"></Script>
        {properties.map(post => (
          <div key={post._id}>
+           {/* <Animation3 />   */}
            <Logotransparent />
            <Ticker />
            <Inventory />
-           <Label2 />
-            <div className="linkWrapper">
-                <div className="link1"><Link href="/room1">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-                 <div className="link2"><Link href="/room2">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-                 <div className="link3"><Link href="/room3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-                  <div className="link4"><Link href="/room4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-              </div>
-            <div className="mainContainer">
-            <Container1 />
-            <Container2 />
-            <Container3 />
-            <Container4 />
-           </div> 
- 
+           <div className= "Typing1" >
+           <TypeAnimation
+        cursor={true}
+        sequence={[
+          'Cam 4',
+          2000,
+          'Space Room',
+          2000,
+          'Spacetime.',
+        ]}
+        wrapper="a"
+        repeat={2}
+       />
+      
+          </div>
+
+           <div className=" ">
+           <div className="iframe-container">
+           <iframe className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
+          </div>
+
+          </div> 
+           
+          <div className="rowof4">
+            {post.rowof4.map((image) => 
+            (
+                    <div key={image._id}>
+                         <a href={`/room4d`}> 
+                        <img src={urlFor(image).url()} />
+                        </a> 
+
+                    </div>
+                
+            ))
+            }
+                            </div>
+
+            <div className="rowof8">
+            {post.rowof8.map((image) => 
+            (
+              <div key={image._id}>
+                                  <a href={`/room1works`}> 
+                <img src={urlFor(image).url()} />
+                </a>
+                </div>
+                
+            ))
+            }
+            </div>
+        
+
+
+
+
+
+
+
+
          </div>
          
        ))}
@@ -99,7 +159,7 @@
  }
  
  export const getServerSideProps = async () => {
-   const query = '*[ _type == "rooms"]'
+   const query = '*[ _type == "room4"]'
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -117,4 +177,4 @@
    }
  }
  
- export default rooms;
+ export default room4;

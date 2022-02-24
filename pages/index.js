@@ -17,6 +17,9 @@ import Static from 'next/image'
 import Head from 'next/head'
 import More from '../components/More'
 import More2 from '../components/More2'
+import Label from "../components/Label"
+import Label2 from "../components/Label2"
+import Labelnew from '../components/Labelnew'
 
 
 const query = `*[_type == "landingpage"] {
@@ -44,17 +47,18 @@ const IndexPage = ({ properties }) => {
       <Script src="/public/hello.js"></Script>
       {properties.map(post => (
         <div key={post._id}>
-           <Link href="/about">
+           {/* <Link href="/about">
            <div className="showLabel pointer">
             <div className="showTitle">
             Spacetime
             </div>
           </div> 
-          </Link>
-          <More />
-          <More2 />
+          </Link> */}
+          {/* <More />
+          <More2 /> */}
+          <Label />
           <Link href="/about">
-           <div className="showLabel2 pointer">
+           <div className="showLabelold pointer">
             <div className="showInfo">
               <div className="showInfoMain">
               Gabriel Orozco<br></br>
