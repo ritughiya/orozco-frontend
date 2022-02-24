@@ -561,7 +561,7 @@ a {
 }
 
 .Inventorycontainer iframe{
-  width: 20vw;
+  width: fit-content;
   height: auto;
   /* position: absolute; */
   bottom: 0;
