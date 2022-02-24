@@ -132,7 +132,7 @@
             {post.rowof8.map((image) => 
             (
               <div key={image._id}>
-                                  <a href={`/room1works`}> 
+                <a href={`/room1works`}> 
                 <img src={urlFor(image).url()} />
                 </a>
                 </div>

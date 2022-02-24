@@ -129,16 +129,18 @@
             ))
             }
                             </div>
-           {/* <div className="rowof8">
+           <div className="rowof8">
             {post.rowof8.map((image) => 
             (
               <div key={image._id}>
-                <img src={urlFor(image).url()} />
+                <a href={`/${image.slug}`}> 
+                        <img src={urlFor(image).url()} />
+                        </a> 
                 </div>
                 
             ))
             }
-            </div> */}
+            </div>
 
 
 
