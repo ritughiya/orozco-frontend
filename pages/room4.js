@@ -94,11 +94,9 @@
              {post.rowof4.map((image) => 
              (
                      <div key={image._id}>
-                          {/* <a href={`/${image.slug}`}> 
-                         <img src={urlFor(image).url()} />
-                         </a>  */}
-                         <div>{image.caption}
-                         <img src={urlFor(image.mainImage).url()} /></div>
+                          {/* <Link href={`work/${image.slug.current}`}> */}
+                         <img src={urlFor(image.mainImage).url()} />
+                         {/* </Link> */}
  
                      </div>
                  
@@ -111,10 +109,9 @@
  {post.rowof8.map((image) => 
              (
                      <div key={image._id}>
-                          {/* <a href={`/${image.slug}`}> 
-                         <img src={urlFor(image).url()} />
-                         </a>  */}
-                         <div>{image.caption}</div>
+                           {/* <Link href={`work/${image.slug.current}`}> */}
+                         <img src={urlFor(image.mainImage).url()} />
+                         {/* </Link> */}
  
                      </div>
                  

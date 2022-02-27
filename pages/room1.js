@@ -93,7 +93,7 @@
            <div className="rowof4">
              {post.rowof4.map((image) => 
              (
-                     <div className="rowof4" key={image._id}>
+                     <div key={image._id}>
                           {/* <Link href={`work/${image.slug.current}`}> */}
                          <img src={urlFor(image.mainImage).url()} />
                          {/* </Link> */}
@@ -101,6 +101,8 @@
                  
              ))
              }
+             </div>
+             <div className="rowof8">
  
  {post.rowof8.map((image) => 
              (
