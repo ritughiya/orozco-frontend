@@ -1067,7 +1067,7 @@ bounce{
 .Logo-knight2 svg{
   position: absolute;
   z-index: 300;
-  width: 8vw;
+  width: 6vw;
   top: 30px;
   right: 30px;
   animation: 3s 1s spin, 4s 4s float infinite ease-in-out;

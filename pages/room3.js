@@ -36,7 +36,7 @@
  import TypeAnimation from 'react-type-animation';
  
  
- const query = `*[_type == "room4" ]{rowof4[]->, rowof8[]->} `
+ const query = `*[_type == "room3" ]{rowof4[]->, rowof8[]->} `
  
  const serializers = {
      types: {
@@ -49,7 +49,7 @@
    }
  
  
-   const room4 = ({ properties }) => {
+   const room3 = ({ properties }) => {
     return (
       <div className="wrapper fullhog fullhogv2">
         <Head>
@@ -68,9 +68,9 @@
             <TypeAnimation
          cursor={true}
          sequence={[
-           'Cam 4',
+           'Cam 1',
            2000,
-           'Room 4',
+           'Room 1',
            2000,
            'Spacetime.',
          ]}
@@ -86,29 +86,12 @@
            </div> */}
  
            <div className="iframe-container">
-           <iframe className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
+           <iframe className="" src="https://player.vimeo.com/video/675558830?h=8d3e149033&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
            </div>
  
            </div> 
            <div className="rowof4">
              {post.rowof4.map((image) => 
-             (
-                     <div key={image._id}>
-                          {/* <a href={`/${image.slug}`}> 
-                         <img src={urlFor(image).url()} />
-                         </a>  */}
-                         <div>{image.caption}
-                         <img src={urlFor(image.mainImage).url()} /></div>
- 
-                     </div>
-                 
-             ))
-             }
-                                          </div>
-
-                                          <div className="rowof8">
-
- {post.rowof8.map((image) => 
              (
                      <div key={image._id}>
                           {/* <a href={`/${image.slug}`}> 
@@ -121,7 +104,21 @@
              ))
              }
  
- </div>
+ {post.rowof8.map((image) => 
+             (
+                     <div key={image._id}>
+                          {/* <a href={`/${image.slug}`}> 
+                         <img src={urlFor(image).url()} />
+                         </a>  */}
+                         <div>{image.caption}</div>
+ 
+                     </div>
+                 
+             ))
+             }
+                             </div>
+ 
+ 
           </div>
           
         ))}
@@ -132,7 +129,7 @@
   }
  
  export const getServerSideProps = async () => {
-   const query = `*[_type == "room4" ]{rowof4[]->, rowof8[]->} `
+   const query = `*[_type == "room3" ]{rowof4[]->, rowof8[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -150,14 +147,4 @@
    }
  }
  
- export default room4;
-
-
-
-
-
-
-
-
-
-
+ export default room3;
