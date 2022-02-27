@@ -7,7 +7,7 @@ import { sanityClient, urlFor} from '../sanity'
 export default function Logotransparent() {
   return (
             <div className="Logo-knight2 pointer">
-            <Link href="/about">
+            <Link href="/archive">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
