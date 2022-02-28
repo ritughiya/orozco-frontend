@@ -10,7 +10,7 @@ export default function Msg() {
   return (
 <div id="Msganimation">
 <Link href="/text">
-<svg xmlns="http://www.w3.org/2000/svg" class="pointer" viewBox="0 0 224.26 135.15">
+<svg xmlns="http://www.w3.org/2000/svg" className="pointer" viewBox="0 0 224.26 135.15">
 
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
