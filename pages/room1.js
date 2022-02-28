@@ -96,6 +96,7 @@
              (
                      <div key={image._id}>
                           {/* <Link href={`work/${image.slug.current}`}> */}
+                        
                          <img src={urlFor(image.mainImage).url()} />
                          {/* </Link> */}
                      </div>
@@ -107,13 +108,12 @@
  
  {post.rowof8.map((image) => 
              (
-                     <div key={image._id}>
-                          {/* <a href={`/${image.slug}`}> 
-                         <img src={urlFor(image).url()} />
-                         </a>  */}
-                         <div>{image.caption}</div>
- 
-                     </div>
+              <div key={image._id}>
+              {/* <Link href={`work/${image.slug.current}`}> */}
+            <img src={urlFor(image.mainImage).url()} />
+            {/* </Link> */}
+
+        </div>
                  
              ))
              }

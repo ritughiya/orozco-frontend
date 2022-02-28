@@ -677,6 +677,24 @@ a {
     letter-spacing: 0.2em;
 }
 
+.tickerquick{
+  padding: 10px 20px 10px 15px;
+    font-size: 0.7em;
+    position: fixed;
+    top:0px ;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    color: #FFFDF3;
+    letter-spacing: 0.2em;
+}
+
+.tickerquick svg{
+  width:0.8vw;
+  margin-right:1vw;
+  fill: #FFFDF3;
+}
+
 .ticker svg{
   width:0.8vw;
   margin-right:1vw;

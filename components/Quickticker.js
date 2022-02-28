@@ -11,7 +11,7 @@ import Circle from "../components/Circle"
 
 export default function Quickticker() {
   return (
-<div className="ticker">
+<div className="tickerquick">
     <>
     <Circle />
     <Clock
