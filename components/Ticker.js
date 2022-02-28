@@ -11,10 +11,11 @@
  import Image from "../components/Image"
  import Circle from "../components/Circle"
  import Clock from 'react-live-clock';
+ import ReactDelayRender from 'react-delay-render';
 
-export default function Ticker() {
-  return (
-    <div className="ticker">
+
+const Ticker = () => (
+<div className="ticker">
     <>
     <Circle />
     <Clock
@@ -23,7 +24,9 @@ export default function Ticker() {
     </>
     </div>
 
-  );
-}
 
+
+);
+ 
+export default ReactDelayRender({ delay: 1000 })(Ticker);
 

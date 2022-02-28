@@ -2,7 +2,8 @@
 import React from "react";
 export default function Animation3() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" id="Orozcoanimation3" viewBox="0 0 1865.7 1182.71">
+<div id="Orozcoanimation3">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.01 1172.58">
 <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
             <circle className="cls-1" cx="625.14" cy="288.54" r="194.71" />
@@ -24,7 +25,7 @@ export default function Animation3() {
         </g>
     </g>
 </svg>
-
+</div>
 
 
   );

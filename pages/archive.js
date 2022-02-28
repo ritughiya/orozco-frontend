@@ -11,6 +11,7 @@
  import Animation from "../components/Animation"
  import Animation2 from "../components/Animation2"
  import Animation3 from "../components/Animation3"
+ import Msg from "../components/Msg"
  import Circle from "../components/Circle"
  import Container1 from "../components/Container1"
  import Container2 from "../components/Container2"
@@ -34,6 +35,10 @@
  import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
  import TypeAnimation from 'react-type-animation';
+ import Quicklogo from '../components/Quicklogo'
+ import Quickinventory from '../components/Quickinventory.js'
+ import Archivelabel from '../components/Archivelabel.js'
+
  
  
  
@@ -52,16 +57,17 @@
 
  const archive = ({ properties }) => {
    return (
-     <div className="wrapper fullhog fullhogv2">
+     <div className="Archive wrapper fullhog fullhogv2">
        <Head>
          <title>Spacetime Library</title>
          <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
          <link rel="icon" href="/favicon.png" />
        </Head>
        <Script src="/public/hello.js"></Script>
-       <Logotransparent />
-            <Ticker />
-            <Inventory />
+       <Msg />
+       <Archivelabel />
+       <Quicklogo />
+       <Quickinventory />
        <div className="rowof8">
        {properties.map(post => (
          <div key={post._id}>

@@ -27,6 +27,9 @@
  import Label from "../components/Label"
  import Label2 from "../components/Label2"
  import Labelnew from '../components/Labelnew'
+ import Quickticker from '../components/Quickticker'
+ import Quicklogo from '../components/Quicklogo'
+ import Quickinventory from '../components/Quickinventory.js'
  import Static from 'next/image'
  import Head from 'next/head'
  import More from '../components/More'
@@ -61,9 +64,9 @@
         {properties.map(post => (
           <div key={post._id}>
             {/* <Animation3 />   */}
-            <Logotransparent />
-            <Ticker />
-            <Inventory />
+            <Quicklogo />
+            <Quickticker />
+            <Quickinventory />
             <div className= "Typing1" >
             <TypeAnimation
          cursor={true}
@@ -80,10 +83,8 @@
        
            </div>
             
-            <div className=" ">
-            {/* <div className="container pointer v1">
-           <iframe title="vimeo-player" className="primaryView responsive-iframe" src="https://player.vimeo.com/video/675558830?h=8d3e149033&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
-           </div> */}
+            <div className="videoContainer">
+           
  
            <div className="iframe-container">
            <iframe className="" src="https://player.vimeo.com/video/675558830?h=8d3e149033&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   

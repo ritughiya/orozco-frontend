@@ -1,6 +1,11 @@
-import { sanityClient } from "../../sanity"
+import { sanityClient, urlFor} from "../../sanity"
 import Image from "../../components/Image"
 import Link from "next/link"
+import Quickticker from '../../components/Quickticker'
+import Quicklogo from '../../components/Quicklogo'
+import Quickinventory from '../../components/Quickinventory.js'
+import Quicklabel2 from '../../components/Quicklabel2.js'
+
 
 const Work = ({
     mainImage,
@@ -14,8 +19,21 @@ const Work = ({
 }) => {
 
   return (
-    <div className="container">
-        {caption}
+    <div className="container WorkContainer">
+      <Quicklogo />
+       <Quickinventory />
+       <Quickticker />
+       {/* <Quicklabel2 /> */}
+       <div className="imageContainer">
+       <img src={urlFor(mainImage).url()} alt={alt}/>
+       </div>
+       <div className="textContainer">
+        <div>{caption}, {year}</div>
+        <div>{medium}</div>
+        <div>{dimensions}</div>
+        <div>{editionDetails}</div>
+
+      </div>
     </div>
   )
 }

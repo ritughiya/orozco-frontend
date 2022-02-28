@@ -20,6 +20,12 @@ body {
     /* overflow-y:hidden; */
 }
 
+.Home .mainContainer{
+  position:fixed;
+  top:0%;
+  left:0%;
+}
+
 .mainContainer,
 .roomContainer{
 	display:flex;
@@ -27,6 +33,12 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.videoContainer{
+  height:90vh;
+  overflow:hidden;
+}
+
 .container {
   position: relative;
   width: 50%;
@@ -38,7 +50,7 @@ body {
 }
 
 .camTopleft{
-  z-index: 30000000;
+  z-index: 10;
   bottom: 0;
   position: absolute;
   left: 0;
@@ -52,7 +64,7 @@ body {
 }
 
 .camTopright{
-  z-index: 30000000;
+  z-index: 10;
   bottom: 0;
   position: absolute;
   left: 0;
@@ -66,7 +78,7 @@ body {
 }
 
 .camBottomleft{
-  z-index: 30000000;
+  z-index: 10;
   top: 0;
   position: absolute;
   left: 0;
@@ -80,7 +92,7 @@ body {
 }
 
 .camBottomleft{
-  z-index: 30000000;
+  z-index: 10;
   top: 0;
   position: absolute;
   left: 0;
@@ -94,7 +106,7 @@ body {
 }
 
 .camBottomright{
-  z-index: 30000000;
+  z-index: 10;
   top: 0;
   position: absolute;
   left: 0;
@@ -140,7 +152,7 @@ body {
 .v2 iframe.secondaryView,
 .v3 iframe.secondaryView{
   /* opacity:0; */
-  z-index:100;
+  z-index:9;
 }
 
 @keyframes appear {
@@ -181,40 +193,40 @@ body {
 }
 
 .v2 iframe.primaryView{
-  animation: 0.25s 7s disappear ease-in forwards !important;
+  animation: 0.25s 15s disappear ease-in forwards !important;
 }
 
 .v2 iframe.secondaryView{
-  animation: 0.25s 7s appear ease-in forwards !important;
+  animation: 0.25s 15s appear ease-in forwards !important;
   opacity:0;
 }
 
 .v3 iframe.primaryView{
-  animation: 0.25s 15s disappear ease-in forwards !important;
+  animation: 0.25s 25s disappear ease-in forwards !important;
 }
 
 .v3 iframe.secondaryView{
   width:300vw;
-  animation: 0.25s 15s appear ease-in forwards !important;
+  animation: 0.25s 25s appear ease-in forwards !important;
   opacity:0;
 }
 
 .v2 .secondaryCamtitle{
-  animation: 0.25s 7s appear ease-in forwards !important;
-  opacity:0;
-}
-
-.v2 .primaryCamtitle{
-  animation: 0.25s 7s disappear ease-in forwards !important;
-}
-
-.v3 .secondaryCamtitle{
   animation: 0.25s 15s appear ease-in forwards !important;
   opacity:0;
 }
 
-.v3 .primaryCamtitle{
+.v2 .primaryCamtitle{
   animation: 0.25s 15s disappear ease-in forwards !important;
+}
+
+.v3 .secondaryCamtitle{
+  animation: 0.25s 25s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v3 .primaryCamtitle{
+  animation: 0.25s 25s disappear ease-in forwards !important;
 }
 
 .v1 iframe.primaryView{
@@ -236,10 +248,12 @@ body {
 .linkWrapper{
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  top:0;
+  left:0;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
-  z-index: 100000;
+  z-index: 15;
 }
 
 .link1,
@@ -468,7 +482,7 @@ a {
 
 
 .showLabel{
-  z-index:100;
+  z-index:2;
   position: fixed;
   left: 0;
   top: 30px;
@@ -485,6 +499,80 @@ a {
   color: #27355d;
 }
 
+.SpacedOut{
+  z-index: 10;
+  text-transform: uppercase;
+  text-align: center;
+  position: fixed;
+  width: 70%;
+  margin: 0 auto;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%,0);
+  display:flex;
+  justify-content:space-between;
+}
+
+.SpacedOut span{
+  color: #FFFDF3;
+}
+
+
+
+.star-wars {
+  pointer-events:none;
+  display: flex;
+  z-index: 1001;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #FFFDF3;
+  font-size: 140%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 800px;
+  text-align: justify;
+  animation: appear 1s ease-in forwards;
+  font-family: MessinaSans;
+}
+
+.star-wars .title p{
+  display: flex;
+    justify-content: space-around;
+}
+
+.crawl {
+  position: relative;
+  margin-top:150vh;
+  transform-origin: 50% 100%;
+  animation: crawl 50s 1s linear;
+  width:50vw;
+
+}
+
+.crawl > .title {
+  font-size: 80%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    width:1vw;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
 .showTitle{
   width: 40px;
   text-transform: uppercase;
@@ -498,35 +586,53 @@ a {
   font-weight:700;
 }
 
+@keyframes rise {
+  0% {
+    bottom: -115px;
+  }
+  100% {
+    bottom:0px;
+  }
+}
+
 .showLabel2{
-  z-index: 200000 !important;
-  transition: all 1s ease;
-  /* transform: rotate(15deg);
-    transform-origin: bottom left; */
+  z-index: 100 !important;
+  animation: 2s 0s rise ease-in forwards !important;  
   width: fit-content;
   padding-left: 10vw;
   margin-left: -10vw;
   position: fixed;
-  z-index: 100;
-  bottom: -75px;
+  bottom: -115px;
   left: 0px;   
-  background-color: #1a1919;
-  color: #FFFDF3;
+  background-color: #FFFDF3;
+  color: #1a1919;
   filter: drop-shadow(2px 4px 6px grey);
 }
 
-.showLabel2:hover{
-  bottom:0px;
+@keyframes moveleft {
+  from {
+    right:-100px !important;
+  }
+  to {
+    right:30px !important;
+  }
 }
 
+/* .Animationleft{
+  right: -100px ;
+  animation: 1s 5s moveleft ease-in-out forwards !important;   
+}
+
+.Logo-knight2delay svg{
+  } */
+
+
+
 .showLabelold{
-  z-index: 200000 !important;
+  z-index: 11 !important;
   transition: all 1s ease;
-  /* transform: rotate(15deg);
-    transform-origin: bottom left; */
   width: fit-content;
   position: fixed;
-  z-index: 100;
   bottom: 0px;
   left: 0px;   
   background-color: #FFFDF3;
@@ -534,12 +640,37 @@ a {
   filter: drop-shadow(2px 4px 6px grey);
 }
 
+@keyframes sink {
+  0% {
+    top:-100px;
+  }
+  50% {
+    top:0px;
+  }
+  55% {
+    top:10px;
+  }
+  60% {
+    top:0px;
+  }
+  65% {
+    top:-5px;
+  }
+  70% {
+    top:0px;
+  }
+  100% {
+    top:0px;
+  }
+}
+
 .ticker{
   padding: 10px 20px 10px 15px;
     font-size: 0.7em;
     position: fixed;
-    top: 0;
+    top:-100px ;
     left: 0;
+    animation: 4s sink ease-in forwards;
     z-index: 10000;
     display: flex;
     color: #FFFDF3;
@@ -557,7 +688,7 @@ a {
   bottom: 10px;
   right: 10px;
   /* width: 10vw; */
-  z-index: 1000;
+  z-index: 10;
 }
 
 .Inventorycontainer iframe{
@@ -597,7 +728,7 @@ a {
 
 
 .showInfo{
-  padding: 10px 20px 10px 15px;
+  padding: 10px 15px;
   font-size: 0.65em;
 }
 
@@ -710,7 +841,7 @@ a {
   position:fixed;
   height:100vh;
   mix-blend-mode:color-burn;
-  animation: 30s move1 linear forwards;
+  /* animation: 30s move1 linear forwards; */
   z-index:1;
 }
 
@@ -727,13 +858,15 @@ a {
 
 #Orozcoanimation3{
   position:fixed;
-  height:80vh;
   width:80vw;
-  animation: 20s 18s fade  linear infinite;
-  z-index:3;
-  left:10vw;
-  top:10vh;
+  animation: fade 10s linear 4s infinite;
+  /* animation: 10s 0s fade  linear infinite; */
+  animation-iteration-count: 2;
   opacity:0;
+  z-index:1000;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
   pointer-events:none;
 }
 
@@ -741,7 +874,7 @@ a {
   position:fixed;
   height:80vh;
   width:80vw;
-  animation: 5s 5s fade  linear infinite;
+  /* animation: 5s 5s fade  linear infinite; */
   z-index:3;
   left:10vw;
   top:10vh;
@@ -750,7 +883,7 @@ a {
 }
 
 .fullhogv2a #Orozcoanimation3{
-  animation: 20s 10s fade  linear infinite;
+  /* animation: 20s 10s fade  linear infinite; */
 }
 
 @keyframes fade {
@@ -814,22 +947,17 @@ a {
     fill: #0b0b0a;
 }
 
-
-.fullhogv2 #Orozcoanimation3{
-  animation: 20s 5s fade  linear infinite; 
-}
-
 .vimeo-wrapper, video{
   position:fixed;
-  z-index:2;
-  width: 115vw;
+  z-index:90;
+  width: 112vw;
     min-height:100vh;
     object-fit:cover;
-  animation: appear 1s ease-in forwards;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  opacity:0;
+  animation: 0.25s 15s disappear ease-in forwards !important;
+  /* opacity:0; */
 }
 
 .fullhog{
@@ -844,12 +972,12 @@ a {
 
 .fullhog .vimeo-wrapper,
 .fullhog video{
-  animation: 1s 5s appear ease-in forwards !important;
+  /* animation: 1s 5s appear ease-in forwards !important; */
 }
 
 .fullhogv2 .vimeo-wrapper,
 .fullhogv2 video{
-  animation: 2s 1s appear ease-in forwards !important;
+  /* animation: 2s 1s appear ease-in forwards !important; */
 }
 
 @keyframes appear {
@@ -1066,12 +1194,16 @@ bounce{
 
 .Logo-knight2 svg{
   position: absolute;
-  z-index: 300;
+  z-index: 3;
   width: 6vw;
   top: 30px;
   right: 30px;
   animation: 3s 1s spin, 4s 4s float infinite ease-in-out;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+}
+
+.Archive .Logo-knight2 svg{
+  width: 10vw;
 }
 
 .Logo-knight2 svg:hover{
@@ -1331,15 +1463,15 @@ border-bottom:2px solid black;
    height: 100%;
    left: 0;
    position: absolute;
-   top: 0;
+   top: -5%;
    width: 100%;
 }
 
 .Typing1{
-  position: fixed;
+  position: absolute;
   padding: 10px 20px 10px 15px;
   font-size: 0.7em;
-  bottom:0;
+  bottom: 90px;
 left: 0;
 z-index: 10000;
 display: -moz-box;
@@ -1348,4 +1480,85 @@ color: #FFFDF3;
 letter-spacing: 0.2em;
 
 }
+.archivelabel{
+  left: 0;
+  top: 0;
+  width: 80vh;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+  position: absolute;
+  background-color: #ffffff;
+}
 
+.archivelabel .inner{
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  font-size: 80%;
+  margin: 0 20px 0 auto;
+  text-align: right;
+}
+
+/* Slug page */
+
+.WorkContainer{
+  color:#ffffff;
+  width: 100vw;
+}
+
+.WorkContainer .imageContainer{
+  margin: 0 auto;
+  height: 75vh;
+  display: flex;
+}
+
+.WorkContainer .imageContainer img{
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.WorkContainer .textContainer{
+  margin: 30px 15px 15px 15px;
+  display: flex;
+  font-size:0.9em;
+  line-height:1.4em;
+  flex-direction:column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#Msganimation svg{
+  position: fixed;
+  width: 10vw;
+  bottom: 30px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+  left: 30px;
+  animation:  4s 4s float infinite ease-in-out;
+
+}
+
+#Msganimation .cls-1,
+#Msganimation .cls-2 {
+    fill: #6c6c6c;
+}
+
+#Msganimation:hover .cls-1,
+#Msganimation:hover .cls-2 {
+    /* fill: #a5a4a4; */
+}
+
+#Msganimation .cls-1 {
+    /* stroke: #333; */
+}
+
+#Msganimation .cls-3 {
+    fill: #c4c2c2;
+    filter: drop-shadow(2px 4px 15px #000000);
+}
+
+#Msganimation circle.cls-3:hover{
+    fill: #5a5a5a;
+}

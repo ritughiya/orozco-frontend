@@ -3,12 +3,13 @@ import React from "react";
 import Link from 'next/link'
 import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
+import ReactDelayRender from 'react-delay-render';
 
-export default function Logotransparent() {
-  return (
-            <div className="Logo-knight2 pointer">
+
+const Logotransparent = () => (
+  <div className="Logo-knight2 Logo-knight2delay pointer">
             <Link href="/archive">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
+<svg className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
             <path className="cls-1" d="M499,242.5V499H242.5C242.5,357.34,357.34,242.5,499,242.5Z" />
@@ -26,5 +27,8 @@ export default function Logotransparent() {
 </svg>
 </Link>
 </div>
-  );
-}
+);
+ 
+export default ReactDelayRender({ delay: 15000 })(Logotransparent);
+
+
