@@ -1525,7 +1525,7 @@ letter-spacing: 0.2em;
 
 .WorkContainer .imageContainer{
   margin: 0 auto;
-  height: 75vh;
+  height: 80vh;
   display: flex;
 }
 
@@ -1539,7 +1539,7 @@ letter-spacing: 0.2em;
 .WorkContainer .textContainer{
   margin: 30px 15px 15px 15px;
   display: flex;
-  font-size:0.9em;
+  font-size:0.8em;
   line-height:1.4em;
   flex-direction:column;
   text-align: center;
@@ -1579,4 +1579,23 @@ letter-spacing: 0.2em;
 
 #Msganimation circle.cls-3:hover{
     fill: #5a5a5a;
+}
+
+
+.relatedWorkscontainer{
+  width: 100vw;
+  display: -moz-box;
+  display: flex;
+  margin: 40px 0;
+  height: 30vh;
+}
+
+.relatedWorkscontainer > * {
+  width: 33vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.relatedWorkscontainer div img {
+  width: 100%;
 }

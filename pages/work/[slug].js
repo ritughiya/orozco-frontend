@@ -15,7 +15,8 @@ const Work = ({
   dimensions,
   editionDetails,
   alt,
-  slug
+  slug,
+  relatedworks,
 }) => {
 
   return (
@@ -32,8 +33,21 @@ const Work = ({
         <div>{medium}</div>
         <div>{dimensions}</div>
         <div>{editionDetails}</div>
-
       </div>
+      <div className="relatedWorkscontainer">
+      {relatedworks.map((image) => 
+             (
+
+                     <div key={image._id}>
+                          {/* <Link href={`work/${image.slug.current}`}> */}
+                         <img src={urlFor(image.mainImage).url()} />
+                         {/* </Link> */}
+                     </div>
+                 
+             ))
+             }
+                                  </div>
+
     </div>
   )
 }
@@ -48,7 +62,8 @@ export const getServerSideProps = async (pageContext) => {
       medium,
       dimensions,
       editionDetails,
-      alt
+      alt,
+      relatedworks[]->
     }`
   
     const work = await sanityClient.fetch(query, { pageSlug })
@@ -68,6 +83,7 @@ export const getServerSideProps = async (pageContext) => {
           dimensions: work.dimensions,
           editionDetails: work.editionDetails,
           alt: work.alt,
+          relatedworks: work.relatedworks,
         },
       }
     }
