@@ -1,9 +1,16 @@
 //Msg.js
 import React from "react";
+import Link from 'next/link'
+import Script from 'next/script'
+import { sanityClient, urlFor} from '../sanity'
+import ReactDelayRender from 'react-delay-render';
+
+
 export default function Msg() {
   return (
 <div id="Msganimation">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.26 135.15">
+<Link href="/text">
+<svg xmlns="http://www.w3.org/2000/svg" class="pointer" viewBox="0 0 224.26 135.15">
 
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
@@ -15,7 +22,7 @@ export default function Msg() {
         </g>
     </g>
 </svg>
-
+</Link>
 
 </div>
 
