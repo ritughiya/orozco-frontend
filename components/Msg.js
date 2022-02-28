@@ -7,11 +7,11 @@ export default function Msg() {
 
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
-            <path class="cls-1" d="M223.76,61a60.5,60.5,0,0,1-60.5,60.5h-80A60.19,60.19,0,0,1,52,112.8a18.75,18.75,0,1,1-23.92-27A60.52,60.52,0,0,1,83.26.5h80A60.5,60.5,0,0,1,223.76,61Z" />
-            <circle class="cls-2" cx="9.37" cy="125.77" r="9.38" />
-            <circle class="cls-3" cx="79.47" cy="61" r="14.06" />
-            <circle class="cls-3" cx="123.26" cy="61" r="14.06" />
-            <circle class="cls-3" cx="167.05" cy="61" r="14.06" />
+            <path className="cls-1" d="M223.76,61a60.5,60.5,0,0,1-60.5,60.5h-80A60.19,60.19,0,0,1,52,112.8a18.75,18.75,0,1,1-23.92-27A60.52,60.52,0,0,1,83.26.5h80A60.5,60.5,0,0,1,223.76,61Z" />
+            <circle className="cls-2" cx="9.37" cy="125.77" r="9.38" />
+            <circle className="cls-3" cx="79.47" cy="61" r="14.06" />
+            <circle className="cls-3" cx="123.26" cy="61" r="14.06" />
+            <circle className="cls-3" cx="167.05" cy="61" r="14.06" />
         </g>
     </g>
 </svg>
