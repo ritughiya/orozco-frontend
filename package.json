@@ -20,6 +20,7 @@
     "next": "12.0.7",
     "next-images": "^1.8.4",
     "next-sanity": "^0.4.0",
+    "next-sanity-image": "^3.2.1",
     "plyr": "^3.6.12",
     "react": "^17.0.2",
     "react-datetime": "^3.1.1",
@@ -31,11 +32,13 @@
     "react-refractor": "^2.1.5",
     "react-router-dom": "^6.2.1",
     "react-sticky-el": "^2.0.9",
+    "react-test-renderer": "^17.0.2",
     "react-type-animation": "^1.1.2",
     "reactstrap": "^9.0.1",
     "refractor": "^4.4.0"
   },
   "devDependencies": {
+    "@babel/preset-flow": "^7.16.7",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7"

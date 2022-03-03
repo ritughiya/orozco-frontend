@@ -1,6 +1,6 @@
+import { createClient, createPortableTextComponent} from "next-sanity"
+import createImageUrlBuilder from '@sanity/image-url';
 
-   
-import { createClient, createImageUrlBuilder, createPortableTextComponent} from "next-sanity"
 
 const config = {
   /**
@@ -13,17 +13,14 @@ const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   useCdn: process.env.NODE_ENV === "production",
+  apiVersion: '2022-03-03', // use a UTC date string
+  useCdn: true
   /**
    * Set useCdn to `false` if your application require the freshest possible
    * data always (potentially slightly slower and a bit more expensive).
    * Authenticated request (like preview) will always bypass the CDN
    **/
 };
-/**
- * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
- * Read more: https://www.sanity.io/docs/image-url
- **/
-export const urlFor = (source) => createImageUrlBuilder(config).image(source)
 
 // Set up Portable Text serialization
 export const PortableText = createPortableTextComponent({
@@ -33,5 +30,15 @@ export const PortableText = createPortableTextComponent({
   serializers: {},
 })
 
+
+
 // Set up the client for fetching data in the getProps page functions
 export const sanityClient = createClient(config)
+
+/**
+ * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
+ * Read more: https://www.sanity.io/docs/image-url
+ **/
+
+
+ export const urlFor = (source) => createImageUrlBuilder(config).image(source); // <-----------

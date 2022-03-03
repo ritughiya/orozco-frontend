@@ -1,11 +1,18 @@
-import { sanityClient, urlFor} from "../../sanity"
-import Image from "../../components/Image"
+import { sanityClient} from "../../sanity"
+import { useState, useEffect } from 'react';
+// import Image from "../../components/Image"
+import Image from 'next/image'
+import imageUrlBuilder from '@sanity/image-url'
+import imageUrlFor from "../../utils/imageUrlFor";
 import Link from "next/link"
 import Quickticker from '../../components/Quickticker'
 import Quicklogo from '../../components/Quicklogo'
 import Quickinventory from '../../components/Quickinventory.js'
 import Quicklabel2 from '../../components/Quicklabel2.js'
 
+function urlFor (source) {
+  return imageUrlBuilder(sanityClient).image(source)
+}
 
 const Work = ({
     mainImage,
@@ -22,11 +29,11 @@ const Work = ({
   return (
     <div className="container WorkContainer">
       <Quicklogo />
-       <Quickinventory />
+       {/* <Quickinventory /> */}
        <Quickticker />
        {/* <Quicklabel2 /> */}
        <div className="imageContainer">
-       <img src={urlFor(mainImage).url()} alt={alt}/>
+                         <img src={urlFor(mainImage).url()} />
        </div>
        <div className="textContainer">
         <div>{caption}, {year}</div>
@@ -35,12 +42,23 @@ const Work = ({
         <div>{editionDetails}</div>
       </div>
       <div className="relatedWorkscontainer">
-      {relatedworks.map((image) => 
+      {relatedworks && relatedworks.map((asset) => 
              (
 
-                     <div key={image._id}>
+                     <div key={asset._id}>
+
+                        {/* <img
+                      src={urlFor(asset.mainImage).url()}
+                     
+                    /> */}
+                            {/* <img src={asset.imageUrl} /> */}
+                         {/* <Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
+                        
+
+<Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+
                           {/* <Link href={`work/${image.slug.current}`}> */}
-                         <img src={urlFor(image.mainImage).url()} />
+                         {/* <img src={urlFor(image.mainImage).url()} /> */}
                          {/* </Link> */}
                      </div>
                  
@@ -87,6 +105,7 @@ export const getServerSideProps = async (pageContext) => {
         },
       }
     }
+
   }
 
 export default Work

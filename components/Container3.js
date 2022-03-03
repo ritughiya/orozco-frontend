@@ -13,4 +13,4 @@ const Container3 = () => (
 
 );
  
-export default ReactDelayRender({ delay: 15000 })(Container3);
+export default ReactDelayRender({ delay: 3000 })(Container3);

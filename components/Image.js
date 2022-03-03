@@ -1,11 +1,9 @@
-import { urlFor } from "../sanity"
+import React from 'react'
+import { sanityClient} from '../sanity'
+import imageUrlBuilder from '@sanity/image-url'
 
-const Image = ({ identifier, image }) => {
-  return (
-    <div className={identifier === "main-image" ? "main-image" : "image"}>
-      <img src={urlFor(image).auto("format")} />
-    </div>
-  )
+const builder = imageUrlBuilder(sanityClient)
+
+function urlFor(source) {
+  return builder.image(source)
 }
-
-export default Image

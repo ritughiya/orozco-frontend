@@ -29,6 +29,6 @@ const Logotransparent = () => (
 </div>
 );
  
-export default ReactDelayRender({ delay: 15000 })(Logotransparent);
+export default ReactDelayRender({ delay: 8000 })(Logotransparent);
 
 

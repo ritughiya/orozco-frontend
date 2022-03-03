@@ -6,7 +6,8 @@
  import Link from 'next/link'
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
- import Image from "../components/Image"
+ import Image from 'next/image'
+//  import Image from "../components/Image"
  import OrozcoCircle1 from "../components/orozcoCircle1"
  import Animation from "../components/Animation"
  import Animation2 from "../components/Animation2"
@@ -66,7 +67,7 @@
             {/* <Animation3 />   */}
             <Quicklogo />
             <Quickticker />
-            <Quickinventory />
+            {/* <Quickinventory /> */}
             <div className= "Typing1" >
             <TypeAnimation
          cursor={true}
@@ -91,33 +92,35 @@
            </div>
  
            </div> 
+           
+
            <div className="rowof4">
-             {post.rowof4.map((image) => 
-             (
-                     <div key={image._id}>
-                          {/* <Link href={`work/${image.slug.current}`}> */}
-                        
-                         <img src={urlFor(image.mainImage).url()} />
-                         {/* </Link> */}
+             {post.rowof4 && post.rowof4.map(({_id, slug = '', mainImage = ''}) =>  (
+                     <div className="zoom-in" key={_id}>
+                          <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                         <Image src={urlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                      </Link>
                      </div>
                  
              ))
              }
              </div>
-             <div className="rowof8">
- 
- {post.rowof8.map((image) => 
-             (
-              <div key={image._id}>
-              {/* <Link href={`work/${image.slug.current}`}> */}
-            <img src={urlFor(image.mainImage).url()} />
-            {/* </Link> */}
 
-        </div>
+
+             <div className="rowof8">
+             {post.rowof8 && post.rowof8.map(({_id, slug = '', mainImage = ''}) => (
+                     <div className="zoom-in"  key={_id}>
+                          <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                         <Image src={urlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                      </Link>
+                     </div>
                  
              ))
              }
-                             </div>
+             </div>
+
+
+             
  
  
           </div>
