@@ -1,6 +1,5 @@
 import { sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
-// import Image from "../../components/Image"
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
 import imageUrlFor from "../../utils/imageUrlFor";
