@@ -2,7 +2,6 @@ import { sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
-import imageUrlFor from "../../utils/imageUrlFor";
 import Link from "next/link"
 import Quickticker from '../../components/Quickticker'
 import Quicklogo from '../../components/Quicklogo'
