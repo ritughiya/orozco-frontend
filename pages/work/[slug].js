@@ -53,7 +53,7 @@ const Work = ({
         <div>{dimensions}</div>
         <div>{editionDetails}</div>
       </div>
-      <div className="imageContainer2b">
+      {/* <div className="imageContainer2b">
         <div className="backContainer">
       <div className="backto">
       <img src={imageUrlFor(thumbImage).url()} />
@@ -71,8 +71,8 @@ const Work = ({
                     /> */}
                             {/* <img src={asset.imageUrl} /> */}
                          {/* <Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
-                        {mainImage && (
-                         <img src={imageUrlFor(mainImage).url()} />)}
+                        {/* {mainImage && (
+                         <img src={imageUrlFor(mainImage).url()} />)} */}
 
 {/* <Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
 
@@ -84,7 +84,7 @@ const Work = ({
              ))
              }
                                      </div>
- </div>
+ </div> */}
 
     </div>
   )
