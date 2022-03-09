@@ -36,8 +36,6 @@ const query = `*[_type == "landingpage"] {
 }
 `
 
-
-
 const IndexPage = ({ properties }) => {
   return (
     <div className=" Home wrapper fullhog fullhogv2">
@@ -46,7 +44,6 @@ const IndexPage = ({ properties }) => {
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Script src="/public/hello.js"></Script>
       {properties.map(post => (
         <div key={post._id}>
          

@@ -69,7 +69,6 @@
            </Head>
            {properties.map(post => (
              <div key={post._id}>
-               {/* <Animation3 />   */}
                <Quicklogo />
                <Quickticker />
                <Quicklabel />
