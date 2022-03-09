@@ -9,8 +9,6 @@
     import Image from 'next/image'
     import imageUrlBuilder from '@sanity/image-url'
     import OrozcoCircle1 from "../components/orozcoCircle1"
-    import Animation from "../components/Animation"
-    import Animation2 from "../components/Animation2"
     import Animation3 from "../components/Animation3"
     import Circle from "../components/Circle"
     import Container1 from "../components/Container1"
@@ -33,8 +31,6 @@
     import Quickinventory from '../components/Quickinventory.js'
     import Static from 'next/image'
     import Head from 'next/head'
-    import More from '../components/More'
-    import More2 from '../components/More2'
     import BlockContent from '@sanity/block-content-to-react'
     import Clock from 'react-live-clock';
     import TypeAnimation from 'react-type-animation';
@@ -46,7 +42,7 @@
    }
    
     
-    const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
+    const query = `*[_type == "room3" ]{rowof4[]->, rowof8[]->} `
     
     const serializers = {
         types: {

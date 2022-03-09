@@ -14,13 +14,10 @@
  import Container4 from "../components/Container4"
  import Linkwrapper from "../components/Linkwrapper"
  import Ticker from "../components/Ticker"
- import Logo from "../components/Logo"
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
  import Label2 from "../components/Label2"
- import Static from 'next/image'
  import Head from 'next/head'
- import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
 
 

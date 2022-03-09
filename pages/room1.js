@@ -8,9 +8,6 @@
  import { sanityClient, urlFor} from '../sanity'
  import Image from 'next/image'
  import imageUrlBuilder from '@sanity/image-url'
- import OrozcoCircle1 from "../components/orozcoCircle1"
- import Animation from "../components/Animation"
- import Animation2 from "../components/Animation2"
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Container1 from "../components/Container1"
@@ -19,7 +16,6 @@
  import Container4 from "../components/Container4"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
- import Showfooter from "../components/Showfooter"
  import Logo from "../components/Logo"
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
@@ -33,8 +29,6 @@
  import Quickinventory from '../components/Quickinventory.js'
  import Static from 'next/image'
  import Head from 'next/head'
- import More from '../components/More'
- import More2 from '../components/More2'
  import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
  import TypeAnimation from 'react-type-animation';

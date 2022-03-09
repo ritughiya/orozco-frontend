@@ -8,18 +8,12 @@
   import { sanityClient, urlFor} from '../sanity'
   import Image from 'next/image'
   import imageUrlBuilder from '@sanity/image-url'
-  import OrozcoCircle1 from "../components/orozcoCircle1"
-  import Animation from "../components/Animation"
-  import Animation2 from "../components/Animation2"
   import Animation3 from "../components/Animation3"
   import Circle from "../components/Circle"
   import Container1 from "../components/Container1"
   import Container2 from "../components/Container2"
   import Container3 from "../components/Container3"
   import Container4 from "../components/Container4"
-  import Inventory from "../components/Inventory"
-  import Ticker from "../components/Ticker"
-  import Showfooter from "../components/Showfooter"
   import Logo from "../components/Logo"
   import Logotransparent from "../components/Logotransparent"
   import Label from "../components/Label"
@@ -33,8 +27,6 @@
   import Quickinventory from '../components/Quickinventory.js'
   import Static from 'next/image'
   import Head from 'next/head'
-  import More from '../components/More'
-  import More2 from '../components/More2'
   import BlockContent from '@sanity/block-content-to-react'
   import Clock from 'react-live-clock';
   import TypeAnimation from 'react-type-animation';
@@ -46,7 +38,7 @@
  }
  
   
-  const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
+  const query = `*[_type == "room2" ]{rowof4[]->, rowof8[]->} `
   
   const serializers = {
       types: {
@@ -69,30 +61,11 @@
          </Head>
          {properties.map(post => (
            <div key={post._id}>
-             {/* <Animation3 />   */}
              <Quicklogo />
              <Quickticker />
              <Quicklabel />
              <Room2Label />
              <Roomsdropdown />
-             {/* <Roomsdropdown2 /> */}
- 
-             {/* <Quickinventory /> */}
-             {/* <div className= "Typing1" >
-             <TypeAnimation
-          cursor={true}
-          sequence={[
-            'Cam 1',
-            2000,
-            'Room 1',
-            2000,
-            'Spacetime.',
-          ]}
-          wrapper="a"
-          repeat={2}
-         />
-        
-            </div> */}
              
              <div className="videoContainer">
             
