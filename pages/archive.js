@@ -7,6 +7,7 @@
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Image from "../components/Image"
+ import imageUrlBuilder from '@sanity/image-url'
  import OrozcoCircle1 from "../components/orozcoCircle1"
  import Animation from "../components/Animation"
  import Animation2 from "../components/Animation2"
@@ -40,6 +41,11 @@
  import Archivelabel from '../components/Archivelabel.js'
 
  
+ const imageBuilder = imageUrlBuilder(sanityClient);
+
+ function imageUrlFor(source) {
+   return imageBuilder.image(source);
+ }
  
  
  const query = `*[_type == "work" ]`
@@ -72,7 +78,7 @@
        {properties.map(post => (
          <div key={post._id}>
            
-           <img src={urlFor(post.mainImage).url()} />
+           <img src={imageUrlFor(post.mainImage).url()} />
          </div>
          
        ))}

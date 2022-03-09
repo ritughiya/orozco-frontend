@@ -7,7 +7,7 @@
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Image from 'next/image'
-//  import Image from "../components/Image"
+ import imageUrlBuilder from '@sanity/image-url'
  import OrozcoCircle1 from "../components/orozcoCircle1"
  import Animation from "../components/Animation"
  import Animation2 from "../components/Animation2"
@@ -19,15 +19,15 @@
  import Container4 from "../components/Container4"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
- import Battery from "../components/Battery"
- import MobileSignal from "../components/MobileSignal"
- import Wifi from "../components/Wifi"
  import Showfooter from "../components/Showfooter"
  import Logo from "../components/Logo"
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
  import Label2 from "../components/Label2"
  import Labelnew from '../components/Labelnew'
+ import Room1Label from "../components/Room1Label"
+ import Roomsdropdown from "../components/Roomsdropdown"
+ import Quicklabel from '../components/Quicklabel.js'
  import Quickticker from '../components/Quickticker'
  import Quicklogo from '../components/Quicklogo'
  import Quickinventory from '../components/Quickinventory.js'
@@ -38,7 +38,13 @@
  import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
  import TypeAnimation from 'react-type-animation';
- 
+
+ const imageBuilder = imageUrlBuilder(sanityClient);
+
+function imageUrlFor(source) {
+  return imageBuilder.image(source);
+}
+
  
  const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
  
@@ -61,14 +67,18 @@
           <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        <Script src="/public/hello.js"></Script>
         {properties.map(post => (
           <div key={post._id}>
             {/* <Animation3 />   */}
             <Quicklogo />
             <Quickticker />
+            <Quicklabel />
+            <Room1Label />
+            <Roomsdropdown />
+            {/* <Roomsdropdown2 /> */}
+
             {/* <Quickinventory /> */}
-            <div className= "Typing1" >
+            {/* <div className= "Typing1" >
             <TypeAnimation
          cursor={true}
          sequence={[
@@ -82,7 +92,7 @@
          repeat={2}
         />
        
-           </div>
+           </div> */}
             
             <div className="videoContainer">
            
@@ -95,10 +105,11 @@
            
 
            <div className="rowof4">
-             {post.rowof4 && post.rowof4.map(({_id, slug = '', mainImage = ''}) =>  (
+             {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div className="zoom-in" key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                         <Image src={urlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                          <img src={imageUrlFor(thumbImage).url()} />
+                         {/* <Image src={imageUrlFor(thumbImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
                       </Link>
                      </div>
                  
@@ -111,7 +122,7 @@
              {post.rowof8 && post.rowof8.map(({_id, slug = '', mainImage = ''}) => (
                      <div className="zoom-in"  key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                         <Image src={urlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                         <Image src={imageUrlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
                       </Link>
                      </div>
                  

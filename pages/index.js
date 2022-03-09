@@ -13,10 +13,10 @@
  import Container3 from "../components/Container3"
  import Container4 from "../components/Container4"
  import Linkwrapper from "../components/Linkwrapper"
- import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
  import Logo from "../components/Logo"
  import Logotransparent from "../components/Logotransparent"
+ import Label from "../components/Label"
  import Label2 from "../components/Label2"
  import Static from 'next/image'
  import Head from 'next/head'
@@ -50,25 +50,7 @@ const IndexPage = ({ properties }) => {
       {properties.map(post => (
         <div key={post._id}>
          
-{/* <div class="fade"></div>
 
-<section class="star-wars">
-  <div class="crawl">
-    <div class="title">
-      <p>
-      <span>S</span>
-            <span>P</span>
-            <span>A</span>
-            <span>C</span>
-            <span>E</span>
-            <span>T</span>
-            <span>I</span>
-            <span>M</span>
-            <span>E</span>
-       </p>
-    </div>
-  </div>
-</section> */}
 <div className="vimeo-wrapper pointer">
               <iframe src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
           </div>
@@ -76,7 +58,7 @@ const IndexPage = ({ properties }) => {
           <Animation3 /> 
           <Logotransparent />
            <Ticker />
-           {/* <Inventory /> */}
+           <Label />
            <Label2 />
            <Linkwrapper />   
 

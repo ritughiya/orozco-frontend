@@ -1,5 +1,5 @@
 import { createClient, createPortableTextComponent} from "next-sanity"
-import createImageUrlBuilder from '@sanity/image-url';
+import sanityClientPkg from "@sanity/client";
 
 
 const config = {
@@ -33,7 +33,7 @@ export const PortableText = createPortableTextComponent({
 
 
 // Set up the client for fetching data in the getProps page functions
-export const sanityClient = createClient(config)
+export const sanityClient = sanityClientPkg(config);
 
 /**
  * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
@@ -41,4 +41,6 @@ export const sanityClient = createClient(config)
  **/
 
 
- export const urlFor = (source) => createImageUrlBuilder(config).image(source); // <-----------
+//  export const urlFor = (source) => imageUrlBuilder(sanityClient).image(source);
+
+
