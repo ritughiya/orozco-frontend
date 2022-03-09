@@ -29,7 +29,7 @@ const Roomsdropdown = () => {
         <a href="#">Rooms <Caret/> </a>
         <ul className="dropdown">
             <div className="dropspace"> 
-            <li><Link href="#">
+            <li><Link href="/room1">
                 <div className="roomrow pointer">
                 <span className="roomflex"><div className="roomthumb"><Image src={Room1thumbnail} /> </div>Room One </span></div></Link>
              </li>

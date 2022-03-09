@@ -54,6 +54,18 @@ body {
   overflow: hidden;
 }
 
+.Room1detail .container {
+  display:block;
+  width:100vw;
+  height:100vh;
+}
+
+.Room4detail .container {
+  display:block;
+  width:100vw;
+  height:100vh;
+}
+
 .mainContainer .container{
   border: 1px solid #422b22d1;
 }
@@ -139,16 +151,17 @@ body {
   border: none;
 }
 
-.v1 iframe.primaryView,
-.v1 iframe.secondaryView,
-.v2 iframe.primaryView,
-.v3 iframe.primaryView,
-.v4 iframe.primaryView,
+.Room1detail .v1 iframe.primaryView,
+.Room1detail .v1 iframe.secondaryView,
+.Room2detail .v2 iframe.primaryView,
+.Room3detail .v3 iframe.primaryView,
+.Room4detail .v4 iframe.primaryView,
+.Room4detail .v4 iframe.secondaryView,
 .v2 iframe.secondaryView,
 .v3 iframe.secondaryView
 {
   width:300vw;
-  /* height:56.25vw; */
+  height:56.25vw;
   min-height:51vh;
   min-width:51vw;
   position:absolute;
@@ -156,6 +169,31 @@ body {
   left:50%;
   /* object-fit:cover; */
   transform:translate(-50%, -50%);
+}
+
+.v1 iframe.primaryView,
+.v1 iframe.secondaryView,
+.v2 iframe.primaryView,
+.v3 iframe.primaryView,
+.v4 iframe.primaryView,
+.v4 iframe.secondaryView,
+.v2 iframe.secondaryView,
+.v3 iframe.secondaryView
+{
+  width:300vw;
+  height: 28vw;
+  min-height:51vh;
+  min-width:51vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  /* object-fit:cover; */
+  transform:translate(-50%, -50%);
+}
+
+.v3 iframe.primaryView{
+  height: 32vw !important;
+
 }
 
 .v2 iframe.secondaryView,
@@ -208,15 +246,25 @@ body {
 .v2 iframe.secondaryView{
   animation: 0.25s 15s appear ease-in forwards !important;
   opacity:0;
+  height: 39vw;
 }
 
 .v3 iframe.primaryView{
-  animation: 0.25s 25s disappear ease-in forwards !important;
+  animation: 0.25s 28s disappear ease-in forwards !important;
 }
 
 .v3 iframe.secondaryView{
   width:300vw;
-  animation: 0.25s 25s appear ease-in forwards !important;
+  animation: 0.25s 28s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v4 iframe.primaryView{
+  animation: 0.25s 40s disappear ease-in forwards !important;
+}
+
+.v4 iframe.secondaryView{
+  animation: 0.25s 40s appear ease-in forwards !important;
   opacity:0;
 }
 
@@ -230,12 +278,21 @@ body {
 }
 
 .v3 .secondaryCamtitle{
-  animation: 0.25s 25s appear ease-in forwards !important;
+  animation: 0.25s 28s appear ease-in forwards !important;
   opacity:0;
 }
 
 .v3 .primaryCamtitle{
-  animation: 0.25s 25s disappear ease-in forwards !important;
+  animation: 0.25s 28s disappear ease-in forwards !important;
+}
+
+.v4 .secondaryCamtitle{
+  animation: 0.25s 40s appear ease-in forwards !important;
+  opacity:0;
+}
+
+.v4 .primaryCamtitle{
+  animation: 0.25s 40s disappear ease-in forwards !important;
 }
 
 .v1 iframe.primaryView{
@@ -516,30 +573,16 @@ a {
   width: fit-content;
   position: absolute;
   z-index:20;
-  left: 15px;
+  left: 0;
+  margin: 10px 20px 10px 10px;
   font-size: 0.6em;
-  top: 84vh;
+  bottom: 0;
   background-color: rgba(252, 252, 249, 0.7);
   padding: 5px 10px;
   /* border-radius: 9px; */
   text-transform: uppercase;
   line-height: 18px;
   letter-spacing: 0.02em;
-}
-
-.rs-dropdown{
-  width: fit-content;
-  position: absolute;
-  z-index:20;
-  right: 15px;
-  font-size: 0.6em;
-  top: 84vh;
-  background-color: rgba(252, 252, 249, 0.7);
-  padding: 5px 10px;
-  /* border-radius: 9px; */
-  text-transform: uppercase;
-  line-height: 18px;
-  letter-spacing: 0.02em; 
 }
 
 ul.dropdowncontainer svg{
@@ -558,16 +601,16 @@ ul.dropdowncontainer{
   position: absolute;
   width: fit-content;
   z-index: 20;
-  right: 15px;
+  right: 0px;
   font-size: 0.6em;
-  top: 84vh;
+  bottom: 0px;
   background-color: #fcfcf9;
   color:#000000;
   padding: 5px 15px;
     text-transform: uppercase;
   line-height: 18px;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 10px 10px 10px 15px;
   list-style: none;
   border-radius: 2px;
   transition: 1s all ease;
@@ -775,18 +818,18 @@ letter-spacing: 0.02em;
   }
 }
 
-@keyframes sinklabel {
+/* @keyframes sinklabel {
   0% {
     bottom: 0px;
   }
   100% {
     bottom:-55px;
   }
-}
+} */
 
 .showLabel2{
   z-index: 89 !important;
-  animation: 2s 0s rise ease-in forwards, 0.5s 7s sinklabel ease forwards !important;  
+  animation: 2s 0s rise ease-in forwards !important;  
   width: fit-content;
   padding-left: 10vw;
   margin-left: -10vw;
@@ -1177,7 +1220,7 @@ letter-spacing: 0.02em;
 
 @keyframes slideUp {
   0% {top:50%;}
-  100% {top:-50%;}
+  100% {top:-50%;display:none;}
 }
 
 .vimeo-wrapper, video{
@@ -1189,7 +1232,7 @@ letter-spacing: 0.02em;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: 1s 7s slideUp ease-in forwards !important;
+  animation: 1s 7s disappear ease-in forwards !important;
   /* opacity:0; */
 }
 

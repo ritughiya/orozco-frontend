@@ -15,11 +15,13 @@
  
  export default function Quicklabel() {
    return (
+    <Link href="/index">
     <div className="showLabel pointer">
     <div className="showTitle">
     Spacetime
     </div>
   </div> 
+  </Link>
  
    );
  }

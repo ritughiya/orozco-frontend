@@ -13,10 +13,7 @@
  import Animation2 from "../components/Animation2"
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
- import Container1 from "../components/Container1"
- import Container2 from "../components/Container2"
- import Container3 from "../components/Container3"
- import Container4 from "../components/Container4"
+ import Quickcontainer4 from "../components/Quickcontainer4"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
  import Showfooter from "../components/Showfooter"
@@ -61,7 +58,7 @@ function imageUrlFor(source) {
  
    const room4 = ({ properties }) => {
     return (
-      <div className="wrapper fullhog fullhogv2">
+      <div className="wrapper fullhog fullhogv2 Room4detail">
         <Head>
           <title>Spacetime Library</title>
           <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -69,40 +66,14 @@ function imageUrlFor(source) {
         </Head>
         {properties.map(post => (
           <div key={post._id}>
-            {/* <Animation3 />   */}
             <Quicklogo />
             <Quickticker />
             <Quicklabel />
             <Room4Label />
             <Roomsdropdown />
-            {/* <Roomsdropdown2 /> */}
 
-            {/* <Quickinventory /> */}
-            {/* <div className= "Typing1" >
-            <TypeAnimation
-         cursor={true}
-         sequence={[
-           'Cam 1',
-           2000,
-           'Room 1',
-           2000,
-           'Spacetime.',
-         ]}
-         wrapper="a"
-         repeat={2}
-        />
-       
-           </div> */}
             
-            <div className="videoContainer">
-           
- 
-           <div className="iframe-container">
-           <iframe className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
-
-</div>
- 
-           </div> 
+            <Quickcontainer4 />
            
 
            <div className="rowof4">

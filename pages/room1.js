@@ -10,10 +10,7 @@
  import imageUrlBuilder from '@sanity/image-url'
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
- import Container1 from "../components/Container1"
- import Container2 from "../components/Container2"
- import Container3 from "../components/Container3"
- import Container4 from "../components/Container4"
+ import Quickcontainer1 from "../components/Quickcontainer1"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
  import Logo from "../components/Logo"
@@ -55,7 +52,7 @@ function imageUrlFor(source) {
  
    const room1 = ({ properties }) => {
     return (
-      <div className="wrapper fullhog fullhogv2">
+      <div className="wrapper fullhog fullhogv2 Room1detail">
         <Head>
           <title>Spacetime Library</title>
           <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -69,33 +66,8 @@ function imageUrlFor(source) {
             <Quicklabel />
             <Room1Label />
             <Roomsdropdown />
-            {/* <Roomsdropdown2 /> */}
-
-            {/* <Quickinventory /> */}
-            {/* <div className= "Typing1" >
-            <TypeAnimation
-         cursor={true}
-         sequence={[
-           'Cam 1',
-           2000,
-           'Room 1',
-           2000,
-           'Spacetime.',
-         ]}
-         wrapper="a"
-         repeat={2}
-        />
-       
-           </div> */}
+            <Quickcontainer1 />
             
-            <div className="videoContainer">
-           
- 
-           <div className="iframe-container">
-           <iframe className="" src="https://player.vimeo.com/video/675558830?h=8d3e149033&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
-           </div>
- 
-           </div> 
            
 
            <div className="rowof4">
