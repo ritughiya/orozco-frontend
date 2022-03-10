@@ -8,16 +8,10 @@
     import { sanityClient, urlFor} from '../sanity'
     import Image from 'next/image'
     import imageUrlBuilder from '@sanity/image-url'
-    import OrozcoCircle1 from "../components/orozcoCircle1"
     import Animation3 from "../components/Animation3"
     import Circle from "../components/Circle"
-    import Container1 from "../components/Container1"
-    import Container2 from "../components/Container2"
-    import Container3 from "../components/Container3"
-    import Container4 from "../components/Container4"
-    import Inventory from "../components/Inventory"
+    import Quickcontainer3 from "../components/Quickcontainer3"
     import Ticker from "../components/Ticker"
-    import Showfooter from "../components/Showfooter"
     import Logo from "../components/Logo"
     import Logotransparent from "../components/Logotransparent"
     import Label from "../components/Label"
@@ -57,7 +51,7 @@
     
       const room3 = ({ properties }) => {
        return (
-         <div className="wrapper fullhog fullhogv2">
+         <div className="wrapper fullhog fullhogv2 Room3detail">
            <Head>
              <title>Spacetime Library</title>
              <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -70,16 +64,11 @@
                <Quicklabel />
                <Room3Label />
                <Roomsdropdown />
+               <Quickcontainer3 />
+
                
                
-               <div className="videoContainer">
-              
-    
-              <div className="iframe-container">
-              <iframe src="https://player.vimeo.com/video/675558970?h=32f28b079d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
-              </div>
-    
-              </div> 
+               
               
    
               <div className="rowof4">

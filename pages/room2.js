@@ -10,10 +10,7 @@
   import imageUrlBuilder from '@sanity/image-url'
   import Animation3 from "../components/Animation3"
   import Circle from "../components/Circle"
-  import Container1 from "../components/Container1"
-  import Container2 from "../components/Container2"
-  import Container3 from "../components/Container3"
-  import Container4 from "../components/Container4"
+  import Quickcontainer2 from "../components/Quickcontainer2"
   import Logo from "../components/Logo"
   import Logotransparent from "../components/Logotransparent"
   import Label from "../components/Label"
@@ -53,7 +50,7 @@
   
     const room2 = ({ properties }) => {
      return (
-       <div className="wrapper fullhog fullhogv2">
+       <div className="wrapper fullhog fullhogv2 Room2detail">
          <Head>
            <title>Spacetime Library</title>
            <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -66,15 +63,10 @@
              <Quicklabel />
              <Room2Label />
              <Roomsdropdown />
+             <Quickcontainer2 />
+
              
-             <div className="videoContainer">
-            
-  
-            <div className="iframe-container">
-            <iframe src="https://player.vimeo.com/video/675558810?h=2f656dbd0f&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="100%" height="100vh" frameBorder="0" allowFullScreen></iframe>   
-            </div>
-  
-            </div> 
+      
             
  
             <div className="rowof4">

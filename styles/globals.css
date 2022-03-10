@@ -16,7 +16,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size:19px;
     line-height:27px;
-    background-color: #000;
+    background-color: #fcfcf9;
     /* overflow-y:hidden; */
 }
 
@@ -54,13 +54,10 @@ body {
   overflow: hidden;
 }
 
-.Room1detail .container {
-  display:block;
-  width:100vw;
-  height:100vh;
-}
-
-.Room4detail .container {
+.Room1detail .container,
+.Room2detail .container,
+.Room3detail .container,
+.Room4detail .container{
   display:block;
   width:100vw;
   height:100vh;
@@ -157,11 +154,12 @@ body {
 .Room3detail .v3 iframe.primaryView,
 .Room4detail .v4 iframe.primaryView,
 .Room4detail .v4 iframe.secondaryView,
-.v2 iframe.secondaryView,
-.v3 iframe.secondaryView
+.Room2detail .v2 iframe.secondaryView,
+.Room3detail .v3 iframe.primaryView,
+.Room3detail .v3 iframe.secondaryView
 {
   width:300vw;
-  height:56.25vw;
+  height:56.25vw !important;
   min-height:51vh;
   min-width:51vw;
   position:absolute;
@@ -591,6 +589,15 @@ ul.dropdowncontainer svg{
   margin-left: 80px;
   transition: all 1s ease;
 }
+
+.RoomLabel svg{
+  width: 0.5vw;
+  padding-bottom: 3px; 
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+
 
 ul.dropdowncontainer:hover svg{
   transform:rotate(180deg);

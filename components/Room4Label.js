@@ -10,12 +10,13 @@ import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
  import Clock from 'react-live-clock';
  import Circle from "../components/Circle"
- 
+ import Caret from "../components/Caret"
+
  
  export default function Room4Label() {
    return (
     <div className="RoomLabel">
-        Works in Room Four Below
+        Works in Room Four Below <Caret/>
     </div>
  
    );

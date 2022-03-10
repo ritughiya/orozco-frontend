@@ -13,8 +13,6 @@
  import Quickcontainer1 from "../components/Quickcontainer1"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
- import Logo from "../components/Logo"
- import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
  import Label2 from "../components/Label2"
  import Labelnew from '../components/Labelnew'
@@ -35,6 +33,21 @@
 function imageUrlFor(source) {
   return imageBuilder.image(source);
 }
+
+// Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
+const keyStr =
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+
+const triplet = (e1, e2, e3) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63)
+
+const rgbDataURL = (r, g, b) =>
+  `data:image/gif;base64,R0lGODlhAQABAPAA${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
  
  const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
@@ -74,8 +87,7 @@ function imageUrlFor(source) {
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div className="zoom-in" key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <img src={imageUrlFor(thumbImage).url()} />
-                         {/* <Image src={imageUrlFor(thumbImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
+                          <Image src={imageUrlFor(thumbImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
                       </Link>
                      </div>
                  
@@ -85,10 +97,10 @@ function imageUrlFor(source) {
 
 
              <div className="rowof8">
-             {post.rowof8 && post.rowof8.map(({_id, slug = '', mainImage = ''}) => (
+             {post.rowof8 && post.rowof8.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
                      <div className="zoom-in"  key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                         <Image src={imageUrlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                          <Image src={imageUrlFor(thumbImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
                       </Link>
                      </div>
                  
