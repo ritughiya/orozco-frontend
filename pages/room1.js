@@ -87,7 +87,7 @@ const rgbDataURL = (r, g, b) =>
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div className="zoom-in" key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <Image src={imageUrlFor(thumbImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
+                          <Image src={imageUrlFor(thumbImage).url()} width="100%" height="100%" layout="responsive" />
                       </Link>
                      </div>
                  
