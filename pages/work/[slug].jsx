@@ -69,7 +69,7 @@ const Work = ({
         className="mySwiper2"
       >
        {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
-        <SwiperSlide>
+        <SwiperSlide key={_id}>
               <img src={imageUrlFor(mainImage).url()} />
         </SwiperSlide> ))}
       </Swiper>
@@ -83,7 +83,7 @@ const Work = ({
         className="mySwiper"
       >
         {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
-        <SwiperSlide>
+        <SwiperSlide key={_id}>
               <img src={imageUrlFor(mainImage).url()} />
         </SwiperSlide> ))}
       </Swiper>

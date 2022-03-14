@@ -70,8 +70,8 @@ const IndexPage = ({ properties }) => {
                 </div>
                 <div className="column2">
                 Hours: Monday – Friday, 10AM – 6PM<br></br>
-                Call <span class="contact">212 977 7160</span><br></br>
-                Or email <span class="contact">alena@go-spacetime.com</span>
+                Call <span className="contact">212 977 7160</span><br></br>
+                Or email <span className="contact">alena@go-spacetime.com</span>
                 </div>
               </div>
               <div className="footerNav">
