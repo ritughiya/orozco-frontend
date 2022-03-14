@@ -10,7 +10,6 @@
  import imageUrlBuilder from '@sanity/image-url'
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
-
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
  import Label2 from "../components/Label2"
@@ -23,8 +22,7 @@
  import Quickticker from '../components/Quickticker'
  import Archivelabel from '../components/Archivelabel.js'
 
- 
- // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
+  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
 const keyStr =
 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
 
@@ -39,6 +37,7 @@ const rgbDataURL = (r, g, b) =>
   triplet(0, r, g) + triplet(b, 255, 255)
 }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
+ 
  const imageBuilder = imageUrlBuilder(sanityClient);
 
  function imageUrlFor(source) {
@@ -59,7 +58,7 @@ const rgbDataURL = (r, g, b) =>
    }
  
 
- const archive = ({ properties }) => {
+ const archiveremix = ({ properties }) => {
    return (
      <div className="Archive wrapper fullhog fullhogv2">
        <Head>
@@ -71,7 +70,6 @@ const rgbDataURL = (r, g, b) =>
        <Quicklogo />
             <Quickticker />
             <Quicklabel />
-            
        {properties.map(post => (
                <div className="rowof8" key={post._id}>
 
@@ -97,7 +95,7 @@ const rgbDataURL = (r, g, b) =>
  }
  
  export const getServerSideProps = async () => {
-  const query = `*[_type == "archive" ]{archivegallery[]->} `
+  const query = `*[_type == "archiveremix" ]{archivegallery[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -115,4 +113,4 @@ const rgbDataURL = (r, g, b) =>
    }
  }
  
- export default archive;
+ export default archiveremix;

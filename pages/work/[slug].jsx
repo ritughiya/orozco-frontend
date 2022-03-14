@@ -10,16 +10,21 @@ import Quickinventory from '../../components/Quickinventory.js'
 import Quicklabel from '../../components/Quicklabel.js'
 import Quicklabel2 from '../../components/Quicklabel2.js'
 import Itemnav from "../../components/Itemnav.js"
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 const imageBuilder = imageUrlBuilder(sanityClient);
+
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
 function imageUrlFor(source) {
   return imageBuilder.image(source).auto('format').fit('clip');
 }
-
-
-
-
 
 const Work = ({
   thumbImage,
@@ -33,10 +38,11 @@ const Work = ({
   slug,
   relatedworks,
 }) => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     
-    <div className="container WorkContainer">
+    <div className="itemContainer">
       <Head>
           <title>Spacetime Library</title>
           <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
@@ -46,47 +52,42 @@ const Work = ({
        <Quickticker2 />
 
        <Itemnav />
-       <div className="imageContainer2">
-       <img src={imageUrlFor(mainImage).url()} />
-       </div>
-       <div className="textContainer2">
-        <div>{caption}, {year}</div>
-        <div>{medium}</div>
-        <div>{dimensions}</div>
-        <div>{editionDetails}</div>
-      </div>
-      <div className="imageContainer2b">
-        <div className="backContainer"></div>
-      <div className="backto">
-      {/* <img src={imageUrlFor(thumbImage).url()} /> */}
-      </div>
-      <div className="relatedWorkscontainer2">
 
-      {relatedworks && relatedworks.map(({_id, mainImage = ''}) => 
-             (
-
-                     <div key={_id}>
-
-                        {/* <img
-                      src={urlFor(asset.mainImage).url()}
-                     
-                    /> */}
-                            {/* <img src={asset.imageUrl} /> */}
-                         {/* <Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
-                        {mainImage && (
-                         <img src={imageUrlFor(mainImage).url()} />)}
-
-{/* <Image src={urlFor(asset.mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
-
-                          {/* <Link href={`work/${image.slug.current}`}> */}
-                         {/* <img src={urlFor(image.mainImage).url()} /> */}
-                         {/* </Link> */}
-                     </div>
-                 
-             ))
-             }
-                                     </div>
- </div>
+       <>
+      <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        loop={true}
+        spaceBetween={10}
+        centeredSlides={true}
+        height={300}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+       {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
+        <SwiperSlide>
+              <img src={imageUrlFor(mainImage).url()} />
+        </SwiperSlide> ))}
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        grid={ {rows: 2,}}
+        loop={true}
+        spaceBetween={10}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
+        <SwiperSlide>
+              <img src={imageUrlFor(mainImage).url()} />
+        </SwiperSlide> ))}
+      </Swiper>
+    </>
 
     </div>
   )
@@ -104,9 +105,7 @@ export const getServerSideProps = async (pageContext) => {
       dimensions,
       editionDetails,
       alt,
-      relatedworks[]->{
-        ...
-      }
+      relatedworks[]->
     }`
   
     const work = await sanityClient.fetch(query, { pageSlug })
@@ -133,5 +132,7 @@ export const getServerSideProps = async (pageContext) => {
     }
 
   }
+
+  
 
 export default Work

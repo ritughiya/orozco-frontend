@@ -8,7 +8,7 @@ import ReactDelayRender from 'react-delay-render';
 
 const Label = () => (
   <Link href="/index">
-  <div className="showLabel pointer">
+  <div className="labelAnimation showLabel pointer">
    <div className="showTitle">
    Spacetime
    </div>

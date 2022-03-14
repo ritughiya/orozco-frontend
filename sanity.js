@@ -1,4 +1,4 @@
-import { createClient, createPortableTextComponent} from "next-sanity"
+import { createClient, createPortableTextComponent,   createImageUrlBuilder} from "next-sanity"
 import sanityClientPkg from "@sanity/client";
 
 
@@ -44,3 +44,4 @@ export const sanityClient = sanityClientPkg(config);
 //  export const urlFor = (source) => imageUrlBuilder(sanityClient).image(source);
 
 
+export const urlFor = (source) => createImageUrlBuilder(config).image(source);
