@@ -28,5 +28,5 @@ const Ticker = () => (
 
 );
  
-export default ReactDelayRender({ delay: 1000 })(Ticker);
+export default ReactDelayRender({ delay: 500 })(Ticker);
 
