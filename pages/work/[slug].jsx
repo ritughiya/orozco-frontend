@@ -64,7 +64,7 @@ const Work = ({
       
       <If condition={room === "room1"}>
       <div className="backcontainer">
-      <Link href="/room1">Back to Room</Link>
+      <Link href="/room1">Back to Room </Link>
       <img src={imageUrlFor(thumbImage).url()} />
       <div className="arrows">
         <Link href="#"> &#60; </Link>
