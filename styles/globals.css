@@ -2191,6 +2191,7 @@ letter-spacing: 0.2em;
 }
 
 .arrows{
+  display:flex;
   margin-left:auto;
   margin-top:3px;
 }

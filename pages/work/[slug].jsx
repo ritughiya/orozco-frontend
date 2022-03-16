@@ -64,7 +64,9 @@ const Work = ({
   editionDetails,
   alt,
   slug,
-  relatedworks
+  relatedworks,
+  previouswork,
+  nextwork
 }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -90,8 +92,15 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
       <div className="arrows">
-        <Link href="#"> &#60; </Link>
-        <Link href="#"> &#62; </Link>
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
@@ -181,6 +190,8 @@ export const getServerSideProps = async (pageContext) => {
       editionDetails,
       alt,
       relatedworks[]->,
+      previouswork[]->,
+      nextwork[]->
     }`
 
   
@@ -203,7 +214,9 @@ export const getServerSideProps = async (pageContext) => {
           dimensions: work.dimensions,
           editionDetails: work.editionDetails,
           alt: work.alt,
-          relatedworks: work.relatedworks        },
+          relatedworks: work.relatedworks,
+          previouswork: work.previouswork,  
+          nextwork: work.nextwork   },
       }
     }
 
