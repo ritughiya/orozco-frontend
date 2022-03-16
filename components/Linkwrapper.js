@@ -18,5 +18,5 @@ const Linkwrapper = () => (
 
 );
  
-export default ReactDelayRender({ delay: 9000 })(Linkwrapper);
+export default ReactDelayRender({ delay: 6000 })(Linkwrapper);
 

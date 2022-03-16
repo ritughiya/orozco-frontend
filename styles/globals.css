@@ -20,9 +20,14 @@ body {
     /* overflow-y:hidden; */
 }
 
+.placeholder{
+}
+
 .rowof4 img,
 .rowof8 img{
   pointer-events:none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8tnPyfwAHcgMT2neDCwAAAABJRU5ErkJggg==);
+
 }
 
 .Home .mainContainer{
@@ -1470,15 +1475,15 @@ bounce{
 
   @keyframes float {
     0% {
-      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+      /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616)); */
       transform: translatey(0px);
     }
     50% {
-      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+      /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); */
       transform: translatey(-10px);
     }
     100% {
-      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
+      /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616)); */
       transform: translatey(0px);
     }
   }
