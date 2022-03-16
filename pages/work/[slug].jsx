@@ -10,7 +10,6 @@ import Room3Materials from '../../components/Room3Materials'
 import Room4Materials from '../../components/Room4Materials'
 import Quickticker2 from '../../components/Quickticker2'
 import Quicklogo from '../../components/Quicklogo'
-import Quickinventory from '../../components/Quickinventory.js'
 import Quicklabel from '../../components/Quicklabel.js'
 import Quicklabel2 from '../../components/Quicklabel2.js'
 import Itemnav from "../../components/Itemnav.js"
@@ -96,9 +95,17 @@ const Work = ({
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-       {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
+        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
+          <div className="workcontainer">
               <img src={imageUrlFor(mainImage).url()} />
+              <div className="info">
+                {caption}, {year}<br></br>
+                {medium}<br></br>
+                {dimensions}<br></br>
+                {editionDetails}
+              </div>
+              </div>
         </SwiperSlide> ))}
       </Swiper>
 
@@ -107,16 +114,16 @@ const Work = ({
         
       <Swiper
         onSwiper={setThumbsSwiper}
-        loop={true}
-        slidesPerView={3}
+        slidesPerView={2}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        {relatedworks && relatedworks.map(({_id, mainImage = ''}) => (
+        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
               <img src={imageUrlFor(mainImage).url()} />
+              
         </SwiperSlide> ))}
       </Swiper>
       </div>

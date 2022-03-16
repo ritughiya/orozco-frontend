@@ -1583,26 +1583,28 @@ bounce{
   animation: none !important;
 }
 
+.Logo-knight2quick .logocontainer{
+  animation: 6s 1s float infinite ease-in-out !important;
 
-   .Logo-knight2quick svg{
-     transform-origin:center;
-  animation: 5s 2s spin, 6s 4s float infinite ease-in-out; }
+}
 
 .Logo-knight2 svg{
   /* animation: 5s 2s spin, 6s 4s float infinite ease-in-out; */
   margin-top:25px;
   position: absolute;
   z-index: 1000;
+  width: 115px;
 }
 
 .logocontainer{
   position: relative;
+  width: 115px;
 }
 
 .logo-label1{
   position: absolute;
   top: 60px;
-  left: -15px;
+  left: -18px;
   line-height: 2;
   font-size: 0.5em;
   background-color: #FFFDF3;
@@ -1613,8 +1615,8 @@ bounce{
 
 .logo-label2{
   position: absolute;
-    top: 125px;
-    left: 65px;
+  top: 115px;
+  left: 58px;
     line-height: 2;
     font-size: 0.5em;
     background-color: #FFFDF3;
@@ -2059,12 +2061,46 @@ letter-spacing: 0.2em;
   height:100vh;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  display:none !important;}
+/* .swiper-button-next, .swiper-button-prev {
+  display:none !important;} */
+
+  .swiper-button-next {
+    background-image: url(/NEXT.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    top: 35% !important;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    background-image: url(/PREV.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    top: 35% !important;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-prev{
+    left: 0px !important;
+  }
+
+  .swiper-button-next{
+    right: 0px !important;
+  }
+
+
 
 .mySwiper2{
   width:50vw;
-  height:86vh;
+  height:100vh;
 }
 
 .mySwiper2 .swiper-slide{
@@ -2073,22 +2109,25 @@ letter-spacing: 0.2em;
 }
 
 .mySwiper2 img{
-  height:100%;
+  height: 600px;
   pointer-events:none;
 }
 
-
+.swiper.mySwiper{
+  margin:0;
+}
 
 .mySwiper {
   height: 20%;
-  width:300px;
+  width:200px;
+  height:100px;
   box-sizing: border-box;
   padding: 10px 0;
 }
 
 .mySwiper .swiper-slide {
   width: 25%;
-  height: 75px;
+  height:100px;
   /* opacity: 0.4; */
 }
 
@@ -2102,7 +2141,23 @@ letter-spacing: 0.2em;
   height: 100%;
   object-fit: cover;
   pointer-events:none;
+}
 
+.workcontainer{
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+}
+
+.workcontainer .info{
+  padding: 20px 0px 0px 0px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    color: #FFFDF3;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
 }
 
 
@@ -2148,8 +2203,8 @@ letter-spacing: 0.2em;
     text-transform: uppercase;
     width: 20vw;
     position: absolute;
-    right: 80px;
-    bottom: 300px;
+    right: 50px;
+    bottom: 250px;
 }
 
 .thumbhead{
