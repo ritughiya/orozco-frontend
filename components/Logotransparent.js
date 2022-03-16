@@ -9,6 +9,7 @@ import ReactDelayRender from 'react-delay-render';
 const Logotransparent = () => (
   <div className="Logo-knight2 Logo-knight2delay pointer">
             <Link href="/archive">
+           <div className="logocontainer">       
 <svg className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
@@ -25,10 +26,22 @@ const Logotransparent = () => (
         </g>
     </g>
 </svg>
+
+<div className="logo-label1">
+<Link href="/visit">
+    Visit
+</Link>
+</div>
+<div className="logo-label2">
+<Link href="/archive">
+    Index
+</Link>
+</div>
+</div>  
 </Link>
 </div>
 );
  
-export default ReactDelayRender({ delay: 12000 })(Logotransparent);
+export default ReactDelayRender({ delay: 14000 })(Logotransparent);
 
 

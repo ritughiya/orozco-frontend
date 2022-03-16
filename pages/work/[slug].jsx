@@ -4,6 +4,10 @@ import Image from 'next/image'
 import Head from 'next/head'
 import imageUrlBuilder from '@sanity/image-url'
 import Link from "next/link"
+import Room1Materials from '../../components/Room1Materials'
+import Room2Materials from '../../components/Room2Materials'
+import Room3Materials from '../../components/Room3Materials'
+import Room4Materials from '../../components/Room4Materials'
 import Quickticker2 from '../../components/Quickticker2'
 import Quicklogo from '../../components/Quicklogo'
 import Quickinventory from '../../components/Quickinventory.js'
@@ -11,6 +15,8 @@ import Quicklabel from '../../components/Quicklabel.js'
 import Quicklabel2 from '../../components/Quicklabel2.js'
 import Itemnav from "../../components/Itemnav.js"
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { If, Elif, Else } from 'rc-if-else';
 
 // Import Swiper styles
 import "swiper/css";
@@ -26,17 +32,20 @@ function imageUrlFor(source) {
   return imageBuilder.image(source).auto('format').fit('clip');
 }
 
+
+
 const Work = ({
   thumbImage,
     mainImage,
   caption,
+  room,
   year,
   medium,
   dimensions,
   editionDetails,
   alt,
   slug,
-  relatedworks,
+  relatedworks
 }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -52,7 +61,26 @@ const Work = ({
        <Quickticker2 />
 
        <Itemnav />
-
+      
+      <If condition={room === "room1"}>
+      <div className="backcontainer">
+      <Link href="/room1">Back to Room</Link>
+      <img src={imageUrlFor(thumbImage).url()} />
+      <div className="arrows">
+        <Link href="#"> &#60; </Link>
+        <Link href="#"> &#62; </Link>
+      </div>
+      </div>
+      </If>
+      <If condition={room === "room2"}>
+        <Room2Materials />
+      </If>
+      <If condition={room === "room3"}>
+        <Room3Materials />
+      </If>
+      <If condition={room === "room4"}>
+        <Room4Materials />
+      </If>
        <>
       <Swiper
         style={{
@@ -73,11 +101,15 @@ const Work = ({
               <img src={imageUrlFor(mainImage).url()} />
         </SwiperSlide> ))}
       </Swiper>
+
+      <div className="thumbs">
+        <div className="thumbhead">Reference Images:</div>
+        
       <Swiper
         onSwiper={setThumbsSwiper}
-        grid={ {rows: 2,}}
         loop={true}
-        spaceBetween={10}
+        slidesPerView={3}
+        freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
@@ -87,6 +119,7 @@ const Work = ({
               <img src={imageUrlFor(mainImage).url()} />
         </SwiperSlide> ))}
       </Swiper>
+      </div>
     </>
 
     </div>
@@ -101,12 +134,14 @@ export const getServerSideProps = async (pageContext) => {
       mainImage,
       caption,
       year,
+      room,
       medium,
       dimensions,
       editionDetails,
       alt,
-      relatedworks[]->
+      relatedworks[]->,
     }`
+
   
     const work = await sanityClient.fetch(query, { pageSlug })
   
@@ -121,13 +156,13 @@ export const getServerSideProps = async (pageContext) => {
           thumbImage: work.thumbImage,
           mainImage: work.mainImage,
           caption: work.caption,
+          room: work.room,
           year: work.year,
           medium: work.medium,
           dimensions: work.dimensions,
           editionDetails: work.editionDetails,
           alt: work.alt,
-          relatedworks: work.relatedworks,
-        },
+          relatedworks: work.relatedworks        },
       }
     }
 
@@ -136,3 +171,5 @@ export const getServerSideProps = async (pageContext) => {
   
 
 export default Work
+
+

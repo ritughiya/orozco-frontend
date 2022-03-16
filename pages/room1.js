@@ -47,8 +47,9 @@ const rgbDataURL = (r, g, b) =>
     triplet(0, r, g) + triplet(b, 255, 255)
   }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
+  
+
  
- const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
  
  const serializers = {
      types: {
@@ -83,9 +84,11 @@ const rgbDataURL = (r, g, b) =>
 
            <div className="rowof4">
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
-                     <div className="zoom-in" key={_id}>
+                     <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <img src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
+                            <div className="zoom-in">
+                          <img draggable="false" ondragstart="return false;" oncontextmenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
+                          </div>
                       </Link>
                      </div>
                  
@@ -96,11 +99,13 @@ const rgbDataURL = (r, g, b) =>
 
              <div className="rowof8">
              {post.rowof8 && post.rowof8.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
-                     <div className="zoom-in"  key={_id}>
-                          <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <img src={urlFor(thumbImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
-                      </Link>
+                     <div key={_id}>
+                     <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                       <div className="zoom-in">
+                     <img draggable="false" ondragstart="return false;" oncontextmenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
                      </div>
+                 </Link>
+                </div>
                  
              ))
              }

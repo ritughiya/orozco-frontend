@@ -75,7 +75,10 @@ const IndexPage = ({ properties }) => {
                 </div>
               </div>
               <div className="footerNav">
-                <Link href="/about">About</Link>
+                <Link href="/press">
+                <span className="contact">
+                  Press Release
+                  </span></Link>
               </div>
           </div>
 

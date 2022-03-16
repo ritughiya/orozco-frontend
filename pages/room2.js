@@ -71,25 +71,27 @@
  
             <div className="rowof4">
               {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
-                      <div className="zoom-in" key={_id}>
-                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                           <img src={imageUrlFor(thumbImage).url()} />
-                          {/* <Image src={imageUrlFor(thumbImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/> */}
-                       </Link>
+                      <div key={_id}>
+                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                        <div className="zoom-in">
+                      <img draggable="false" ondragstart="return false;" oncontextmenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
                       </div>
-                  
+                  </Link>
+                 </div>
               ))
               }
               </div>
  
  
               <div className="rowof8">
-              {post.rowof8 && post.rowof8.map(({_id, slug = '', mainImage = ''}) => (
-                      <div className="zoom-in"  key={_id}>
-                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <Image src={imageUrlFor(mainImage).url()} alt="" title="" width="100%" height="100%" layout="responsive" objectFit="cover"/>
-                       </Link>
+              {post.rowof8 && post.rowof8.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
+                      <div key={_id}>
+                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                        <div className="zoom-in">
+                      <img draggable="false" ondragstart="return false;" oncontextmenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
                       </div>
+                  </Link>
+                 </div>
                   
               ))
               }

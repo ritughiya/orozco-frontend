@@ -18,4 +18,4 @@ const Label = () => (
 
 );
  
-export default ReactDelayRender({ delay: 4000 })(Label);
+export default ReactDelayRender({ delay: 3000 })(Label);
