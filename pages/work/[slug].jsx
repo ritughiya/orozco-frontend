@@ -22,10 +22,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import "swiper/css/effect-fade";
+
 
 const imageBuilder = imageUrlBuilder(sanityClient);
 
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { EffectFade, FreeMode, Navigation, Thumbs } from "swiper";
 
 function imageUrlFor(source) {
   return imageBuilder.image(source).auto('format').fit('clip');
@@ -88,11 +90,13 @@ const Work = ({
         }}
         loop={true}
         spaceBetween={10}
+        speed={500}
+        
         centeredSlides={true}
         height={300}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (

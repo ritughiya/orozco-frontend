@@ -2069,7 +2069,7 @@ letter-spacing: 0.2em;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    top: 35% !important;
+    top: 32% !important;
   }
 
   .swiper-button-next::after {
@@ -2081,7 +2081,7 @@ letter-spacing: 0.2em;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    top: 35% !important;
+    top: 32% !important;
   }
 
   .swiper-button-prev::after {
@@ -2096,10 +2096,14 @@ letter-spacing: 0.2em;
     right: 0px !important;
   }
 
+  .swiper.mySwiper2{
+    padding: 10px 0 0 0;
+  }
+
 
 
 .mySwiper2{
-  width:50vw;
+  width:53vw;
   height:100vh;
 }
 
@@ -2109,8 +2113,11 @@ letter-spacing: 0.2em;
 }
 
 .mySwiper2 img{
-  height: 600px;
-  pointer-events:none;
+  width: auto;
+  max-width:100%;
+  margin: 0 auto;
+  max-height: 650px;
+  pointer-events: none;
 }
 
 .swiper.mySwiper{
@@ -2146,7 +2153,7 @@ letter-spacing: 0.2em;
 .workcontainer{
   display: flex;
   flex-direction: column;
-  height: 83vh;
+  width: 46vw;
 }
 
 .workcontainer .info{
@@ -2203,7 +2210,7 @@ letter-spacing: 0.2em;
     text-transform: uppercase;
     width: 20vw;
     position: absolute;
-    right: 50px;
+    right: 20px;
     bottom: 250px;
 }
 
