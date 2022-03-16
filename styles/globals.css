@@ -1575,7 +1575,7 @@ bounce{
   animation: 1s 0s senddown ease-in forwards,  6s 1s float infinite ease-in-out !important;
   z-index: 1000;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
-  width: 9vw;
+  width: 120px;
   right: 20px;
 }
 
@@ -1593,12 +1593,12 @@ bounce{
   margin-top:25px;
   position: absolute;
   z-index: 1000;
-  width: 115px;
+  width: 120px;
 }
 
 .logocontainer{
   position: relative;
-  width: 115px;
+  width: 120px;
 }
 
 .logo-label1{
