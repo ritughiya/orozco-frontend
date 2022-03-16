@@ -6,6 +6,7 @@
  import Link from 'next/link'
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
+ import Image from 'next/image'
 //  import imageUrlBuilder from '@sanity/image-url'
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
@@ -87,8 +88,8 @@ const rgbDataURL = (r, g, b) =>
                      <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                             <div className="zoom-in">
-                            <img className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
-      blurDataURL={rgbDataURL(237, 181, 6)}/>
+                            <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>
                           </div>
                       </Link>
                      </div>
@@ -103,8 +104,8 @@ const rgbDataURL = (r, g, b) =>
                      <div key={_id}>
                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                        <div className="zoom-in">
-                       <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
-                     </div>
+                       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>                   </div>
                  </Link>
                 </div>
                  

@@ -24,6 +24,24 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
 
+// Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
+const keyStr =
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+
+const triplet = (e1, e2, e3) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63)
+
+const rgbDataURL = (r, g, b) =>
+  `data:image/gif;base64,R0lGODlhAQABAPAA${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
+
+  
+
+
 
 const imageBuilder = imageUrlBuilder(sanityClient);
 
@@ -66,7 +84,11 @@ const Work = ({
       <If condition={room === "room1"}>
       <div className="backcontainer">
       <Link href="/room1">Back to Room </Link>
-      <img src={imageUrlFor(thumbImage).url()} />
+      <div style={{width: '140px', height: '200px', position: 'relative'}}>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
       <div className="arrows">
         <Link href="#"> &#60; </Link>
         <Link href="#"> &#62; </Link>
@@ -102,8 +124,15 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-              <img src={imageUrlFor(mainImage).url()} />
-              <div className="info">
+          <div style={{width: '46vw', height: '80vh', position: 'relative'}}>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+{/* 
+          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/> */}
+                    <div className="info">
                 {caption}, {year}<br></br>
                 {medium}<br></br>
                 {dimensions}<br></br>
@@ -126,7 +155,8 @@ const Work = ({
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
-              <img src={imageUrlFor(mainImage).url()} />
+          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="200px" height="100%" layout="fill" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>
               
         </SwiperSlide> ))}
       </Swiper>

@@ -2069,7 +2069,7 @@ letter-spacing: 0.2em;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    top: 32% !important;
+    top: 40% !important;
   }
 
   .swiper-button-next::after {
@@ -2081,7 +2081,7 @@ letter-spacing: 0.2em;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    top: 32% !important;
+    top: 40% !important;
   }
 
   .swiper-button-prev::after {
@@ -2103,7 +2103,7 @@ letter-spacing: 0.2em;
 
 
 .mySwiper2{
-  width:53vw;
+  width:55vw;
   height:100vh;
 }
 
@@ -2116,7 +2116,7 @@ letter-spacing: 0.2em;
   width: auto;
   max-width:100%;
   margin: 0 auto;
-  max-height: 100vh;
+  height: 80vh;
   pointer-events: none;
 }
 
@@ -2157,7 +2157,7 @@ letter-spacing: 0.2em;
 }
 
 .workcontainer .info{
-  padding: 20px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
     font-size: 0.8em;
     display: flex;
     flex-direction: column;
