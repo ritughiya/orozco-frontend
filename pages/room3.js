@@ -29,15 +29,32 @@
     import Clock from 'react-live-clock';
     import TypeAnimation from 'react-type-animation';
    
-    const imageBuilder = imageUrlBuilder(sanityClient);
+  //   const imageBuilder = imageUrlBuilder(sanityClient);
    
-   function imageUrlFor(source) {
-     return imageBuilder.image(source);
-   }
+  //  function imageUrlFor(source) {
+  //    return imageBuilder.image(source);
+  //  }
    
     
     const query = `*[_type == "room3" ]{rowof4[]->, rowof8[]->} `
     
+      // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
+const keyStr =
+'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+
+const triplet = (e1, e2, e3) =>
+keyStr.charAt(e1 >> 2) +
+keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+keyStr.charAt(e3 & 63)
+
+const rgbDataURL = (r, g, b) =>
+`data:image/gif;base64,R0lGODlhAQABAPAA${
+  triplet(0, r, g) + triplet(b, 255, 255)
+}/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
+
+
+
     const serializers = {
         types: {
           code: (props) => (
@@ -76,8 +93,8 @@
                        <div key={_id}>
                        <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                          <div className="zoom-in">
-                       <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
-                       </div>
+                         <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>                         </div>
                    </Link>
                   </div>
                     
@@ -91,8 +108,8 @@
                         <div key={_id}>
                         <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                           <div className="zoom-in">
-                        <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
-                        </div>
+                          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>                          </div>
                     </Link>
                    </div>
                 ))

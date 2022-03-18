@@ -13,7 +13,7 @@
    return (
  <div className="tickerquick2">
      <>
-     SPACETIME &nbsp;
+     SPACETIME&ensp;
      <Circle /> &nbsp;
      <Clock
            format={'HH:mm:ss'}

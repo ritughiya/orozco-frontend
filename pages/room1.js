@@ -7,15 +7,11 @@
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Image from 'next/image'
-//  import imageUrlBuilder from '@sanity/image-url'
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainer1 from "../components/Quickcontainer1"
  import Inventory from "../components/Inventory"
  import Ticker from "../components/Ticker"
- import Label from "../components/Label"
- import Label2 from "../components/Label2"
- import Labelnew from '../components/Labelnew'
  import Room1Label from "../components/Room1Label"
  import Roomsdropdown from "../components/Roomsdropdown"
  import Quicklabel from '../components/Quicklabel.js'
@@ -27,11 +23,7 @@
  import Clock from 'react-live-clock';
  import TypeAnimation from 'react-type-animation';
 
-//  const imageBuilder = imageUrlBuilder(sanityClient);
 
-// function imageUrlFor(source) {
-//   return imageBuilder.image(source);
-// }
 
 // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
 const keyStr =

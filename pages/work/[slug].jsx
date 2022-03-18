@@ -68,6 +68,7 @@ const Work = ({
   previouswork,
   nextwork
 }) => {
+  const slideshowAmount = relatedworks.length;
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
@@ -79,10 +80,7 @@ const Work = ({
           <link rel="icon" href="/favicon.png" />
         </Head>
       <Quicklogo />
-       <Quickticker2 />
-
-       <Itemnav />
-      
+       <Quickticker2 />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
       <Link href="/room1">Back to Room </Link>
@@ -119,10 +117,10 @@ const Work = ({
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
-        loop={true}
+        
         spaceBetween={10}
         speed={500}
-        
+        watchOverflow={true}
         centeredSlides={true}
         height={300}
         navigation={true}
@@ -151,6 +149,7 @@ const Work = ({
         </SwiperSlide> ))}
       </Swiper>
 
+      <If condition={slideshowAmount > 1}>
       <div className="thumbs">
         <div className="thumbhead">Reference Images:</div>
         
@@ -170,6 +169,7 @@ const Work = ({
         </SwiperSlide> ))}
       </Swiper>
       </div>
+      </If>
     </>
 
     </div>
