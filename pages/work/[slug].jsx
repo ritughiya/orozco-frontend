@@ -14,6 +14,7 @@ import Quicklabel from '../../components/Quicklabel.js'
 import Quicklabel2 from '../../components/Quicklabel2.js'
 import Itemnav from "../../components/Itemnav.js"
 import { Swiper, SwiperSlide } from "swiper/react";
+import Footer from "../../components/Footer"
 
 import { If, Elif, Else } from 'rc-if-else';
 
@@ -83,8 +84,9 @@ const Work = ({
        <Quickticker2 />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
-      <Link href="/room1">Back to Room </Link>
-      <div style={{width: '140px', height: '200px', position: 'relative'}}>
+      <Link href="/room1">Back to Room </Link><br></br>
+      <div style={{height: '190px', position: 'relative'}}>
+        
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
       "fill"
     objectFit="contain" placeholder="blur"
@@ -112,6 +114,7 @@ const Work = ({
         <Room4Materials />
       </If>
        <>
+       <div className="singlecontainer">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -170,7 +173,9 @@ const Work = ({
       </Swiper>
       </div>
       </If>
+      </div>
     </>
+    <Footer />
 
     </div>
   )

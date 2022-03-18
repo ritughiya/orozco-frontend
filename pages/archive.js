@@ -22,6 +22,7 @@
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker from '../components/Quickticker'
  import Archivelabel from '../components/Archivelabel.js'
+ import Footer from "../components/Footer"
 
  
  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
@@ -84,11 +85,12 @@ const rgbDataURL = (r, g, b) =>
                  
              ))
              }
-           
+
          </div>       
 
          
        ))}
+                           <Footer />
 
        
      </div>

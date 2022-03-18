@@ -22,6 +22,7 @@
  import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
  import TypeAnimation from 'react-type-animation';
+ import Footer from "../components/Footer"
 
 
 
@@ -105,6 +106,7 @@ const rgbDataURL = (r, g, b) =>
              }
              </div>
 
+             <Footer />
 
              
  

@@ -28,7 +28,8 @@
     import BlockContent from '@sanity/block-content-to-react'
     import Clock from 'react-live-clock';
     import TypeAnimation from 'react-type-animation';
-   
+    import Footer from "../components/Footer"
+
   //   const imageBuilder = imageUrlBuilder(sanityClient);
    
   //  function imageUrlFor(source) {
@@ -93,8 +94,8 @@ const rgbDataURL = (r, g, b) =>
                        <div key={_id}>
                        <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                          <div className="zoom-in">
-                         <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/>                         </div>
+                         <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
+                       </div>
                    </Link>
                   </div>
                     
@@ -108,15 +109,16 @@ const rgbDataURL = (r, g, b) =>
                         <div key={_id}>
                         <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                           <div className="zoom-in">
-                          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/>                          </div>
+                          <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
+                         </div>
                     </Link>
                    </div>
                 ))
                 }
                 </div>
    
-   
+                <Footer />
+
                 
     
     
