@@ -105,13 +105,70 @@ const Work = ({
       </div>
       </If>
       <If condition={room === "room2"}>
-        <Room2Materials />
+      <div className="backcontainer">
+      <Link href="/room2">Back to Room </Link><br></br>
+      <div style={{height: '190px', position: 'relative'}}>
+        
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+      <div className="arrows">
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+        {/* <Link href="#"> &#62; </Link> */}
+      </div>
+      </div>
       </If>
       <If condition={room === "room3"}>
-        <Room3Materials />
+      <div className="backcontainer">
+      <Link href="/room3">Back to Room </Link><br></br>
+      <div style={{height: '190px', position: 'relative'}}>
+        
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+      <div className="arrows">
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+        {/* <Link href="#"> &#62; </Link> */}
+      </div>
+      </div>
       </If>
       <If condition={room === "room4"}>
-        <Room4Materials />
+      <div className="backcontainer">
+      <Link href="/room4">Back to Room </Link><br></br>
+      <div style={{height: '190px', position: 'relative'}}>
+        
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+      <div className="arrows">
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+        {/* <Link href="#"> &#62; </Link> */}
+      </div>
+      </div>
       </If>
        <>
        <div className="singlecontainer">
