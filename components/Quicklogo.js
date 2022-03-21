@@ -39,15 +39,15 @@ import { sanityClient, urlFor} from '../sanity'
 </svg>
 
 <div className="logo-label1">
-<Link href="/visit">
-Visit
-</Link>
-</div>
-<div className="logo-label2">
 <Link href="/archive">
 Index
 </Link>
 </div>
+{/* <div className="logo-label2">
+<Link href="/archive">
+Index
+</Link>
+</div> */}
 </div>  
 </Link>
 </div>

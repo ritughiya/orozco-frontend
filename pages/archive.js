@@ -7,22 +7,15 @@
  import Script from 'next/script'
  import {urlFor, sanityClient} from '../sanity'
  import Image from "../components/Image"
- import imageUrlBuilder from '@sanity/image-url'
- import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
-
- import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
- import Label2 from "../components/Label2"
  import Static from 'next/image'
- import Head from 'next/head'
- import BlockContent from '@sanity/block-content-to-react'
  import Clock from 'react-live-clock';
  import Quicklogo from '../components/Quicklogo'
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker from '../components/Quickticker'
- import Archivelabel from '../components/Archivelabel.js'
  import Footer from "../components/Footer"
+ import Customhead from "../components/Customhead"
 
  
  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
@@ -40,12 +33,7 @@ const rgbDataURL = (r, g, b) =>
   triplet(0, r, g) + triplet(b, 255, 255)
 }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
- const imageBuilder = imageUrlBuilder(sanityClient);
 
- function imageUrlFor(source) {
-   return imageBuilder.image(source);
- }
- 
  
  const query = `*[_type == "work" ]`
  
@@ -63,12 +51,7 @@ const rgbDataURL = (r, g, b) =>
  const archive = ({ properties }) => {
    return (
      <div className="Archive wrapper fullhog fullhogv2">
-       <Head>
-         <title>Spacetime Library</title>
-         <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-         <link rel="icon" href="/favicon.png" />
-       </Head>
-       <Script src="/public/hello.js"></Script>
+      <Customhead />
        <Quicklogo />
             <Quickticker />
             <Quicklabel />

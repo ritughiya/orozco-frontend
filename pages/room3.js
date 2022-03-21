@@ -7,28 +7,20 @@
     import Script from 'next/script'
     import { sanityClient, urlFor} from '../sanity'
     import Image from 'next/image'
-    import imageUrlBuilder from '@sanity/image-url'
     import Animation3 from "../components/Animation3"
     import Circle from "../components/Circle"
     import Quickcontainer3 from "../components/Quickcontainer3"
     import Ticker from "../components/Ticker"
-    import Logo from "../components/Logo"
-    import Logotransparent from "../components/Logotransparent"
     import Label from "../components/Label"
-    import Label2 from "../components/Label2"
-    import Labelnew from '../components/Labelnew'
     import Room3Label from "../components/Room3Label"
     import Roomsdropdown from "../components/Roomsdropdown"
     import Quicklabel from '../components/Quicklabel.js'
     import Quickticker from '../components/Quickticker'
     import Quicklogo from '../components/Quicklogo'
-    import Quickinventory from '../components/Quickinventory.js'
-    import Static from 'next/image'
-    import Head from 'next/head'
-    import BlockContent from '@sanity/block-content-to-react'
     import Clock from 'react-live-clock';
-    import TypeAnimation from 'react-type-animation';
     import Footer from "../components/Footer"
+    import Customhead from "../components/Customhead"
+
 
   //   const imageBuilder = imageUrlBuilder(sanityClient);
    
@@ -70,11 +62,7 @@ const rgbDataURL = (r, g, b) =>
       const room3 = ({ properties }) => {
        return (
          <div className="wrapper fullhog fullhogv2 Room3detail">
-           <Head>
-             <title>Spacetime Library</title>
-             <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-             <link rel="icon" href="/favicon.png" />
-           </Head>
+           <Customhead />
            {properties.map(post => (
              <div key={post._id}>
                <Quicklogo />

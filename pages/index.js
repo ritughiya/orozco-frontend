@@ -16,8 +16,7 @@
  import Ticker from "../components/Ticker"
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
- import Label2 from "../components/Label2"
- import Head from 'next/head'
+ import Customhead from "../components/Customhead"
  import Clock from 'react-live-clock';
  import Footer from "../components/Footer"
 
@@ -36,11 +35,7 @@ const query = `*[_type == "landingpage"] {
 const IndexPage = ({ properties }) => {
   return (
     <div className=" Home wrapper fullhog fullhogv2">
-      <Head>
-        <title>Spacetime Library</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      <Customhead />
       {properties.map(post => (
         <div key={post._id}>
          
