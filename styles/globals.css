@@ -102,6 +102,10 @@ body {
   height:100vh;
 }
 
+.room4container{
+  position:relative;
+}
+
 .mainContainer .container{
   border: 1px solid #422b22d1;
 }
@@ -2194,7 +2198,8 @@ letter-spacing: 0.2em;
 
 .mySwiper3 .swiper-wrapper{
   width:100vw;
-  height:100vh;
+  position: relative;
+  /* height:100vh; */
   cursor: grab;
 }
 

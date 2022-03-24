@@ -63,9 +63,9 @@ const rgbDataURL = (r, g, b) =>
             <Quicklogo />
             <Quickticker />
             <Quicklabel />
+            <div className="room4container">
             <Room4Label />
             <Roomsdropdown />
-
             <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -109,6 +109,7 @@ const rgbDataURL = (r, g, b) =>
       </div>
       </SwiperSlide>
     </Swiper>
+    </div>
     
     <Swiper
         onSwiper={setThumbsSwiper}
