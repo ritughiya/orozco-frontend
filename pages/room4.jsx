@@ -83,7 +83,6 @@ const rgbDataURL = (r, g, b) =>
       className="mySwiper3"
       effect="fade"
       loop={true}
-      navigation
       pagination={{ clickable: true, dynamicBullets: true }}
       fadeEffect={{
         crossFade: true // enables slides to cross fade

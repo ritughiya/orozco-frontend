@@ -171,7 +171,6 @@ const Work = ({
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
         effect="fade"
-      navigation
       pagination={{ clickable: true, dynamicBullets: true }}
       fadeEffect={{
         crossFade: true // enables slides to cross fade
