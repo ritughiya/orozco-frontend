@@ -68,8 +68,8 @@ const rgbDataURL = (r, g, b) =>
                <Quicklogo />
                <Quickticker />
                <Quicklabel />
-               <Room3Label />
-               <Roomsdropdown />
+               {/* <Room3Label />
+               <Roomsdropdown /> */}
                <Quickcontainer3 />
 
                

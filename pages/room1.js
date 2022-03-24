@@ -60,12 +60,11 @@ const rgbDataURL = (r, g, b) =>
        <Customhead />
         {properties.map(post => (
           <div key={post._id}>
-            {/* <Animation3 />   */}
             <Quicklogo />
             <Quickticker />
             <Quicklabel />
-            <Room1Label />
-            <Roomsdropdown />
+            {/* <Room1Label />
+            <Roomsdropdown /> */}
             <Quickcontainer1 />
             
            
@@ -74,8 +73,8 @@ const rgbDataURL = (r, g, b) =>
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                            <div className="zoom-in">
-                            <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+                            <div className="zoom-in held">
+                            <Image className="placeholder" draggable="false" onDragStart="return false;" objectFit="cover" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>
                           </div>
                       </Link>

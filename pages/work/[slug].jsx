@@ -2,7 +2,6 @@ import {urlFor, sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Head from 'next/head'
-import imageUrlBuilder from '@sanity/image-url'
 import Link from "next/link"
 import Room1Materials from '../../components/Room1Materials'
 import Room2Materials from '../../components/Room2Materials'
@@ -10,11 +9,10 @@ import Room3Materials from '../../components/Room3Materials'
 import Room4Materials from '../../components/Room4Materials'
 import Quickticker2 from '../../components/Quickticker2'
 import Quicklogo from '../../components/Quicklogo'
-import Quicklabel from '../../components/Quicklabel.js'
-import Quicklabel2 from '../../components/Quicklabel2.js'
-import Itemnav from "../../components/Itemnav.js"
+import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
+import Customhead from "../../components/Customhead"
 
 import { If, Elif, Else } from 'rc-if-else';
 
@@ -40,17 +38,6 @@ const rgbDataURL = (r, g, b) =>
     triplet(0, r, g) + triplet(b, 255, 255)
   }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
-  
-
-
-
-const imageBuilder = imageUrlBuilder(sanityClient);
-
-import { EffectFade, FreeMode, Navigation, Thumbs } from "swiper";
-
-function imageUrlFor(source) {
-  return imageBuilder.image(source).auto('format').fit('clip');
-}
 
 
 
@@ -75,11 +62,7 @@ const Work = ({
   return (
     
     <div className="itemContainer">
-      <Head>
-          <title>Spacetime Library</title>
-          <meta charSet="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-          <link rel="icon" href="/favicon.png" />
-        </Head>
+      <Customhead />
       <Quicklogo />
        <Quickticker2 />      
       <If condition={room === "room1"}>
@@ -187,6 +170,12 @@ const Work = ({
         thumbs={{ swiper: thumbsSwiper }}
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
+        effect="fade"
+      navigation
+      pagination={{ clickable: true, dynamicBullets: true }}
+      fadeEffect={{
+        crossFade: true // enables slides to cross fade
+      }}
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>

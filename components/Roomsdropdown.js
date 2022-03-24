@@ -57,8 +57,16 @@ const Roomsdropdown = () => {
                  <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Room Three </span></div></Link>
               </li>
               <li><Link href="/room4">
+                 <div className="roomrow pointer">
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Room Four </span></div></Link>
+              </li>
+              <li><Link href="/offices">
+                 <div className="roomrow pointer">
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Offices </span></div></Link>
+              </li>
+              <li><Link href="/bookshelf">
                  <div className="roomrowlast pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Spaceship Room</span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Bookshelf</span></div></Link>
               </li>
              </div>
          </ul>
