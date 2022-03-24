@@ -53,7 +53,7 @@ const rgbDataURL = (r, g, b) =>
    }
  
  
-   const room4 = ({ properties }) => {
+   const Room4 = ({ properties }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
       <div className="wrapper fullhog fullhogv2 Room4detail">
@@ -211,4 +211,4 @@ const rgbDataURL = (r, g, b) =>
    }
  }
  
- export default room4;
+ export default Room4
