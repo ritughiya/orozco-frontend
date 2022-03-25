@@ -490,7 +490,7 @@ body {
   .rowof8{
     display:flex;
     flex-wrap:wrap;
-    background-color: #FFFDF3 !important;
+    background-color: rgb(11 7 7) !important;
   }
 
   .rowof8 div{
@@ -1327,7 +1327,7 @@ ul li ul.dropdown li{
 }
 
 .fullhog{
-  background-color:#fff !important;
+  /* background-color:#fff !important; */
   width:100vw;
   height:100vh;
 }
