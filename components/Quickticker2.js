@@ -5,6 +5,7 @@
  */
 
  import React from "react";
+ import Link from "next/link"
  import Clock from 'react-live-clock';
  import Circle from "../components/Circle"
  
@@ -13,7 +14,10 @@
    return (
  <div className="tickerquick2">
      <>
-     SPACETIME&ensp;
+     <Link href="/index">
+     SPACETIME
+     </Link>
+&ensp;
      <Circle /> &nbsp;
      <Clock
            format={'HH:mm:ss'}

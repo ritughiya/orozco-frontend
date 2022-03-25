@@ -1,7 +1,6 @@
 import {urlFor, sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
-import Head from 'next/head'
 import Link from "next/link"
 import Room1Materials from '../../components/Room1Materials'
 import Room2Materials from '../../components/Room2Materials'
@@ -134,7 +133,7 @@ const Work = ({
       <If condition={room === "room4"}>
       <div className="backcontainer">
       <Link href="/room4">Back to Room </Link><br></br>
-      <div style={{height: '190px', position: 'relative'}}>
+      <div style={{height: '180px', position: 'relative'}}>
         
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
       "fill"
@@ -208,10 +207,13 @@ const Work = ({
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
+        height={120}
+        spaceBetween={5}
+
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="200px" height="100%" layout="fill" placeholder="blur"
+          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>
               
         </SwiperSlide> ))}
