@@ -59,7 +59,8 @@ const rgbDataURL = (r, g, b) =>
       <div className="wrapper fullhog fullhogv2 Room4detail">
         <Customhead />
         {properties.map(post => (
-          <div key={post._id}>
+          <div className="flex" key={post._id}>
+             <div className="flexgrow">
             <Quicklogo />
             <Quickticker />
             <Quicklabel />
@@ -183,6 +184,7 @@ const rgbDataURL = (r, g, b) =>
               </div>
         </SwiperSlide>
       </Swiper>
+      </div>
              <Footer />
           </div>
           

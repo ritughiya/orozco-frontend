@@ -1329,9 +1329,14 @@ ul li ul.dropdown li{
 .fullhog{
   /* background-color:#fff !important; */
   width:100vw;
+
+}
+
+.flex{
   height:100vh;
   display:flex;
   flex-direction:column;
+
 }
 
 .flexgrow{

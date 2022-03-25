@@ -59,13 +59,13 @@ const rgbDataURL = (r, g, b) =>
       <div className="wrapper fullhog fullhogv2 Room1detail">
        <Customhead />
         {properties.map(post => (
-          <div key={post._id}>
+          <div className="flex" key={post._id}>
+               <div className="flexgrow">
             <Quicklogo />
             <Quickticker />
             <Quicklabel />
             {/* <Room1Label />
             <Roomsdropdown /> */}
-            <div className="flexgrow">
             <Quickcontainer1 />
             
            
