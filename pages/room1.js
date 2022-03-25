@@ -65,6 +65,7 @@ const rgbDataURL = (r, g, b) =>
             <Quicklabel />
             {/* <Room1Label />
             <Roomsdropdown /> */}
+            <div className="flexgrow">
             <Quickcontainer1 />
             
            
@@ -97,6 +98,7 @@ const rgbDataURL = (r, g, b) =>
                  
              ))
              }
+             </div>
              </div>
 
              <Footer />
