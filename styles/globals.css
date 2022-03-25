@@ -53,15 +53,17 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.02em;
-    padding: 2.5% 0.5rem 2% 0.5rem;
+    padding: 8% 0.5rem 4% 0.5rem;
         display: flex;
     justify-content:space-between;
 }
 
 .footerDetails{
-  width: 48vw;
-    display: flex;
-    justify-content: space-between;
+}
+
+.column1{
+  margin-bottom: 40px;
+
 }
 
 .contact{
@@ -463,10 +465,19 @@ body {
   object-fit: contain;
 }
 
-.zoom-in.held{
-  height: 120px;
-  opacity: 0.8;
+.rowof4 .zoom-in.held{
+  height: 140px;
+  opacity: 0.7;
+  transition: all 1 ease-in;
 }
+
+.rowof4 .zoom-in.held:hover{
+  opacity:1;
+}
+
+/* .rowof4 .zoom-in.held:not(:hover){
+  opacity: 0.2;
+} */
 
 .Mainimage {
   margin: 5vh auto 8vh auto;
@@ -1032,7 +1043,7 @@ ul li ul.dropdown li{
 
 .showLabel{
   z-index:250;
-  position: fixed;
+  position: absolute;
   font-size: 0.6em;
   top: 100px;
   background-color: #FFFDF3;
@@ -1599,7 +1610,7 @@ bounce{
 
 .Logo-knight2{
   top: 0px;
-  position: fixed;
+  position: absolute;
   animation: 1s 0s senddown ease-in forwards,  6s 1s float infinite ease-in-out !important;
   z-index: 1000;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
