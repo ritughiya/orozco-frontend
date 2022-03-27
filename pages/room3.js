@@ -78,33 +78,35 @@ const rgbDataURL = (r, g, b) =>
                
               
    
-              <div className="rowof4">
-                {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
-                       <div key={_id}>
-                       <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                         <div className="zoom-in">
-                         <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
-                       </div>
-                   </Link>
-                  </div>
-                    
-                ))
-                }
+               <div className="rowof4">
+             {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
+                     <div key={_id}>
+                          <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                            <div className="zoom-in held">
+                            {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>  }  
+                          </div>
+                      </Link>
+                     </div>
+                 
+             ))
+             }
+             </div>
+
+
+             <div className="rowof8">
+             {post.rowof8 && post.rowof8.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
+                     <div key={_id}>
+                     <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                       <div className="zoom-in">
+                       {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>  }                   </div>
+                 </Link>
                 </div>
-   
-   
-                <div className="rowof8">
-                {post.rowof8 && post.rowof8.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
-                        <div key={_id}>
-                        <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-                          <div className="zoom-in">
-                          <img draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" />
-                         </div>
-                    </Link>
-                   </div>
-                ))
-                }
-                </div>
+                 
+             ))
+             }
+             </div>
 
                 </div>
 
