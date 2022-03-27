@@ -20,7 +20,8 @@ body {
     /* overflow-y:hidden; */
 }
 
-.placeholder{
+.count{
+  color:white;
 }
 
 .rowof4 img,
