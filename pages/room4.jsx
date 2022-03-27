@@ -83,6 +83,10 @@ const rgbDataURL = (r, g, b) =>
       modules={[EffectFade, FreeMode, Navigation, Thumbs]}
       className="mySwiper3"
       effect="fade"
+      // Disable preloading of all images
+  preloadImages="false"
+  // Enable lazy loading
+  lazy={true}
       loop={true}
       pagination={{ clickable: true, dynamicBullets: true }}
       fadeEffect={{
@@ -90,22 +94,22 @@ const rgbDataURL = (r, g, b) =>
       }}
     >
       <SwiperSlide id="wall1">
-      <div className="embed-container">
+      <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
      </div>
       </SwiperSlide>
       <SwiperSlide id="wall2">
-      <div className="embed-container">
+      <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958162?h=2f2aadf50d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="embed-container">
+      <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958293?h=7aeff40d6d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="embed-container">
+      <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958259?h=c1b5770c19&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
       </SwiperSlide>
@@ -161,7 +165,7 @@ const rgbDataURL = (r, g, b) =>
                       <div key={_id}>
                       <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
-                        {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+                        {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" objectFit="cover" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>  }                      </div>
                   </Link>
                  </div>
@@ -175,7 +179,7 @@ const rgbDataURL = (r, g, b) =>
                       <div key={_id}>
                       <Link href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
-                        {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+                        {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" objectFit="cover" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>  }                       </div>
                   </Link>
                  </div>

@@ -462,8 +462,9 @@ body {
   height:100% !important;
 }
 
-.rowof4 img {
-  object-fit: contain;
+.rowof4 img,
+.rowof8 img {
+  object-fit: cover;
 }
 
 .rowof4 .zoom-in.held{
