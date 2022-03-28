@@ -7,7 +7,7 @@ import PortableText from '@sanity/block-content-to-react'
 import ReactDelayRender from 'react-delay-render';
 
 const Label = () => (
-  <Link href="/index">
+  <Link href="https://go-spacetime.netlify.app/">
   <div className="labelAnimation showLabel pointer">
    <div className="showTitle">
    Spacetime

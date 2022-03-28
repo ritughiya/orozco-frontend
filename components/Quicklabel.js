@@ -15,7 +15,7 @@
  
  export default function Quicklabel() {
    return (
-    <Link href="/index">
+    <Link href="https://go-spacetime.netlify.app/">
     <div className="showLabel pointer">
     <div className="showTitle">
     Spacetime
