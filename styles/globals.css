@@ -20,6 +20,20 @@ body {
     /* overflow-y:hidden; */
 }
 
+@keyframes fadepage {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:100%;
+  }
+}
+
+.fadepage{
+  opacity:0;
+  animation: 2s fadepage ease-in forwards;
+}
+
 .count{
   color:white;
 }
@@ -1659,6 +1673,10 @@ bounce{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0 2.25em 0 0.5em;
+}
+
+.logo-label1 a{
+  z-index:300;
 }
 
 .logo-label2{

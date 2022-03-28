@@ -12,8 +12,9 @@
  import Label from "../components/Label"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
- import Quicklogo from '../components/Quicklogo'
- import Quickticker2 from '../components/Quickticker2'
+ import Quicklabel from '../components/Quicklabel'
+ import Quicklogo2 from '../components/Quicklogo2'
+ import Quickticker from '../components/Quickticker'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
 
@@ -46,12 +47,13 @@ const rgbDataURL = (r, g, b) =>
 
  const about = ({ properties }) => {
    return (
-     <div className="Archive wrapper fullhog fullhogv2">
+     <div className="Archive wrapper fullhog fullhogv2 ">
       <Customhead />
-       <Quicklogo />
-            <Quickticker2 />
+       <Quicklogo2 />
+       <Quicklabel />
+            <Quickticker />
             {properties.map(post => (
-              <div className="aboutshow" key={post._id}>
+              <div className="aboutshow fadepage" key={post._id}>
                   <div className="about1">
                   <div className="subhead">ABOUT SPACETIME</div>
                   <div className="text">
@@ -66,7 +68,7 @@ const rgbDataURL = (r, g, b) =>
       </div>
           </div>
 
-          <div className="about2">
+          <div className="about2 ">
                   <div className="subhead">ABOUT GO</div>
                   <div className="text">
                <PortableText 
