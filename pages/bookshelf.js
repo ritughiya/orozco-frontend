@@ -9,7 +9,7 @@
  import Image from 'next/image'
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
- import Quickcontainer1 from "../components/Quickcontainer1"
+ import Quickcontainerbook from "../components/Quickcontainerbook"
  import Room1Label from "../components/Room1Label"
  import Roomsdropdown from "../components/Roomsdropdown"
  import Quicklabel from '../components/Quicklabel.js'
@@ -63,9 +63,8 @@ const rgbDataURL = (r, g, b) =>
                <div className="flexgrow">
             <Quicklogo />
             <Quickticker2 />
-            {/* <Room1Label />
-            <Roomsdropdown /> */}
-            <Quickcontainer1 />
+            
+            <Quickcontainerbook />
             
            
 

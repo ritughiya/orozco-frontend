@@ -6,14 +6,14 @@
  import Link from 'next/link'
  import Script from 'next/script'
  import {urlFor, sanityClient} from '../sanity'
+ import PortableText from '@sanity/block-content-to-react'
  import Image from "../components/Image"
  import Circle from "../components/Circle"
  import Label from "../components/Label"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
  import Quicklogo from '../components/Quicklogo'
- import Quicklabel from '../components/Quicklabel.js'
- import Quickticker from '../components/Quickticker'
+ import Quickticker2 from '../components/Quickticker2'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
 
@@ -32,10 +32,6 @@ const rgbDataURL = (r, g, b) =>
 `data:image/gif;base64,R0lGODlhAQABAPAA${
   triplet(0, r, g) + triplet(b, 255, 255)
 }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
-
-
- 
- const query = `*[_type == "work" ]`
  
  const serializers = {
      types: {
@@ -48,35 +44,39 @@ const rgbDataURL = (r, g, b) =>
    }
  
 
- const archive = ({ properties }) => {
+ const about = ({ properties }) => {
    return (
      <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
        <Quicklogo />
-            <Quickticker />
-            <Quicklabel />
-            
-       {properties.map(post => (
-               <div className="rowof8" key={post._id}>
+            <Quickticker2 />
+            {properties.map(post => (
+              <div className="aboutshow" key={post._id}>
+                  <div className="about1">
+                  <div className="subhead">ABOUT SPACETIME</div>
+                  <div className="text">
+               <PortableText 
+            blocks = {post.aboutspacetime}
+          />
+          <img className="placeholder map" draggable="false" src={urlFor(post.mapimage).url()} layout=
+      "fill"
+    objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>
+      
+      </div>
+          </div>
 
-{post.archivegallery && post.archivegallery.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
-  <div key={_id}>
-  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
-    <div className="zoom-in">
-    <img src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
- 
-  </div>
-</Link>
-</div>
-                     
-             ))
-             }
-
-         </div>       
-
-         
-       ))}
-                           <Footer />
+          <div className="about2">
+                  <div className="subhead">ABOUT GO</div>
+                  <div className="text">
+               <PortableText 
+            blocks = {post.aboutGO}
+          /></div>
+          </div>
+                </div>
+            ))}
+       
+         <Footer />
 
        
      </div>
@@ -85,7 +85,7 @@ const rgbDataURL = (r, g, b) =>
  }
  
  export const getServerSideProps = async () => {
-  const query = `*[_type == "archive" ]{archivegallery[]->} `
+  const query = `*[_type == "about" ]`
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -103,4 +103,4 @@ const rgbDataURL = (r, g, b) =>
    }
  }
  
- export default archive;
+ export default about;

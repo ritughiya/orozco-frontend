@@ -178,7 +178,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{width: '46vw', height: '80vh', position: 'relative'}}>
+          <div style={{width: '40vw', height: '80vh', position: 'relative'}}>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
     objectFit="contain" placeholder="blur"

@@ -14,7 +14,7 @@
    return (
  <div className="tickerquick2">
      <>
-     <Link href="/index">
+     <Link href="https://go-spacetime.netlify.app/">
      SPACETIME
      </Link>
 &ensp;
