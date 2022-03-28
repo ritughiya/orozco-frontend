@@ -1235,7 +1235,7 @@ ul li ul.dropdown li{
 #Orozcoanimation3{
   position:fixed;
   width:80vw;
-  animation: fade 6s linear 1s infinite;
+  animation: fade 5s linear 1s infinite;
   /* animation: 10s 0s fade  linear infinite; */
   animation-iteration-count: 2;
   opacity:0;
@@ -2162,7 +2162,7 @@ letter-spacing: 0.2em;
 
 .mySwiper2{
   width:50vw;
-  height:100vh;
+  /* height:100vh; */
 }
 
 .mySwiper2 .swiper-slide{

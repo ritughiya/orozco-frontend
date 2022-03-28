@@ -10,7 +10,6 @@
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainerbook from "../components/Quickcontainerbook"
- import Room1Label from "../components/Room1Label"
  import Roomsdropdown from "../components/Roomsdropdown"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
