@@ -67,7 +67,7 @@ const rgbDataURL = (r, g, b) =>
                        <div className="flexgrow">
                <Quicklogo />
                <Quickticker2 />
-               <Quicklabel />
+               {/* <Quicklabel /> */}
                {/* <Room3Label />
                <Roomsdropdown /> */}
                <Quickcontainer3 />
