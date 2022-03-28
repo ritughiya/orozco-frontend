@@ -41,7 +41,7 @@ body {
 .rowof4 img,
 .rowof8 img{
   pointer-events:none;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8tnPyfwAHcgMT2neDCwAAAABJRU5ErkJggg==);
+  /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8tnPyfwAHcgMT2neDCwAAAABJRU5ErkJggg==); */
 
 }
 
@@ -1249,9 +1249,9 @@ ul li ul.dropdown li{
 #Orozcoanimation3{
   position:fixed;
   width:80vw;
-  animation: fade 5s linear 1s infinite;
+  animation: fade 7s linear 1s infinite;
   /* animation: 10s 0s fade  linear infinite; */
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   opacity:0;
   z-index:1000;
   left:50%;

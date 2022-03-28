@@ -31,7 +31,7 @@ const Room1Label = () => {
     }, [])
     return (
       <div className={`RoomLabel ${show && 'nav__blue'}`}>
-      Works in Room One Below <Caret/>
+      Click in for books +
   </div>
     )
 }
