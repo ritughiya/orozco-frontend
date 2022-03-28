@@ -237,7 +237,8 @@ body {
 .v4 iframe.primaryView,
 .v4 iframe.secondaryView,
 .v2 iframe.secondaryView,
-.v3 iframe.secondaryView
+.v3 iframe.secondaryView,
+.responsive-iframe
 {
   width:300vw;
   height: 28vw;
