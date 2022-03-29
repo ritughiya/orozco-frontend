@@ -1028,7 +1028,7 @@ ul li ul.dropdown li{
 }
 
 .tickerquick svg{
-  width:0.8vw;
+  width: 10px;
   margin-right:1vw;
   fill: #FFFDF3;
 }
@@ -1046,12 +1046,12 @@ ul li ul.dropdown li{
 }
 
 .tickerquick2 svg{
-  width:0.8vw;
+  width: 10px;
   fill: #FFFDF3;
 }
 
 .ticker svg{
-  width:0.8vw;
+  width: 10px;
   margin-right:1vw;
   fill: #FFFDF3;
 }
@@ -2443,4 +2443,68 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     /* margin: 0; */
     padding: 0 15em;
     margin: 4em 0;
+}
+
+/* Media Query - Smaller Devices */
+
+@media only screen and (max-width:600px){
+
+.showLabel{
+  display:none;
+}
+
+.Logo-knight2{
+  display:none;
+}
+
+.mainContainer{
+  height:unset;
+}
+
+.container{
+  width:100%;
+  height:33vh;
+
+}
+
+.v3, .link3{
+  display:none;
+}
+
+.link1, .link2, .link3, .link4,
+.link1 a, .link2 a, .link3 a, .link4 a{
+  width:100vw;
+  height:33vh;
+}
+
+.link1:hover, .link2:hover, .link3:hover, .link4:hover {
+  width: 99.5vw;
+  height: 32.5vh;
+}
+
+.mainFooter{
+  display:block;
+  padding: 5% 1.5% 3% 1.5%;
+}
+
+.footerNav{
+  text-align:left;
+  margin-top:20px;
+}
+
+.embed-container{
+  height: 100vh;
+}
+
+.embed-container iframe{
+  width: 260vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.tickerquick2{
+  padding: 10px 20px 10px 15px;
+  width: 100vw;
+  background-color: rgb(11,7,7);
+}
 }
