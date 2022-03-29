@@ -119,14 +119,14 @@ const rgbDataURL = (r, g, b) =>
         onSwiper={setThumbsSwiper}
         // slidesPerView={1}
         // freeMode={true}
-        // watchSlidesProgress={true}
+        watchSlidesProgress={true}
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         className="mySwiper4"
         autoHeight="true"
-      //   effect="fade"
-      // loop={true}
-      // navigation
-      // pagination={{ clickable: true, dynamicBullets: true }}
+        // effect="fade"
+      loop={true}
+      navigation
+      pagination={{ clickable: true, dynamicBullets: true }}
       // fadeEffect={{
       //   crossFade: false // enables slides to cross fade
       // }}
