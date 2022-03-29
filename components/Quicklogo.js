@@ -19,11 +19,11 @@ import { sanityClient, urlFor} from '../sanity'
 
 
   <div className="Logo-knight2 Logo-knight2quick pointer">
-  <Link href="/archive">
  <div className="logocontainer">       
 <svg className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
 <g id="Layer_2" data-name="Layer 2">
 <g id="Layer_1-2" data-name="Layer 1">
+  
   <path className="cls-1" d="M499,242.5V499H242.5C242.5,357.34,357.34,242.5,499,242.5Z" />
   <path className="cls-2" d="M499,499V755.5c-141.66,0-256.5-114.84-256.5-256.5Z" />
   <path className="cls-3" d="M755.5,499H499V242.5C640.66,242.5,755.5,357.34,755.5,499Z" />
@@ -49,7 +49,6 @@ Index
 </Link>
 </div>
 </div>  
-</Link>
 </div>
  
    );

@@ -20,6 +20,11 @@ body {
     /* overflow-y:hidden; */
 }
 
+.fullhogv2{
+  width:100vw;
+  overflow-x:hidden;
+}
+
 @keyframes fadepage {
   from {
     opacity:0;
@@ -1029,6 +1034,7 @@ ul li ul.dropdown li{
 
 .tickerquick svg{
   width: 10px;
+  height:28px;
   margin-right:1vw;
   fill: #FFFDF3;
 }
@@ -1047,11 +1053,13 @@ ul li ul.dropdown li{
 
 .tickerquick2 svg{
   width: 10px;
+  height:28px;
   fill: #FFFDF3;
 }
 
 .ticker svg{
   width: 10px;
+  height:28px;
   margin-right:1vw;
   fill: #FFFDF3;
 }
@@ -1665,9 +1673,10 @@ bounce{
   /* animation: 5s 2
   s spin, 6s 4s float infinite ease-in-out; */
   margin-top:25px;
-  position: absolute;
   z-index: 1000;
-  width: 120px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .Logo-knight2 svg:active{
@@ -1676,13 +1685,13 @@ bounce{
 
 .logocontainer{
   position: relative;
-  width: 120px;
+  width: 100%;
 }
 
 .logo-label1{
   position: absolute;
-  top: 60px;
-  left: -18px;
+  top: 37%;
+  left: -15%;
   line-height: 2;
   font-size: 0.5em;
   background-color: #FFFDF3;
@@ -1691,14 +1700,15 @@ bounce{
   padding: 0 2.25em 0 0.5em;
 }
 
-.logo-label1 a{
+.logo-label1 a,
+.logo-label2 a{
   z-index:300;
 }
 
 .logo-label2{
   position: absolute;
-  top: 115px;
-  left: 58px;
+  top: 75%;
+  left: 50%;
     line-height: 2;
     font-size: 0.5em;
     background-color: #FFFDF3;
@@ -1714,18 +1724,26 @@ bounce{
 } */
 
 
-.Archive .Logo-knight2 svg,
+/* .Archive .Logo-knight2 svg,
 .Sophie .Logo-knight2 svg{
   width: 8vw;
-}
+} */
 
 .Logo-knight2 svg:hover{
   -webkit-animation-play-state:paused;
   -moz-animation-play-state:paused;
   -o-animation-play-state:paused;
-  animation-play-state:paused;
+  animation-play-state:paused !important;
   cursor: pointer;  
   /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616)); */
+}
+
+.Logo-knight2quick .logocontainer:hover{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused !important;
+  cursor: pointer;  
 }
 
 .Logo-knight2 .cls-1 {
