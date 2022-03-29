@@ -55,7 +55,14 @@ const Work = ({
   previouswork,
   nextwork
 }) => {
-  const slideshowAmount = relatedworks.length;
+
+  const slideshowAmount = (() => {
+    if (relatedworks)
+      return relatedworks.length
+    else
+      return 1
+  })();
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
