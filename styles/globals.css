@@ -22,7 +22,7 @@ body {
 
 .fullhogv2{
   width:100vw;
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 
 @keyframes fadepage {
