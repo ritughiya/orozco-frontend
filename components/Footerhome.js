@@ -7,11 +7,11 @@
  import Link from 'next/link'
 
 
- export default function Footer() {
+ export default function Footerhome() {
     return (
-        <div className="mainFooter">
+        <div className="homeFooter">
         <div className="footerDetails">
-          <div className="column1">
+        <div className="column1">
           Gabriel Orozco, Spacetime<br></br>
           Summer 2021 – Summer 2022
           </div>

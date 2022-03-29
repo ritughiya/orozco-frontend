@@ -178,7 +178,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '600px', height: '550px' }}>
+          <div style={{ position: 'relative', width: '750px', height: '75vh' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -196,7 +196,7 @@ const Work = ({
 
       <If condition={slideshowAmount > 1}>
       <div className="thumbs">
-        <div className="thumbhead">Reference Images:</div>
+        
         
       <Swiper
         onSwiper={setThumbsSwiper}

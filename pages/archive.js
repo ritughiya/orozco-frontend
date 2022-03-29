@@ -13,7 +13,7 @@
  import Clock from 'react-live-clock';
  import Quicklogo from '../components/Quicklogo'
  import Quicklabel from '../components/Quicklabel.js'
- import Quickticker from '../components/Quickticker'
+ import Quickticker2 from '../components/Quickticker2'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
 
@@ -53,8 +53,7 @@ const rgbDataURL = (r, g, b) =>
      <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
        <Quicklogo />
-            <Quickticker />
-            <Quicklabel />
+            <Quickticker2 />
             
        {properties.map(post => (
                <div className="rowof8" key={post._id}>

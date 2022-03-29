@@ -15,11 +15,12 @@
 //  import Container4 from "../components/Container4"
  import Linkwrapper from "../components/Linkwrapper"
  import Ticker from "../components/Ticker"
+ import Quickticker2 from "../components/Quickticker2"
  import Logotransparent from "../components/Logotransparent"
  import Label from "../components/Label"
  import Customhead from "../components/Customhead"
  import Clock from 'react-live-clock';
- import Footer from "../components/Footer"
+ import Footerhome from "../components/Footerhome"
  import Footerdelay from "../components/Footerdelay"
  import { If, Elif, Else } from 'rc-if-else';
  import Quicklabel from '../components/Quicklabel.js'
@@ -72,7 +73,7 @@ const IndexPage = ({ properties }) => {
       {(() => {
         if (count > 1 ) {
           return (
-            <><Quicklogo /><Quickticker /><Quicklabel /><Quicklinkwrapper />
+            <><Quicklogo /><Quickticker2 /><Quicklinkwrapper />
             
             </>
 
@@ -87,7 +88,7 @@ const IndexPage = ({ properties }) => {
               <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
             </div><Animation3 />
             
-            <Logotransparent /><Ticker /><Label /><Linkwrapper />
+            <Logotransparent /><Ticker /><Linkwrapper />
             <Overlay />
             </>
           )
@@ -106,7 +107,7 @@ const IndexPage = ({ properties }) => {
           return (
             <>
             
-            <Footer /></>
+            <Footerhome /></>
 
 
             

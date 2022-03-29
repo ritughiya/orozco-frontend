@@ -17,7 +17,11 @@
 const Ticker = () => (
 <div className="ticker">
     <>
-    <Circle />
+    <Link href="https://go-spacetime.netlify.app/">
+     SPACETIME
+     </Link>
+&ensp;
+    <Circle /> &nbsp;
     <Clock
           format={'HH:mm:ss'}
           ticking={true} />

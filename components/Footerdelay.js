@@ -7,14 +7,17 @@ import Link from 'next/link'
 
 
 const Footerdelay = () => (
-  <div className="mainFooter">
+  <div className="homeFooter">
   <div className="footerDetails">
-    <div className="column1">
-    Gabriel Orozco, Spacetime<br></br>
-    Summer 2021 – Summer 2022<br></br>
-    24 West 57th, Room 305, New York NY 10019<br></br>
-    Hours: Monday – Friday, 10AM – 6PM
-    </div>
+  <div className="column1">
+          Gabriel Orozco, Spacetime<br></br>
+          Summer 2021 – Summer 2022
+          </div>
+          <div className="column2">
+          24 West 57th, Room 305, New York NY 10019<br></br>
+          Hours: Monday – Friday, 10AM – 6PM
+          </div>
+        
   </div>
   <div className="footerNav">
     Call <span className="contact">212 977 7160</span><br></br>
