@@ -382,6 +382,21 @@ body {
   z-index: 15;
 }
 
+.overlayWrapper{
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 20;
+  background-color: rgb(11 7 7);
+  animation: fade 1s linear 2s forwards;
+  pointer-events:none;
+
+}
+
 .link1,
 .link2,
 .link3,
@@ -2280,7 +2295,8 @@ letter-spacing: 0.2em;
   position: absolute;
   top: 0;
   right: 0;
-  height: 200%;
+  height: 70vh;
+  margin: 15vh 0;
   width: 50%;
   background: transparent;
   outline: none;
@@ -2311,7 +2327,8 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   position: absolute;
   top: 0;
   left: 0;
-  height: 200%;
+  height: 70vh;
+  margin: 15vh 0;
   width: 50%;
   outline: none;
   border: none;

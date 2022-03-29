@@ -9,10 +9,10 @@
  import { sanityClient, urlFor} from '../sanity'
  import Image from "../components/Image"
  import Animation3 from "../components/Animation3"
- import Container1 from "../components/Container1"
- import Container2 from "../components/Container2"
- import Container3 from "../components/Container3"
- import Container4 from "../components/Container4"
+//  import Container1 from "../components/Container1"
+//  import Container2 from "../components/Container2"
+//  import Container3 from "../components/Container3"
+//  import Container4 from "../components/Container4"
  import Linkwrapper from "../components/Linkwrapper"
  import Ticker from "../components/Ticker"
  import Logotransparent from "../components/Logotransparent"
@@ -30,6 +30,7 @@ import Homecontainer2 from "../components/Homecontainer2";
 import Homecontainer3 from "../components/Homecontainer3";
 import Homecontainer4 from "../components/Homecontainer4";
 import Quicklinkwrapper from "../components/Quicklinkwrapper"
+import Overlay from "../components/Overlay"
 
 
 
@@ -71,13 +72,9 @@ const IndexPage = ({ properties }) => {
       {(() => {
         if (count > 1 ) {
           return (
-            <><Quicklogo /><Quickticker /><Quicklabel /><Quicklinkwrapper /><div className="mainContainer">
-              
-              <Homecontainer1 />
-              <Homecontainer2 />
-              <Homecontainer3 />
-              <Homecontainer4 />
-            </div><Footer /></>
+            <><Quicklogo /><Quickticker /><Quicklabel /><Quicklinkwrapper />
+            
+            </>
 
 
             
@@ -88,17 +85,41 @@ const IndexPage = ({ properties }) => {
           return (
             <><div className="vimeo-wrapper pointer">
               <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
-            </div><Animation3 /><Logotransparent /><Ticker /><Label /><Linkwrapper /><div className="mainContainer">
-               
-                <Container1 />
-                <Container2 />
-                <Container3 />
-                <Container4 />
-              </div><Footerdelay /></>
+            </div><Animation3 />
+            
+            <Logotransparent /><Ticker /><Label /><Linkwrapper />
+            <Overlay />
+            </>
           )
         }
       })()}
+      <div className="mainContainer">
+              
+              <Homecontainer1 />
+              <Homecontainer2 />
+              <Homecontainer3 />
+              <Homecontainer4 />
+            </div>
 
+            {(() => {
+        if (count > 1 ) {
+          return (
+            <>
+            
+            <Footer /></>
+
+
+            
+
+          )
+        
+        } else {
+          return (
+            <>
+            <Footerdelay /></>
+          )
+        }
+      })()}
       
     </div>
   )
