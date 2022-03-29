@@ -207,7 +207,7 @@ const Work = ({
         
       <Swiper
         onSwiper={setThumbsSwiper}  
-        slidesPerView={3}
+        slidesPerView={2}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
