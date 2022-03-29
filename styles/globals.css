@@ -2252,7 +2252,7 @@ letter-spacing: 0.2em;
 
 
 .mySwiper2{
-  width:50vw;
+  width:60vw;
   /* height:100vh; */
 }
 
@@ -2465,7 +2465,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     width: 20vw;
     position: absolute;
     right: 20px;
-    bottom: 150px;
+    bottom: 50px;
 }
 
 .thumbhead{
