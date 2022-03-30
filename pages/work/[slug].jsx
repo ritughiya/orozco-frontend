@@ -12,6 +12,8 @@ import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
 import Customhead from "../../components/Customhead"
+import Head from 'next/head'
+
 
 import { If, Elif, Else } from 'rc-if-else';
 
@@ -37,6 +39,7 @@ const rgbDataURL = (r, g, b) =>
     triplet(0, r, g) + triplet(b, 255, 255)
   }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
+  
 
 
 
@@ -58,17 +61,26 @@ const Work = ({
 
   const slideshowAmount = (() => {
     if (relatedworks)
-      return relatedworks.length
-    else
-      return 1
+    return relatedworks.length;
+   else 
+    return 1;
   })();
 
+  // const slideshowAmount = relatedworks.length;
+
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  //   const autoRefresh() {
+  //     window.location = window.location.href;
+  // }
+  // setInterval('autoRefresh()', 2000);
 
   return (
     
     <div className="itemContainer">
       <Customhead />
+      {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
       <Quicklogo />
        <Quickticker2 />      
       <If condition={room === "room1"}>
@@ -160,21 +172,24 @@ const Work = ({
       </div>
       </If>
        <>
-       <div className="singlecontainer">
+      <div className="singlecontainer">
+      {(() => {
+        if (slideshowAmount > 1 ) {
+          return (
+            <>
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
-        
-        spaceBetween={10}
+        // slidesPerView={1}
         speed={500}
         watchOverflow={true}
         centeredSlides={true}
         height={300}
         navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
+        thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
         effect="fade"
       pagination={{ clickable: true, dynamicBullets: true }}
@@ -185,7 +200,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '52vw', height: '72vh' }}>
+          <div style={{ position: 'relative', width: '750px', height: '75vh' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -201,7 +216,6 @@ const Work = ({
         </SwiperSlide> ))}
       </Swiper>
 
-      <If condition={slideshowAmount > 1}>
       <div className="thumbs">
         
         
@@ -224,9 +238,117 @@ const Work = ({
         </SwiperSlide> ))}
       </Swiper>
       </div>
-      </If>
+            
+
+            
+      </>
+
+
+          )
+        
+        } else {
+          return (
+            <>
+            <Swiper
+              style={{
+                "--swiper-navigation-color": "#fff",
+                "--swiper-pagination-color": "#fff",
+              }}
+              // slidesPerView={1}
+              speed={500}
+              watchOverflow={true}
+              centeredSlides={true}
+              height={300}
+              navigation={true}
+              modules={[EffectFade, FreeMode, Navigation, Thumbs]}
+              thumbs={{ swiper: thumbsSwiper }}
+              className="mySwiper2"
+              effect="fade"
+            pagination={{ clickable: true, dynamicBullets: true }}
+            fadeEffect={{
+              crossFade: true // enables slides to cross fade
+            }}
+            >
+              {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+              <SwiperSlide key={_id}>
+                <div className="workcontainer">
+                <div style={{ position: 'relative', width: '750px', height: '75vh' }}>
+                  
+                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
+            "fill"
+          objectFit="contain" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+                          <div className="info">
+                      {caption}, {year}<br></br>
+                      {medium}<br></br>
+                      {dimensions}<br></br>
+                      {editionDetails}
+                    </div>
+                    </div>
+              </SwiperSlide> ))}
+            </Swiper>
+      
+            <div className="thumbs none">
+              
+              
+            <Swiper
+              onSwiper={setThumbsSwiper}  
+              slidesPerView={2}
+              freeMode={true}
+              watchSlidesProgress={true}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mySwiper"
+              height={120}
+              spaceBetween={5}
+      
+            >
+              {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+              <SwiperSlide key={_id}>
+                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)}/>
+                    
+              </SwiperSlide> ))}
+            </Swiper>
+            </div>
+                  
+      
+                  
+            </>
+      
+            
+            
+
+          )
+        }
+      })()}
+
+      {/* <If condition={slideshowAmount > 1}>
+      <div className="thumbs">
+        
+        
+      <Swiper
+        onSwiper={setThumbsSwiper}  
+        slidesPerView={3}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+        height={120}
+        spaceBetween={5}
+
+      >
+        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <SwiperSlide key={_id}>
+          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>
+              
+        </SwiperSlide> ))}
+      </Swiper>
+      </div>
+      </If> */}
       </div>
     </>
+
     <Footer />
 
     </div>

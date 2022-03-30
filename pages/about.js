@@ -47,7 +47,7 @@ const rgbDataURL = (r, g, b) =>
 
  const about = ({ properties }) => {
    return (
-     <div className="Archive wrapper fullhog fullhogv2 ">
+     <div className=" wrapper fullhog fullhogv2 ">
       <Customhead />
        <Quicklogo2 />
             <Quickticker2 />
