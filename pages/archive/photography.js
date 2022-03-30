@@ -63,11 +63,10 @@ const rgbDataURL = (r, g, b) =>
             <div className="archiveContainer">
 
             
-       {/* {properties.map(post => (
+       {properties.map(post => (
                <div className="rowof8" key={post._id}>
 
-{post.archivegallery && post.archivegallery.map(({_id, slug = '', thumbImage = '', mainImage = '', filter = ''}) => (
-   <If condition={filter === "photography"}>
+{post.photography && post.photography.map(({_id, slug = '', thumbImage = '', mainImage = '', filter = ''}) => (
   <div key={_id}>
   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
     <div className="zoom-in">
@@ -76,7 +75,6 @@ const rgbDataURL = (r, g, b) =>
   </div>
 </Link>
 </div>
-</If>
                      
              ))
              }
@@ -84,7 +82,7 @@ const rgbDataURL = (r, g, b) =>
          </div>       
 
          
-       ))}            */}
+       ))}           
        
         </div>
 
@@ -97,7 +95,7 @@ const rgbDataURL = (r, g, b) =>
  }
  
  export const getServerSideProps = async () => {
-  const query = `*[_type == "archive" ]{archivegallery[]->} `
+  const query = `*[_type == "archive" ]{photography[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
