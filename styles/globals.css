@@ -1114,7 +1114,7 @@ ul li ul.dropdown li{
 
 .tickerquick svg{
   width: 10px;
-  height:28px;
+  height:10px;
   margin-right:1vw;
   fill: #FFFDF3;
 }
@@ -1135,7 +1135,7 @@ ul li ul.dropdown li{
 
 .tickerquick2 svg{
   width: 10px;
-  height:28px;
+  height:10px;
   fill: #FFFDF3;
 }
 
@@ -1151,8 +1151,12 @@ ul li ul.dropdown li{
 
 .ticker svg{
   width: 10px;
-  height:28px;
+  height:10px;
   fill: #FFFDF3;
+}
+
+.h2{
+  display:none;
 }
 
 @keyframes sendright {
@@ -2612,7 +2616,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 /* Media Query - Smaller Devices */
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:780px){
 
 .showLabel{
   display:none;
@@ -2653,7 +2657,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 .embed-container iframe{
-  width: 260vw;
+  width: 400vw;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -2662,5 +2666,33 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   padding: 10px 20px 10px 15px;
   width: 100vw;
   background-color: rgb(11,7,7);
+  margin:0;position: fixed;
 }
+
+.rowof4{
+  display:flex;
+  flex-wrap:wrap;
+  padding:0;
+  grid-template-columns: none;
+  grid-gap: 0;
+}
+
+.rowof4 .zoom-in.held {
+  height: 25vh;
+  width: 25vw;
+  opacity: 0.75;
+  
+  padding: 0.25rem;}
+
+  .tickerquick2{
+    justify-content: space-between;
+  }
+
+  .h2{
+    display:block;
+  }
+
+  .h2 svg{
+    width:20px;
+  }
 }
