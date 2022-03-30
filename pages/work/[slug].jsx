@@ -200,7 +200,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '750px', height: '75vh' }}>
+          <div style={{ position: 'relative', width: '750px', height: '80vh' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -272,7 +272,7 @@ const Work = ({
               {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
-                <div style={{ position: 'relative', width: '750px', height: '75vh' }}>
+                <div style={{ position: 'relative', width: '750px', height: '80vh' }}>
                   
                 <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
             "fill"
