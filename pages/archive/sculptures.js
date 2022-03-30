@@ -63,7 +63,7 @@ const rgbDataURL = (r, g, b) =>
             <div className="archiveContainer">
 
             
-       {properties.map(post => (
+       {/* {properties.map(post => (
                <div className="rowof8" key={post._id}>
 
 {post.archivegallery && post.archivegallery.map(({_id, slug = '', thumbImage = '', mainImage = '', filter = ''}) => (
@@ -84,7 +84,8 @@ const rgbDataURL = (r, g, b) =>
          </div>       
 
          
-       ))}             </div>
+       ))}             */}
+        </div>
 
                            <Footer />
 

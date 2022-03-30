@@ -27,7 +27,7 @@ const Reset = () => {
      
      <ul className="dropdowncontainer Resetbutton">
      <li>
-         <a href="/archive">Reset X </a>
+         <Link href="/archive">Reset X </Link>
          
      </li>
  </ul>
