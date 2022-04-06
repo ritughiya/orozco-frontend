@@ -1,4 +1,4 @@
-//Roomsdropdown.js
+//Roomsdropdown2.js
 
 /**
  * @jest-environment jsdom
@@ -16,33 +16,63 @@ import { sanityClient, urlFor} from '../sanity'
  import Room3thumbnail from "../public/room3.png"
  import Room4thumbnail from "../public/room4.png"
 
+ import ReactHoverObserver from 'react-hover-observer';
 
 import ReactDOM from 'react-dom';
 
 // import default style
 
-const Roomsdropdown = () => {
-   const [show, setShow] = useState(true)
-   const controlNavbar = () => {
-       if (window.scrollY > 300) {
-           setShow(false)
-       } else {
-           setShow(true)
-       }
-   }
-
-   useEffect(() => {
-       window.addEventListener('scroll', controlNavbar)
-       return () => {
-           window.removeEventListener('scroll', controlNavbar)
-       }
-   }, [])
-   return (
+    const DropdownLabel = () => {
+        const [show, setShow] = useState(true)
+        const controlNavbar = () => {
+            if (window.scrollY > 60) {
+                setShow(false)
+            } else {
+                setShow(true)
+            }
+        }
      
-     <ul className={`dropdowncontainer ${show && 'nav__blue'}`}>
-     <li>
-         <a href="#">Rooms <Caret/> </a>
-         <ul className="dropdown">
+        useEffect(() => {
+            window.addEventListener('scroll', controlNavbar)
+            return () => {
+                window.removeEventListener('scroll', controlNavbar)
+            }
+        }, [])
+        return (
+    // <div className="dropdowncontainer">
+      <ReactHoverObserver
+        className="example"
+        hoverDelayInMs={300}
+        hoverOffDelayInMs={1500}
+      >
+
+          <div className={`dropdowncontainer ${show}`}>Rooms <Caret/></div>
+        <DropdownContainer />
+      </ReactHoverObserver>
+    // </div>
+  );
+  }
+
+  const DropdownContainer = ({ isHovering = false }) => {
+    const [show, setShow] = useState(true)
+    const controlNavbar = () => {
+        if (window.scrollY > 60) {
+            setShow(false)
+        } else {
+            setShow(true)
+        }
+    }
+ 
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    }, [])
+    return (
+        <div className={`${show}`}>
+    <div className={isHovering ? "reveal" : ""}>
+      <ul className="dropdown">
              <div className="dropspace"> 
              <li><Link href="/room1">
                  <div className="roomrow pointer">
@@ -70,9 +100,10 @@ const Roomsdropdown = () => {
               </li>
              </div>
          </ul>
-     </li>
- </ul>
-   )
-}
+     </div>
+     </div>
+  )}
 
-export default Roomsdropdown
+
+  export default DropdownLabel
+

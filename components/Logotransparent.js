@@ -4,12 +4,23 @@ import Link from 'next/link'
 import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
 import ReactDelayRender from 'react-delay-render';
+import ReactHoverObserver from 'react-hover-observer';
 
+// import default style
 
-const Logotransparent = () => (
-  <div className="Logo-knight2 Logo-knight2delay pointer">
-            <Link href="/archive">
-           <div className="logocontainer">       
+const Logotransparent = () => {
+
+    return (
+        <div className="Logo-knight2 Logo-knight2delay pointer">
+           <div className="logocontainer">   
+      
+    <ReactHoverObserver
+      className="example"
+      hoverDelayInMs={300}
+      hoverOffDelayInMs={1500}
+    >
+
+    
 <svg className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
@@ -27,7 +38,22 @@ const Logotransparent = () => (
     </g>
 </svg>
 
-<div className="logo-label1">
+<Logolabels />
+
+
+    </ReactHoverObserver>
+    </div>  
+</div>
+
+);
+}
+
+const Logolabels   = ({ isHovering = false }) => {
+
+ return (
+  <div className={isHovering ? "reveal" : ""}>
+  
+  <div className="logo-label1">
 <Link href="/about">
     About
 </Link>
@@ -37,11 +63,9 @@ const Logotransparent = () => (
     Index
 </Link>
 </div>
-</div>  
-</Link>
-</div>
-);
- 
+  
+   </div>
+)}
+
+
 export default ReactDelayRender({ delay: 14000 })(Logotransparent);
-
-

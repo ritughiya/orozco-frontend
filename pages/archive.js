@@ -57,7 +57,7 @@ const rgbDataURL = (r, g, b) =>
        <Quicklogo />
             <Quickticker2 />
             <Filtersdropdown />
-            <Reset />
+            {/* <Reset /> */}
 
             
        {properties.map(post => (

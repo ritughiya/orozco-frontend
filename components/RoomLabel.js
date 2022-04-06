@@ -16,7 +16,7 @@ import { sanityClient, urlFor} from '../sanity'
 const RoomLabel = () => {
     const [show, setShow] = useState(true)
     const controlNavbar = () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 60) {
             setShow(false)
         } else {
             setShow(true)

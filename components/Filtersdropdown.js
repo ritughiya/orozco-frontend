@@ -16,19 +16,36 @@ import { sanityClient, urlFor} from '../sanity'
  import Room3thumbnail from "../public/room3.png"
  import Room4thumbnail from "../public/room4.png"
 
+ import ReactHoverObserver from 'react-hover-observer';
 
 import ReactDOM from 'react-dom';
 
 // import default style
 
-const Filtersdropdown = () => {
+    const FiltersDropdownLabel = () => {
+
+      return (
+        
+    // <div className="dropdowncontainer">
+      <ReactHoverObserver
+        className="example"
+        hoverDelayInMs={300}
+        hoverOffDelayInMs={1500}
+      >
+
+          <div className="dropdowncontainer Filtersdrop">Filters <Caret/></div>
+        <DropdownContainer />
+      </ReactHoverObserver>
+    // </div>
+  );
+  }
+
+  const DropdownContainer   = ({ isHovering = false }) => {
 
    return (
-     
-     <ul className="dropdowncontainer Filtersdrop">
-     <li>
-         <a href="#">Filters <Caret/> </a>
-         <ul className="dropdown">
+    <div className={isHovering ? "reveal" : ""}>
+    
+         <ul className="filtersdropdown dropdown">
              <div className="dropspace"> 
              <li>
                  <div className="roomrowfirst ">
@@ -59,9 +76,10 @@ const Filtersdropdown = () => {
               
              </div>
          </ul>
-     </li>
- </ul>
-   )
-}
+    
+     </div>
+  )}
 
-export default Filtersdropdown
+
+  export default FiltersDropdownLabel
+

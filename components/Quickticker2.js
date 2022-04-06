@@ -20,8 +20,8 @@
      <Link href="https://go-spacetime.netlify.app/">
      SPACETIME
      </Link>
-&ensp;
-     <Circle /> &ensp;
+
+     <Circle /> 
      <Clock
            format={'HH:mm:ss'}
            ticking={true} />
