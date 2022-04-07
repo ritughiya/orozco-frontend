@@ -2404,6 +2404,30 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin: 4em 0;
 }
 
+@media only screen and (min-width:2100px){
+
+  .rowof4 {
+    grid-template-columns: repeat(23, 1fr);
+  }
+
+}
+
+@media only screen and (min-width:1800px){
+
+  .rowof4 {
+    grid-template-columns: repeat(19, 1fr);
+  }
+
+}
+
+@media only screen and (min-width:1500px){
+
+  .rowof4 {
+    grid-template-columns: repeat(15, 1fr);
+  }
+
+}
+
 @media only screen and (min-width:1318px){
 
   .RoomLabel{
