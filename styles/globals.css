@@ -2428,7 +2428,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 }
 
-@media only screen and (min-width:1318px){
+/* @media only screen and (min-width:1318px){
 
   .RoomLabel{
     position:fixed;
@@ -2455,7 +2455,38 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 
 
+} */
+
+
+
+
+@media (min-aspect-ratio: 177/100){
+
+  .RoomLabel{
+    position:fixed;
+    transition: all 0.25s linear;
+  }
+
+  div.dropdowncontainer{
+    position:fixed;
+    transition: all 0.25s linear;
+
+  }
+
+  ul.dropdown{
+    position:fixed;
+    transition: all 0.25s linear;
+
+  }
+
+.false ul.dropdown,
+.false.dropdowncontainer,
+.false.RoomLabel{
+  position:absolute !important;
 }
+
+}
+
 
 
 
