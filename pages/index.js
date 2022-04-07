@@ -24,7 +24,6 @@
  import Footerdelay from "../components/Footerdelay"
  import { If, Elif, Else } from 'rc-if-else';
  import Quicklabel from '../components/Quicklabel.js'
- import Quickticker from '../components/Quickticker'
  import Quicklogo from '../components/Quicklogo'
 import Homecontainer1 from "../components/Homecontainer1";
 import Homecontainer2 from "../components/Homecontainer2";
