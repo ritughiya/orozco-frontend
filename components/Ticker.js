@@ -12,21 +12,29 @@
  import Circle from "../components/Circle"
  import Clock from 'react-live-clock';
  import ReactDelayRender from 'react-delay-render';
+ import Menu from "../components/Menu"
 
 
 const Ticker = () => (
-<div className="ticker">
-    <>
-    <Link href="https://go-spacetime.netlify.app/">
-     SPACETIME
-     </Link>
-&ensp;
-    <Circle /> &nbsp;
-    <Clock
-          format={'HH:mm:ss'}
-          ticking={true} />
-    </>
-    </div>
+
+
+    <div className="ticker tickerquick2">
+    <div className="h1">
+      <>
+      <Link href="https://go-spacetime.netlify.app/">
+      SPACETIME
+      </Link>
+ 
+      <Circle /> 
+      <Clock
+            format={'HH:mm:ss'}
+            ticking={true} />
+      </>
+      </div>
+      <div className="h2">
+        <Menu />
+      </div>
+      </div>
 
 
 

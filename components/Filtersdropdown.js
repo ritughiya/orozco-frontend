@@ -49,7 +49,7 @@ import ReactDOM from 'react-dom';
              <div className="dropspace"> 
              <li>
                  <div className="roomrowfirst ">
-                 <span className="roomflex">Filter by:</span>
+                 <span className="roomflex">Browse by:</span>
                  </div>
               </li>
              <li><Link href="/archive/paintings">
