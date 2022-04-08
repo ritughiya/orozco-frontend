@@ -79,7 +79,7 @@ body {
 }
 
 .mainFooter{
-  background-color: #fffdf3e0 !important;
+  background-color: #fffdf3 !important;
     color: rgb(11 7 7);
     font-size: 0.6em;
     line-height: 18px;
@@ -90,6 +90,7 @@ body {
     padding: 1em 1em;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .footerDetails{
@@ -811,6 +812,15 @@ ul li a{
   color: rgb(11 7 7) !important;
   position:fixed !important;
   font-size: 0.65em !important;
+}
+
+.resetspan{
+  display: flex;
+  align-items: center;
+}
+
+.resetspan svg{
+  height: 1em;
 }
 
 
