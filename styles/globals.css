@@ -2577,11 +2577,11 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 
 .embed-container{
-  height: 90vh;
+  height: 85vh;
 }
 
 .embed-container iframe{
-  width: 400vw;
+  width: 250vw;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -2631,6 +2631,23 @@ div.dropdowncontainer{
 
   .rowof4 {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+
+
+/* Row of 4 Breakpoints */
+
+@media only screen and (max-width:500px){
+
+  .rowof4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .rowof4 .zoom-in.held {
+    height: 8.5rem;
+    padding: 0.1rem;
+    opacity: 0.75;
   }
 
 }
