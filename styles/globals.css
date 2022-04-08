@@ -2581,7 +2581,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 .embed-container iframe{
-  width: 250vw;
+  width: 300vw;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -2644,10 +2644,10 @@ div.dropdowncontainer{
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .rowof4 .zoom-in.held {
+  /* .rowof4 .zoom-in.held {
     height: 8.5rem;
     padding: 0.1rem;
     opacity: 0.75;
-  }
+  } */
 
 }
