@@ -8,7 +8,6 @@
  import {urlFor, sanityClient} from "../../sanity"
  import Image from "../../components/Image"
  import Circle from "../../components/Circle"
- import Label from "../../components/Label"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
  import Quicklogo from '../../components/Quicklogo'

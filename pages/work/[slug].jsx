@@ -2,10 +2,6 @@ import {urlFor, sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
-import Room1Materials from '../../components/Room1Materials'
-import Room2Materials from '../../components/Room2Materials'
-import Room3Materials from '../../components/Room3Materials'
-import Room4Materials from '../../components/Room4Materials'
 import Quickticker2 from '../../components/Quickticker2'
 import Quicklogo from '../../components/Quicklogo'
 import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
