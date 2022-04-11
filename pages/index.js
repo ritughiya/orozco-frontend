@@ -9,15 +9,10 @@
  import { sanityClient, urlFor} from '../sanity'
  import Image from "../components/Image"
  import Animation3 from "../components/Animation3"
-//  import Container1 from "../components/Container1"
-//  import Container2 from "../components/Container2"
-//  import Container3 from "../components/Container3"
-//  import Container4 from "../components/Container4"
  import Linkwrapper from "../components/Linkwrapper"
  import Ticker from "../components/Ticker"
  import Quickticker2 from "../components/Quickticker2"
  import Logotransparent from "../components/Logotransparent"
- import Label from "../components/Label"
  import Customhead from "../components/Customhead"
  import Clock from 'react-live-clock';
  import Footerhome from "../components/Footerhome"

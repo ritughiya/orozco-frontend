@@ -5,7 +5,7 @@
  */
 
  import React from "react";
- import Room1Label from "../components/Room1Label"
+ import BookshelfLabel from "../components/BookshelfLabel"
  import Roomsdropdown from "../components/Roomsdropdown"
  import Roomsdropdown2 from "../components/Roomsdropdown2"
 

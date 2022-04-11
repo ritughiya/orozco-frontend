@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainer4 from "../components/Quickcontainer4"
- import RoomLabel from "../components/RoomLabel"
+ import Room4Label from "../components/Room4Label"
  import Roomsdropdown2 from "../components/Roomsdropdown2"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
@@ -64,7 +64,7 @@ const rgbDataURL = (r, g, b) =>
             <Quicklogo />
             <Quickticker2 />
             <div className="room4container">
-            <RoomLabel />
+            <Room4Label />
             <Roomsdropdown2 />
             <Swiper
         style={{
@@ -115,7 +115,7 @@ const rgbDataURL = (r, g, b) =>
     </Swiper>
     </div>
     
-    <Swiper
+    <Swiper id="selectedworks"
         onSwiper={setThumbsSwiper}
         // slidesPerView={1}
         // freeMode={true}

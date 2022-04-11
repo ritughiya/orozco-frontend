@@ -46,7 +46,7 @@ import ReactDOM from 'react-dom';
         hoverOffDelayInMs={1500}
       >
 
-          <div className={`dropdowncontainer roomslist ${show}`}>Rooms <Caret/></div>
+          <div className={`dropdowncontainer pointer roomslist ${show}`}>Rooms <Caret/></div>
         <DropdownContainer />
       </ReactHoverObserver>
     // </div>
@@ -91,13 +91,13 @@ import ReactDOM from 'react-dom';
                  <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Spaceship Room</span></div></Link>
               </li>
               <li><Link href="/offices">
-                 <div className="roomrow pointer">
+                 <div className="roomrowlast pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Offices </span></div></Link>
               </li>
-              <li><Link href="/bookshelf">
+              {/* <li><Link href="/bookshelf">
                  <div className="roomrowlast pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Bookshelf</span></div></Link>
-              </li>
+              </li> */}
              </div>
          </ul>
      </div>

@@ -64,6 +64,10 @@ import ReactDOM from 'react-dom';
                  <div className="roomrow pointer">
                  <span className="roomflex">Sculpture</span></div></Link>
               </li>
+              <li><Link href="/archive/worksonpaper">
+                 <div className="roomrow pointer">
+                 <span className="roomflex">Works on Paper</span></div></Link>
+              </li>
               <li>
                  <div className="roomrowfirst secondary">
                  <span className="roomflex">Sort:</span>

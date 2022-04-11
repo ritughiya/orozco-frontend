@@ -42,12 +42,12 @@ const RoomLabel = () => {
         ignoreCancelEvents={false}
   >
       <div className={`RoomLabel ${show && 'nav__blue'}`}>
-      Selected Works – Room Two <Caret/>
+      Selected Works – Offices <Caret/>
   </div>
   </Link>
 
 <div className={`RoomLabel mobile ${show && 'nav__blue'}`}>
-Selected Works – Room Two <Caret/>
+Selected Works – Offices <Caret/>
 </div>
 </div>
     )

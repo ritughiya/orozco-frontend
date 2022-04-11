@@ -39,6 +39,10 @@ body {
   animation: 2s fadepage ease-in forwards;
 }
 
+.mobile{
+  display:none;
+}
+
 .count{
   color:white;
 }
@@ -717,7 +721,7 @@ ul.dropdowncontainer{
 }
 
 div.dropdowncontainer{
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
   position: absolute;
   width: fit-content;
   z-index: 20;
@@ -2552,6 +2556,14 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 @media only screen and (max-width:780px){
 
+  .desktop{
+    display:none;
+  }
+
+  .mobile{
+    display:block;
+  }
+
 .showLabel{
   display:none;
 }
@@ -2613,6 +2625,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .RoomLabel{
   margin:10px;
+  cursor:initial;
 }
 
 div.dropdowncontainer{

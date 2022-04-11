@@ -68,7 +68,7 @@ const rgbDataURL = (r, g, b) =>
             
            
 
-           <div className="rowof4">
+           <div className="rowof4" id="selectedworks">
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>

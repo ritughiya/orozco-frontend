@@ -5,21 +5,24 @@
  import React from 'react'
  import Link from 'next/link'
  import Script from 'next/script'
- import {urlFor, sanityClient} from '../sanity'
- import Image from "../components/Image"
- import Circle from "../components/Circle"
+ import {urlFor, sanityClient} from "../../sanity"
+ import Image from "../../components/Image"
+ import Circle from "../../components/Circle"
+ import Label from "../../components/Label"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
- import Quicklogo from '../components/Quicklogo'
- import Quicklabel from '../components/Quicklabel.js'
- import Quickticker2 from '../components/Quickticker2'
- import Footer from "../components/Footer"
- import Customhead from "../components/Customhead"
-import Filtersdropdown from '../components/Filtersdropdown'
-import Reset from '../components/Reset'
+ import Quicklogo from '../../components/Quicklogo'
+ import Quicklabel from '../../components/Quicklabel.js'
+ import Quickticker2 from '../../components/Quickticker2'
+ import Footer from "../../components/Footer"
+ import Customhead from "../../components/Customhead"
+
+ import { If, Elif, Else } from 'rc-if-else';
+ import Filtersdropdown from '../../components/Filtersdropdown'
+ import Reset from '../../components/Reset'
+
 
  
- // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
 const keyStr =
 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
 
@@ -36,7 +39,6 @@ const rgbDataURL = (r, g, b) =>
 
 
  
- const query = `*[_type == "work" ]`
  
  const serializers = {
      types: {
@@ -49,21 +51,21 @@ const rgbDataURL = (r, g, b) =>
    }
  
 
- const archive = ({ properties }) => {
+ const worksonpaper = ({ properties }) => {
    return (
      <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
        <Quicklogo />
             <Quickticker2 />
             <Filtersdropdown />
-            {/* <Reset /> */}
+            <Reset />
 
-            
+            <div className="archiveContainer">
        {properties.map(post => (
                <div className="rowof8" key={post._id}>
 
-{post.archivegallery && post.archivegallery.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
-  <div key={_id}>
+{post.worksonpaper && post.worksonpaper.map(({_id, slug = '', thumbImage = '', mainImage = '', filter = ''}) => (
+     <div key={_id}>
   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
     <div className="zoom-in">
     <img src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" />
@@ -71,6 +73,7 @@ const rgbDataURL = (r, g, b) =>
   </div>
 </Link>
 </div>
+
                      
              ))
              }
@@ -79,6 +82,7 @@ const rgbDataURL = (r, g, b) =>
 
          
        ))}
+                </div>       
                            <Footer />
 
        
@@ -88,7 +92,7 @@ const rgbDataURL = (r, g, b) =>
  }
  
  export const getServerSideProps = async () => {
-  const query = `*[_type == "archive" ]{archivegallery[]->} `
+  const query = `*[_type == "archive" ]{worksonpaper[]->}  `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -106,4 +110,4 @@ const rgbDataURL = (r, g, b) =>
    }
  }
  
- export default archive;
+ export default worksonpaper;

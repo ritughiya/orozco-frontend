@@ -10,8 +10,6 @@
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainer1 from "../components/Quickcontainer1"
- import Room1Label from "../components/Room1Label"
- import Roomsdropdown from "../components/Roomsdropdown"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
  import Quicklogo from '../components/Quicklogo'
@@ -63,13 +61,11 @@ const rgbDataURL = (r, g, b) =>
                <div className="flexgrow">
             <Quicklogo />
             <Quickticker2 />
-            {/* <Room1Label />
-            <Roomsdropdown /> */}
             <Quickcontainer1 />
             
            
 
-           <div className="rowof4">
+           <div id="selectedworks" className="rowof4">
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>

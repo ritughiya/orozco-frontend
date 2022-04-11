@@ -11,9 +11,6 @@
     import Circle from "../components/Circle"
     import Quickcontainer3 from "../components/Quickcontainer3"
     import Ticker from "../components/Ticker"
-    import Label from "../components/Label"
-    import Room3Label from "../components/Room3Label"
-    import Roomsdropdown from "../components/Roomsdropdown"
     import Quickticker2 from '../components/Quickticker2'
     import Quicklogo from '../components/Quicklogo'
     import Clock from 'react-live-clock';
@@ -67,9 +64,7 @@ const rgbDataURL = (r, g, b) =>
                        <div className="flexgrow">
                <Quicklogo />
                <Quickticker2 />
-               {/* <Quicklabel /> */}
-               {/* <Room3Label />
-               <Roomsdropdown /> */}
+              
                <Quickcontainer3 />
 
                
@@ -77,7 +72,7 @@ const rgbDataURL = (r, g, b) =>
                
               
    
-               <div className="rowof4">
+               <div id="selectedworks" className="rowof4">
              {post.rowof4 && post.rowof4.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
                      <div key={_id}>
                           <Link href="/work/[slug]" as={`/work/${slug.current}`}>
