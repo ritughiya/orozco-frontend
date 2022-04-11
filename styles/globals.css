@@ -97,6 +97,12 @@ body {
     
 }
 
+.Archive .mainFooter{
+  position: absolute;
+  width: 100vw;
+  z-index: 100000;
+}
+
 .footerDetails{
   display: flex;
   /* width: 50vw; */
