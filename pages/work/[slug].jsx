@@ -373,9 +373,10 @@ const Work = ({
                 {editionDetails}
               </div>
               </div>
-               </div>
-               </div>
-        ))}
+
+        ))}              
+         </div>
+        </div>
       
             
       </>
@@ -401,10 +402,10 @@ const Work = ({
                 {editionDetails}
               </div>
               </div>
-                            </div>
-                            </div>
+                           
         ))}
-           
+            </div>
+                            </div>
                   
       
                   
