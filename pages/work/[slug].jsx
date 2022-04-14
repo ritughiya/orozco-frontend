@@ -353,14 +353,14 @@ const Work = ({
       </div>
     </>
     <>
-      <div className="singlecontainer mobile">
-
-      <div className="workcontainer">
+      
       {(() => {
         if (slideshowAmount > 1 ) {
           return (
             <>
+<div className="singlecontainer mobile">
 
+<div className="workcontainer">
 {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '88vw', height: '60vh' }}>
             
@@ -373,6 +373,8 @@ const Work = ({
                 {editionDetails}
               </div>
               </div>
+               </div>
+               </div>
         ))}
       
             
@@ -384,6 +386,9 @@ const Work = ({
         } else {
           return (
             <>
+            <div className="singlecontainer2 mobile">
+
+<div className="workcontainer">
             {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '90vw' }}>
             
@@ -396,6 +401,8 @@ const Work = ({
                 {editionDetails}
               </div>
               </div>
+                            </div>
+                            </div>
         ))}
            
                   
@@ -412,8 +419,7 @@ const Work = ({
       })()}
       
 
-</div>
-</div>
+
 
     </>
 

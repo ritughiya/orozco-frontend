@@ -2619,6 +2619,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       padding: 20px 0 0 0;
   }
 
+  .singlecontainer2.mobile {
+    padding: 10% 0;
+}
+
     .singlecontainer.mobile .workcontainer{
       margin-bottom:15px;
     }
@@ -2683,6 +2687,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
     /* Other thongs */
 
+
+    .itemContainer .mainFooter{
+      margin-top:0;
+    }
 
   .mainFooter{
     display:block;
