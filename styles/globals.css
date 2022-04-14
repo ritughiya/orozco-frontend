@@ -2620,7 +2620,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   }
 
   .singlecontainer2.mobile {
-    padding: 10% 0;
+    padding: 8% 0;
 }
 
     .singlecontainer.mobile .workcontainer{
@@ -2645,9 +2645,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       margin: 0;
       line-height: unset;
       position: fixed;
-      width: 99vw;
+      width: 94vw;
       top: 35%;
-      left: 0.5vw;
+      left: 3svw;
       justify-content:space-between;
     }
 
