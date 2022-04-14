@@ -2641,9 +2641,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       margin: 0;
       line-height: unset;
       position: fixed;
-      width: 98vw;
+      width: 99vw;
       top: 35%;
-      left: 1vw;
+      left: 0.5vw;
       justify-content:space-between;
     }
 
