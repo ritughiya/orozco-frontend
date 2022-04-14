@@ -2654,9 +2654,14 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     }
   
     .workcontainer{
-      width:80vw;
+      width:100vw;
       font-size:0.9em;
-      margin: 0 10vw;
+      /* margin: 0 auto; */
+    }
+
+    .workposition{
+      max-width:90vw;
+      margin:auto;
     }
   
     .workcontainer .info {
@@ -2723,6 +2728,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 @media only screen and (max-width:1000px){
 
+  .Home{
+    overflow-x:hidden;
+  }
+
   .desktop{
     display:none;
   }
@@ -2770,7 +2779,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 
 .embed-container{
-  height: 85vh;
+  height: 80vh;
 }
 
 .embed-container iframe{
