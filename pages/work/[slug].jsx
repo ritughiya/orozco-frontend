@@ -411,7 +411,7 @@ const Work = ({
           </div>
     
     <div className="bookcontainer mobile">
-    <div className="bookdetail">
+    {relatedbook1 && <div className="bookdetail"></div>}
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} </div>  }  
 
 
@@ -419,7 +419,7 @@ const Work = ({
         <div key={_id}>
           <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
           
-            <div className="bookimage pointer" style={{height: '240px', width: '190px', position: 'relative'}}>
+            <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
@@ -446,7 +446,6 @@ const Work = ({
           {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
           </div>
 
-          </div>
 
 
     <Footer />

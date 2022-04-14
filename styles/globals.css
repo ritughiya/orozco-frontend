@@ -2291,7 +2291,14 @@ cursor: e-resize;
 }
 
 .bookdetail{
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
+  font-size: 0.75em;
+  color: #FFFDF3;
+  line-height: 1.5;
+}
+
+.bookinfo{
+  padding-top:30px;
   font-size: 0.75em;
   color: #FFFDF3;
   line-height: 1.5;
@@ -2659,6 +2666,16 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     .mySwiper2{
       width:100vw;
     }
+
+    .bookcontainer{
+      text-align:center;
+    }
+
+    .bookinfo{
+      border-top:1px solid #FFFDF3;
+      padding-bottom:20px;
+    }
+
 
     /* Other thongs */
 
