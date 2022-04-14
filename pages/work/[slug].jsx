@@ -93,7 +93,7 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
        <div className="arrows">
-        <div>&nbsp; 
+        <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
@@ -119,7 +119,7 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
        <div className="arrows">
-        <div>&nbsp; 
+        <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
@@ -145,7 +145,7 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
        <div className="arrows">
-        <div>&nbsp; 
+        <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
@@ -171,7 +171,7 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
       <div className="arrows">
-        <div>&nbsp; 
+        <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
@@ -209,28 +209,30 @@ const Work = ({
         thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
         effect="fade"
+        initialSlide="1"
       pagination={{ clickable: true, dynamicBullets: true }}
       fadeEffect={{
         crossFade: true // enables slides to cross fade
       }}
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <SwiperSlide key={_id}>
-          <div className="workcontainer">
-          <div style={{ position: 'relative', width: '32rem', height: '31.5rem' }}>
-            
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-                    <div className="info">
-                {caption}, {year}<br></br>
-                {medium}<br></br>
-                {dimensions}<br></br>
-                {editionDetails}
-              </div>
-              </div>
-        </SwiperSlide> ))}
+              <SwiperSlide key={_id}>
+                <div className="workcontainer">
+                  <div className="workcontainersub">
+                <div style={{ position: 'relative', width: '44vw', height: '100%' }}>
+                  
+                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+            </div>
+                          <div className="info">
+                      {caption}, {year}<br></br>
+                      {medium}<br></br>
+                      {dimensions}<br></br>
+                      {editionDetails}
+                    </div>
+                    
+                    </div>
+              </SwiperSlide> ))}
       </Swiper>
 
       <div className="thumbs">
@@ -290,7 +292,7 @@ const Work = ({
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div className="workcontainersub">
-                <div style={{ position: 'relative', width: '32rem', height: '100%' }}>
+                <div style={{ position: 'relative', width: '44vw', height: '100%' }}>
                   
                 <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/></div>

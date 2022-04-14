@@ -2634,9 +2634,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       margin: 0;
       line-height: unset;
       position: fixed;
-      width: 98vw;
+      width: 96vw;
       top: 35%;
-      left: 1vw;
+      left: 2vw;
       justify-content:space-between;
     }
 
