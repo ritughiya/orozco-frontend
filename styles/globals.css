@@ -2647,9 +2647,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     }
   
     .workcontainer{
-      width:88vw;
+      width:80vw;
       font-size:0.9em;
-      margin: 0 6vw;
+      margin: 0 10vw;
     }
   
     .workcontainer .info {
