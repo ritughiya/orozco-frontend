@@ -19,6 +19,8 @@
  import { If, Elif, Else } from 'rc-if-else';
  import Filtersdropdown from '../../components/Filtersdropdown'
  import Reset from '../../components/Reset'
+ import Mobilefilters from '../components/Mobilefilters'
+ 
 
 
  
