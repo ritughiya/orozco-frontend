@@ -354,8 +354,37 @@ const Work = ({
     </>
     <>
       <div className="singlecontainer mobile">
+
       <div className="workcontainer">
-      {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+      {(() => {
+        if (slideshowAmount > 1 ) {
+          return (
+            <>
+
+{relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '88vw', height: '60vh' }}>
+            
+          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+                    <div className="info">
+                {caption}, {year}<br></br>
+                {medium}<br></br>
+                {dimensions}<br></br>
+                {editionDetails}
+              </div>
+              </div>
+        ))}
+      
+            
+      </>
+
+
+          )
+        
+        } else {
+          return (
+            <>
+            {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '88vw', height: '69vh' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
@@ -368,6 +397,20 @@ const Work = ({
               </div>
               </div>
         ))}
+           
+                  
+      
+                  
+            </>
+      
+      
+            
+            
+
+          )
+        }
+      })()}
+      
 
 </div>
 </div>
