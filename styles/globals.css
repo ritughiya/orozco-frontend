@@ -2133,7 +2133,7 @@ letter-spacing: 0.2em;
 .itemContainer{
   background-color: rgb(11 7 7) !important;
   width:100vw;
-  height:100vh;
+  /* height:100vh; */
   overflow-x: hidden;
 }
 
@@ -2426,6 +2426,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   justify-content: flex-end;
 }
 
+.arrows div{
+  display:flex;
+}
 
 .thumbs{
       padding: 20px 15px 15px 15px;
@@ -2633,9 +2636,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       justify-content:space-between;
     }
 
-    .arrows div{
-      display:flex;
-    }
+   
   
     .backimage{
       display:none;

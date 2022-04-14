@@ -39,28 +39,16 @@ const rgbDataURL = (r, g, b) =>
 
 
 
-const Work = ({
+const Book = ({
   thumbImage,
     mainImage,
-  caption,
-  room,
-  year,
-  medium,
-  dimensions,
-  editionDetails,
-  alt,
+  aboutbook,
   slug,
-  relatedworks,
   previouswork,
   nextwork
 }) => {
 
-  const slideshowAmount = (() => {
-    if (relatedworks)
-    return relatedworks.length;
-   else 
-    return 1;
-  })();
+  
 
   // const slideshowAmount = relatedworks.length;
 
@@ -78,97 +66,35 @@ const Work = ({
       <Customhead />
       {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
       <Quicklogo />
-       <Quickticker2 />      
-      <If condition={room === "room1"}>
-      <div className="backcontainer">
-      <Link href="/room1">Back to Room </Link>
+       <Quickticker2 />   
+       <div className="backcontainer">
+      <Link href="/bookshelf">Back to Bookshelf </Link>
       <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
+      {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
       "fill"
     objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-      <div className="arrows">
+      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+      
+      </div>
+       <div className="arrows">
+        <div>&nbsp; 
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> &#60; </Link>
           </div> ) )}
+          </div>
+          <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> &#62; </Link>
           </div> ) )}
+          </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
-      </div>
-      </If>
-      <If condition={room === "room2"}>
-      <div className="backcontainer">
-      <Link href="/room2">Back to Room </Link><br></br>
-      <div className="backimage" style={{height: '190px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-      <div className="arrows">
-      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
-          </div> ) )}
-          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
-          </div> ) )}
-        {/* <Link href="#"> &#62; </Link> */}
-      </div>
-      </div>
-      </If>
-      <If condition={room === "room3"}>
-      <div className="backcontainer">
-      <Link href="/room3">Back to Room </Link><br></br>
-      <div className="backimage" style={{height: '190px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-      <div className="arrows">
-      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
-          </div> ) )}
-          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
-          </div> ) )}
-        {/* <Link href="#"> &#62; </Link> */}
-      </div>
-      </div>
-      </If>
-      <If condition={room === "room4"}>
-      <div className="backcontainer">
-      <Link href="/spaceshiproom">Back to Room </Link><br></br>
-      <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-      <div className="arrows">
-      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
-          </div> ) )}
-          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
-          </div> ) )}
-        {/* <Link href="#"> &#62; </Link> */}
-      </div>
-      </div>
-      </If>
-       <>
-      <div className="singlecontainer">
+      </div>   
+
+      {/* <div className="singlecontainer desktop">
       {(() => {
         if (slideshowAmount > 1 ) {
           return (
@@ -196,7 +122,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '35rem', height: '35rem' }}>
+          <div style={{ position: 'relative', width: '30rem', height: '31.5rem' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -212,28 +138,7 @@ const Work = ({
         </SwiperSlide> ))}
       </Swiper>
 
-      <div className="thumbs">
-        
-        
-      <Swiper
-        onSwiper={setThumbsSwiper}  
-        slidesPerView="auto"
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-        height={120}
-        spaceBetween={5}
-
-      >
-        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <SwiperSlide key={_id}>
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/>
-              
-        </SwiperSlide> ))}
-      </Swiper>
-      </div>
+      
             
 
             
@@ -268,21 +173,24 @@ const Work = ({
               {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
-                <div style={{ position: 'relative', width: '750px', height: '80vh' }}>
+                  <div className="workcontainersub">
+                <div style={{ position: 'relative', width: '30rem', height: '100%' }}>
                   
-                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
-            "fill"
-          objectFit="contain" placeholder="blur"
+                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+            </div>
                           <div className="info">
                       {caption}, {year}<br></br>
                       {medium}<br></br>
                       {dimensions}<br></br>
                       {editionDetails}
                     </div>
+                    
                     </div>
               </SwiperSlide> ))}
             </Swiper>
+
+           
       
             <div className="thumbs none">
               
@@ -306,10 +214,13 @@ const Work = ({
               </SwiperSlide> ))}
             </Swiper>
             </div>
+
+           
                   
       
                   
             </>
+      
       
             
             
@@ -318,32 +229,11 @@ const Work = ({
         }
       })()}
 
-      {/* <If condition={slideshowAmount > 1}>
-      <div className="thumbs">
-        
-        
-      <Swiper
-        onSwiper={setThumbsSwiper}  
-        slidesPerView={3}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-        height={120}
-        spaceBetween={5}
 
-      >
-        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-        <SwiperSlide key={_id}>
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/>
-              
-        </SwiperSlide> ))}
-      </Swiper>
-      </div>
-      </If> */}
-      </div>
-    </>
+      
+      
+      </div> */}
+     
 
     <Footer />
 
@@ -354,25 +244,18 @@ const Work = ({
 export const getServerSideProps = async (pageContext) => {
     const pageSlug = pageContext.query.slug
   
-    const query = `*[ _type == "work" && slug.current == $pageSlug][0]{
+    const query = `*[ _type == "book" && slug.current == $pageSlug][0]{
      thumbImage,
       mainImage,
-      caption,
-      year,
-      room,
-      medium,
-      dimensions,
-      editionDetails,
-      alt,
-      relatedworks[]->,
+      aboutbook,
       previouswork[]->,
       nextwork[]->
     }`
 
   
-    const work = await sanityClient.fetch(query, { pageSlug })
+    const book = await sanityClient.fetch(query, { pageSlug })
   
-    if (!work) {
+    if (!book) {
       return {
         props: null,
         notFound: true,
@@ -380,18 +263,11 @@ export const getServerSideProps = async (pageContext) => {
     } else {
       return {
         props: {
-          thumbImage: work.thumbImage,
-          mainImage: work.mainImage,
-          caption: work.caption,
-          room: work.room,
-          year: work.year,
-          medium: work.medium,
-          dimensions: work.dimensions,
-          editionDetails: work.editionDetails,
-          alt: work.alt,
-          relatedworks: work.relatedworks,
-          previouswork: work.previouswork,  
-          nextwork: work.nextwork   },
+          thumbImage: book.thumbImage,
+          mainImage: book.mainImage,
+          aboutbook: book.aboutbook,
+          previouswork: book.previouswork,  
+          nextwork: book.nextwork },
       }
     }
 
@@ -399,6 +275,6 @@ export const getServerSideProps = async (pageContext) => {
 
   
 
-export default Work
+export default Book
 
 

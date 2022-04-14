@@ -345,7 +345,7 @@ const Work = ({
       })()}
 
 
-
+      
       
       </div>
     </>
@@ -353,7 +353,7 @@ const Work = ({
       <div className="singlecontainer mobile">
       <div className="workcontainer">
       {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-         <div> <div style={{ position: 'relative',  width: '88vw', height: '100%' }}>
+         <div key={_id}> <div style={{ position: 'relative',  width: '88vw', height: '100%' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
@@ -370,7 +370,44 @@ const Work = ({
 </div>
 
     </>
+
+    <div class="bookcontainer desktop">
+    <div className="bookdetail">
+    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} : </div>  }  
+
+
+    {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+
+          <div className="bookdetail">
+    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} : </div>  }  
+
+
+    {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+
+          {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
+          </div>
     
+    <div class="bookcontainer mobile">
     <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} </div>  }  
 
@@ -387,16 +424,27 @@ const Work = ({
           </div> ) )}
           </div> 
 
+          <div className="bookdetail">
+    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} </div>  }  
+
+
+    {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '240px', width: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+
           {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
+          </div>
 
 
-{relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
-    <div key={_id}>
-      <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
-        blurDataURL={rgbDataURL(73, 71, 63)}/>
-       </Link>
-      </div> ) )}
+
 
     <Footer />
 
