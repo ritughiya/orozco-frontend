@@ -56,8 +56,9 @@ const rgbDataURL = (r, g, b) =>
       <Customhead />
        <Quicklogo />
             <Quickticker2 />
-            <Filtersdropdown />
-            <Reset />
+            <div className="desktop"><Filtersdropdown /><Reset /></div>
+            <div className="mobile"><Mobilefilters /></div>
+            
 
             <div className="archiveContainer">
        {properties.map(post => (

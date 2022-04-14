@@ -46,6 +46,7 @@ import 'react-modern-drawer/dist/index.css'
                   <ul>
                   <div className="menubordertop">&nbsp;&nbsp;</div>
                     <li className="pointer">Browse By: </li>
+                    <li  className="submenu" ><Link href="/archive/">All</Link></li>
                     <li  className="submenu" ><Link href="/archive/paintings">Paintings</Link></li>
                     <li className="submenu"><Link href="/archive/photography">Photography</Link></li>
                     <li className="submenu"><Link href="/archive/sculptures">Sculpture</Link></li>

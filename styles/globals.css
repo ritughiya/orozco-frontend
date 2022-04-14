@@ -2630,9 +2630,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       margin: 0;
       line-height: unset;
       position: fixed;
-      width: 96vw;
-      top: 50%;
-      left: 2vw;
+      width: 98vw;
+      top: 35%;
+      left: 1vw;
       justify-content:space-between;
     }
 
