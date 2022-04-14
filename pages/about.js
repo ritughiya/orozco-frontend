@@ -12,7 +12,7 @@
  import Static from 'next/image'
  import Clock from 'react-live-clock';
  import Quicklabel from '../components/Quicklabel'
- import Quicklogo2 from '../components/Quicklogo2'
+ import Quicklogo from '../components/Quicklogo'
  import Quickticker2 from '../components/Quickticker2'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
@@ -48,7 +48,7 @@ const rgbDataURL = (r, g, b) =>
    return (
      <div className=" wrapper fullhog fullhogv2 ">
       <Customhead />
-       <Quicklogo2 />
+       <Quicklogo />
             <Quickticker2 />
             {properties.map(post => (
               <div className="aboutshow fadepage" key={post._id}>

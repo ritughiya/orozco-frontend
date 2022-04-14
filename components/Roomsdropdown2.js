@@ -41,7 +41,7 @@ import ReactDOM from 'react-dom';
         return (
     // <div className="dropdowncontainer">
       <ReactHoverObserver
-        className="example"
+        className="desktop"
         hoverDelayInMs={300}
         hoverOffDelayInMs={1500}
       >
@@ -86,7 +86,7 @@ import ReactDOM from 'react-dom';
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Room Three </span></div></Link>
               </li>
-              <li><Link href="/room4">
+              <li><Link href="/spaceshiproom">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Spaceship Room</span></div></Link>
               </li>

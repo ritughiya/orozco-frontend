@@ -45,10 +45,6 @@ const Work = ({
   caption,
   room,
   year,
-  pagenumber1,
-  relatedbook1,
-  pagenumber2,
-  relatedbook2,
   medium,
   dimensions,
   editionDetails,
@@ -92,19 +88,15 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
-        <div>&nbsp; 
+      <div className="arrows">
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
-          </div>
-          <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
-          </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
@@ -118,19 +110,15 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
-        <div>&nbsp; 
+      <div className="arrows">
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
-          </div>
-          <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
-          </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
@@ -144,19 +132,15 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
-        <div>&nbsp; 
+      <div className="arrows">
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
-          </div>
-          <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
-          </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
@@ -171,24 +155,20 @@ const Work = ({
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
       <div className="arrows">
-        <div>&nbsp; 
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
-          </div>
-          <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
           <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
-          </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
        <>
-      <div className="singlecontainer desktop">
+      <div className="singlecontainer">
       {(() => {
         if (slideshowAmount > 1 ) {
           return (
@@ -216,7 +196,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '30rem', height: '31.5rem' }}>
+          <div style={{ position: 'relative', width: '35rem', height: '35rem' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -288,24 +268,21 @@ const Work = ({
               {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
-                  <div className="workcontainersub">
-                <div style={{ position: 'relative', width: '30rem', height: '100%' }}>
+                <div style={{ position: 'relative', width: '750px', height: '80vh' }}>
                   
-                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
+                <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
+            "fill"
+          objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-            </div>
                           <div className="info">
                       {caption}, {year}<br></br>
                       {medium}<br></br>
                       {dimensions}<br></br>
                       {editionDetails}
                     </div>
-                    
                     </div>
               </SwiperSlide> ))}
             </Swiper>
-
-           
       
             <div className="thumbs none">
               
@@ -329,13 +306,10 @@ const Work = ({
               </SwiperSlide> ))}
             </Swiper>
             </div>
-
-           
                   
       
                   
             </>
-      
       
             
             
@@ -344,59 +318,32 @@ const Work = ({
         }
       })()}
 
+      {/* <If condition={slideshowAmount > 1}>
+      <div className="thumbs">
+        
+        
+      <Swiper
+        onSwiper={setThumbsSwiper}  
+        slidesPerView={3}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+        height={120}
+        spaceBetween={5}
 
-
-      
+      >
+        {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <SwiperSlide key={_id}>
+          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>
+              
+        </SwiperSlide> ))}
+      </Swiper>
+      </div>
+      </If> */}
       </div>
     </>
-    <>
-      <div className="singlecontainer mobile">
-      <div className="workcontainer">
-      {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-         <div> <div style={{ position: 'relative',  width: '88vw', height: '100%' }}>
-            
-          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-                    <div className="info">
-                {caption}, {year}<br></br>
-                {medium}<br></br>
-                {dimensions}<br></br>
-                {editionDetails}
-              </div>
-              </div>
-        ))}
-
-</div>
-</div>
-
-    </>
-    
-    <div className="bookdetail">
-    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} </div>  }  
-
-
-    {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
-        <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
-          
-            <div className="bookimage pointer" style={{height: '240px', width: '190px', position: 'relative'}}>
-      <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
-           </Link>
-          </div> ) )}
-          </div> 
-
-          {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
-
-
-{relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
-    <div key={_id}>
-      <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
-        blurDataURL={rgbDataURL(73, 71, 63)}/>
-       </Link>
-      </div> ) )}
 
     <Footer />
 
@@ -412,8 +359,6 @@ export const getServerSideProps = async (pageContext) => {
       mainImage,
       caption,
       year,
-      pagenumber1,
-      pagenumber2,
       room,
       medium,
       dimensions,
@@ -421,9 +366,7 @@ export const getServerSideProps = async (pageContext) => {
       alt,
       relatedworks[]->,
       previouswork[]->,
-      nextwork[]->,
-      relatedbook1[]->,
-      relatedbook2[]->
+      nextwork[]->
     }`
 
   
@@ -442,10 +385,6 @@ export const getServerSideProps = async (pageContext) => {
           caption: work.caption,
           room: work.room,
           year: work.year,
-          pagenumber1: work.pagenumber1,
-          relatedbook1: work.relatedbook1,
-          pagenumber2: work.pagenumber2,
-          relatedbook2: work.relatedbook2,
           medium: work.medium,
           dimensions: work.dimensions,
           editionDetails: work.editionDetails,

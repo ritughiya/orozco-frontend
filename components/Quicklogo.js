@@ -60,14 +60,19 @@ const Logolabels   = ({ isHovering = false }) => {
 return (
 <div className={isHovering ? "reveal" : ""}>
   
-  <div className="logo-label1">
-<Link href="/about">
-    About
+<div className="logo-label1">
+<Link href="/bookshelf">
+    Bookshelf
 </Link>
 </div>
 <div className="logo-label2">
 <Link href="/archive">
     Index
+</Link>
+</div>
+<div className="logo-label3">
+<Link href="/about">
+    About
 </Link>
 </div>
   

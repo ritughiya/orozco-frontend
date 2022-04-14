@@ -16,6 +16,8 @@
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
 import Filtersdropdown from '../components/Filtersdropdown'
+import Mobilefilters from '../components/Mobilefilters'
+
 import Reset from '../components/Reset'
 
  
@@ -55,8 +57,9 @@ const rgbDataURL = (r, g, b) =>
       <Customhead />
        <Quicklogo />
             <Quickticker2 />
-            <Filtersdropdown />
-            {/* <Reset /> */}
+            <div className="desktop"><Filtersdropdown /></div>
+            <div className="mobile"><Mobilefilters /></div>
+     
 
             
        {properties.map(post => (
