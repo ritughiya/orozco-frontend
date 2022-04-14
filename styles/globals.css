@@ -2615,9 +2615,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
     /* WORK PAGE */
 
-    .singlecontainer.mobile{
-      padding:30px 0 0 0;
-    }
+    .singlecontainer.mobile {
+      padding: 20px 0 0 0;
+  }
 
     .singlecontainer.mobile .workcontainer{
       margin-bottom:15px;
@@ -2659,13 +2659,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       /* margin: 0 auto; */
     }
 
-    /* .workposition{
-      max-width:90vw;
+    .workposition{
       margin:auto;
     }
-   */
+  
     .workcontainer .info {
-      padding: 15px 6vw 40px 6vw;
+      padding: 15px 6vw 30px 6vw;
             }
   
     .mySwiper2{
