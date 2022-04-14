@@ -2130,6 +2130,10 @@ letter-spacing: 0.2em;
 
 /* Swiper */
 
+.fullitem{
+  min-height:100vh;
+}
+
 .itemContainer{
   background-color: rgb(11 7 7) !important;
   width:100vw;

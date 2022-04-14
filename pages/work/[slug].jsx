@@ -187,6 +187,7 @@ const Work = ({
       </div>
       </div>
       </If>
+      <div className="fullitem">
        <>
       <div className="singlecontainer desktop">
       {(() => {
@@ -216,7 +217,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           <div className="workcontainer">
-          <div style={{ position: 'relative', width: '30rem', height: '31.5rem' }}>
+          <div style={{ position: 'relative', width: '32rem', height: '31.5rem' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
       "fill"
@@ -289,7 +290,7 @@ const Work = ({
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div className="workcontainersub">
-                <div style={{ position: 'relative', width: '30rem', height: '100%' }}>
+                <div style={{ position: 'relative', width: '32rem', height: '100%' }}>
                   
                 <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/></div>
@@ -443,7 +444,7 @@ const Work = ({
           {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
           </div>
 
-
+          </div>
 
 
     <Footer />
