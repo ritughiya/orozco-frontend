@@ -371,7 +371,7 @@ const Work = ({
 
     </>
 
-    <div class="bookcontainer desktop">
+    <div className="bookcontainer desktop">
     <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} : </div>  }  
 
@@ -407,7 +407,7 @@ const Work = ({
           {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
           </div>
     
-    <div class="bookcontainer mobile">
+    <div className="bookcontainer mobile">
     <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} </div>  }  
 
