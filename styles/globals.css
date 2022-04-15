@@ -3126,13 +3126,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     height: 7.5rem;
   }
 
-  .singlecontainer2 .workcontainer{
-    /* position:unset;
-    top:0%;
-    transform:translate(0,0); */
-    margin-top: 0;
-  }
-
+  
   .fullitem{
     min-height:90vh;
   }
