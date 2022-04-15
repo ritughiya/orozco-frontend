@@ -1,4 +1,6 @@
 import {urlFor, sanityClient} from "../../sanity"
+import PortableText from '@sanity/block-content-to-react'
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
@@ -35,7 +37,15 @@ const rgbDataURL = (r, g, b) =>
     triplet(0, r, g) + triplet(b, 255, 255)
   }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
-  
+  const serializers = {
+    types: {
+      code: (props) => (
+        <pre data-language={props.node.language}>
+          <code>{props.node.code}</code>
+        </pre>
+      ),
+    },
+  }
 
 
 
@@ -45,20 +55,24 @@ const Book = ({
   aboutbook,
   slug,
   previouswork,
-  nextwork
+  nextwork,
+relatedworks,
+worksreferenced
 }) => {
 
   
-
-  // const slideshowAmount = relatedworks.length;
+  const slideshowAmount = (() => {
+    if (relatedworks)
+    return relatedworks.length;
+   else 
+    return 1;
+  })();
 
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  //   const autoRefresh() {
-  //     window.location = window.location.href;
-  // }
-  // setInterval('autoRefresh()', 2000);
+
+
 
   return (
     
@@ -92,9 +106,11 @@ const Book = ({
           </div>
         {/* <Link href="#"> &#62; </Link> */}
       </div>
-      </div>   
+      </div>  
+      <div className="fullitem">
+       <>
 
-      {/* <div className="singlecontainer desktop">
+      <div className="singlecontainer desktop">
       {(() => {
         if (slideshowAmount > 1 ) {
           return (
@@ -128,15 +144,15 @@ const Book = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-                    <div className="info">
-                {caption}, {year}<br></br>
-                {medium}<br></br>
-                {dimensions}<br></br>
-                {editionDetails}
-              </div>
+                    
               </div>
         </SwiperSlide> ))}
       </Swiper>
+      <div className="info">
+            <PortableText 
+            blocks = {aboutbook}
+          />
+                    </div>
 
       
             
@@ -179,17 +195,15 @@ const Book = ({
                 <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/></div>
             </div>
-                          <div className="info">
-                      {caption}, {year}<br></br>
-                      {medium}<br></br>
-                      {dimensions}<br></br>
-                      {editionDetails}
-                    </div>
-                    
+                      
                     </div>
               </SwiperSlide> ))}
             </Swiper>
-
+            <div className="info">
+            <PortableText 
+            blocks = {aboutbook}
+          />
+                    </div>
            
       
             <div className="thumbs none">
@@ -232,8 +246,150 @@ const Book = ({
 
       
       
-      </div> */}
+      </div>
      
+      </>
+    <>
+
+
+<div className="arrows mobile">
+        <div>&#8203;
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          </div>
+          <div>
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+          </div>
+        {/* <Link href="#"> &#62; </Link> */}
+      </div>
+      
+      {(() => {
+        if (slideshowAmount > 1 ) {
+          return (
+            <>
+<div className="singlecontainer mobile">
+
+
+<div className="workcontainer">
+{relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '60vh' }}>
+            
+          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+                    
+              </div>
+
+        ))}    
+         <div className="info">
+            <PortableText 
+            blocks = {aboutbook}
+          />
+                    </div>          
+         </div>
+        
+        </div>
+      
+            
+      </>
+
+
+          )
+        
+        } else {
+          return (
+            <>
+
+            
+            <div className="singlecontainer2 mobile">
+
+              
+
+<div className="workcontainer">
+            {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
+            
+          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/></div>
+                  
+              </div>
+                           
+        ))}
+         <div className="info">
+            <PortableText 
+            blocks = {aboutbook}
+          />
+                    </div>
+            </div>
+           
+                            </div>
+                  
+      
+                  
+            </>
+      
+      
+            
+            
+
+          )
+        }
+      })()}
+      
+
+
+
+    </>
+
+     <div className="bookcontainer desktop">
+    <div className="bookdetail">
+    {worksreferenced && <div className="bookinfo">Works Referenced : </div>  }
+
+    <div className="worksreferenced">
+
+    {worksreferenced && worksreferenced.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '120px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+          </div>
+
+        
+          </div>
+    
+   <div className="bookcontainer mobile">
+    <div className="bookdetail">
+    {worksreferenced && <div className="bookinfo">Works Referenced : </div>  }
+
+      <div className="worksreferenced">
+    {worksreferenced && worksreferenced.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '120px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div>
+          </div> 
+
+        
+          </div> 
+
+          </div>
+
 
     <Footer />
 
@@ -249,7 +405,9 @@ export const getServerSideProps = async (pageContext) => {
       mainImage,
       aboutbook,
       previouswork[]->,
-      nextwork[]->
+      nextwork[]->,
+      relatedworks[]->,
+      worksreferenced[]->
     }`
 
   
@@ -267,7 +425,10 @@ export const getServerSideProps = async (pageContext) => {
           mainImage: book.mainImage,
           aboutbook: book.aboutbook,
           previouswork: book.previouswork,  
-          nextwork: book.nextwork },
+          nextwork: book.nextwork,
+          relatedworks: book.relatedworks,
+          worksreferenced: book.worksreferenced
+         },
       }
     }
 

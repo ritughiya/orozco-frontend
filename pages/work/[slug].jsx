@@ -66,15 +66,9 @@ const Work = ({
     return 1;
   })();
 
-  // const slideshowAmount = relatedworks.length;
-
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  //   const autoRefresh() {
-  //     window.location = window.location.href;
-  // }
-  // setInterval('autoRefresh()', 2000);
 
   return (
     
@@ -382,7 +376,7 @@ const Work = ({
 {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '60vh' }}>
             
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;"  src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
                     <div className="info">
                 {caption}, {year}<br></br>
@@ -415,7 +409,7 @@ const Work = ({
             {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
-          <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;"  src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+          <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
                     <div className="info">
                 {caption}, {year}<br></br>
@@ -479,12 +473,11 @@ const Work = ({
           </div> ) )}
           </div> 
 
-          {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
           </div>
     
     <div className="bookcontainer mobile">
     <div className="bookdetail">
-    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} </div>  }  
+    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} : </div>  }  
 
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
@@ -493,14 +486,15 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;"   src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
            </Link>
           </div> ) )}
           </div> 
 
+
           <div className="bookdetail">
-    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} </div>  }  
+    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} : </div>  }  
 
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
@@ -509,13 +503,12 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '190px', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;"   src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
            </Link>
           </div> ) )}
           </div> 
 
-          {pagenumber2 &&     <div className="bookdetail">Referenced on page {pagenumber2}</div>    }  
           </div>
 
           </div>
