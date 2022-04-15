@@ -2623,6 +2623,13 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     padding: 15px 0 0 0;
   }
 
+  .singlecontainer2 .workcontainer{
+    position:absolute;
+    top:50%;
+    transform:translate(0,-50%);
+    margin-top: 45px;
+  }
+
     .singlecontainer.mobile .workcontainer{
       margin-bottom:15px;
     }
@@ -2646,7 +2653,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       line-height: unset;
       position: fixed;
       width: 98vw;
-      top: 35%;
+      top: 50%;
       left: 1vw;
       justify-content:space-between;
     }
