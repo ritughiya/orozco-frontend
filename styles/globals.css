@@ -2616,12 +2616,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     /* WORK PAGE */
 
     .singlecontainer.mobile {
-      padding: 20px 0 0 0;
+      padding: 15px 0 0 0;
   }
 
   .singlecontainer2.mobile {
-    padding: 8% 0;
-}
+    padding: 15px 0 0 0;
+  }
 
     .singlecontainer.mobile .workcontainer{
       margin-bottom:15px;
@@ -2645,9 +2645,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       margin: 0;
       line-height: unset;
       position: fixed;
-      width: 94vw;
+      width: 98vw;
       top: 35%;
-      left: 3svw;
+      left: 1vw;
       justify-content:space-between;
     }
 
@@ -2668,7 +2668,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     }
   
     .workcontainer .info {
-      padding: 15px 6vw 30px 6vw;
+      padding: 10px 6vw 30px 6vw;
             }
   
     .mySwiper2{
