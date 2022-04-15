@@ -274,16 +274,14 @@ body {
   transform:translate(-50%, -50%);
 }
 
-.v3 iframe.primaryView{
+/* .v3 iframe.primaryView{
   height: 32vw !important;
 
 }
 
 .v2 iframe.secondaryView,
 .v3 iframe.secondaryView{
-  /* opacity:0; */
-  z-index:9;
-}
+} */
 
 @keyframes appear {
   from {
@@ -2650,6 +2648,27 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     display:block;
   }
 
+  .v1 .camTopleft{
+    bottom:0;
+  }
+
+  .v3 .camTopleft{
+    top:0;
+
+  }
+
+    
+  .embed-container{
+    height: 80vh;
+  }
+  
+  .embed-container iframe{
+    width: 300vw;
+    left: 50%;
+    top:0;
+    transform: translate(-50%, 0);
+  }
+
   .arrows.mobile{
     display:flex !important;
     color: #FFFDF3;
@@ -2670,58 +2689,6 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   display:none;
 }
 
-.mainContainer{
-  height:unset;
-}
-
-.container{
-  width:100%;
-  height:33.3vh;
-
-}
-
-.v3, .link3{
-  display:none;
-}
-
-.linkWrapper{
-  top:40px;
-}
-
-.link1, .link2, .link3, .link4,
-.link1 a, .link2 a, .link3 a, .link4 a{
-  width:100vw;
-  height:33vh;
-}
-
-.link1:hover, .link2:hover, .link3:hover, .link4:hover {
-  width: 99.5vw;
-  height: 32.5vh;
-}
-
-.v1 iframe.primaryView,
-.v1 iframe.secondaryView,
-.v2 iframe.primaryView,
-.v3 iframe.primaryView,
-.v4 iframe.primaryView,
-.v4 iframe.secondaryView,
-.v2 iframe.secondaryView,
-.v3 iframe.secondaryView,
-.responsive-iframe
-{
-  transform:translate(-50%, -50%)scale(1.4);
-}
-
-
-.embed-container{
-  height: 80vh;
-}
-
-.embed-container iframe{
-  width: 300vw;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
 
 .rowof4 {
   grid-template-columns: repeat(7, 1fr);
@@ -2747,6 +2714,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     width: 100vw;
   background-color: rgb(11,7,7);
   margin:0;position: sticky;
+}
+
+.linkWrapper{
+  top:40px;
 }
 
 .RoomLabel{
@@ -2906,7 +2877,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   }
 
   .tickerquick2 button.open{
-    height:16px;
+    height:17px;
   }
 
   .bar-one,
@@ -2981,6 +2952,59 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   
 }
 
+/* @media only screen and (max-width:1000px){
+
+
+.v1 iframe.primaryView,
+.v1 iframe.secondaryView,
+.v2 iframe.primaryView,
+.v3 iframe.primaryView,
+.v4 iframe.primaryView,
+.v4 iframe.secondaryView,
+.v2 iframe.secondaryView,
+.v3 iframe.secondaryView,
+.responsive-iframe
+{
+  transform:translate(-50%, -50%)scale(1.5);
+}
+} */
+
+/* @media screen and (max-width: 1000px), 
+       screen and (min-height: 700px) {
+
+        .v1 iframe.primaryView,
+        .v1 iframe.secondaryView,
+        .v2 iframe.primaryView,
+        .v3 iframe.primaryView,
+        .v4 iframe.primaryView,
+        .v4 iframe.secondaryView,
+        .v2 iframe.secondaryView,
+        .v3 iframe.secondaryView,
+        .responsive-iframe
+        {
+          transform:translate(-50%, -50%)scale(1.6);
+        }
+
+}
+
+@media screen and (max-width: 1000px), 
+       screen and (min-height: 500px) {
+
+        .v1 iframe.primaryView,
+        .v1 iframe.secondaryView,
+        .v2 iframe.primaryView,
+        .v3 iframe.primaryView,
+        .v4 iframe.primaryView,
+        .v4 iframe.secondaryView,
+        .v2 iframe.secondaryView,
+        .v3 iframe.secondaryView,
+        .responsive-iframe
+        {
+          transform:translate(-50%, -50%)scale(2);
+        }
+
+} */
+
 
 
 /* Row of 4 Breakpoints */
@@ -2988,7 +3012,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 @media only screen and (max-width:800px){
 
 
-  .v1 iframe.primaryView,
+  /* .v1 iframe.primaryView,
   .v1 iframe.secondaryView,
   .v2 iframe.primaryView,
   .v3 iframe.primaryView,
@@ -2999,7 +3023,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   .responsive-iframe
   {
     transform:translate(-50%, -50%)scale(1.15);
-  }
+  } */
 
   .rowof4 {
     grid-template-columns: repeat(8, 1fr);
@@ -3012,7 +3036,60 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 }
 
+/* @media screen and (max-width: 800px) {
 
+        .v1 iframe.primaryView,
+  .v1 iframe.secondaryView,
+  .v2 iframe.primaryView,
+  .v3 iframe.primaryView,
+  .v4 iframe.primaryView,
+  .v4 iframe.secondaryView,
+  .v2 iframe.secondaryView,
+  .v3 iframe.secondaryView,
+  .responsive-iframe
+  {
+    transform:translate(-50%, -50%)scale(1.15);
+  }
+}
+
+
+
+
+@media screen and (max-width: 800px), 
+       screen and (max-height: 700px) {
+
+        .v1 iframe.primaryView,
+        .v1 iframe.secondaryView,
+        .v2 iframe.primaryView,
+        .v3 iframe.primaryView,
+        .v4 iframe.primaryView,
+        .v4 iframe.secondaryView,
+        .v2 iframe.secondaryView,
+        .v3 iframe.secondaryView,
+        .responsive-iframe
+        {
+          transform:translate(-50%, -50%)scale(1.15);
+        }
+
+}
+
+@media screen and (max-width: 800px), 
+       screen and (max-height: 500px) {
+
+        .v1 iframe.primaryView,
+        .v1 iframe.secondaryView,
+        .v2 iframe.primaryView,
+        .v3 iframe.primaryView,
+        .v4 iframe.primaryView,
+        .v4 iframe.secondaryView,
+        .v2 iframe.secondaryView,
+        .v3 iframe.secondaryView,
+        .responsive-iframe
+        {
+          transform:translate(-50%, -50%)scale(1.15);
+        }
+
+} */
 
 
 
@@ -3021,7 +3098,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 /* Row of 4 Breakpoints */
 
 @media only screen and (max-width:600px){
-
+/* 
   .v1 iframe.primaryView,
   .v1 iframe.secondaryView,
   .v2 iframe.primaryView,
@@ -3033,7 +3110,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   .responsive-iframe
   {
     transform:translate(-50%, -50%)scale(1);
-  }
+  } */
 
   .rowof4 {
     grid-template-columns: repeat(5, 1fr);
@@ -3045,18 +3122,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   }
 
   .singlecontainer2 .workcontainer{
-    position:unset;
+    /* position:unset;
     top:0%;
-    transform:translate(0,0);
+    transform:translate(0,0); */
     margin-top: 0;
   }
 
   .fullitem{
-    min-height:85vh;
+    min-height:90vh;
   }
 
   .workposition{
-    height:20rem !important;
+    height:22rem !important;
   }
 
   .arrows{

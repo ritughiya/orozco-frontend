@@ -57,7 +57,7 @@
                 open={isOpen}
                 onClose={toggleDrawer}
                 direction='top'
-                className='bla bla bla'
+                className='topnav'
                 overlayOpacity='0'
             >
                 <div>
