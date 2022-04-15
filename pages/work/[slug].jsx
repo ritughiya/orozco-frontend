@@ -92,7 +92,7 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
+       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
@@ -118,7 +118,7 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
+       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
@@ -144,7 +144,7 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-       <div className="arrows">
+       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
@@ -170,7 +170,7 @@ const Work = ({
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>
-      <div className="arrows">
+      <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
@@ -353,12 +353,30 @@ const Work = ({
       </div>
     </>
     <>
+
+
+<div className="arrows mobile">
+        <div>&#8203;
+      {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          </div> ) )}
+          </div>
+          <div>
+          {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
+        <div key={_id}>
+          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          </div> ) )}
+          </div>
+        {/* <Link href="#"> &#62; </Link> */}
+      </div>
       
       {(() => {
         if (slideshowAmount > 1 ) {
           return (
             <>
 <div className="singlecontainer mobile">
+
 
 <div className="workcontainer">
 {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -387,7 +405,11 @@ const Work = ({
         } else {
           return (
             <>
+
+            
             <div className="singlecontainer2 mobile">
+
+              
 
 <div className="workcontainer">
             {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (

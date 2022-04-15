@@ -2651,10 +2651,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       display: flex;
       margin: 0;
       line-height: unset;
-      position: fixed;
-      width: 98vw;
+      position: absolute;
+      width: 97vw;
       top: 50%;
-      left: 1vw;
+      left: 1.5vw;
       justify-content:space-between;
     }
 
@@ -2752,6 +2752,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
   .mobile{
     display:block;
+  }
+
+  .arrows.mobile{
+    display:flex !important;
+    color: #FFFDF3;
+    position:absolute;
+    z-index:100000;
+  }
+
+  .arrows.mobile a{
+    color: #FFFDF3;
+
   }
 
 .showLabel{
