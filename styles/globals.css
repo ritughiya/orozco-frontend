@@ -2709,7 +2709,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 .v3 iframe.secondaryView,
 .responsive-iframe
 {
-  min-height:80vh;
+  transform:translate(-50%, -50%)scale(1.4);
 }
 
 
@@ -2998,7 +2998,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   .v3 iframe.secondaryView,
   .responsive-iframe
   {
-    min-height:62vh;
+    transform:translate(-50%, -50%)scale(1.15);
   }
 
   .rowof4 {
@@ -3032,7 +3032,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   .v3 iframe.secondaryView,
   .responsive-iframe
   {
-    min-height:50vh;
+    transform:translate(-50%, -50%)scale(1);
   }
 
   .rowof4 {
