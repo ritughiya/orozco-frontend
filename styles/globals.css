@@ -2425,24 +2425,28 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .aboutshow .subhead{
   color: #fcfcf9;
-    font-size: 0.75em;
+    font-size: 0.7em;
     line-height: 1.9em;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1em;
     font-family: "abcSimon";
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     text-align:center;
 }
 
 .aboutshow .text{
   color: #fcfcf9;
-  font-size: 0.725em;
+  font-size: 0.7em;
   line-height: 1.9em;
   font-weight: 700;
   font-family: 'abcSimon';
   margin-bottom: 3em;
   
+}
+
+.about2 .text{
+  margin-bottom: 3em;
 }
 
 .map{
@@ -2614,6 +2618,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
   .mainFooter{
     display:block;
+    letter-spacing:0;
     /* padding: 5% 1.5% 3% 1.5%; */
   }
 
@@ -2728,7 +2733,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 
 .aboutshow {
-  margin: 80px 15px;
+  margin: 25px 15px;
 }
 
 
@@ -3138,6 +3143,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
   .arrows{
     top:35%;
+  }
+
+  .tickerquick2 button.open{
+    height:15px;
   }
 
 }
