@@ -2540,7 +2540,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     position:absolute;
     top:50%;
     transform:translate(0,-50%);
-    margin-top: 45px;
+    margin-top: 25px;
   }
 
     .singlecontainer.mobile .workcontainer{
