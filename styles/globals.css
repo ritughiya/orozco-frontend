@@ -378,20 +378,10 @@ body {
   animation: 0.25s 40s disappear ease-in forwards !important;
 }
 
-.v1 iframe.primaryView{
-/* width: 66vw; */
-}
+
 
 .v2 iframe.primaryView{
   width:100vw;
-}
-
-.v3 iframe.primaryView{
-  /* width: 55vw; */
-}
-
-.v4 iframe.primaryView{
-  /* width: 70vw; */
 }
 
 .linkWrapper{
@@ -2181,26 +2171,12 @@ cursor: e-resize;
   .mySwiper2 .swiper-button-prev::after {
     content: "";
   }
-/* 
-  .mySwiper2 .swiper-button-next {
-    background-image: url(/NEXT.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    top: 40% !important;
-  } */
+
 
   .swiper-button-next::after {
     display: none;
   }
-/* 
-  .mySwiper2 .swiper-button-prev {
-    background-image: url(/PREV.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    top: 40% !important;
-  } */
+
 
   .swiper-button-disabled{
     background-image:none;
@@ -2210,14 +2186,7 @@ cursor: e-resize;
     display: none;
   }
 
-  /* .mySwiper2 .swiper-button-prev{
-    left: 0px !important;
-  }
-
-  .mySwiper2 .swiper-button-next{
-    right: 0px !important;
-  } */
-
+ 
   .swiper.mySwiper2{
     padding: 10px 0 0 0;
   }
@@ -2312,28 +2281,6 @@ cursor: e-resize;
   /* height:100vh; */
   cursor: grab;
 }
-
-/* .mySwiper3 .swiper-button-next{
-  background-image: url(/wide-next.svg);
-  right:80px;
-  top: 25% !important;
-  filter: drop-shadow(-12px 0px 4px rgb(0 0 0 / 65%));
-  transform: skew(340deg, 12deg)rotate(354deg);
-  opacity:0;
-  width:50vw;
-  height:100vh;
-}
-
-.mySwiper3 .swiper-button-next:hover{
-  opacity:100%;}
-
-.mySwiper3 .swiper-button-prev{
-  background-image: url(/wide-prev.svg);
-  left:80px;
-  top: 75% !important;
-  filter: drop-shadow(-12px 0px 4px rgb(0 0 0 / 65%));
-  transform: skew(340deg, 12deg)rotate(354deg);
-} */
 
 .mySwiper3 .swiper-button-next {
   position: absolute;
@@ -2531,38 +2478,6 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 }
 
-/* @media only screen and (min-width:1318px){
-
-  .RoomLabel{
-    position:fixed;
-    transition: all 0.25s linear;
-  }
-
-  div.dropdowncontainer{
-    position:fixed;
-    transition: all 0.25s linear;
-
-  }
-
-  ul.dropdown{
-    position:fixed;
-    transition: all 0.25s linear;
-
-  }
-
-.false ul.dropdown,
-.false.dropdowncontainer,
-.false.RoomLabel{
-  position:absolute !important;
-}
-
-
-
-} */
-
-
-
-
 @media (min-aspect-ratio: 177/100){
 
   .RoomLabel{
@@ -2716,28 +2631,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     text-align:left;
     margin-top:20px;
   }
-  
-  
-
-
-/* Row of 4 Breakpoints */
-
-@media only screen and (max-width:800px){
-
-  .rowof4 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-
-  .rowof8 div{
-    width: 25vw;
-    height: 10rem;
-  }
-
 }
+  
 
-
-
-}
 /* Media Query - Smaller Devices */
 
 @media only screen and (max-width:1000px){
@@ -2801,6 +2697,19 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 .link1:hover, .link2:hover, .link3:hover, .link4:hover {
   width: 99.5vw;
   height: 32.5vh;
+}
+
+.v1 iframe.primaryView,
+.v1 iframe.secondaryView,
+.v2 iframe.primaryView,
+.v3 iframe.primaryView,
+.v4 iframe.primaryView,
+.v4 iframe.secondaryView,
+.v2 iframe.secondaryView,
+.v3 iframe.secondaryView,
+.responsive-iframe
+{
+  min-height:80vh;
 }
 
 
@@ -3073,9 +2982,58 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 
+
+/* Row of 4 Breakpoints */
+
+@media only screen and (max-width:800px){
+
+
+  .v1 iframe.primaryView,
+  .v1 iframe.secondaryView,
+  .v2 iframe.primaryView,
+  .v3 iframe.primaryView,
+  .v4 iframe.primaryView,
+  .v4 iframe.secondaryView,
+  .v2 iframe.secondaryView,
+  .v3 iframe.secondaryView,
+  .responsive-iframe
+  {
+    min-height:62vh;
+  }
+
+  .rowof4 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .rowof8 div{
+    width: 25vw;
+    height: 10rem;
+  }
+
+}
+
+
+
+
+
+
+
 /* Row of 4 Breakpoints */
 
 @media only screen and (max-width:600px){
+
+  .v1 iframe.primaryView,
+  .v1 iframe.secondaryView,
+  .v2 iframe.primaryView,
+  .v3 iframe.primaryView,
+  .v4 iframe.primaryView,
+  .v4 iframe.secondaryView,
+  .v2 iframe.secondaryView,
+  .v3 iframe.secondaryView,
+  .responsive-iframe
+  {
+    min-height:50vh;
+  }
 
   .rowof4 {
     grid-template-columns: repeat(5, 1fr);
