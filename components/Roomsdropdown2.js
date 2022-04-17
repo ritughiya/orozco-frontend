@@ -16,8 +16,9 @@ import { sanityClient, urlFor} from '../sanity'
  import Room3thumbnail from "../public/room3.png"
  import Room4thumbnail from "../public/room4.png"
 
- import ReactHoverObserver from 'react-hover-observer';
 
+ import ReactHoverObserver from 'react-hover-observer';
+// 
 import ReactDOM from 'react-dom';
 
 // import default style
@@ -54,6 +55,9 @@ import ReactDOM from 'react-dom';
   }
 
   const DropdownContainer = ({ isHovering = false }) => {
+
+
+     
     const [show, setShow] = useState(true)
     const controlNavbar = () => {
         if (window.scrollY > 60) {

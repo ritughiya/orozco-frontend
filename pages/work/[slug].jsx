@@ -374,7 +374,7 @@ const Work = ({
 
 <div className="workcontainer">
 {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
-         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '60vh' }}>
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
           <Image className="placeholder" draggable="false" onDragStart="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div>

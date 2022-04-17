@@ -758,11 +758,10 @@ ul.dropdown{
   background-color: #FFFDF3 !important;
   color: rgb(11 7 7);
   /* border: 1px solid #FFFDF3; */
-  display: none;
+  opacity:0;
   z-index: 999;
   padding: 0;
   width: 14em;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   font-weight: 900;
   font-family: Messinasans;
@@ -773,27 +772,12 @@ ul.dropdown{
 }
 
 .reveal ul.dropdown{
-  display:block;
+  opacity:100%;
 }
 
 li{
   display: unset;
 }
-    
-/* ul li{
-  width: 14em;
-  display: inline;
-  position: relative;
-  line-height: 21px;
-  text-align: left;
-  transition: 20s all ease;
-
-}
-ul li a{
-  display: block;
-  /* padding: 8px 25px; */
-  /* text-decoration: none;
-}  */
 
 .roomslist{
   border: 1px solid #FFFDF3;
@@ -830,13 +814,20 @@ ul li a{
 
 ul.filtersdropdown{
   
-  /* box-shadow: none; */
-  
   display: none;
+  opacity:100%;
   position: absolute;
   z-index: 999;
   left: 10px;
     bottom: 3em;
+  
+}
+
+.reveal ul.filtersdropdown {
+  
+  
+  display: block;
+  
   
 }
 
