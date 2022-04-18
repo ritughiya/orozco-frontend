@@ -10,6 +10,7 @@
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainer1 from "../components/Quickcontainer1"
+ import Quickcontainer1mobile from "../components/Quickcontainer1mobile"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
  import Quicklogo from '../components/Quicklogo'
@@ -61,7 +62,12 @@ const rgbDataURL = (r, g, b) =>
                <div className="flexgrow">
             <Quicklogo />
             <Quickticker2 />
-            <Quickcontainer1 />
+            <div className="desktop">
+            <Quickcontainer1 /></div>
+
+            <div className="mobile">
+            <Quickcontainer1mobile />
+            </div>
             
            
 

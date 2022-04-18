@@ -2691,11 +2691,14 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
     
   .embed-container{
-    height: 80vh;
+    height: 50vh;
+    width:100vw;
+    overflow:scroll;
+    touch-action:pinch-zoom;
   }
   
   .embed-container iframe{
-    width: 300vw;
+    width: 200vw;
     left: 50%;
     top:0;
     transform: translate(-50%, 0);
