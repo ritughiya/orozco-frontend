@@ -2430,6 +2430,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 /* About Page */
 
+.Aboutpage{
+  overflow-x: hidden;
+}
+
 .aboutshow{
   margin: 6.5em 10em;
 }
@@ -2549,7 +2553,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
   .singlecontainer2.mobile {
     padding: 15px 0 0 0;
-    padding-bottom: 125%;
+    padding-bottom: 140%;
 
   }
 
