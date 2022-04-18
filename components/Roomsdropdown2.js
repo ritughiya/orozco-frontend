@@ -15,6 +15,8 @@ import { sanityClient, urlFor} from '../sanity'
  import Room2thumbnail from "../public/room2.png"
  import Room3thumbnail from "../public/room3.png"
  import Room4thumbnail from "../public/room4.png"
+ import Officesthumbnail from "../public/offices.png"
+
 
 
  import ReactHoverObserver from 'react-hover-observer';
@@ -96,7 +98,7 @@ import ReactDOM from 'react-dom';
               </li>
               <li><Link href="/offices">
                  <div className="roomrowlast pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Offices </span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Officesthumbnail} /> </div>Offices </span></div></Link>
               </li>
               {/* <li><Link href="/bookshelf">
                  <div className="roomrowlast pointer">

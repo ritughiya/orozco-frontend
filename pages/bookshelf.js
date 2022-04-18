@@ -64,6 +64,21 @@ const rgbDataURL = (r, g, b) =>
             <Quickticker2 />
             
             <Quickcontainerbook />
+
+            <div id="selectedworks" className="rowof4">
+             {post.selectedworks && post.selectedworks.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (
+                     <div key={_id}>
+                          <Link href="/book/[slug]" as={`/book/${slug.current}`}>
+                            <div className="zoom-in held">
+                            {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/>  }  
+                          </div>
+                      </Link>
+                     </div>
+                 
+             ))
+             }
+             </div>
             
            
 
@@ -84,7 +99,7 @@ const rgbDataURL = (r, g, b) =>
   }
  
  export const getServerSideProps = async () => {
-   const query = `*[_type == "room1" ]{rowof4[]->, rowof8[]->} `
+   const query = `*[_type == "bookshelf" ]{selectedworks[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {

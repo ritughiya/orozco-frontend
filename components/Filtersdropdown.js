@@ -33,7 +33,7 @@ import ReactDOM from 'react-dom';
         hoverOffDelayInMs={1500}
       >
 
-          <div className="dropdowncontainer Filtersdrop">Filters <Caret/></div>
+          <div className="pointer dropdowncontainer Filtersdrop">Filters <Caret/></div>
         <DropdownContainer />
       </ReactHoverObserver>
     // </div>
