@@ -2559,7 +2559,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 @media only screen and (max-width:1000px){
 
-  .fullhogv2{
+  .Room1detail,
+  .Room2detail,
+  .Room3detail,
+  .Room4detail{
     overflow-x:hidden;
   }
 
