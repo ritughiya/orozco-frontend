@@ -122,10 +122,8 @@ worksreferenced
         }}
         slidesPerView= 'auto'
         speed={500}
-        watchOverflow={true}
-        centeredSlides={true}
         height={300}
-        loop={true}
+        loop={false}
         navigation={true}
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         thumbs={{ swiper: thumbsSwiper }}
@@ -348,7 +346,7 @@ worksreferenced
 
      <div className="bookcontainer desktop">
     <div className="bookdetail">
-    {worksreferenced && <div className="bookinfo">Works Referenced : </div>  }
+    {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>  }
 
     <div className="worksreferenced">
 
@@ -373,7 +371,7 @@ worksreferenced
     
    <div className="bookcontainer mobile">
     <div className="bookdetail">
-    {worksreferenced && <div className="bookinfo">Works Referenced : </div>  }
+    {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>  }
 
       <div className="worksreferenced">
     {worksreferenced && worksreferenced.map(({_id, slug = '', mainImage = ''}) => (

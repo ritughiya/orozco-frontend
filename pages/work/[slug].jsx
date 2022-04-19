@@ -444,7 +444,7 @@ const Work = ({
 
     <div className="bookcontainer desktop">
     <div className="bookdetail">
-    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} : </div>  }  
+    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1}: </div>  }  
 
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
@@ -460,7 +460,7 @@ const Work = ({
           </div> 
 
           <div className="bookdetail">
-    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} : </div>  }  
+    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2}: </div>  }  
 
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
@@ -479,7 +479,7 @@ const Work = ({
     
     <div className="bookcontainer mobile">
     <div className="bookdetail">
-    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1} : </div>  }  
+    {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1}: </div>  }  
 
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
@@ -496,7 +496,7 @@ const Work = ({
 
 
           <div className="bookdetail">
-    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2} : </div>  }  
+    {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2}: </div>  }  
 
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
