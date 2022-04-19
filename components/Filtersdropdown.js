@@ -65,10 +65,10 @@ import ReactDOM from 'react-dom';
                  <span className="roomflex">Sculpture</span></div></Link>
               </li>
               <li><Link href="/archive/worksonpaper">
-                 <div className="roomrow pointer">
+                 <div className="roomrowlast pointer">
                  <span className="roomflex">Works on Paper</span></div></Link>
               </li>
-              <li>
+              {/* <li>
                  <div className="roomrowfirst secondary">
                  <span className="roomflex">Sort:</span>
                  </div>
@@ -76,7 +76,7 @@ import ReactDOM from 'react-dom';
              <li><Link href="/paintings">
                  <div className="roomrowlast pointer">
                  <span className="roomflex">Chronologically</span></div></Link>
-              </li>
+              </li> */}
               
              </div>
          </ul>
