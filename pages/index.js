@@ -21,9 +21,14 @@
  import Quicklabel from '../components/Quicklabel.js'
  import Quicklogo from '../components/Quicklogo'
 import Homecontainer1 from "../components/Homecontainer1";
+import Homecontainer1mobile from "../components/Homecontainer1mobile";
 import Homecontainer2 from "../components/Homecontainer2";
+import Homecontainer2mobile from "../components/Homecontainer2mobile";
+
 import Homecontainer3 from "../components/Homecontainer3";
 import Homecontainer4 from "../components/Homecontainer4";
+import Homecontainer4mobile from "../components/Homecontainer4mobile";
+
 import Quicklinkwrapper from "../components/Quicklinkwrapper"
 import Overlay from "../components/Overlay"
 
@@ -95,6 +100,16 @@ const IndexPage = ({ properties }) => {
               <Homecontainer3 />
               <Homecontainer4 />
             </div>
+
+            {/* <div className="mainContainer mobile">
+              
+              <Homecontainer1mobile />
+              <Homecontainer2mobile />
+              <Homecontainer4mobile />
+
+
+
+            </div> */}
 
             {(() => {
         if (count > 1 ) {

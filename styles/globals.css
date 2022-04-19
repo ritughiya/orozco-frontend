@@ -2765,6 +2765,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     color: #FFFDF3;
     position:absolute;
     /* z-index:100000; */
+    z-index: 100;
   }
 
   .arrows.mobile a{
