@@ -69,6 +69,7 @@ const Work = ({
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+    
 
   return (
     
@@ -193,18 +194,16 @@ const Work = ({
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
+        
         slidesPerView= 'auto'
         speed={500}
-        watchOverflow={true}
-        centeredSlides={true}
-        height={300}
-        loop={true}
+                height={300}
+        loop={false}
         navigation={true}
         modules={[EffectFade, FreeMode, Navigation, Thumbs]}
         thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
         effect="fade"
-        initialSlide="1"
       pagination={{ clickable: true, dynamicBullets: true }}
       fadeEffect={{
         crossFade: true // enables slides to cross fade
@@ -213,6 +212,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
+                  <div>
                   <div className="workcontainersub">
                 <div style={{ position: 'relative', width: '80vh', height: '100%' }}>
                   
@@ -225,7 +225,7 @@ const Work = ({
                       {dimensions}<br></br>
                       {editionDetails}
                     </div>
-                    
+                    </div>
                     </div>
               </SwiperSlide> ))}
       </Swiper>
@@ -235,13 +235,13 @@ const Work = ({
         
       <Swiper
         onSwiper={setThumbsSwiper}  
-        slidesPerView="auto"
+        slidesPerView="3"
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
-        height={120}
-        spaceBetween={5}
+        height={60}
+        spaceBetween={2}
 
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -310,7 +310,8 @@ const Work = ({
               
             <Swiper
               onSwiper={setThumbsSwiper}  
-              slidesPerView= 'auto'
+                      slidesPerView= 'auto'
+
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
