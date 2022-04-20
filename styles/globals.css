@@ -20,6 +20,11 @@ body {
     /* overflow-y:hidden; */
 }
 
+p {
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
 .swiper-slide{
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0,0,0);
@@ -2245,6 +2250,34 @@ cursor: e-resize;
   justify-content: space-evenly;
 }
 
+.Bookpage .workcontainer{
+  height:unset;
+}
+
+.Bookpage .info .desc{
+  padding: 0 10em 0rem 10em;
+  text-align: left;
+  color: #fcfcf9;
+  font-size: 0.95em;
+  line-height: 1.9em;
+  font-weight: 500;
+  font-family: 'abcSimon';
+}
+
+.publishing{
+  font-size:0.8em;
+  line-height: 1.9em;
+
+}
+
+.Bookpage .fullitem{
+  padding-bottom: 2.5em;
+}
+
+.Bookpage .desktop .bookdetail{
+  padding: 2em 10em 15px 10em;
+}
+
 .workcontainer .info,
 .info{
   padding: 15px 0px 0px 0px;
@@ -2273,10 +2306,20 @@ cursor: e-resize;
 
 .worksreferenced{
 display: flex;
-flex-wrap: wrap;}
+flex-wrap: wrap;
+flex-direction:column;
+margin-right:10px;}
+
+.worksreferencedcontainer{
+  display:flex;
+}
 
 .worksreferenced .bookimage{
   margin-right:10px;
+}
+
+.excerptlink{
+  margin-top:10px;
 }
 
 /* Room 4 slideshow */
