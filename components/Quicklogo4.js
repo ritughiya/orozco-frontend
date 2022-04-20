@@ -47,13 +47,13 @@ import { sanityClient, urlFor} from '../sanity'
             <Link href="/archive">
             <path className="cls-2" d="M499,242.5V0a121.25,121.25,0,0,1,0,242.5Z" />
             </Link>
-            <Link href="/about">
+            <Link href="https://go-spacetime.netlify.app/">
             <path className="cls-1" d="M755.5,499H998a121.25,121.25,0,0,1-242.5,0Z" />
             </Link>
-            <Link href="/about">
+            <Link href="https://go-spacetime.netlify.app/">
             <path className="cls-3" d="M499,760.88v242.5a121.25,121.25,0,0,1,0-242.5Z" />
             </Link>
-            <Link href="/about">
+            <Link href="https://go-spacetime.netlify.app/">
             <path className="cls-1" d="M499,1003.38V760.88a121.25,121.25,0,1,1,0,242.5Z" />
             </Link>
             <Link href="/bookshelf">
@@ -89,8 +89,8 @@ return (
 </Link>
 </div>
 <div className="logo-label3">
-<Link href="/about">
-    About
+<Link href="https://go-spacetime.netlify.app/">
+    Rooms
 </Link>
 </div>
   

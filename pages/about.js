@@ -12,7 +12,7 @@
  import Static from 'next/image'
  import Clock from 'react-live-clock';
  import Quicklabel from '../components/Quicklabel'
- import Quicklogo from '../components/Quicklogo'
+ import Quicklogo from '../components/Quicklogo4'
  import Quickticker2 from '../components/Quickticker2'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"

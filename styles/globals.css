@@ -1742,6 +1742,11 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   transition: opacity 1s ease;
 }
 
+.Bookshelfdetail .logo-label1{
+  padding: 0 5em 0 0.5em;
+  left: -25%;
+}
+
 .logo-label1 a,
 .logo-label2 a{
   z-index:300;
