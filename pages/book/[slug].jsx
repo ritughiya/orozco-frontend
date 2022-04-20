@@ -408,7 +408,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
-              <div class="excerptlink">
+              <div className="excerptlink">
                 <Link href={`${excerptlink}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
                     Excerpt
@@ -432,7 +432,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
-                {excerptlink2 && <div class="excerptlink">
+                {excerptlink2 && <div className="excerptlink">
                 <Link href={`${excerptlink}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
                     Excerpt
