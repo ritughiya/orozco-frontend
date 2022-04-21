@@ -13,7 +13,7 @@
         <div className="footerDetails">
           <div className="column1">
           Gabriel Orozco, Spacetime<br></br>
-          Summer 2021 – Summer 2022
+          Summer 2021 – Summer 2023
           </div>
           <div className="column2">
           24 West 57th, Room 305, New York NY 10019<br></br>
