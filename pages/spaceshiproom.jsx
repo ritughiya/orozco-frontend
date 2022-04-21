@@ -14,7 +14,7 @@ import { useState, useEffect } from 'react';
  import Clock from 'react-live-clock';
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
- import { EffectFade, FreeMode, Navigation, Thumbs, EffectCube, Pagination } from 'swiper';
+ import { EffectFade, FreeMode, Navigation, Thumbs, EffectCube, Pagination, HashNavigation } from 'swiper';
  import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -23,6 +23,8 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
+import "swiper/css/hash-navigation";
+
 
 // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
 const keyStr =
@@ -79,35 +81,36 @@ const rgbDataURL = (r, g, b) =>
         height={300}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
-      modules={[EffectFade, FreeMode, Navigation, Thumbs]}
-      className="mySwiper3"
+        modules={[EffectFade, FreeMode, Navigation, HashNavigation, Thumbs]}
+        className="mySwiper3"
       effect="fade"
       // Disable preloading of all images
   preloadImages="false"
   // Enable lazy loading
   lazy={true}
       loop={true}
-      pagination={{ clickable: true, dynamicBullets: true }}
+      hashNavigation= {{watchState: true,     replaceState: true,      }}
+      pagination={{ clickable: true, el: '.swiper-pagination', }}
       fadeEffect={{
         crossFade: true // enables slides to cross fade
       }}
     >
-      <SwiperSlide id="wall1">
+      <SwiperSlide data-hash="wall1" id="wall1">
       <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
      </div>
       </SwiperSlide>
-      <SwiperSlide id="wall2">
+      <SwiperSlide data-hash="wall2" id="wall2">
       <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958162?h=2f2aadf50d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide data-hash="wall3"  id="wall3">
       <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958293?h=7aeff40d6d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide data-hash="wall4" id="wall4">
       <div className="embed-container swiper-lazy">
       <iframe loading="lazy" src="https://player.vimeo.com/video/688958259?h=c1b5770c19&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>   
       </div>
