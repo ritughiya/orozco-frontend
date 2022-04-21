@@ -141,7 +141,7 @@ const Book = ({
                       {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
                         <SwiperSlide key={_id}>
                           <div className="workcontainer">
-                            <div style={{ position: 'relative', width: '30rem', height: '31.5rem' }}>
+                          <div style={{ position: 'relative', width: '80vh', height: '100%' }}>
 
                               {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
                                 "fill"
@@ -191,7 +191,7 @@ const Book = ({
                         <SwiperSlide key={_id}>
                           <div className="workcontainer">
                             <div className="workcontainersub">
-                              <div style={{ position: 'relative', width: '30rem', height: '100%' }}>
+                            <div style={{ position: 'relative', width: '80vh', height: '100%' }}>
 
                                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
                                   blurDataURL={rgbDataURL(73, 71, 63)} />}
@@ -247,6 +247,10 @@ const Book = ({
                 {aboutbook && <PortableText
                   blocks={aboutbook}
                 />}</div>
+                <div className="publishing">
+            {aboutbook3 && <PortableText
+              blocks={aboutbook3}
+            />}</div>
               <div className="desc">
                 {aboutbook2 && <PortableText
                   blocks={aboutbook2}
@@ -308,6 +312,10 @@ const Book = ({
                         {aboutbook && <PortableText
                           blocks={aboutbook}
                         />}</div>
+                        <div className="publishing">
+            {aboutbook3 && <PortableText
+              blocks={aboutbook3}
+            />}</div>
                       <div className="desc">
                         {aboutbook2 && <PortableText
                           blocks={aboutbook2}
@@ -357,6 +365,10 @@ const Book = ({
                         {aboutbook && <PortableText
                           blocks={aboutbook}
                         />}</div>
+                         <div className="publishing">
+            {aboutbook3 && <PortableText
+              blocks={aboutbook3}
+            />}</div>
                       <div className="desc">
                         {aboutbook2 && <PortableText
                           blocks={aboutbook2}
@@ -471,13 +483,7 @@ const Book = ({
 
         </div>
 
-        <div className="info">
-
-          <div className="publishing">
-            {aboutbook3 && <PortableText
-              blocks={aboutbook3}
-            />}</div>
-        </div>
+        
 
       </div>
 
