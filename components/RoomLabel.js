@@ -31,7 +31,7 @@ const RoomLabel = () => {
     }, [])
     return (
       <div className={`RoomLabel ${show && 'nav__blue'}`}>
-      Selected Works <Caret/>
+      Selected Works
   </div>
     )
 }
