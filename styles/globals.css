@@ -2661,6 +2661,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin-top: 45px;
   }
 
+  .Bookpage .workcontainer{
+    position:unset;
+    transform:none;
+    margin-top:0;
+  }
+
     .singlecontainer.mobile .workcontainer{
       margin-bottom:15px;
     }
@@ -3338,10 +3344,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     min-height:90vh;
   }
 
-  .singlecontainer2 .workcontainer{
-   
+  .Workpage .singlecontainer2 .workcontainer{
+    top:40%;
     margin-top: 25px;
   }
+
+  
 
   .Workpage .singlecontainer2.mobile {
     padding: 15px 0 0 0;
