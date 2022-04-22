@@ -75,7 +75,7 @@ const Work = ({
 
   return (
     
-    <div className="itemContainer">
+    <div className="itemContainer Workpage">
       <Customhead />
       {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
       <Quicklogo />
@@ -556,12 +556,13 @@ const Work = ({
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
           <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+
+          {/* <div className="bookimage pointer" style={{ height: '7.5rem', width: '10rem', position: 'relative' }}> */}
           
-            <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
+          <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
-           </Link>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div></Link>
           </div> ) )}
           </div> 
 
@@ -609,7 +610,7 @@ const Work = ({
         <div key={_id}>
           <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
           
-            <div className="bookimage pointer" style={{height: '240px', width: '190px', position: 'relative'}}>
+            <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>

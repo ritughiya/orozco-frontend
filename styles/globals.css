@@ -2261,12 +2261,16 @@ cursor: e-resize;
 
 }
 
+.Bookpage .title{
+  margin-bottom:15px;
+}
+
 .Bookpage .workcontainer{
   min-height:unset;
 }
 
 .Bookpage .info .desc{
-  padding: 0 10em 0rem 10em;
+  /* padding: 0 10em 0rem 10em; */
   text-align: left;
   color: #fcfcf9;
   font-size: 0.95em;
@@ -2287,6 +2291,11 @@ cursor: e-resize;
 
 .Bookpage .desktop .bookdetail{
   padding: 2em 10em 15px 10em;
+}
+
+.Bookpage .info{
+    margin: 15px 10em 0rem 10em; 
+
 }
 
 .workcontainer .info,
@@ -2326,11 +2335,12 @@ margin-right:10px;}
 }
 
 .worksreferenced .bookimage{
-  margin-right:10px;
+  /* margin-right:10px; */
 }
 
 .excerptlink{
   margin-top:10px;
+  font-size:0.75em;
 }
 
 /* Room 4 slideshow */
@@ -2465,6 +2475,11 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 .mySwiper {
   width: 18em;
   height: 12em;
+}
+
+.bookcontainer.desktop{
+  display:flex;
+
 }
 
 .bookinfo{
@@ -2626,11 +2641,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       padding: 15px 0 0 0;
   }
 
-  .singlecontainer2.mobile {
+  .Workpage .singlecontainer2.mobile {
     padding: 15px 0 0 0;
-    padding-bottom: 140%;
+    padding-bottom: 80%;
 
   }
+
+  .Bookpage .info{
+    padding-top: 80%;
+
+  }
+
+
 
   .singlecontainer2 .workcontainer{
     position:absolute;
@@ -2753,6 +2775,8 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       text-align:center;
     }
 
+    
+
     .bookdetail:first-of-type{
       /* border-top: 1px solid #FFFDF3; */
     }
@@ -2761,6 +2785,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
       border-top:1px solid #FFFDF3;
       padding-bottom:20px;
       padding-top:15px;
+    }
+
+    .worksreferenced{
+      flex-direction: column;
+       margin-right: 0; 
+      align-content: space-around;
     }
 
 
@@ -2892,9 +2922,13 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 
 
-.aboutshow {
+.aboutshow,
+.Bookpage .info {
   margin: 25px 15px;
+  padding:0;
 }
+
+
 
 
   .tickerquick2{
@@ -3081,7 +3115,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
             .open .bar-three {
               transform: rotate(-45deg);
             }
-          
+            
+            .bookcontainer.desktop{
+              display:none;}
 
 
   /* Mobile Archive Page */
@@ -3198,6 +3234,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     height: 10rem;
   }
 
+  .Workpage .singlecontainer2.mobile {
+    padding: 15px 0 0 0;
+    padding-bottom: 110%;
+
+  }
+
+  .Bookpage .info{
+    padding-top: 110%;
+
+  }
+
+
 }
 
 /* @media screen and (max-width: 800px) {
@@ -3294,6 +3342,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
    
     margin-top: 25px;
   }
+
+  .Workpage .singlecontainer2.mobile {
+    padding: 15px 0 0 0;
+    padding-bottom: 140%;
+
+  }
+
+  .Bookpage .info{
+    padding-top: 140%;
+
+  }
+
 
   .workposition{
     height:22rem !important;

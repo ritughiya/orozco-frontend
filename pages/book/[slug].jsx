@@ -96,7 +96,7 @@ const Book = ({
       blurDataURL={rgbDataURL(73, 71, 63)}/> 
       
       </div> } */}
-        <div className="arrows">
+        <div className="arrows desktop">
           <div>&nbsp;
             {previouswork && previouswork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
               <div key={_id}>
@@ -410,23 +410,26 @@ const Book = ({
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
 
-                    <div className="bookimage pointer" style={{ height: '160px', width: '135px', position: 'relative' }}>
+                
+                  
+                    <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
-                      {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+                      {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} objectFit="cover" />}
+                        
                     </div>
 
 
 
                   </Link>
                 </div>))}
-              <div className="excerptlink">
+                {excerptlink &&  <div className="excerptlink">
                 <Link href={`${excerptlink}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
                     Excerpt
                   </a>
                 </Link>
-              </div>
+              </div>  }
             </div>
             <div className="worksreferenced">
 
@@ -434,10 +437,11 @@ const Book = ({
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
 
-                    <div className="bookimage pointer" style={{ height: '160px', width: '135px', position: 'relative' }}>
+                  <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} objectFit="cover" />}
+                        
                     </div>
 
 
@@ -445,7 +449,7 @@ const Book = ({
                   </Link>
                 </div>))}
                 {excerptlink2 && <div className="excerptlink">
-                <Link href={`${excerptlink}`} passHref>
+                <Link href={`${excerptlink2}`} passHref>
                   <a target="_blank" rel="noopener noreferrer">
                     Excerpt
                   </a>
@@ -474,9 +478,17 @@ const Book = ({
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} objectFit="cover" />}
+                        
                     </div>
                   </Link>
                 </div>))}
+                {excerptlink &&  <div className="excerptlink">
+                <Link href={`${excerptlink}`} passHref>
+                  <a target="_blank" rel="noopener noreferrer">
+                    Excerpt
+                  </a>
+                </Link>
+              </div>  }
             </div>
           </div>
 
