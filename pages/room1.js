@@ -62,12 +62,9 @@ const rgbDataURL = (r, g, b) =>
                <div className="flexgrow">
             <Quicklogo />
             <Quickticker2 />
-            <div className="desktop">
-            <Quickcontainer1 /></div>
+            <Quickcontainer1 />
 
-            <div className="mobile">
-            <Quickcontainer1mobile />
-            </div>
+           
             
            
 
