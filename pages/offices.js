@@ -22,6 +22,7 @@
  import Customhead from "../components/Customhead"
 
 
+ 
 
 
 // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
@@ -102,7 +103,7 @@ const rgbDataURL = (r, g, b) =>
   }
  
  export const getServerSideProps = async () => {
-   const query = `*[_type == "room2" ]{rowof4[]->} `
+   const query = `*[_type == "offices" ]{rowof4[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
