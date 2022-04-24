@@ -33,26 +33,20 @@ const rgbDataURL = (r, g, b) =>
    return (
 
     
-     <div>
 
-<div style={{ position: 'relative', width: '80vh', height: '100%' }}>
-    <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src="/public/bookshelf.png" width="100%" height="100%" layout="fill" placeholder="blur"
-    blurDataURL={rgbDataURL(73, 71, 63)}/>
-    </div>
-    
-    <div className="  v1">
+    <div className="Bookshelfpage v1">
                   
      
      <div className="embed-container ">
      <BookshelfLabel />
     <Roomsdropdown2 />
-   
+    <Image src={Bookshelf} />
+
             
      </div>
     
      </div> 
     
-     </div>
  
    );
  }

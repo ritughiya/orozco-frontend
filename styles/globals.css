@@ -2310,6 +2310,14 @@ cursor: e-resize;
     text-align: center;
 }
 
+.infocopy{
+  display:inline;
+}
+
+.infocopy p{
+  display:inline;
+}
+
 .bookdetail{
   padding: 0px 15px 15px 15px;
   font-size: 0.75em;
@@ -2405,6 +2413,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 /* .mySwiper4 .swiper-slide-duplicate-next{
   display:none;
 } */
+
+.Bookshelfpage .embed-container{
+  padding:0;
+}
 
 .embed-container {
   padding:56.25% 0 0 0;
