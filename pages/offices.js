@@ -54,7 +54,7 @@ const rgbDataURL = (r, g, b) =>
    }
  
  
-   const offices = ({ properties }) => {
+   const Office = ({ properties }) => {
     return (
       <div className="wrapper fullhog fullhogv2 Room1detail">
        <Customhead />
@@ -102,7 +102,7 @@ const rgbDataURL = (r, g, b) =>
   }
  
  export const getServerSideProps = async () => {
-   const query = `*[_type == "offices" ]{rowof4[]->, rowof8[]->} `
+   const query = `*[_type == "room2" ]{rowof4[]->} `
    const properties = await sanityClient.fetch(query)
  
    if (!properties.length) {
@@ -120,4 +120,4 @@ const rgbDataURL = (r, g, b) =>
    }
  }
  
- export default offices;
+ export default Office;
