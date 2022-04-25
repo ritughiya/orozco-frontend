@@ -2640,6 +2640,11 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin: 4em 0;
 }
 
+#floorplan{
+  max-width:800px;
+  margin: 50px auto;
+}
+
 #floorplan  .b {
     stroke-width: 1.5px;
 }
