@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
 import Quickticker2 from '../../components/Quickticker2'
-import Quicklogo from '../../components/Quicklogo'
+import Quicklogo2 from '../../components/Quicklogo2'
 import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
@@ -84,7 +84,7 @@ const Book = ({
     <div className="itemContainer Bookpage">
       <Customhead />
       {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
-      <Quicklogo />
+      <Quicklogo2 />
       <Quickticker2 />
       <div className="backcontainer">
         <Link href="/bookshelf">Back to Bookshelf </Link>

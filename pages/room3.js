@@ -12,7 +12,7 @@
     import Quickcontainer3 from "../components/Quickcontainer3"
     import Ticker from "../components/Ticker"
     import Quickticker2 from '../components/Quickticker2'
-    import Quicklogo from '../components/Quicklogo'
+    import Quicklogo2 from '../components/Quicklogo2'
     import Clock from 'react-live-clock';
     import Footer from "../components/Footer"
     import Customhead from "../components/Customhead"
@@ -62,7 +62,7 @@ const rgbDataURL = (r, g, b) =>
            {properties.map(post => (
                        <div className="flex" key={post._id}>
                        <div className="flexgrow">
-               <Quicklogo />
+               <Quicklogo2 />
                <Quickticker2 />
               
                <Quickcontainer3 />

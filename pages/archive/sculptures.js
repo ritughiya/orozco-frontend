@@ -10,7 +10,7 @@
  import Circle from "../../components/Circle"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
- import Quicklogo from '../../components/Quicklogo'
+ import Quicklogo2 from '../../components/Quicklogo2'
  import Quicklabel from '../../components/Quicklabel.js'
  import Quickticker2 from '../../components/Quickticker2'
  import Footer from "../../components/Footer"
@@ -56,7 +56,7 @@ const rgbDataURL = (r, g, b) =>
    return (
      <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
-       <Quicklogo />
+       <Quicklogo2 />
             <Quickticker2 />
             <div className="desktop"><Filtersdropdown /><Reset /></div>
             <div className="mobile"><Mobilefilters /></div>

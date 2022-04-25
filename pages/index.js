@@ -10,6 +10,7 @@
  import Image from "../components/Image"
  import Animation3 from "../components/Animation3"
  import Linkwrapper from "../components/Linkwrapper"
+ import Linkwrapper2 from "../components/Linkwrapper2"
  import Ticker from "../components/Ticker"
  import Quickticker2 from "../components/Quickticker2"
  import Logotransparent from "../components/Logotransparent"
@@ -27,6 +28,7 @@ import Homecontainer3 from "../components/Homecontainer3";
 import Homecontainer4 from "../components/Homecontainer4";
 
 import Quicklinkwrapper from "../components/Quicklinkwrapper"
+import Quicklinkwrapper2 from "../components/Quicklinkwrapper2"
 import Overlay from "../components/Overlay"
 
 
@@ -69,7 +71,7 @@ const IndexPage = ({ properties }) => {
       {(() => {
         if (count > 1 ) {
           return (
-            <><Quicklogo /><Quickticker2 /><Quicklinkwrapper />
+            <><Quicklogo /><Quickticker2 /><Quicklinkwrapper2 /><Quicklinkwrapper />
             
             </>
 
@@ -84,7 +86,7 @@ const IndexPage = ({ properties }) => {
               <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
             </div><Animation3 />
             
-            <Logotransparent /><Ticker /><Linkwrapper />
+            <Logotransparent /><Ticker /><Linkwrapper2 /><Linkwrapper />
             <Overlay />
             </>
           )

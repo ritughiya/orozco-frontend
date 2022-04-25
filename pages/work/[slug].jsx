@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
 import Quickticker2 from '../../components/Quickticker2'
-import Quicklogo from '../../components/Quicklogo'
+import Quicklogo2 from '../../components/Quicklogo2'
 import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
@@ -88,7 +88,7 @@ const Work = ({
     <div className="itemContainer Workpage">
       <Customhead />
       {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
-      <Quicklogo />
+      <Quicklogo2 />
        <Quickticker2 />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
@@ -351,14 +351,14 @@ const Work = ({
         crossFade: true // enables slides to cross fade
       }}
       >
-        {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
+        {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 ='', alt=''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div>
                   <div className="workcontainersub">
                 <div style={{ position: 'relative', width: '80vh', height: '100%' }}>
                   
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)}/> } </div>
             </div>
             

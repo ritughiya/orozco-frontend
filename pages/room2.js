@@ -15,7 +15,7 @@
   import Roomsdropdown from "../components/Roomsdropdown"
   import Quicklabel from '../components/Quicklabel.js'
   import Quickticker2 from '../components/Quickticker2'
-  import Quicklogo from '../components/Quicklogo'
+  import Quicklogo2 from '../components/Quicklogo2'
   import Static from 'next/image'
   import Clock from 'react-live-clock';
   import Footer from "../components/Footer"
@@ -63,7 +63,7 @@ const rgbDataURL = (r, g, b) =>
          {properties.map(post => (
                     <div className="flex" key={post._id}>
                     <div className="flexgrow">
-             <Quicklogo />
+             <Quicklogo2 />
              <Quickticker2 />
              <Quickcontainer2 />
 

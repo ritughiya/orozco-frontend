@@ -178,6 +178,10 @@ p {
   font-family: MessinaSans;
 }
 
+.v3 .camTopleft{
+  top:0;
+}
+
 .camTopright{
   z-index: 10;
   bottom: 0;
@@ -344,13 +348,14 @@ p {
 }
 
 .v3 iframe.primaryView{
-  animation: 0.25s 28s disappear ease-in forwards !important;
+  animation: 0.25s 35s disappear ease-in forwards !important;
 }
 
 .v3 iframe.secondaryView{
   width:300vw;
-  animation: 0.25s 28s appear ease-in forwards !important;
+  animation: 0.25s 35s appear ease-in forwards !important;
   opacity:0;
+  z-index: 2;
 }
 
 .v4 iframe.primaryView{
@@ -372,12 +377,12 @@ p {
 }
 
 .v3 .secondaryCamtitle{
-  animation: 0.25s 28s appear ease-in forwards !important;
+  animation: 0.25s 35s appear ease-in forwards !important;
   opacity:0;
 }
 
 .v3 .primaryCamtitle{
-  animation: 0.25s 28s disappear ease-in forwards !important;
+  animation: 0.25s 35s disappear ease-in forwards !important;
 }
 
 .v4 .secondaryCamtitle{
@@ -395,6 +400,25 @@ p {
   width:100vw;
 }
 
+@keyframes turnflex {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible !important;
+  }
+}
+
+@keyframes turnnone {
+  from {
+    display: flex;
+  }
+  to {
+    display: none !important;
+  }
+}
+
+
 .linkWrapper{
   width: 100vw;
   height: 100vh;
@@ -404,7 +428,30 @@ p {
   display: flex;
   flex-wrap: wrap;
   z-index: 15;
+  /* animation: 0.25s 40s turnnone ease-in forwards !important; */
+
 }
+
+.linkWrapper2{
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 20;
+  /* visibility: hidden;
+  animation: 0.25s 40s turnflex ease-in forwards !important; */
+
+
+}
+
+
+
+
+
+
 
 .overlayWrapper{
   width: 100vw;
@@ -443,6 +490,7 @@ p {
 .link1:hover,
 .link2:hover,
 .link3:hover,
+
 .link4:hover{
   border: 3px solid #62d24191;
     box-sizing: border-box;
@@ -452,6 +500,9 @@ p {
     margin-left: 0.25vw;
     margin-top: 0.25vh;
 }
+
+
+
 
 /* Room Page */
 
@@ -761,7 +812,7 @@ div.dropdowncontainer:hover svg{
 }
 
 div.Filtersdrop svg{
-  fill: #000;}
+  fill: #fffdf3;}
 
 ul.dropdown{
   position:absolute;
@@ -784,6 +835,11 @@ ul.dropdown{
   bottom: 3em;
 }
 
+.Archive ul.dropdown{
+  background-color: rgb(11 7 7 / 82%) !important;
+  color: #fffdf3;
+}
+
 .reveal ul.dropdown{
   opacity:100%;
 }
@@ -800,10 +856,21 @@ li{
 
 .Filtersdrop{
   left:0;
-  background-color: #FFFDF3 !important;
-  color: rgb(11 7 7) !important;
+  background-color: rgb(11 7 7 / 33%) !important;
+  color: #fffdf3 !important;
   position:fixed !important;
   font-size: 0.65em !important;
+}
+
+.Archive ul.dropdowncontainer{
+  background-color: rgb(11 7 7 / 33%) !important;
+  color: #fffdf3 !important;
+
+}
+
+.Archive ul.dropdowncontainer svg path{
+  stroke: #fffdf3 !important;
+
 }
 
 .Resetbutton{
@@ -873,6 +940,12 @@ ul.filtersdropdown{
   border-bottom: 1px solid #4a4a4a;
   transition: all 0.25s ease;
   color: #00000090;
+}
+
+.Archive .roomrowfirst,
+.Archive .roomrow{
+  border-bottom: 1px solid #fffdf3;
+  color: #fffdf3;
 }
 
 .roomrowlast{
@@ -1093,13 +1166,13 @@ ul li ul.dropdown li{
 }
 
 .Archive .tickerquick2{
-  background-color: #FFFDF3;
-  color:rgb(11 7 7);
+  background-color:  rgb(11 7 7 / 33%);
+  color:#FFFDF3;
 }
 
 
 .Archive .tickerquick2 svg{
-  fill: rgb(11,11,7);
+  fill: #FFFDF3;
 }
 
 .ticker svg{
@@ -1730,8 +1803,8 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
 
 .logo-label1{
   position: absolute;
-  top: 35%;
-  left: -33%;
+  top: 34%;
+  left: -32%;
   line-height: 2;
   font-size: 0.5em;
   background-color: #FFFDF3;
@@ -1740,6 +1813,7 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   padding: 0 3em 0 0.5em;
   opacity:0;
   transition: opacity 1s ease;
+  
 }
 
 .Bookshelfdetail .logo-label1{
@@ -1756,12 +1830,12 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   position: absolute;
   top: 20%;
   left: 52%;
-    line-height: 2;
-    font-size: 0.5em;
-    background-color: #FFFDF3;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 0 0.5em 0 1.8em;
+  line-height: 2;
+  font-size: 0.5em;
+  background-color: #FFFDF3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 0.5em 0 2.25em;
     opacity:0;
     transition: opacity 1s ease;
 
@@ -1771,12 +1845,27 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   position: absolute;
   top: 76%;
   left: 52%;
-    line-height: 2;
-    font-size: 0.5em;
-    background-color: #FFFDF3;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 0 0.5em 0 1.8em;
+  line-height: 2;
+  font-size: 0.5em;
+  background-color: #FFFDF3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 0.5em 0 2em;
+    opacity:0;
+    transition: opacity 1s ease;
+
+}
+
+.logo-label4{
+  position: absolute;
+  top: 69%;
+  left: -8%;
+  line-height: 2;
+  font-size: 0.5em;
+  background-color: #FFFDF3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 2.8em 0 0.5em;
     opacity:0;
     transition: opacity 1s ease;
 
@@ -1784,7 +1873,8 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
 
 .reveal .logo-label1,
 .reveal .logo-label2,
-.reveal .logo-label3{
+.reveal .logo-label3,
+.reveal .logo-label4{
   opacity:100%;
 }
 
@@ -2416,6 +2506,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .Bookshelfpage .embed-container{
   padding:0;
+  margin-top: -30vh;
 }
 
 .embed-container {
@@ -2932,6 +3023,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 .linkWrapper{
   top:40px;
 }
+
 
 .RoomLabel{
   margin:10px;

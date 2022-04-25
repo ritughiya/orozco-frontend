@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
  import Roomsdropdown2 from "../components/Roomsdropdown2"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
- import Quicklogo from '../components/Quicklogo'
+ import Quicklogo2 from '../components/Quicklogo2'
  import Clock from 'react-live-clock';
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
@@ -63,7 +63,7 @@ const rgbDataURL = (r, g, b) =>
         {properties.map(post => (
           <div className="flex" key={post._id}>
              <div className="flexgrow">
-            <Quicklogo />
+            <Quicklogo2 />
             <Quickticker2 />
             <div className="room4container">
             <Room4Label />
