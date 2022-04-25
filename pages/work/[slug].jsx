@@ -95,9 +95,8 @@ const Work = ({
       <Link href="/room1">Back to Room </Link>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
        <div className="arrows desktop">
         <div>&#8203;
@@ -120,10 +119,9 @@ const Work = ({
       <div className="backcontainer">
       <Link href="/room2">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
        <div className="arrows desktop">
         <div>&#8203;
@@ -145,11 +143,10 @@ const Work = ({
       <If condition={room === "room3"}>
       <div className="backcontainer">
       <Link href="/room3">Back to Room </Link><br></br>
-      {thumbImage &&  <div className="backimage" style={{height: '190px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
        <div className="arrows desktop">
         <div>&#8203;
@@ -171,11 +168,10 @@ const Work = ({
       <If condition={room === "room4"}>
       <div className="backcontainer">
       <Link href="/spaceshiproom">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
@@ -197,11 +193,10 @@ const Work = ({
       <If condition={room === "room4wall1"}>
       <div className="backcontainer">
       <Link href="/spaceshiproom#wall1">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
@@ -223,11 +218,10 @@ const Work = ({
       <If condition={room === "room4wall2"}>
       <div className="backcontainer">
       <Link href="/spaceshiproom#wall2">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
@@ -249,11 +243,10 @@ const Work = ({
       <If condition={room === "room4wall3"}>
       <div className="backcontainer">
       <Link href="/spaceshiproom#wall3">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
@@ -275,11 +268,10 @@ const Work = ({
       <If condition={room === "room4wall4"}>
       <div className="backcontainer">
       <Link href="/spaceshiproom#wall4">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
@@ -301,11 +293,10 @@ const Work = ({
       <If condition={room === "offices"}>
       <div className="backcontainer">
       <Link href="/offices">Back to Room </Link><br></br>
-      {thumbImage && <div className="backimage" style={{height: '180px', position: 'relative'}}>
-        
-      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
-      "fill"
-    objectFit="contain" placeholder="blur"
+      {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
+      <br></br>
+      <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
+    objectFit="contain" placeholder="blur" height="170px" width="130px"
       blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
       <div className="arrows desktop">
         <div>&#8203;
