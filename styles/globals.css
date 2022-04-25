@@ -2192,6 +2192,7 @@ letter-spacing: 0.2em;
 
 .workposition{
   max-width:900px;
+  margin: 0 auto;
 }
 
 .relatedWorkscontainer{
