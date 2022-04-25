@@ -2640,6 +2640,87 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin: 4em 0;
 }
 
+#floorplan  .b {
+    stroke-width: 1.5px;
+}
+
+#floorplan  .b,
+#floorplan  .c,
+#floorplan  .d,
+#floorplan  .e,
+#floorplan  .f,
+#floorplan  .g,
+#floorplan  .h,
+#floorplan  .i,
+#floorplan  .j,
+#floorplan  .k {
+    stroke-miterlimit: 10;
+}
+
+#floorplan  .b,
+#floorplan  .c,
+#floorplan  .d,
+#floorplan  .e,
+#floorplan  .f,
+#floorplan  .g,
+#floorplan  .h,
+#floorplan  .i,
+#floorplan  .k {
+    stroke: #fffdf3;
+}
+
+#floorplan  .b,
+#floorplan  .c,
+#floorplan  .d,
+#floorplan  .e,
+#floorplan  .h,
+#floorplan  .i,
+#floorplan  .j,
+#floorplan  .k {
+    fill: none;
+}
+
+#floorplan  .c {
+    stroke-width: 3px;
+}
+
+#floorplan  .d,
+#floorplan  .f,
+#floorplan  .g {
+    stroke-width: .4px;
+}
+
+#floorplan  .l,
+#floorplan  .f {
+    fill: #fff;
+}
+
+#floorplan  .m {
+    fill: #fffdf3;
+}
+
+#floorplan  .e {
+    stroke-width: .75px;
+}
+
+#floorplan  .g {
+    fill: #fcfcf9;
+}
+
+#floorplan  .i,
+#floorplan  .j {
+    stroke-width: .25px;
+}
+
+#floorplan  .j {
+    stroke: #000;
+}
+
+#floorplan  .k {
+    stroke-width: .5px;
+}
+
+
 @media only screen and (max-width:3000px){
 
   .rowof4 {

@@ -16,6 +16,7 @@
  import Quickticker2 from '../components/Quickticker2'
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
+ import Floorplan from "../components/Floorplan"
 
  
  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
@@ -58,11 +59,15 @@ const rgbDataURL = (r, g, b) =>
                <PortableText 
             blocks = {post.aboutspacetime}
           />
-          <img className="placeholder map" draggable="false" src={urlFor(post.mapimage).url()} layout=
+          {/* <img className="placeholder map" draggable="false" src={urlFor(post.mapimage).url()} layout=
       "fill"
     objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>
-      
+       */}
+
+       <Floorplan />
+
+
       </div>
           </div>
 
