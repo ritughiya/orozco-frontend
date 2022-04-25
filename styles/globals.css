@@ -2190,6 +2190,10 @@ letter-spacing: 0.2em;
 
 }
 
+.workposition{
+  max-width:900px;
+}
+
 .relatedWorkscontainer{
   width: 100vw;
   display: -moz-box;
