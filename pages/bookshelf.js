@@ -70,7 +70,7 @@ const rgbDataURL = (r, g, b) =>
                      <div key={_id}>
                           <Link href="/book/[slug]" as={`/book/${slug.current}`}>
                             <div className="zoom-in held">
-                            {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+                            {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/>  }  
                           </div>
                       </Link>

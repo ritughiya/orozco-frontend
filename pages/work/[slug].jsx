@@ -402,7 +402,7 @@ const Work = ({
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
-          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
+          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)}/> }
               
         </SwiperSlide> ))}
@@ -501,8 +501,8 @@ const Work = ({
             >
               {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="120px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)}/> }
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)}/> }
                     
               </SwiperSlide> ))}
             </Swiper>
