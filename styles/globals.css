@@ -3584,3 +3584,23 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   } */
 
 }
+
+/* Row of 4 Breakpoints */
+
+@media only screen and (max-width:400px){
+
+  .rowof4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tickerquick2 button.open{
+    height:15px;
+  }
+
+  /* .rowof4 .zoom-in.held {
+    height: 8.5rem;
+    padding: 0.1rem;
+    opacity: 0.75;
+  } */
+
+}
