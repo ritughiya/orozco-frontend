@@ -836,8 +836,8 @@ ul.dropdown{
 }
 
 .Archive ul.dropdown{
-  background-color: rgb(11 7 7 / 82%) !important;
-  color: #fffdf3;
+  /* background-color: rgb(11 7 7 / 82%) !important;
+  color: #fffdf3; */
 }
 
 .reveal ul.dropdown{
@@ -944,8 +944,8 @@ ul.filtersdropdown{
 
 .Archive .roomrowfirst,
 .Archive .roomrow{
-  border-bottom: 1px solid #fffdf3;
-  color: #fffdf3;
+  /* border-bottom: 1px solid #fffdf3;
+  color: #fffdf3; */
 }
 
 .roomrowlast{
@@ -1786,25 +1786,12 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   position: relative;
   width: 100%;
 }
-/* path.cls-1:hover .logo-label1,
- path.cls-2:hover .logo-label1, 
- path.cls-3:hover .logo-label1, 
- line.cls-4:hover .logo-label1,
-.logo-label1:hover {
 
-  display:block;
-}
-
-
-.Logo-knight2 svg:hover .logo-label1,
-.Logo-knight2 svg:hover .logo-label2{
-  display:block;
-} */
 
 .logo-label1{
   position: absolute;
   top: 34%;
-  left: -32%;
+  left: -19%;
   line-height: 2;
   font-size: 0.5em;
   background-color: #FFFDF3;
@@ -1817,8 +1804,8 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
 }
 
 .Bookshelfdetail .logo-label1{
-  padding: 0 5em 0 0.5em;
-  left: -25%;
+  /* padding: 0 5em 0 0.5em;
+  left: -25%; */
 }
 
 .logo-label1 a,
@@ -3276,7 +3263,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   }
 
   .tickerquick2 button.open{
-    height:17px;
+    height:16px;
   }
 
   .bar-one,
@@ -3340,6 +3327,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     transform: translate(-50%,0);
     background-color: transparent;
     border-style: none;
+    z-index: 100;
   }
 
   .mobilefiltersbutton svg{
@@ -3571,7 +3559,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   }
 
   .tickerquick2 button.open{
-    height:15px;
+    height:16px;
   }
 
 }
@@ -3583,6 +3571,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
   .rowof4 {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tickerquick2 button.open{
+    height:16px;
   }
 
   /* .rowof4 .zoom-in.held {

@@ -18,7 +18,6 @@
 
  import { If, Elif, Else } from 'rc-if-else';
  import Filtersdropdown from '../../components/Filtersdropdown'
- import Reset from '../../components/Reset'
  import Mobilefilters from '../../components/Mobilefilters'
 
 
@@ -58,7 +57,7 @@ const rgbDataURL = (r, g, b) =>
       <Customhead />
        <Quicklogo2 />
             <Quickticker2 />
-            <div className="desktop"><Filtersdropdown /><Reset /></div>
+            <div className="desktop"><Filtersdropdown /></div>
             <div className="mobile"><Mobilefilters /></div>
 
             <div className="archiveContainer">

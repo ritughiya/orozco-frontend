@@ -66,7 +66,7 @@ import 'react-modern-drawer/dist/index.css'
                     <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/spaceshiproom">Spaceship Room</Link></li>
                     <li className={`submenu submenulast ${show ? 'revealdisplay': null}`}><Link href="/offices">Offices</Link></li>
                     <div className={`menuborder ${show ? 'revealdisplay': null}`}>&nbsp;&nbsp;</div>
-                    <li className={`${show ? 'revealtop': null}`}><Link href="/bookshelf">Bookshelf</Link></li>
+                    <li className={`${show ? 'revealtop': null}`}><Link href="/library">Library</Link></li>
                     <li><Link href="/about">About</Link></li>
                     <li className="menulast"><Link href="/archive">Index</Link></li>
                     <div className="menuborderlast">&nbsp;&nbsp;</div>

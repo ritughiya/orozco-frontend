@@ -52,6 +52,10 @@ import ReactDOM from 'react-dom';
                  <span className="roomflex">Browse by:</span>
                  </div>
               </li>
+              <li><Link href="/archive/">
+                 <div className="roomrow pointer">
+                 <span className="roomflex">All</span></div></Link>
+              </li>
              <li><Link href="/archive/paintings">
                  <div className="roomrow pointer">
                  <span className="roomflex">Paintings</span></div></Link>
