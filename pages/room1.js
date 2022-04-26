@@ -10,7 +10,6 @@
  import Animation3 from "../components/Animation3"
  import Circle from "../components/Circle"
  import Quickcontainer1 from "../components/Quickcontainer1"
- import Quickcontainer1mobile from "../components/Quickcontainer1mobile"
  import Quicklabel from '../components/Quicklabel.js'
  import Quickticker2 from '../components/Quickticker2'
  import Quicklogo2 from '../components/Quicklogo2'
