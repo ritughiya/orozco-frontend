@@ -2646,7 +2646,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 #floorplan{
-  max-width:800px;
+  max-width: 600px;
   margin: 50px auto 80px auto;
   overflow:hidden;
 }
@@ -3573,7 +3573,6 @@ svg #room3 text:hover .m5{
   }
 
   #floorplan svg{
-  margin-left: -150px;
   }
 
 
