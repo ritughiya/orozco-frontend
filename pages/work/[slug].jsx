@@ -57,10 +57,12 @@ const Work = ({
   year2,
   pagenumber1,
   relatedbook1,
-  excerptlink1,
   pagenumber2,
   relatedbook2,
-  excerptlink2,
+  pagenumber3,
+  relatedbook3,
+  pagenumber4,
+  relatedbook4,
   medium2,
   dimensions2,
   editionDetails2,
@@ -674,7 +676,6 @@ const Work = ({
     <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1}: </div>  }  
 
-
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
           <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
@@ -693,6 +694,38 @@ const Work = ({
 
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+
+          <div className="bookdetail">
+    {pagenumber3 &&     <div className="bookinfo">Referenced on page {pagenumber3}: </div>  }  
+
+
+    {relatedbook3 && relatedbook3.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+
+          <div className="bookdetail">
+    {pagenumber4 &&     <div className="bookinfo">Referenced on page {pagenumber4}: </div>  }  
+
+
+    {relatedbook4 && relatedbook4.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
           <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
           
@@ -739,6 +772,36 @@ const Work = ({
            </Link>
           </div> ) )}
           </div> 
+          <div className="bookdetail">
+    {pagenumber3 &&     <div className="bookinfo">Referenced on page {pagenumber3}: </div>  }  
+
+
+    {relatedbook3 && relatedbook3.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
+          <div className="bookdetail">
+    {pagenumber4 &&     <div className="bookinfo">Referenced on page {pagenumber4}: </div>  }  
+
+
+    {relatedbook4 && relatedbook4.map(({_id, slug = '', mainImage = ''}) => (
+        <div key={_id}>
+          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          
+            <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
+      <br></br>
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+           </Link>
+          </div> ) )}
+          </div> 
 
           </div>
 
@@ -761,6 +824,8 @@ export const getServerSideProps = async (pageContext) => {
       year2,
       pagenumber1,
       pagenumber2,
+      pagenumber3,
+      pagenumber4,
       room,
       medium2,
       dimensions2,
@@ -770,7 +835,9 @@ export const getServerSideProps = async (pageContext) => {
       previouswork[]->,
       nextwork[]->,
       relatedbook1[]->,
-      relatedbook2[]->
+      relatedbook2[]->,
+      relatedbook3[]->,
+      relatedbook4[]->
     }`
 
   
@@ -791,10 +858,12 @@ export const getServerSideProps = async (pageContext) => {
           year2: work.year2,
           pagenumber1: work.pagenumber1,
           relatedbook1: work.relatedbook1,
-          // excerptlink1: work.excerptlink1,
           pagenumber2: work.pagenumber2,
           relatedbook2: work.relatedbook2,
-          // excerptlink2: work.excerptlink2,
+          pagenumber3: work.pagenumber3,
+          relatedbook3: work.relatedbook3,
+          pagenumber4: work.pagenumber4,
+          relatedbook4: work.relatedbook4,
           medium2: work.medium2,
           dimensions2: work.dimensions2,
           editionDetails2: work.editionDetails2,

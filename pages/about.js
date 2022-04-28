@@ -35,15 +35,25 @@ const rgbDataURL = (r, g, b) =>
   triplet(0, r, g) + triplet(b, 255, 255)
 }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
  
- const serializers = {
-     types: {
-       code: (props) => (
-         <pre data-language={props.node.language}>
-           <code>{props.node.code}</code>
-         </pre>
-       ),
-     },
-   }
+const serializers = {
+  types: {
+    code: (props) => (
+      <pre data-language={props.node.language}>
+        <code>{props.node.code}</code>
+      </pre>
+    ),
+  },
+  marks: {
+    
+    link: ({mark, children}) => {
+      // Read https://css-tricks.com/use-target_blank/
+      const { blank, href } = mark
+      return blank ?
+        <a href={href} target="_blank" rel="noopener">{children}</a>
+        : <a href={href}>{children}</a>
+    }
+  }
+}
  
 
  const about = ({ properties }) => {
@@ -59,6 +69,7 @@ const rgbDataURL = (r, g, b) =>
                   <div className="text">
                <PortableText 
             blocks = {post.aboutspacetime}
+            serializers={serializers} 
           />
           {/* <img className="placeholder map" draggable="false" src={urlFor(post.mapimage).url()} layout=
       "fill"
@@ -79,6 +90,8 @@ const rgbDataURL = (r, g, b) =>
                   <div className="text">
                <PortableText 
             blocks = {post.aboutGO}
+            serializers={serializers} 
+
           /></div>
           </div>
                 </div>
