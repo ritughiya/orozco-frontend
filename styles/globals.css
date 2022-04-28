@@ -2632,8 +2632,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin: 4em 0;
 }
 
-#floorplan,
-#floorplan2{
+#floorplan{
   max-width:800px;
   margin: 50px auto 80px auto;
   overflow:hidden;
@@ -2841,61 +2840,7 @@ svg #room3 text:hover .m5{
 
 
 
-/* Floorplan 2 */
 
-
-      #floorplan2 .cls-1, #floorplan2 .cls-11, #floorplan2 .cls-4, #floorplan2 .cls-5, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
-        fill: none;
-      }
-
-      #floorplan2 .cls-1, #floorplan2 .cls-10, #floorplan2 .cls-4, 
-      #floorplan2 .cls-5, #floorplan2 .cls-6, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
-        stroke: #fffdf3;
-      }
-
-      #floorplan2 .cls-1, #floorplan2 .cls-10, #floorplan2 .cls-11, #floorplan2 .cls-4, 
-      #floorplan2 .cls-5, #floorplan2 .cls-6, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
-        stroke-miterlimit: 10;
-      }
-
-      #floorplan2 .cls-1, 
-      #floorplan2 .cls-10, 
-      #floorplan2 .cls-6 {
-        stroke-width: 0.4px;
-      }
-
-      #floorplan2 .cls-2 {
-        fill: #fffdf3;
-      }
-
-      #floorplan2 .cls-3, #floorplan2 .cls-6 {
-        fill: #fff;
-      }
-
-      #floorplan2 .cls-4 {
-        stroke-width: 0.25px;
-      }
-
-      #floorplan2 .cls-5 {
-        stroke-width: 1.5px;
-      }
-
-      #floorplan2 .cls-8 {
-        stroke-width: 0.5px;
-      }
-
-      #floorplan2 .cls-9 {
-        stroke-width: 3px;
-      }
-
-      #floorplan2 .cls-10 {
-        fill: #fcfcf9;
-      }
-
-      #floorplan2 .cls-11 {
-        stroke: red;
-        stroke-width: 0.4px;
-      }
 
 
 @media only screen and (max-width:3000px){

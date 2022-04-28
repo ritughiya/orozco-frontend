@@ -17,7 +17,6 @@
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
  import Floorplan from "../components/Floorplan"
- import Floorplan2 from "../components/Floorplan2"
 
 
  
