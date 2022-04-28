@@ -17,6 +17,8 @@
  import Footer from "../components/Footer"
  import Customhead from "../components/Customhead"
  import Floorplan from "../components/Floorplan"
+ import Floorplan2 from "../components/Floorplan2"
+
 
  
  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
@@ -66,6 +68,8 @@ const rgbDataURL = (r, g, b) =>
        */}
 
        <Floorplan />
+       {/* <Floorplan2 /> */}
+
 
 
       </div>

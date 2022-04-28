@@ -2354,7 +2354,7 @@ cursor: e-resize;
 .Bookpage .info .desc{
   /* padding: 0 10em 0rem 10em; */
   text-align: left;
-  color: #fcfcf9;
+  color: #fffdf3;
   font-size: 0.95em;
   line-height: 1.9em;
   font-weight: 500;
@@ -2600,7 +2600,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 .aboutshow .subhead{
-  color: #fcfcf9;
+  color: #fffdf3;
     font-size: 0.7em;
     line-height: 1.9em;
     text-transform: uppercase;
@@ -2612,7 +2612,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 .aboutshow .text{
-  color: #fcfcf9;
+  color: #fffdf3;
   font-size: 0.7em;
   line-height: 1.9em;
   font-weight: 500;
@@ -2632,9 +2632,11 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     margin: 4em 0;
 }
 
-#floorplan{
+#floorplan,
+#floorplan2{
   max-width:800px;
-  margin: 50px auto;
+  margin: 50px auto 80px auto;
+  overflow:hidden;
 }
 
 #floorplan  .b {
@@ -2677,8 +2679,9 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
     fill: none;
 }
 
-#floorplan  .c {
-    stroke-width: 3px;
+#floorplan  .chess {
+  stroke-width: .4px;
+  stroke: #fffdf3;
 }
 
 #floorplan  .d,
@@ -2689,7 +2692,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 #floorplan  .l,
 #floorplan  .f {
-    fill: #fff;
+    fill: #fffdf3;
 }
 
 #floorplan  .m {
@@ -2701,7 +2704,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 }
 
 #floorplan  .g {
-    fill: #fcfcf9;
+    fill: #fffdf3;
 }
 
 #floorplan  .i,
@@ -2716,6 +2719,183 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 #floorplan  .k {
     stroke-width: .5px;
 }
+
+/* spaceship */
+#spaceship .m1{
+  opacity:0;
+  transition: all .5 linear;
+}
+svg text {
+  fill: #fffdf3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+svg #spaceship:hover .m1 {
+  fill: #fffdf3;
+  opacity:100%;
+}
+svg #spaceship:hover text {
+  fill: rgb(11 7 7);
+}
+
+svg #spaceship text:hover .m1{
+  fill: #fffdf3;
+  opacity:100%;
+}
+
+/* offices */
+
+#offices .m2{
+  opacity:0;
+  transition: all .5 linear;
+}
+
+svg #offices:hover .m2 {
+  fill: #fffdf3;
+  opacity:100%;
+}
+svg #offices:hover text {
+  fill: rgb(11 7 7);
+}
+
+svg #offices:hover .line{
+  stroke:rgb(11 7 7);
+}
+
+svg #offices text:hover .m2{
+  fill: #fffdf3;
+  opacity:100%;
+}
+
+/* room1 */
+
+#room1 .m3{
+  opacity:0;
+  transition: opacity .5 linear;
+}
+
+svg #room1:hover .m3 {
+  fill: #fffdf3;
+  opacity:100%;
+}
+svg #room1:hover text {
+  fill: rgb(11 7 7);
+}
+
+svg #room1:hover .object{
+  stroke:rgb(11 7 7);
+}
+
+svg #room1 text:hover .m3{
+  fill: #fffdf3;
+  opacity:100%;
+}
+
+/* room 2 */
+
+#room2 .m4{
+  opacity:0;
+  transition: all .5 linear;
+}
+
+svg #room2:hover .m4 {
+  fill: #fffdf3;
+  opacity:100%;
+}
+svg #room2:hover text {
+  fill: rgb(11 7 7);
+}
+
+svg #room2:hover .object{
+  stroke:rgb(11 7 7);
+}
+
+svg #room2 text:hover .m4{
+  fill: #fffdf3;
+  opacity:100%;
+}
+
+/* room 3 */
+
+#room3 .m5{
+  opacity:0;
+  transition: all .5 linear;
+}
+
+svg #room3:hover .m5 {
+  fill: #fffdf3;
+  opacity:100%;
+}
+svg #room3:hover text {
+  fill: rgb(11 7 7);
+}
+
+svg #room3:hover .table{
+  stroke:rgb(11 7 7);
+}
+
+svg #room3 text:hover .m5{
+  fill: #fffdf3;
+  opacity:100%;
+}
+
+
+
+/* Floorplan 2 */
+
+
+      #floorplan2 .cls-1, #floorplan2 .cls-11, #floorplan2 .cls-4, #floorplan2 .cls-5, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
+        fill: none;
+      }
+
+      #floorplan2 .cls-1, #floorplan2 .cls-10, #floorplan2 .cls-4, 
+      #floorplan2 .cls-5, #floorplan2 .cls-6, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
+        stroke: #fffdf3;
+      }
+
+      #floorplan2 .cls-1, #floorplan2 .cls-10, #floorplan2 .cls-11, #floorplan2 .cls-4, 
+      #floorplan2 .cls-5, #floorplan2 .cls-6, #floorplan2 .cls-7, #floorplan2 .cls-8, #floorplan2 .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      #floorplan2 .cls-1, 
+      #floorplan2 .cls-10, 
+      #floorplan2 .cls-6 {
+        stroke-width: 0.4px;
+      }
+
+      #floorplan2 .cls-2 {
+        fill: #fffdf3;
+      }
+
+      #floorplan2 .cls-3, #floorplan2 .cls-6 {
+        fill: #fff;
+      }
+
+      #floorplan2 .cls-4 {
+        stroke-width: 0.25px;
+      }
+
+      #floorplan2 .cls-5 {
+        stroke-width: 1.5px;
+      }
+
+      #floorplan2 .cls-8 {
+        stroke-width: 0.5px;
+      }
+
+      #floorplan2 .cls-9 {
+        stroke-width: 3px;
+      }
+
+      #floorplan2 .cls-10 {
+        fill: #fcfcf9;
+      }
+
+      #floorplan2 .cls-11 {
+        stroke: red;
+        stroke-width: 0.4px;
+      }
 
 
 @media only screen and (max-width:3000px){
@@ -3432,6 +3612,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   .Bookpage .info{
     /* padding-top: 110%; */
 
+  }
+
+  #floorplan svg{
+  margin-left: -150px;
   }
 
 

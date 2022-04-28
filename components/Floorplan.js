@@ -6,152 +6,15 @@ export default function Floorplan() {
 
 <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.91 389.1">
    
-    <rect className="m" x="15.59" y="263.36" width="76.85" height="23.99" />
     <polyline className="d" points="388.29 120.64 388.29 55.88 558.28 55.88 558.28 155.56" />
     <line className="d" x1="272.57" y1="145.35" x2="336.13" y2="145.35" />
     <path className="m" d="M519.85,310.89v2.12h-32.86v-2.12h32.86m.5-.5h-33.86v3.12h33.86v-3.12h0Z" />
     <polygon className="l" points="406.18 169.85 390.54 169.85 387.98 169.85 387.98 170.49 406.44 170.49 407.07 169.85 406.18 169.85" />
     <rect className="l" x="387.97" y="120.33" width=".58" height=".64" />
-    <polygon className="e" points="92.45 368.19 92.45 199.28 92.45 168.71 93.3 162.73 91.76 162.73 91.76 156.93 15.76 156.93 15.76 162.69 14.76 162.69 15.59 168.58 15.59 368.19 92.45 368.19" />
-    <rect className="i" x="22.93" y="291.55" width="8.88" height="17.08" />
-    <rect className="i" x="21.32" y="324.3" width="49.53" height="43.89" />
-    <g>
-        <rect className="i" x="23.49" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="27.65" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="23.49" y="296.8" width="3.61" height="11.12" />
-        <rect className="i" x="27.65" y="296.8" width="3.61" height="11.12" />
-    </g>
-    <rect className="i" x="40.87" y="291.55" width="8.88" height="17.08" />
-    <g>
-        <rect className="i" x="41.42" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="45.59" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="41.42" y="296.8" width="3.61" height="11.12" />
-        <rect className="i" x="45.59" y="296.8" width="3.61" height="11.12" />
-    </g>
-    <rect className="i" x="58.8" y="291.55" width="8.88" height="17.08" />
-    <g>
-        <rect className="i" x="59.36" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="63.52" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="59.36" y="296.8" width="3.61" height="11.12" />
-        <rect className="i" x="63.52" y="296.8" width="3.61" height="11.12" />
-    </g>
-    <rect className="i" x="76.73" y="291.55" width="8.88" height="17.08" />
-    <g>
-        <rect className="i" x="77.29" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="81.45" y="292.25" width="3.61" height="3.61" />
-        <rect className="i" x="77.29" y="296.8" width="3.61" height="11.12" />
-        <rect className="i" x="81.45" y="296.8" width="3.61" height="11.12" />
-    </g>
-    <rect className="i" x="76.73" y="185.25" width="8.88" height="12.08" />
-    <rect className="i" x="77.29" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="81.45" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="77.29" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="81.45" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="58.76" y="185.25" width="8.88" height="12.08" />
-    <rect className="i" x="59.32" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="63.48" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="59.32" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="63.48" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="40.85" y="185.25" width="8.88" height="12.08" />
-    <rect className="i" x="41.41" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="45.57" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="41.41" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="45.57" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="23" y="185.25" width="8.88" height="12.08" />
-    <rect className="i" x="23.56" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="27.72" y="186" width="3.61" height="5.7" />
-    <rect className="i" x="23.56" y="192.22" width="3.61" height="4.4" />
-    <rect className="i" x="27.72" y="192.22" width="3.61" height="4.4" />
-    <rect className="j" x="76.66" y="269.2" width="8.88" height="11.63" />
-    <rect className="j" x="77.32" y="276.09" width="7.56" height="4.35" />
-    <rect className="j" x="77.32" y="269.71" width="7.56" height="5.76" />
-    <rect className="j" x="58.76" y="269.2" width="8.88" height="11.63" />
-    <rect className="j" x="59.43" y="276.09" width="7.56" height="4.35" />
-    <rect className="j" x="59.43" y="269.71" width="7.56" height="5.76" />
-    <rect className="j" x="40.85" y="269.2" width="8.88" height="11.63" />
-    <rect className="j" x="41.51" y="276.09" width="7.56" height="4.35" />
-    <rect className="j" x="41.51" y="269.71" width="7.56" height="5.76" />
-    <rect className="j" x="22.57" y="269.2" width="8.88" height="11.63" />
-    <rect className="j" x="23.23" y="276.09" width="7.56" height="4.35" />
-    <rect className="j" x="23.23" y="269.71" width="7.56" height="5.76" />
-    <rect className="i" x="76.66" y="248.32" width="8.88" height="11.63" />
-    <rect className="i" x="77.32" y="255.22" width="7.56" height="4.35" />
-    <rect className="i" x="77.32" y="248.84" width="7.56" height="5.76" />
-    <rect className="i" x="58.76" y="248.32" width="8.88" height="11.63" />
-    <rect className="i" x="59.43" y="255.22" width="7.56" height="4.35" />
-    <rect className="i" x="59.43" y="248.84" width="7.56" height="5.76" />
-    <rect className="i" x="40.85" y="248.32" width="8.88" height="11.63" />
-    <rect className="i" x="41.51" y="255.22" width="7.56" height="4.35" />
-    <rect className="i" x="41.51" y="248.84" width="7.56" height="5.76" />
-    <rect className="i" x="22.57" y="248.32" width="8.88" height="11.63" />
-    <rect className="i" x="23.23" y="255.22" width="7.56" height="4.35" />
-    <rect className="i" x="23.23" y="248.84" width="7.56" height="5.76" />
-    <rect className="i" x="76.66" y="227.45" width="8.88" height="11.63" />
-    <rect className="i" x="77.32" y="234.35" width="7.56" height="4.35" />
-    <rect className="i" x="77.32" y="227.96" width="7.56" height="5.76" />
-    <rect className="i" x="58.76" y="227.45" width="8.88" height="11.63" />
-    <rect className="i" x="59.43" y="234.35" width="7.56" height="4.35" />
-    <rect className="i" x="59.43" y="227.96" width="7.56" height="5.76" />
-    <rect className="i" x="40.85" y="227.45" width="8.88" height="11.63" />
-    <rect className="i" x="41.51" y="234.35" width="7.56" height="4.35" />
-    <rect className="i" x="41.51" y="227.96" width="7.56" height="5.76" />
-    <rect className="i" x="22.57" y="227.45" width="8.88" height="11.63" />
-    <rect className="i" x="23.23" y="234.35" width="7.56" height="4.35" />
-    <rect className="i" x="23.23" y="227.96" width="7.56" height="5.76" />
-    <rect className="i" x="76.66" y="206.57" width="8.88" height="11.63" />
-    <rect className="i" x="77.32" y="213.47" width="7.56" height="4.35" />
-    <rect className="i" x="77.32" y="207.09" width="7.56" height="5.76" />
-    <rect className="i" x="58.76" y="206.57" width="8.88" height="11.63" />
-    <rect className="i" x="59.43" y="213.47" width="7.56" height="4.35" />
-    <rect className="i" x="59.43" y="207.09" width="7.56" height="5.76" />
-    <rect className="i" x="40.85" y="206.57" width="8.88" height="11.63" />
-    <rect className="i" x="41.51" y="213.47" width="7.56" height="4.35" />
-    <rect className="i" x="41.51" y="207.09" width="7.56" height="5.76" />
-    <rect className="i" x="22.57" y="206.57" width="8.88" height="11.63" />
-    <rect className="i" x="23.23" y="213.47" width="7.56" height="4.35" />
-    <rect className="i" x="23.23" y="207.09" width="7.56" height="5.76" />
-    <rect className="k" x="81.94" y="356.06" width="4.7" height="11.61" />
-    <rect className="k" x="81.13" y="355.72" width=".81" height="11.61" />
-    <rect className="k" x="76.43" y="356.06" width="4.7" height="11.61" />
-    <g>
-        <line className="i" x1="23.4" y1="324.3" x2="23.4" y2="368.57" />
-        <line className="i" x1="25.46" y1="324.3" x2="25.46" y2="368.57" />
-        <line className="i" x1="27.52" y1="324.3" x2="27.52" y2="368.57" />
-        <line className="i" x1="29.59" y1="324.3" x2="29.59" y2="368.57" />
-        <line className="i" x1="31.65" y1="324.3" x2="31.65" y2="368.57" />
-        <line className="i" x1="33.71" y1="324.3" x2="33.71" y2="368.57" />
-        <line className="i" x1="35.77" y1="324.3" x2="35.77" y2="368.57" />
-        <line className="i" x1="37.84" y1="324.3" x2="37.84" y2="368.57" />
-        <line className="i" x1="39.9" y1="324.3" x2="39.9" y2="368.57" />
-        <line className="i" x1="41.96" y1="324.3" x2="41.96" y2="368.57" />
-        <line className="i" x1="44.02" y1="324.3" x2="44.02" y2="368.57" />
-        <line className="i" x1="46.08" y1="324.3" x2="46.08" y2="368.57" />
-        <line className="i" x1="48.15" y1="324.3" x2="48.15" y2="368.57" />
-        <line className="i" x1="50.21" y1="324.3" x2="50.21" y2="368.57" />
-        <line className="i" x1="52.27" y1="324.3" x2="52.27" y2="368.57" />
-        <line className="i" x1="54.33" y1="324.3" x2="54.33" y2="368.57" />
-        <line className="i" x1="56.4" y1="324.3" x2="56.4" y2="368.57" />
-        <line className="i" x1="58.46" y1="324.3" x2="58.46" y2="368.57" />
-        <line className="i" x1="60.52" y1="324.3" x2="60.52" y2="368.57" />
-        <line className="i" x1="62.58" y1="324.3" x2="62.58" y2="368.57" />
-        <line className="i" x1="64.65" y1="324.3" x2="64.65" y2="368.57" />
-        <line className="i" x1="66.71" y1="324.3" x2="66.71" y2="368.57" />
-        <line className="i" x1="68.77" y1="324.3" x2="68.77" y2="368.57" />
-    </g>
-    <line className="i" x1="229.65" y1="170.22" x2="255.62" y2="170.22" />
-    <line className="i" x1="229.65" y1="164.86" x2="255.62" y2="164.86" />
-    <line className="i" x1="229.65" y1="180.93" x2="255.62" y2="180.93" />
-    <line className="d" x1="255.62" y1="142.57" x2="255.62" y2="185.7" />
-    <line className="i" x1="229.65" y1="175.57" x2="255.62" y2="175.57" />
-    <line className="i" x1="229.65" y1="159.51" x2="255.62" y2="159.51" />
-    <line className="i" x1="229.65" y1="154.15" x2="255.62" y2="154.15" />
-    <line className="i" x1="229.65" y1="148.8" x2="255.62" y2="148.8" />
+    
+
     <line className="i" x1="229.65" y1="144.8" x2="255.62" y2="144.8" />
-    <rect className="i" x="367.07" y="120.96" width="84.75" height="11.91" />
-    <rect className="i" x="409.44" y="55.88" width="118.77" height="11.91" />
-    <rect className="i" x="373.33" y="254.54" width="30.46" height="42.07" />
-    <rect className="i" x="403.78" y="179.08" width="30.46" height="15.39" />
-    <rect className="i" x="367.07" y="157.79" width="84.75" height="11.91" />
+
     <polyline className="d" points="245.43 109.35 245.43 27.9 341.51 27.9 341.51 109.35" />
     <polyline className="b" points="336.02 170.17 458.39 170.17 473.09 155.47" />
     <polyline className="d" points="154.84 142.99 229.91 142.99 229.91 185.75 336.02 185.75" />
@@ -159,19 +22,73 @@ export default function Floorplan() {
     <path className="h" d="M486.49,311.82l-5.81-.22v34.84h-144.65V201.15H155.05V12.57h212.02v11.92" />
     <path className="k" d="M520.35,311.82v-28.61s-32.61,8.29-33.86,28.61" />
     <polyline className="h" points="472.55 125.75 472.55 120.33 367.07 120.33 367.07 24.49 583.41 26.39 583.41 311.82 520.35 311.82" />
-    <polygon className="k" points="557.9 182.09 561.61 171.91 541 189.94 568.3 186.3 557.9 182.09" />
-    <polygon className="k" points="190.71 61.58 179.88 61.58 203.89 74.76 191.1 50.36 190.71 61.58" />
-    <line className="i" x1="15.76" y1="162.69" x2="91.76" y2="162.69" />
-    <line className="i" x1="15.59" y1="168.58" x2="92.45" y2="168.58" />
+    
     <line className="c" x1="7.77" y1="380.04" x2="586.97" y2="380.04" />
-    <circle className="i" cx="544.69" cy="65.79" r="6.1" />
     <line className="i" x1="473.09" y1="155.47" x2="487.21" y2="185.84" />
-    <rect className="i" x="475.24" y="316.1" width="5.44" height="26.19" />
     <line className="i" x1="525.34" y1="252.08" x2="525.34" y2="312.11" />
     <line className="i" x1="525.34" y1="155.97" x2="525.34" y2="215.7" />
     <line className="g" x1="336.13" y1="142.57" x2="336.13" y2="201.15" />
+    <line class="i" x1="558.28" y1="120.39" x2="558.28" y2="155.78"/>
+    <line class="i line" x1="255.62" y1="142.57" x2="255.62" y2="145.45"/>
+
+    <polyline class="i cls-14" points="154.84 142.99 229.91 142.99 229.91 145.45"/>
+  
+    <g id="spaceship">
+    <a xlinkHref="/spaceshiproom"  target="_blank">
+    <rect className="m1" x="245.43" y="27.9" width="96.08" height="81.44" />
+    <text className="maptext m1text" x="266" y="62" font-family="abcSimon" font-size="0.6em" >Spaceship
+        <tspan y="75" x="279">Room</tspan></text>
+        </a>
+
+    </g>
+    <g id="offices">
+    <a xlinkHref="/offices"  target="_blank">
+    <rect className="m2" x="154.84" y="144.92" width="181.19" height="55.8" />
+    <line class="i line" x1="255.62" y1="145.45" x2="255.62" y2="185.7"/>
+    <polyline class="i line" points="336.02 185.75 229.91 185.75 229.91 145.45"/>
+    <line className="i line" x1="229.65" y1="170.22" x2="255.62" y2="170.22" />
+    <line className="i line" x1="229.65" y1="164.86" x2="255.62" y2="164.86" />
+    <line className="i line" x1="229.65" y1="180.93" x2="255.62" y2="180.93" />
+    <line className="d line" x1="255.62" y1="142.57" x2="255.62" y2="185.7" />
+    <line className="i line" x1="229.65" y1="175.57" x2="255.62" y2="175.57" />
+    <line className="i line" x1="229.65" y1="159.51" x2="255.62" y2="159.51" />
+    <line className="i line" x1="229.65" y1="154.15" x2="255.62" y2="154.15" />
+    <line className="i line" x1="229.65" y1="148.8" x2="255.62" y2="148.8" />
+
+    <text className="maptext m2text" x="170" y="170" font-family="abcSimon" font-size="0.6em" >Offices</text>
+        </a>
+
+    </g>
+    <g id="room1">
+    <a xlinkHref="/room1"  target="_blank">
+    <rect className="m3" x="336.13" y="170.17" width="145" height="176.27" />
+    <rect className="i object" x="373.33" y="254.54" width="30.46" height="42.07" />
+    <rect className="i object" x="403.78" y="179.08" width="30.46" height="15.39" />
+    <rect className="i object" x="475.24" y="316.1" width="5.44" height="26.19" />
+    <text className="maptext m3text" x="375" y="250" font-family="abcSimon" font-size="0.6em" >Room One</text>
+    </a>
+    </g>
+    <g id="room2">
+    <a xlinkHref="/room2"  target="_blank">
+    <rect className="m4" x="367.07" y="24.49" width="216.34" height="95.84" />
+    <circle className="i object" cx="544.69" cy="65.79" r="6.1" />
+    <polyline class="i object" points="388.29 120.64 388.29 55.88 558.28 55.88 558.28 120.39"/>
+    <rect className="i object" x="409.44" y="55.88" width="118.77" height="11.91" />
+    <text className="maptext m4text" x="445" y="85" font-family="abcSimon" font-size="0.6em" >Room Two</text>
+    </a></g>
+    <g id="room3">
+    <a xlinkHref="/room3" target="_blank">
+    <rect class="m5" x="357" y="120.66" width="103" height="49.03" />
+    <rect className="i table" x="367.07" y="157.79" width="84.75" height="11.91" />
+    <rect className="i table" x="367.07" y="120.96" width="84.75" height="11.91" />
+    <text className="maptext m5text" x="377" y="148" font-family="abcSimon" font-size="0.6em" >Room Three</text>
+    </a></g>
+
+    <path class="chess" d="M200.56,58.34a2.82,2.82,0,0,0,2.81-2.81c0-1.55-1.14-2.6-2.81-3.19a4.28,4.28,0,0,1-2.39-2c-.52-.9-1.65-2.28-3.16-2.28H193V46.28c-11.11,4.16-7.51,19.12-7.51,19.12h2.22v1.46H187a.88.88,0,0,0-.89.83v.1a.81.81,0,0,0,.15.46.85.85,0,0,0,.38.3,3.54,3.54,0,0,0,.08,3.5h-.55a.88.88,0,0,0-.89.83v1.87a.85.85,0,0,0,.83.83v1.67h13.71V75.58a.86.86,0,0,0,.52-.28.79.79,0,0,0,.21-.55V72.88a.78.78,0,0,0-.77-.83h-.44a3.56,3.56,0,0,0,0-3.5.81.81,0,0,0,.47-.76v-.1a.78.78,0,0,0-.76-.83h-.8V65.4h2.51a16.69,16.69,0,0,0-6.89-8.62H198a2.83,2.83,0,0,0,1,1.13A2.8,2.8,0,0,0,200.56,58.34Z"/>
+  <path class="chess" d="M550,184a2.73,2.73,0,0,0,1-1.14h4.18a16.79,16.79,0,0,0-6.9,8.63h2.51V193H550a.78.78,0,0,0-.77.83v.11a.89.89,0,0,0,.12.45.76.76,0,0,0,.35.31,3.62,3.62,0,0,0,0,3.5h-.44a.79.79,0,0,0-.77.83v1.87a.86.86,0,0,0,.21.55.83.83,0,0,0,.52.27v1.67H563v-1.66a.92.92,0,0,0,.58-.25.9.9,0,0,0,.25-.58V199a.89.89,0,0,0-.9-.83h-.55a3.54,3.54,0,0,0,.08-3.5.81.81,0,0,0,.38-.3.88.88,0,0,0,.16-.46v-.11a.89.89,0,0,0-.9-.83h-.66v-1.45h2.22s3.6-15-7.52-19.12v1.77h-2.06c-1.5,0-2.64,1.38-3.16,2.27a4.26,4.26,0,0,1-2.39,2c-1.67.59-2.8,1.64-2.8,3.19a2.8,2.8,0,0,0,2.8,2.8A2.76,2.76,0,0,0,550,184Z"/>
 </svg>
 
+<div id="floorplantext">24 WEST 57TH, ROOM 305, NEW YORK NY 10019</div>
 
 
 </div>
