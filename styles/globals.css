@@ -3250,7 +3250,8 @@ svg #room3 text:hover .m5{
   margin:0;position: sticky;
 }
 
-.linkWrapper{
+.linkWrapper,
+.linkWrapper2{
   top:40px;
 }
 
