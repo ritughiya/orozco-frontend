@@ -6,7 +6,7 @@
  import Link from 'next/link'
  import Script from 'next/script'
  import {urlFor, sanityClient} from "../../sanity"
- import Image from "../../components/Image"
+ import Image from 'next/image'
  import Circle from "../../components/Circle"
  import Static from 'next/image'
  import Clock from 'react-live-clock';
@@ -69,7 +69,7 @@ const rgbDataURL = (r, g, b) =>
      <div key={_id}>
   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
     <div className="zoom-in">
-    {mainImage && <img src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" /> }
+    {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" /> }
  
   </div>
 </Link>
