@@ -67,12 +67,11 @@ const rgbDataURL = (r, g, b) =>
 
 {post.archivegallery && post.archivegallery.map(({_id, slug = '', thumbImage = '', mainImage = ''}) => (
   <div key={_id}>
-  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+  {slug && <Link href="/work/[slug]" as={`/work/${slug.current}`}>
     <div className="zoom-in">
-    {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="300px" height="100%" layout="responsive" objectFit="cover" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+    {mainImage && <img src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" /> }
   </div>
-</Link>
+</Link>}
 </div>
                      
              ))
