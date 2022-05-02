@@ -114,7 +114,7 @@ const Book = ({
       <Quicklogo2 />
       <Quickticker2 />
       <div className="backcontainer">
-        <Link href="/bookshelf">Back to Bookshelf </Link>
+        <Link href="/library">Back to Library </Link>
         {/* {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
@@ -273,18 +273,22 @@ const Book = ({
               <div className="title">
                 {aboutbook && <PortableText
                   blocks={aboutbook}
+                  serializers={serializers} 
                 />}</div>
                 <div className="publishing">
             {aboutbook3 && <PortableText
               blocks={aboutbook3}
+              serializers={serializers} 
             />}</div>
               <div className="desc">
                 {aboutbook2 && <PortableText
                   blocks={aboutbook2}
+                  serializers={serializers} 
                 />}
                 <div className="links">
                   {aboutbook4 && <PortableText
                     blocks={aboutbook4}
+                    serializers={serializers} 
                   />}</div>
 
               </div>
@@ -338,18 +342,22 @@ const Book = ({
                       <div className="title">
                         {aboutbook && <PortableText
                           blocks={aboutbook}
+                          serializers={serializers} 
                         />}</div>
                         <div className="publishing">
             {aboutbook3 && <PortableText
               blocks={aboutbook3}
+              serializers={serializers} 
             />}</div>
                       <div className="desc">
                         {aboutbook2 && <PortableText
                           blocks={aboutbook2}
+                          serializers={serializers} 
                         />}
                         <div className="links">
                           {aboutbook4 && <PortableText
                             blocks={aboutbook4}
+                            serializers={serializers} 
                           />}</div>
                       </div>
 
@@ -391,18 +399,23 @@ const Book = ({
                       <div className="title">
                         {aboutbook && <PortableText
                           blocks={aboutbook}
+                          serializers={serializers} 
+
                         />}</div>
                          <div className="publishing">
             {aboutbook3 && <PortableText
               blocks={aboutbook3}
+              serializers={serializers} 
             />}</div>
                       <div className="desc">
                         {aboutbook2 && <PortableText
                           blocks={aboutbook2}
+                          serializers={serializers} 
                         />}
                         <div className="links">
                           {aboutbook4 && <PortableText
                             blocks={aboutbook4}
+                            serializers={serializers} 
                           />}</div>
                       </div>
 

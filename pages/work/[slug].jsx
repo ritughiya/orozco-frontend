@@ -46,6 +46,16 @@ const rgbDataURL = (r, g, b) =>
         </pre>
       ),
     },
+    marks: {
+      
+      link: ({mark, children}) => {
+        // Read https://css-tricks.com/use-target_blank/
+        const { blank, href } = mark
+        return blank ?
+          <a href={href} target="_blank" rel="noreferrer">{children}</a>
+          : <a href={href}>{children}</a>
+      }
+    }
   }
 
 
@@ -361,23 +371,28 @@ const Work = ({
                      <PortableText
                   blocks={caption2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />,&#8200;
                 <PortableText
                   blocks={year2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={medium2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={dimensions2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                 <br></br>
                 <PortableText
                   blocks={editionDetails2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                       
                       </div> 
@@ -457,23 +472,28 @@ const Work = ({
                      <PortableText
                   blocks={caption2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />,&#8200;
                 <PortableText
                   blocks={year2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={medium2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={dimensions2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                 <br></br>
                 <PortableText
                   blocks={editionDetails2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                       
                       </div> 
@@ -569,23 +589,28 @@ const Work = ({
                      <PortableText
                   blocks={caption2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />,&#8200;
                 <PortableText
                   blocks={year2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={medium2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={dimensions2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                 <br></br>
                 <PortableText
                   blocks={editionDetails2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                       
                       </div> 
@@ -626,23 +651,28 @@ const Work = ({
                      <PortableText
                   blocks={caption2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />,&#8200;
                 <PortableText
                   blocks={year2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={medium2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 /><br></br>
                 <PortableText
                   blocks={dimensions2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                 <br></br>
                 <PortableText
                   blocks={editionDetails2}
                   onMissingComponent={false}
+                  serializers={serializers} 
                 />
                       
                       </div> 

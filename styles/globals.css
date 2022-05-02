@@ -2228,6 +2228,11 @@ letter-spacing: 0.2em;
   overflow-x: hidden;
 }
 
+.itemContainer .info a{
+  border-bottom: 1px solid #fffdf3;
+}
+
+
 .singlecontainer{
   /* height: 100vh; */
   background-color: rgb(11 7 7) !important;
