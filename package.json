@@ -43,6 +43,7 @@
     "react-zoom-pan-pinch": "^2.1.3",
     "reactstrap": "^9.0.1",
     "refractor": "^4.4.0",
+    "sharp": "^0.30.4",
     "swiper": "^8.0.7",
     "webfontloader": "^1.6.28"
   },
