@@ -7,7 +7,7 @@
  import Link from 'next/link'
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
- import Image from "../components/Image"
+ import Image from 'next/image'
  import Animation3 from "../components/Animation3"
  import Linkwrapper from "../components/Linkwrapper"
  import Linkwrapper2 from "../components/Linkwrapper2"
@@ -30,6 +30,8 @@ import Homecontainer4 from "../components/Homecontainer4";
 import Quicklinkwrapper from "../components/Quicklinkwrapper"
 import Quicklinkwrapper2 from "../components/Quicklinkwrapper2"
 import Overlay from "../components/Overlay"
+
+import Spaceshipoverlay from "../public/spaceship-overlay.png"
 
 
 
@@ -82,9 +84,14 @@ const IndexPage = ({ properties }) => {
         
         } else {
           return (
-            <><div className="vimeo-wrapper pointer">
+            <><div className="vimeo-wrapper pointer desktop">
               <iframe loading="lazy" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
-            </div><Animation3 />
+            </div>
+            <div className="vimeo-wrapper pointer mobile">
+            <Image src={Spaceshipoverlay} />
+            </div>
+            
+            <Animation3 />
             
             <Logotransparent /><Ticker /><Linkwrapper2 /><Linkwrapper />
             <Overlay />

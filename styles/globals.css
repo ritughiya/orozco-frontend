@@ -692,6 +692,10 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.vimeo-wrapper.mobile{
+  width: 270vw;
+}
+
 ::selection {
   background: rgb(225, 230, 212);
 }
