@@ -694,6 +694,7 @@ p {
 
 .vimeo-wrapper .img{
   width: 310vw;
+  height:100vh;
   position: absolute;
   top: 50%;
   left: 50%;
