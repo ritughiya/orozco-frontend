@@ -28,7 +28,7 @@ const Footerdelay = () => (
 
 );
  
-export default ReactDelayRender({ delay: 4000 })(Footerdelay);
+export default ReactDelayRender({ delay: 6000 })(Footerdelay);
 
 
 
