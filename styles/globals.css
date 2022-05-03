@@ -694,9 +694,9 @@ p {
 
 .vimeo-wrapper .img{
   width: 370vw;
-  height:100vh;
-  position: absolute;
-  top: 50%;
+  height:120vh;
+  position: fixed;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
