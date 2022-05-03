@@ -2118,15 +2118,6 @@ letter-spacing: 0.2em;
   align-content: space-around; */
 }
 
-.archivelabel{
-  left: 0;
-  top: 0;
-  width: 80vh;
-  transform: rotate(-90deg) translateX(-100%);
-  transform-origin: top left;
-  position: absolute;
-  background-color: #ffffff;
-}
 
 .archivelabel .inner{
   letter-spacing: 0.6em;
@@ -2139,7 +2130,7 @@ letter-spacing: 0.2em;
 /* Slug page */
 
 .WorkContainer{
-  color:#ffffff;
+  color:#fffdf3;
   width: 100vw;
 }
 
@@ -2418,10 +2409,15 @@ cursor: e-resize;
 }
 
 .bookdetail{
-  padding: 0px 15px 15px 15px;
+  padding: 0px 15px 25px 15px;  
   font-size: 0.75em;
   color: #FFFDF3;
   line-height: 1.5;
+}
+
+.desktop .bookdetail{
+  /* margin-top: 10px; */
+    margin-right: 20px;
 }
 
 .bookinfo{
@@ -2435,19 +2431,31 @@ cursor: e-resize;
 display: flex;
 flex-wrap: wrap;
 flex-direction:column;
-margin-right:10px;}
+/* align-items: center; */
+margin-right: 35px;
+width: min-content;
+}
+
+.worksreferenced .img{
+  display:flex;
+  flex-shrink:1;
+}
 
 .worksreferencedcontainer{
   display:flex;
+  flex-wrap:wrap;
 }
 
 .worksreferenced .bookimage{
-  /* margin-right:10px; */
+  margin-right: 7px;
 }
 
 .excerptlink{
-  margin-top:10px;
+  margin-top:7px;
   font-size:0.75em;
+  flex-shrink: 2;
+  /* width:5.5rem; */
+  margin-bottom: 25px;
 }
 
 .excerptlink a{
@@ -2604,6 +2612,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .bookcontainer.desktop{
   display:flex;
+  margin-top: 15px;
 
 }
 
@@ -2953,6 +2962,13 @@ svg #room3 text:hover .m5{
 
 }
 
+
+.bookcontainer.desktop{
+  margin-top: 45px;
+
+}
+
+
 .mySwiper {
   width: 15em;
   height: 10em;
@@ -2990,6 +3006,7 @@ svg #room3 text:hover .m5{
 
 
 
+
   .singlecontainer2 .workcontainer{
     position:absolute;
     top:50%;
@@ -3007,8 +3024,15 @@ svg #room3 text:hover .m5{
       margin-bottom:15px;
     }
 
-    .bookimage{
-      margin-bottom:15px;
+    .worksreferenced .bookimage{
+      margin-bottom:0px;
+      margin-left: 3px;
+    margin-right: 3px;
+    }
+
+    .worksreferenced .img{
+      margin: 0 auto;
+
     }
 
     .backcontainer{
@@ -3131,10 +3155,15 @@ svg #room3 text:hover .m5{
 
     .worksreferenced{
       flex-direction: column;
-       margin-right: 0; 
+       /* margin-right: 0;  */
       align-content: space-around;
+      margin: 0 auto;
+      width: unset;
     }
 
+    .excerptlink{
+      margin: 0 0 30px 0;
+    }
 
     /* Other thongs */
 

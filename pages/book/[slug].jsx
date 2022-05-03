@@ -445,7 +445,7 @@ const Book = ({
             {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>}
             <div className="worksreferencedcontainer">
             <div className="worksreferenced">
-
+              <div className="img">
               {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -463,6 +463,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
 
                 
                 {excerptlinktext &&  <div className="excerptlink">
@@ -474,6 +475,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced2 && worksreferenced2.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -490,6 +492,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink2 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink2}
@@ -499,6 +502,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced3 && worksreferenced3.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -515,6 +519,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink3 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink3}
@@ -524,6 +529,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced4 && worksreferenced4.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -540,6 +546,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink4 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink4}
@@ -549,6 +556,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced5 && worksreferenced5.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -565,6 +573,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink5 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink5}
@@ -574,6 +583,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced6 && worksreferenced6.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -590,6 +600,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink6 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink6}
@@ -599,7 +610,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
-
+            <div className="img">
               {worksreferenced7 && worksreferenced7.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -615,6 +626,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink7 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink7}
@@ -624,6 +636,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
               {worksreferenced8 && worksreferenced8.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
@@ -640,6 +653,7 @@ const Book = ({
 
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink8 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink8}
@@ -649,6 +663,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
 
 {worksreferenced9 && worksreferenced9.map(({ _id, slug = '', mainImage = '' }) => (
   <div key={_id}>
@@ -665,6 +680,7 @@ const Book = ({
 
     </Link>
   </div>))}
+  </div>
   {excerptlink9 &&  <div className="excerptlink">
   <PortableText
       blocks={excerptlink9}
@@ -674,6 +690,7 @@ const Book = ({
 </div>  }
 </div>
 <div className="worksreferenced">
+<div className="img">
 
 {worksreferenced10 && worksreferenced10.map(({ _id, slug = '', mainImage = '' }) => (
   <div key={_id}>
@@ -690,6 +707,7 @@ const Book = ({
 
     </Link>
   </div>))}
+  </div>
   {excerptlink10 &&  <div className="excerptlink">
   <PortableText
       blocks={excerptlink10}
@@ -714,6 +732,7 @@ const Book = ({
           <div className="bookdetail">
             {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>}
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -725,6 +744,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlinktext &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlinktext}
@@ -735,6 +755,7 @@ const Book = ({
             </div>
 
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced2 && worksreferenced2.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -746,6 +767,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink2 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink2}
@@ -755,6 +777,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced3 && worksreferenced3.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -766,6 +789,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink3 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink3}
@@ -775,6 +799,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced4 && worksreferenced4.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -786,6 +811,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink4 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink4}
@@ -795,6 +821,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced5 && worksreferenced5.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -806,6 +833,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink5 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink5}
@@ -815,6 +843,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced6 && worksreferenced6.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -826,6 +855,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink6 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink6}
@@ -835,6 +865,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced7 && worksreferenced7.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -846,6 +877,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink7 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink7}
@@ -855,6 +887,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced8 && worksreferenced8.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -866,6 +899,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {excerptlink8 &&  <div className="excerptlink">
                 <PortableText
                     blocks={excerptlink8}
@@ -875,6 +909,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced9 && worksreferenced9.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -886,6 +921,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {worksreferenced9 &&  <div className="excerptlink">
                 <PortableText
                     blocks={worksreferenced9}
@@ -895,6 +931,7 @@ const Book = ({
               </div>  }
             </div>
             <div className="worksreferenced">
+            <div className="img">
               {worksreferenced10 && worksreferenced10.map(({ _id, slug = '', mainImage = '' }) => (
                 <div key={_id}>
                   <Link href="/work/[slug]" as={`/work/${slug.current}`}>
@@ -906,6 +943,7 @@ const Book = ({
                     </div>
                   </Link>
                 </div>))}
+                </div>
                 {worksreferenced10 &&  <div className="excerptlink">
                 <PortableText
                     blocks={worksreferenced10}
