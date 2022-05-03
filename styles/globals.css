@@ -692,8 +692,12 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.vimeo-wrapper.mobile{
-  width: 270vw;
+.vimeo-wrapper .img{
+  width: 300vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 ::selection {
@@ -3722,7 +3726,7 @@ svg #room3 text:hover .m5{
   }
 
   .Workpage .singlecontainer2 .workcontainer{
-    top:40%;
+    top: 45%;
     margin-top: 25px;
   }
 
