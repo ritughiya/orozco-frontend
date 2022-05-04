@@ -95,6 +95,10 @@ p {
     justify-content: space-between;
 }
 
+.homeFooter .contact{
+  border-bottom: 1px solid #fffdf3e0 !important;
+}
+
 .mainFooter{
   background-color: #fffdf3 !important;
     color: rgb(11 7 7);
