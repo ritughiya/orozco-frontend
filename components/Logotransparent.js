@@ -24,10 +24,10 @@ const Logotransparent = () => {
 <svg className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
-        <Link href="/bookshelf">
+        <Link href="/library">
             <path className="cls-1" d="M499,242.5V499H242.5C242.5,357.34,357.34,242.5,499,242.5Z" />
             </Link>
-            <Link href="/bookshelf">
+            <Link href="/library">
             <path className="cls-2" d="M499,499V755.5c-141.66,0-256.5-114.84-256.5-256.5Z" />
             </Link>
             <Link href="/archive">
@@ -48,7 +48,7 @@ const Logotransparent = () => {
             <Link href="/about">
             <path className="cls-1" d="M499,1003.38V760.88a121.25,121.25,0,1,1,0,242.5Z" />
             </Link>
-            <Link href="/bookshelf">
+            <Link href="/library">
             <path className="cls-3" d="M0,499H242.5A121.25,121.25,0,0,1,0,499Z" />
             </Link>
             <line className="cls-4" x1="148.5" y1="500.5" x2="106" y2="500.5" />
@@ -72,8 +72,8 @@ const Logolabels   = ({ isHovering = false }) => {
   <div className={isHovering ? "reveal" : ""}>
   
   <div className="logo-label1">
-<Link href="/bookshelf">
-    Bookshelf
+<Link href="/library">
+    Library
 </Link>
 </div>
 <div className="logo-label2">
