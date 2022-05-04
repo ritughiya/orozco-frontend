@@ -18,6 +18,7 @@
  import Clock from 'react-live-clock';
  import Footerhome from "../components/Footerhome"
  import Footerdelay from "../components/Footerdelay"
+ import Footerdelaymobile from "../components/Footerdelaymobile"
  import { If, Elif, Else } from 'rc-if-else';
  import Quicklabel from '../components/Quicklabel.js'
  import Quicklogo from '../components/Quicklogo'
@@ -85,9 +86,9 @@ const IndexPage = ({ properties }) => {
         } else {
           return (
             <><div className="vimeo-wrapper pointer ">
-              <div className="img mobile">
-                          <Image className="mobile" src={Spaceshipoverlay} /></div>
-              <iframe loading="lazy" className="desktop" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
+              {/* <div className="img mobile">
+                          <Image className="mobile" src={Spaceshipoverlay} /></div> */}
+              <iframe loading="lazy" className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
             </div>
             {/* <div className="vimeo-wrapper pointer mobile">
             <Image src={Spaceshipoverlay} />
@@ -126,7 +127,10 @@ const IndexPage = ({ properties }) => {
         } else {
           return (
             <>
-            <Footerdelay /></>
+            <div className="desktop"><Footerdelay /></div>
+            <div className="mobile"><Footerdelaymobile /></div>
+            
+            </>
           )
         }
       })()}
