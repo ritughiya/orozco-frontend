@@ -63,7 +63,7 @@ const rgbDataURL = (r, g, b) =>
             <Quicklogo2 />
             <Quickticker2 />
             
-            {/* <Quickcontainerbook /> */}
+            <Quickcontainerbook />
 
             <div id="selectedworks" className="rowof4">
              {post.selectedworks && post.selectedworks.map(({_id, slug = '', thumbImage = '', mainImage = ''}) =>  (

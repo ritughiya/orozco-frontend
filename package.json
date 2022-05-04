@@ -12,6 +12,7 @@
     "@portabletext/react": "^1.0.3",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/image-url": "^0.140.22",
+    "@vimeo/player": "^2.16.4",
     "date-and-time": "^2.1.2",
     "jquery": "^3.6.0",
     "magic-burgers": "^1.0.0",
