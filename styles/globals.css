@@ -2996,6 +2996,10 @@ svg #room3 text:hover .m5{
     animation: 1s 3s disappear ease-in forwards !important;
   }
 
+  #Orozcoanimation3{
+    top: 56%;
+  }
+
     /* WORK PAGE */
 
     .singlecontainer.mobile {
