@@ -42,7 +42,7 @@ const RoomLabel = () => {
         ignoreCancelEvents={false}
   >
       <div className={`RoomLabel ${show && 'nav__blue'}`}>
-      Selected Books <Caret/>
+      Selected Books
   </div>
   </Link>
 
