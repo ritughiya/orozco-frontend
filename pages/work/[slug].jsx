@@ -104,7 +104,7 @@ const Work = ({
        <Quickticker2 />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
-      <Link passHref href="/room1">Back to Room </Link>
+      <Link passHref href="/room-one">Back to Room </Link>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -128,7 +128,7 @@ const Work = ({
       </If>
       <If condition={room === "room2"}>
       <div className="backcontainer">
-      <Link passHref href="/room2">Back to Room </Link><br></br>
+      <Link passHref href="/room-two">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -152,7 +152,7 @@ const Work = ({
       </If>
       <If condition={room === "room3"}>
       <div className="backcontainer">
-      <Link passHref href="/room3">Back to Room </Link><br></br>
+      <Link passHref href="/room-three">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -176,7 +176,7 @@ const Work = ({
       </If>
       <If condition={room === "room4"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceshiproom">Back to Room </Link><br></br>
+      <Link passHref href="/spaceship-room">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -200,7 +200,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall1"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceshiproom#wall1">Back to Room </Link><br></br>
+      <Link passHref href="/spaceship-room#wall1">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -224,7 +224,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall2"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceshiproom#wall2">Back to Room </Link><br></br>
+      <Link passHref href="/spaceship-room#wall2">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -248,7 +248,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall3"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceshiproom#wall3">Back to Room </Link><br></br>
+      <Link passHref href="/spaceship-room#wall3">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -272,7 +272,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall4"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceshiproom#wall4">Back to Room </Link><br></br>
+      <Link passHref href="/spaceship-room#wall4">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 

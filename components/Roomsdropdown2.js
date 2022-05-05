@@ -80,19 +80,19 @@ import ReactDOM from 'react-dom';
     <div className={isHovering ? "reveal" : ""}>
       <ul className="dropdown">
              <div className="dropspace"> 
-             <li><Link passHref href="/room1">
+             <li><Link passHref href="/room-one">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room1thumbnail} alt="Room One" /> </div>Room One </span></div></Link>
               </li>
-              <li><Link passHref href="/room2">
+              <li><Link passHref href="/room-two">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room2thumbnail} alt="Room Two" /> </div>Room Two </span></div></Link>
               </li>
-              <li><Link passHref href="/room3">
+              <li><Link passHref href="/room-three">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail}  alt="Room Three" /> </div>Room Three </span></div></Link>
               </li>
-              <li><Link passHref href="/spaceshiproom">
+              <li><Link passHref href="/spaceship-room">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail}  alt="Spaceship Room" /> </div>Spaceship Room</span></div></Link>
               </li>

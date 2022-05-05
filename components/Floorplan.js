@@ -34,7 +34,7 @@ export default function Floorplan() {
     <polyline className="i cls-14" points="154.84 142.99 229.91 142.99 229.91 145.45"/>
   
     <g id="spaceship">
-    <a xlinkHref="/spaceshiproom"  target="_blank">
+    <a xlinkHref="/spaceship-room"  target="_blank">
     <rect className="m1" x="245.43" y="27.9" width="96.08" height="81.44" />
     <text className="maptext m1text" x="266" y="62" fontFamily="abcSimon" fontSize="0.6em" >Spaceship
         <tspan y="75" x="279">Room</tspan></text>
@@ -60,7 +60,7 @@ export default function Floorplan() {
 
     </g>
     <g id="room1">
-    <a xlinkHref="/room1"  target="_blank">
+    <a xlinkHref="/room-one"  target="_blank">
     <rect className="m3" x="336.13" y="170.17" width="145" height="176.27" />
     <rect className="i object" x="373.33" y="254.54" width="30.46" height="42.07" />
     <rect className="i object" x="403.78" y="179.08" width="30.46" height="15.39" />
@@ -69,7 +69,7 @@ export default function Floorplan() {
     </a>
     </g>
     <g id="room2">
-    <a xlinkHref="/room2"  target="_blank">
+    <a xlinkHref="/room-two"  target="_blank">
     <rect className="m4" x="367.07" y="24.49" width="216.34" height="95.84" />
     <circle className="i object" cx="544.69" cy="65.79" r="6.1" />
     <polyline className="i object" points="388.29 120.64 388.29 55.88 558.28 55.88 558.28 120.39"/>
@@ -77,7 +77,7 @@ export default function Floorplan() {
     <text className="maptext m4text" x="445" y="85" fontFamily="abcSimon" fontSize="0.6em" >Room Two</text>
     </a></g>
     <g id="room3">
-    <a xlinkHref="/room3" target="_blank">
+    <a xlinkHref="/room-three" target="_blank">
     <rect className="m5" x="357" y="120.66" width="103" height="49.03" />
     <rect className="i table" x="367.07" y="157.79" width="84.75" height="11.91" />
     <rect className="i table" x="367.07" y="120.96" width="84.75" height="11.91" />
