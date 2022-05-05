@@ -47,7 +47,7 @@ const RoomLabel = () => {
   </Link>
 
 <div className={`RoomLabel mobile ${show && 'nav__blue'}`}>
-Selected Books <Caret/>
+Selected Books
 </div>
 </div>
     )

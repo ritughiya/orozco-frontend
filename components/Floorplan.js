@@ -4,7 +4,7 @@ export default function Floorplan() {
   return (
 <div id="floorplan">
 
-<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="150 0 440 360">
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="150 0 440 360" alt="Floorplan illustration of the show">
    
     <polyline className="d" points="388.29 120.64 388.29 55.88 558.28 55.88 558.28 155.56" />
     <line className="d" x1="272.57" y1="145.35" x2="336.13" y2="145.35" />

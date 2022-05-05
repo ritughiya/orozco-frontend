@@ -2,26 +2,25 @@
  * @jest-environment jsdom
  */
 
- import React, { useEffect, useState } from "react";
- import ReactDOM from "react-dom";
- import Link from 'next/link'
- import Script from 'next/script'
- import { sanityClient, urlFor} from '../sanity'
- import Image from 'next/image'
- import Animation3 from "../components/Animation3"
- import Linkwrapper from "../components/Linkwrapper"
- import Linkwrapper2 from "../components/Linkwrapper2"
- import Ticker from "../components/Ticker"
- import Quickticker2 from "../components/Quickticker2"
- import Logotransparent from "../components/Logotransparent"
- import Customhead from "../components/Customhead"
- import Clock from 'react-live-clock';
- import Footerhome from "../components/Footerhome"
- import Footerdelay from "../components/Footerdelay"
- import Footerdelaymobile from "../components/Footerdelaymobile"
- import { If, Elif, Else } from 'rc-if-else';
- import Quicklabel from '../components/Quicklabel.js'
- import Quicklogo from '../components/Quicklogo'
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import Link from 'next/link'
+import Script from 'next/script'
+import { sanityClient, urlFor } from '../sanity'
+import Image from 'next/image'
+import Animation3 from "../components/Animation3"
+import Linkwrapper from "../components/Linkwrapper"
+import Linkwrapper2 from "../components/Linkwrapper2"
+import Ticker from "../components/Ticker"
+import Quickticker2 from "../components/Quickticker2"
+import Logotransparent from "../components/Logotransparent"
+import Clock from 'react-live-clock';
+import Footerhome from "../components/Footerhome"
+import Footerdelay from "../components/Footerdelay"
+import Footerdelaymobile from "../components/Footerdelaymobile"
+import { If, Elif, Else } from 'rc-if-else';
+import Quicklabel from '../components/Quicklabel.js'
+import Quicklogo from '../components/Quicklogo'
 import Homecontainer1 from "../components/Homecontainer1";
 import Homecontainer2 from "../components/Homecontainer2";
 
@@ -33,6 +32,7 @@ import Quicklinkwrapper2 from "../components/Quicklinkwrapper2"
 import Overlay from "../components/Overlay"
 
 import Spaceshipoverlay from "../public/spaceship-overlay.png"
+import Head from 'next/head'
 
 
 
@@ -69,72 +69,77 @@ const IndexPage = ({ properties }) => {
 
   return (
     <div className=" Home wrapper fullhog fullhogv2">
-      <Customhead />
+      <Head>
+        <title>Gabriel Orozco: Spacetime</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
+        <link rel="icon" href="/favicon.png" />
+        <meta property="og:title" content="Gabriel Orozco: Spacetime" />
+        <meta property="og:url" content="https://go-spacetime.com/" />
+        <meta property="og:description"
+          content="Go-Spacetime is the online extension of Mexican artist, Gabriel Orozco’s (b. 1962), Spacetime exhibition, which opened at 24 West 57th Street, Room 305, New York, NY in June 2021. An open-archive project, the exhibition consists of a selection of over 500 works in a wide variety of media, including sculpture, drawing, photography and painting.  " />
+
+      </Head>
 
       {(() => {
-        if (count > 1 ) {
+        if (count > 1) {
           return (
             <><Quicklogo /><Quickticker2 /><Quicklinkwrapper2 /><Quicklinkwrapper />
-            
+
             </>
 
 
-            
+
 
           )
-        
+
         } else {
           return (
             <><div className="vimeo-wrapper pointer ">
-              {/* <div className="img mobile">
-                          <Image className="mobile" src={Spaceshipoverlay} /></div> */}
-              <iframe loading="lazy" className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
+
+              <iframe loading="lazy" title="Gabriel Orozco's Spaceship Room" className="" src="https://player.vimeo.com/video/675559033?h=8b71bc1ada&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;autopause=false?background=1&amp;muted=1" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
             </div>
-            {/* <div className="vimeo-wrapper pointer mobile">
-            <Image src={Spaceshipoverlay} />
-            </div> */}
-            
-            <Animation3 />
-            
-            <Logotransparent /><Ticker /><Linkwrapper2 /><Linkwrapper />
-            <Overlay />
+
+              <Animation3 />
+
+              <Logotransparent /><Ticker /><Linkwrapper2 /><Linkwrapper />
+              <Overlay />
             </>
           )
         }
       })()}
       <div className="mainContainer">
-              
-              <Homecontainer1 />
-              <Homecontainer2 />
-              <Homecontainer3 />
-              <Homecontainer4 />
-            </div>
 
-            
+        <Homecontainer1 />
+        <Homecontainer2 />
+        <Homecontainer3 />
+        <Homecontainer4 />
+      </div>
 
-            {(() => {
-        if (count > 1 ) {
+
+
+      {(() => {
+        if (count > 1) {
           return (
             <>
-            
-            <Footerhome /></>
+
+              <Footerhome /></>
 
 
-            
+
 
           )
-        
+
         } else {
           return (
             <>
-            <div className="desktop"><Footerdelay /></div>
-            <div className="mobile"><Footerdelaymobile /></div>
-            
+              <div className="desktop"><Footerdelay /></div>
+              <div className="mobile"><Footerdelaymobile /></div>
+
             </>
           )
         }
       })()}
-      
+
     </div>
   )
 

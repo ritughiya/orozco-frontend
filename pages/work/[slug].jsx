@@ -109,7 +109,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt="" /></div> }
        <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -134,7 +134,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
        <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -159,7 +159,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
        <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -184,7 +184,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -209,7 +209,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -234,7 +234,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt="" /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -259,7 +259,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt=""  /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -284,7 +284,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -309,7 +309,7 @@ const Work = ({
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
     objectFit="contain" placeholder="blur" height="170px" width="130px"
-      blurDataURL={rgbDataURL(73, 71, 63)}/></div> }
+      blurDataURL={rgbDataURL(73, 71, 63)}  alt=""  /></div> }
       <div className="arrows desktop">
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
@@ -362,7 +362,7 @@ const Work = ({
                 <div className="workposition" style={{ position: 'relative', width: '80vh', height: '100%' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)}/> } </div>
+            blurDataURL={rgbDataURL(73, 71, 63)} alt={alt} /> } </div>
             </div>
             
             {caption2 && <div className="info">
@@ -420,7 +420,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt="Click for more photos" /> }
               
         </SwiperSlide> ))}
       </Swiper>
@@ -463,7 +463,7 @@ const Work = ({
                 <div className="workposition" style={{ position: 'relative', width: '80vh', height: '100%' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)}/> }
+            blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
             </div>
             </div>
             {caption2 && <div className="info">
@@ -524,7 +524,7 @@ const Work = ({
               {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
               <SwiperSlide key={_id}>
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt=""/> }
                     
               </SwiperSlide> ))}
             </Swiper>
@@ -580,7 +580,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
       </div>
                   
                   {caption2 && <div className="info">
@@ -642,7 +642,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
       </div>
 
 {caption2 && <div className="info">
@@ -715,7 +715,8 @@ const Work = ({
           <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div></Link>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain" alt="Click to see book" /> 
+            </div></Link>
           </div> ) )}
           </div> 
 
@@ -730,7 +731,8 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/>
+            </div>
            </Link>
           </div> ) )}
           </div> 
@@ -746,7 +748,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 
@@ -762,7 +764,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 
@@ -781,7 +783,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 
@@ -798,7 +800,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 
@@ -813,7 +815,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 
@@ -828,7 +830,7 @@ const Work = ({
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
       <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"/></div>
+            blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
           </div> 

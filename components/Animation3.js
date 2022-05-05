@@ -3,7 +3,7 @@ import React from "react";
 export default function Animation3() {
   return (
 <div id="Orozcoanimation3">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940.07 1172.58">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940.07 1172.58" alt="Illustration by Gabriel Orozco">
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
       <g>
