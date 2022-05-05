@@ -12,7 +12,6 @@ import Circle from "../components/Circle"
 import Quickcontainer2 from "../components/Quickcontainer2"
 import Logotransparent from "../components/Logotransparent"
 import Room2Label from "../components/Room2Label"
-import Roomsdropdown from "../components/Roomsdropdown"
 import Quickticker2 from '../components/Quickticker2'
 import Quicklogo2 from '../components/Quicklogo2'
 import Static from 'next/image'
