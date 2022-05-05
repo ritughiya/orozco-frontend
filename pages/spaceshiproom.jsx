@@ -8,7 +8,6 @@ import Circle from "../components/Circle"
 import Quickcontainer4 from "../components/Quickcontainer4"
 import Room4Label from "../components/Room4Label"
 import Roomsdropdown2 from "../components/Roomsdropdown2"
-import Quicklabel from '../components/Quicklabel.js'
 import Quickticker2 from '../components/Quickticker2'
 import Quicklogo2 from '../components/Quicklogo2'
 import Clock from 'react-live-clock';
@@ -147,7 +146,7 @@ const Room4 = ({ properties }) => {
                 <div className="rowof4">
                   {post.wall1 && post.wall1.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                     <div key={_id}>
-                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                      <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
                           {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="700px" height="200px" placeholder="blur"
                             blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}                   </div>
@@ -161,7 +160,7 @@ const Room4 = ({ properties }) => {
                 <div className="rowof4">
                   {post.wall2 && post.wall2.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                     <div key={_id}>
-                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                      <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
                           {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="700px" height="200px" placeholder="blur"
                             blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}                  </div>
@@ -175,7 +174,7 @@ const Room4 = ({ properties }) => {
                 <div className="rowof4">
                   {post.wall3 && post.wall3.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                     <div key={_id}>
-                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                      <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
                           {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="700px" height="200px" placeholder="blur"
                             blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}                     </div>
@@ -189,7 +188,7 @@ const Room4 = ({ properties }) => {
                 <div className="rowof4">
                   {post.wall4 && post.wall4.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                     <div key={_id}>
-                      <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                      <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                         <div className="zoom-in held">
                           {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="700px" height="200px" placeholder="blur"
                             blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}                         </div>

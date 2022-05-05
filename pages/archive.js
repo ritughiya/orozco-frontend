@@ -11,7 +11,6 @@ import Circle from "../components/Circle"
 import Static from 'next/image'
 import Clock from 'react-live-clock';
 import Quicklogo2 from '../components/Quicklogo2'
-import Quicklabel from '../components/Quicklabel.js'
 import Quickticker2 from '../components/Quickticker2'
 import Footer from "../components/Footer"
 import Customhead from "../components/Customhead"
@@ -76,7 +75,7 @@ const archive = ({ properties }) => {
 
           {post.archivegallery && post.archivegallery.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '' }) => (
             <div key={_id}>
-              {slug && <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+              {slug && <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                 <div className="zoom-in">
                   {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive"
                     alt={caption} />}

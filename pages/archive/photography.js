@@ -12,7 +12,6 @@ import Circle from "../../components/Circle"
 import Static from 'next/image'
 import Clock from 'react-live-clock';
 import Quicklogo2 from '../../components/Quicklogo2'
-import Quicklabel from '../../components/Quicklabel.js'
 import Quickticker2 from '../../components/Quickticker2'
 import Footer from "../../components/Footer"
 import Customhead from "../../components/Customhead"

@@ -80,30 +80,27 @@ import ReactDOM from 'react-dom';
     <div className={isHovering ? "reveal" : ""}>
       <ul className="dropdown">
              <div className="dropspace"> 
-             <li><Link href="/room1">
+             <li><Link passHref href="/room1">
                  <div className="roomrow pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room1thumbnail} /> </div>Room One </span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room1thumbnail} alt="Room One" /> </div>Room One </span></div></Link>
               </li>
-              <li><Link href="/room2">
+              <li><Link passHref href="/room2">
                  <div className="roomrow pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room2thumbnail} /> </div>Room Two </span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room2thumbnail} alt="Room Two" /> </div>Room Two </span></div></Link>
               </li>
-              <li><Link href="/room3">
+              <li><Link passHref href="/room3">
                  <div className="roomrow pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail} /> </div>Room Three </span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail}  alt="Room Three" /> </div>Room Three </span></div></Link>
               </li>
-              <li><Link href="/spaceshiproom">
+              <li><Link passHref href="/spaceshiproom">
                  <div className="roomrow pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Spaceship Room</span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail}  alt="Spaceship Room" /> </div>Spaceship Room</span></div></Link>
               </li>
-              <li><Link href="/offices">
+              <li><Link passHref href="/offices">
                  <div className="roomrowlast pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Officesthumbnail} /> </div>Offices </span></div></Link>
+                 <span className="roomflex"><div className="roomthumb"><Image src={Officesthumbnail}   alt="Offices" /> </div>Offices </span></div></Link>
               </li>
-              {/* <li><Link href="/bookshelf">
-                 <div className="roomrowlast pointer">
-                 <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail} /> </div>Bookshelf</span></div></Link>
-              </li> */}
+              
              </div>
          </ul>
      </div>

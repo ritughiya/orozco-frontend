@@ -12,7 +12,6 @@ import Circle from "../components/Circle"
 import Quickcontaineroffice from "../components/Quickcontaineroffice"
 import Room1Label from "../components/Room1Label"
 import Roomsdropdown from "../components/Roomsdropdown"
-import Quicklabel from '../components/Quicklabel.js'
 import Quickticker2 from '../components/Quickticker2'
 import Quicklogo2 from '../components/Quicklogo2'
 import Static from 'next/image'
@@ -80,7 +79,7 @@ const Office = ({ properties }) => {
             <div className="rowof4" id="selectedworks">
               {post.rowof4 && post.rowof4.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="zoom-in held">
                       {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}

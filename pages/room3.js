@@ -83,7 +83,7 @@ const room3 = ({ properties }) => {
             <div id="selectedworks" className="rowof4">
               {post.rowof4 && post.rowof4.map(({ _id, slug = '', thumbImage = '', mainImage = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="zoom-in held">
                       {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="700px" height="200px" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}

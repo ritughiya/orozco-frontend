@@ -52,35 +52,26 @@ import ReactDOM from 'react-dom';
                  <span className="roomflex">Browse by:</span>
                  </div>
               </li>
-              <li><Link href="/archive/">
+              <li><Link passHref href="/archive/">
                  <div className="roomrow pointer">
                  <span className="roomflex">All</span></div></Link>
               </li>
-             <li><Link href="/archive/paintings">
+             <li><Link passHref href="/archive/paintings">
                  <div className="roomrow pointer">
                  <span className="roomflex">Paintings</span></div></Link>
               </li>
-              <li><Link href="/archive/photography">
+              <li><Link passHref href="/archive/photography">
                  <div className="roomrow pointer">
                  <span className="roomflex">Photography</span></div></Link>
               </li>
-              <li><Link href="/archive/sculptures">
+              <li><Link passHref href="/archive/sculptures">
                  <div className="roomrow pointer">
                  <span className="roomflex">Sculpture</span></div></Link>
               </li>
-              <li><Link href="/archive/worksonpaper">
+              <li><Link passHref href="/archive/worksonpaper">
                  <div className="roomrowlast pointer">
                  <span className="roomflex">Works on Paper</span></div></Link>
               </li>
-              {/* <li>
-                 <div className="roomrowfirst secondary">
-                 <span className="roomflex">Sort:</span>
-                 </div>
-              </li>
-             <li><Link href="/paintings">
-                 <div className="roomrowlast pointer">
-                 <span className="roomflex">Chronologically</span></div></Link>
-              </li> */}
               
              </div>
          </ul>

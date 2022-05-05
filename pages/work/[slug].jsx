@@ -104,7 +104,7 @@ const Work = ({
        <Quickticker2 />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
-      <Link href="/room1">Back to Room </Link>
+      <Link passHref href="/room1">Back to Room </Link>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -114,22 +114,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room2"}>
       <div className="backcontainer">
-      <Link href="/room2">Back to Room </Link><br></br>
+      <Link passHref href="/room2">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -139,22 +138,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room3"}>
       <div className="backcontainer">
-      <Link href="/room3">Back to Room </Link><br></br>
+      <Link passHref href="/room3">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -164,22 +162,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room4"}>
       <div className="backcontainer">
-      <Link href="/spaceshiproom">Back to Room </Link><br></br>
+      <Link passHref href="/spaceshiproom">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -189,22 +186,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room4wall1"}>
       <div className="backcontainer">
-      <Link href="/spaceshiproom#wall1">Back to Room </Link><br></br>
+      <Link passHref href="/spaceshiproom#wall1">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -214,22 +210,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room4wall2"}>
       <div className="backcontainer">
-      <Link href="/spaceshiproom#wall2">Back to Room </Link><br></br>
+      <Link passHref href="/spaceshiproom#wall2">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -239,22 +234,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room4wall3"}>
       <div className="backcontainer">
-      <Link href="/spaceshiproom#wall3">Back to Room </Link><br></br>
+      <Link passHref href="/spaceshiproom#wall3">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -264,22 +258,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "room4wall4"}>
       <div className="backcontainer">
-      <Link href="/spaceshiproom#wall4">Back to Room </Link><br></br>
+      <Link passHref href="/spaceshiproom#wall4">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -289,22 +282,21 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
       <If condition={room === "offices"}>
       <div className="backcontainer">
-      <Link href="/offices">Back to Room </Link><br></br>
+      <Link passHref href="/offices">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -314,16 +306,15 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       </div>
       </If>
@@ -556,16 +547,15 @@ const Work = ({
         <div>&#8203;
       {previouswork && previouswork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
           </div> ) )}
           </div>
           <div>
           {nextwork && nextwork.map(({_id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <div key={_id}>
-          <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+          <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
           </div> ) )}
           </div>
-        {/* <Link href="#"> &#62; </Link> */}
       </div>
       
       {(() => {
@@ -708,9 +698,8 @@ const Work = ({
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
 
-          {/* <div className="bookimage pointer" style={{ height: '7.5rem', width: '10rem', position: 'relative' }}> */}
           
           <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
@@ -726,7 +715,7 @@ const Work = ({
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
@@ -743,7 +732,7 @@ const Work = ({
 
     {relatedbook3 && relatedbook3.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
@@ -759,7 +748,7 @@ const Work = ({
 
     {relatedbook4 && relatedbook4.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
@@ -778,7 +767,7 @@ const Work = ({
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
@@ -795,7 +784,7 @@ const Work = ({
 
     {relatedbook2 && relatedbook2.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
@@ -810,7 +799,7 @@ const Work = ({
 
     {relatedbook3 && relatedbook3.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
@@ -825,7 +814,7 @@ const Work = ({
 
     {relatedbook4 && relatedbook4.map(({_id, slug = '', mainImage = ''}) => (
         <div key={_id}>
-          <Link href="/book/[slug]" as={`/book/${slug.current}`}> 
+          <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> 
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>

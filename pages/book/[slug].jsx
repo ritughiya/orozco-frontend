@@ -1,6 +1,5 @@
 import { urlFor, sanityClient } from "../../sanity"
 import PortableText from '@sanity/block-content-to-react'
-
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
@@ -532,7 +531,7 @@ const Book = ({
 
               {worksreferenced4 && worksreferenced4.map(({ _id, slug = '', mainImage = '' , caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
