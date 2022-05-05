@@ -18,7 +18,6 @@ import Filtersdropdown from '../components/Filtersdropdown'
 import Mobilefilters from '../components/Mobilefilters'
 import Head from 'next/head'
 
-import Reset from '../components/Reset'
 
 
 // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535

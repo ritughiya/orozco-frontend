@@ -6,7 +6,6 @@
 
  import React from "react";
  import Room1Label from "../components/Room1Label"
- import Roomsdropdown from "../components/Roomsdropdown"
  import Roomsdropdown2 from "../components/Roomsdropdown2"
 
  

@@ -10,8 +10,6 @@ import Image from 'next/image'
 import Animation3 from "../components/Animation3"
 import Circle from "../components/Circle"
 import Quickcontainerbook from "../components/Quickcontainerbook"
-import Roomsdropdown from "../components/Roomsdropdown"
-import Quicklabel from '../components/Quicklabel.js'
 import Quickticker2 from '../components/Quickticker2'
 import Quicklogo2 from '../components/Quicklogo2'
 import Static from 'next/image'

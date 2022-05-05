@@ -7,7 +7,6 @@
  import React from "react";
  import Image from 'next/image'
  import BookshelfLabel from "../components/BookshelfLabel"
- import Roomsdropdown from "../components/Roomsdropdown"
  import Roomsdropdown2 from "../components/Roomsdropdown2"
  import Bookshelf  from "../public/bookshelf.png"
 

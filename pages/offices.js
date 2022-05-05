@@ -11,7 +11,6 @@ import Animation3 from "../components/Animation3"
 import Circle from "../components/Circle"
 import Quickcontaineroffice from "../components/Quickcontaineroffice"
 import Room1Label from "../components/Room1Label"
-import Roomsdropdown from "../components/Roomsdropdown"
 import Quickticker2 from '../components/Quickticker2'
 import Quicklogo2 from '../components/Quicklogo2'
 import Static from 'next/image'
