@@ -8,6 +8,27 @@
   src: url(MessinaSans-Book.woff);
 }
 
+
+
+@keyframes fadepage {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:100%;
+  }
+}
+
+
+@supports (background: -webkit-named-image(i)) {
+  .Room1detail .embed-container iframe,
+  .Room2detail .embed-container iframe,
+  .Room3detail .embed-container iframe {
+    opacity:0;
+  animation: 1s 1s fadepage ease-in forwards;
+  }
+}
+
 html,
 body {
   padding: 0;
