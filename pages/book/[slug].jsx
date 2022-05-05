@@ -114,7 +114,7 @@ const Book = ({
       <Quicklogo2 />
       <Quickticker2 />
       <div className="backcontainer">
-        <Link href="/library">Back to Library </Link>
+        <Link passHref href="/library">Back to Library </Link>
         {/* {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} layout=
@@ -127,13 +127,13 @@ const Book = ({
           <div>&nbsp;
             {previouswork && previouswork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
               <div key={_id}>
-                <Link href="/book/[slug]" as={`/book/${slug.current}`}> &#60; </Link>
+                <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> &#60; </Link>
               </div>))}
           </div>
           <div>
             {nextwork && nextwork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
               <div key={_id}>
-                <Link href="/book/[slug]" as={`/book/${slug.current}`}> &#62; </Link>
+                <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> &#62; </Link>
               </div>))}
           </div>
         </div>
@@ -305,16 +305,15 @@ const Book = ({
             <div>&#8203;
               {previouswork && previouswork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
                 </div>))}
             </div>
             <div>
               {nextwork && nextwork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
                 </div>))}
             </div>
-            {/* <Link href="#"> &#62; </Link> */}
           </div>
 
           {(() => {
@@ -448,7 +447,7 @@ const Book = ({
               <div className="img">
               {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                 
                   
@@ -479,7 +478,7 @@ const Book = ({
 
               {worksreferenced2 && worksreferenced2.map(({ _id, slug = '', mainImage = '' , caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -506,7 +505,7 @@ const Book = ({
 
               {worksreferenced3 && worksreferenced3.map(({ _id, slug = '', mainImage = '' , caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -560,7 +559,7 @@ const Book = ({
 
               {worksreferenced5 && worksreferenced5.map(({ _id, slug = '', mainImage = '' , caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -587,7 +586,7 @@ const Book = ({
 
               {worksreferenced6 && worksreferenced6.map(({ _id, slug = '', mainImage = '' , caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -613,7 +612,7 @@ const Book = ({
             <div className="img">
               {worksreferenced7 && worksreferenced7.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -640,7 +639,7 @@ const Book = ({
 
               {worksreferenced8 && worksreferenced8.map(({ _id, slug = '', mainImage = '', caption='' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
                   <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
                       <br></br>
@@ -667,7 +666,7 @@ const Book = ({
 
 {worksreferenced9 && worksreferenced9.map(({ _id, slug = '', mainImage = '', caption=''}) => (
   <div key={_id}>
-    <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+    <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
     <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
         <br></br>
@@ -694,7 +693,7 @@ const Book = ({
 
 {worksreferenced10 && worksreferenced10.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
   <div key={_id}>
-    <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+    <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
 
     <div className="bookimage pointer" style={{ height: '7.5rem', width: '5.5rem', position: 'relative' }}>
         <br></br>
@@ -735,7 +734,7 @@ const Book = ({
             <div className="img">
               {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -758,7 +757,7 @@ const Book = ({
             <div className="img">
               {worksreferenced2 && worksreferenced2.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -780,7 +779,7 @@ const Book = ({
             <div className="img">
               {worksreferenced3 && worksreferenced3.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -802,7 +801,7 @@ const Book = ({
             <div className="img">
               {worksreferenced4 && worksreferenced4.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -824,7 +823,7 @@ const Book = ({
             <div className="img">
               {worksreferenced5 && worksreferenced5.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -846,7 +845,7 @@ const Book = ({
             <div className="img">
               {worksreferenced6 && worksreferenced6.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -868,7 +867,7 @@ const Book = ({
             <div className="img">
               {worksreferenced7 && worksreferenced7.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -890,7 +889,7 @@ const Book = ({
             <div className="img">
               {worksreferenced8 && worksreferenced8.map(({ _id, slug = '', mainImage = '', caption='' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -912,7 +911,7 @@ const Book = ({
             <div className="img">
               {worksreferenced9 && worksreferenced9.map(({ _id, slug = '', mainImage = '', caption='' }) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
@@ -934,7 +933,7 @@ const Book = ({
             <div className="img">
               {worksreferenced10 && worksreferenced10.map(({ _id, slug = '', mainImage = '', caption = ''}) => (
                 <div key={_id}>
-                  <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="bookimage pointer" style={{ height: '120px', width: '120px', position: 'relative' }}>
                       <br></br>
                       {mainImage && <Image className="bookimg placeholder" id="img" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"

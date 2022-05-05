@@ -77,7 +77,7 @@ const photography = ({ properties }) => {
 
             {post.photography && post.photography.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '', filter = '' }) => (
               <div key={_id}>
-                <Link href="/work/[slug]" as={`/work/${slug.current}`}>
+                <Link href="/work/[slug]" as={`/work/${slug.current}`} passHref>
                   <div className="zoom-in">
                     {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" alt={caption} />}
 
