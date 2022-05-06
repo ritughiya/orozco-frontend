@@ -350,7 +350,7 @@ const Work = ({
                 <div className="workcontainer">
                   <div>
                   <div className="workcontainersub">
-                <div className="workposition" style={{ position: 'relative', width: '80vh', height: '100%' }}>
+                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '100%' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} /> } </div>
@@ -451,7 +451,7 @@ const Work = ({
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div className="workcontainersub">
-                <div className="workposition" style={{ position: 'relative', width: '80vh', height: '100%' }}>
+                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '100%' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
