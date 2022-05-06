@@ -3003,6 +3003,10 @@ svg #room3 text:hover .m5{
   width: 15em;
   height: 10em;
 }
+
+.workposition{
+  width:70vh !important;
+}
 }
 
 
@@ -3623,6 +3627,15 @@ svg #room3 text:hover .m5{
 
 } */
 
+@media only screen and (max-width:900px){
+
+
+.Workpage .singlecontainer2.mobile {
+  padding: 15px 0 0 0;
+  padding-bottom: 110%;
+
+}
+}
 
 
 /* Row of 4 Breakpoints */
@@ -3652,11 +3665,7 @@ svg #room3 text:hover .m5{
     height: 10rem;
   }
 
-  .Workpage .singlecontainer2.mobile {
-    padding: 15px 0 0 0;
-    padding-bottom: 110%;
-
-  }
+ 
 
   .Bookpage .info{
     /* padding-top: 110%; */

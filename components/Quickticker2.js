@@ -60,10 +60,10 @@ import 'react-modern-drawer/dist/index.css'
                 <div>
                   <ul>
                     <li className="pointer" onClick={showRooms}>Rooms <span className={` ${show ? 'sayless': 'expand'}`}></span></li>
-                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room1">Room One</Link></li>
-                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room2">Room Two</Link></li>
-                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room3">Room Three</Link></li>
-                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/spaceshiproom">Spaceship Room</Link></li>
+                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room-one">Room One</Link></li>
+                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room-two">Room Two</Link></li>
+                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/room-three">Room Three</Link></li>
+                    <li className={`submenu ${show ? 'revealdisplay': null}`}><Link href="/spaceship-room">Spaceship Room</Link></li>
                     <li className={`submenu submenulast ${show ? 'revealdisplay': null}`}><Link href="/offices">Offices</Link></li>
                     <div className={`menuborder ${show ? 'revealdisplay': null}`}>&nbsp;&nbsp;</div>
                     <li className={`${show ? 'revealtop': null}`}><Link href="/library">Library</Link></li>
