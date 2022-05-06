@@ -98,7 +98,7 @@ return (
 </Link>
 </div>
 <div className="logo-label4">
-<Link passHref href="https://go-spacetime.netlify.app/">
+<Link passHref href="https://go-spacetime.com">
     Rooms
 </Link>
 </div>

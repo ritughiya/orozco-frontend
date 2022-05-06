@@ -34,7 +34,7 @@ import 'react-modern-drawer/dist/index.css'
  <div className="tickerquick2">
 <div className="h1">
   <>
-  <Link href="https://go-spacetime.netlify.app/">
+  <Link href="https://go-spacetime.com">
   SPACETIME
   </Link>
 
