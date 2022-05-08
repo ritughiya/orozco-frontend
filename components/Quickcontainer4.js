@@ -6,7 +6,7 @@
 
  import React from "react";
  import Room4Label from "../components/Room4Label"
- import Roomsdropdown2 from "../components/Roomsdropdown"
+ import Roomsdropdown from "../components/Roomsdropdown"
  
  
  export default function Quickcontainer2() {
