@@ -1,4 +1,4 @@
-//Animation3.js
+//Opening animation
 import React from "react";
 export default function Animation3() {
   return (

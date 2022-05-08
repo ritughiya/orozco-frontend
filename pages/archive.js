@@ -11,7 +11,7 @@ import Circle from "../components/Circle"
 import Static from 'next/image'
 import Clock from 'react-live-clock';
 import Quicklogo2 from '../components/Quicklogo2'
-import Quickticker2 from '../components/Quickticker2'
+import Quickticker from '../components/Quickticker'
 import Footer from "../components/Footer"
 import Customhead from "../components/Customhead"
 import Filtersdropdown from '../components/Filtersdropdown'
@@ -52,18 +52,12 @@ const serializers = {
 const archive = ({ properties }) => {
   return (
     <div className="Archive wrapper fullhog fullhogv2">
+      <Customhead />
       <Head>
         <title>Index | Gabriel Orozco: Spacetime</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-        <link rel="icon" href="/favicon.png" />
-        <meta property="og:title" content="Gabriel Orozco: Spacetime" />
-        <meta property="og:url" content="https://go-spacetime.com/" />
-        <meta property="og:description"
-          content="Go-Spacetime is the online extension of Mexican artist, Gabriel Orozco’s (b. 1962), Spacetime exhibition, which opened at 24 West 57th Street, Room 305, New York, NY in June 2021. An open-archive project, the exhibition consists of a selection of over 500 works in a wide variety of media, including sculpture, drawing, photography and painting.  " />
-
       </Head>
       <Quicklogo2 />
-      <Quickticker2 />
+      <Quickticker />
       <div className="desktop"><Filtersdropdown /></div>
       <div className="mobile"><Mobilefilters /></div>
 
@@ -76,7 +70,7 @@ const archive = ({ properties }) => {
             <div key={_id}>
               {slug && <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                 <div className="zoom-in">
-                  {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive"
+                  {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(73, 71, 63)} width="100%" height="100%" layout="responsive"
                     alt={caption} />}
                 </div>
               </Link>}

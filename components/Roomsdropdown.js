@@ -1,4 +1,4 @@
-//Roomsdropdown2.js
+//Roomsdropdown.js
 
 /**
  * @jest-environment jsdom
@@ -10,7 +10,7 @@
 import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
  import Clock from 'react-live-clock';
- import Caret from "../components/Caret"
+ import Caret from "./Caret"
  import Room1thumbnail from "../public/room1.png"
  import Room2thumbnail from "../public/room2.png"
  import Room3thumbnail from "../public/room3.png"

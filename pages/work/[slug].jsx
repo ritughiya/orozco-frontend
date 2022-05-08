@@ -2,7 +2,7 @@ import {urlFor, sanityClient} from "../../sanity"
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from "next/link"
-import Quickticker2 from '../../components/Quickticker2'
+import Quickticker from '../../components/Quickticker'
 import Quicklogo2 from '../../components/Quicklogo2'
 import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -99,9 +99,8 @@ const Work = ({
     
     <div className="itemContainer Workpage">
       <Customhead />
-      {/* <Head> <meta http-equiv="refresh" content="5" /></Head> */}
       <Quicklogo2 />
-       <Quickticker2 />      
+       <Quickticker />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
       <Link passHref href="/room-one">Back to Room </Link>

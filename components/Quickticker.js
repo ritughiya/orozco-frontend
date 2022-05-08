@@ -7,8 +7,8 @@
  import React, { useEffect, useState }  from "react";
  import Link from "next/link"
  import Clock from 'react-live-clock';
- import Circle from "../components/Circle"
- import Menu from "../components/Menu"
+ import Circle from "./Circle"
+ import Menu from "./Menu"
 //  import HamburgerDrawer from 'react-hamburger-drawer'
 
 // import component 👇

@@ -7,15 +7,11 @@ import Link from 'next/link'
 import Script from 'next/script'
 import { sanityClient, urlFor } from '../sanity'
 import Image from 'next/image'
-import Animation3 from "../components/Animation3"
-import Circle from "../components/Circle"
 import Quickcontaineroffice from "../components/Quickcontaineroffice"
 import Room1Label from "../components/Room1Label"
-import Quickticker2 from '../components/Quickticker2'
+import Quickticker from '../components/Quickticker'
 import Quicklogo2 from '../components/Quicklogo2'
-import Static from 'next/image'
 import Head from 'next/head'
-import Clock from 'react-live-clock';
 import Footer from "../components/Footer"
 import Customhead from "../components/Customhead"
 
@@ -55,21 +51,15 @@ const serializers = {
 const Office = ({ properties }) => {
   return (
     <div className="wrapper fullhog fullhogv2 Room1detail">
+      <Customhead />
       <Head>
         <title>Offices | Gabriel Orozco: Spacetime</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
-        <link rel="icon" href="/favicon.png" />
-        <meta property="og:title" content="Gabriel Orozco: Spacetime" />
-        <meta property="og:url" content="https://go-spacetime.com/" />
-        <meta property="og:description"
-          content="Go-Spacetime is the online extension of Mexican artist, Gabriel Orozco’s (b. 1962), Spacetime exhibition, which opened at 24 West 57th Street, Room 305, New York, NY in June 2021. An open-archive project, the exhibition consists of a selection of over 500 works in a wide variety of media, including sculpture, drawing, photography and painting.  " />
-
       </Head>
       {properties.map(post => (
         <div className="flex" key={post._id}>
           <div className="flexgrow">
             <Quicklogo2 />
-            <Quickticker2 />
+            <Quickticker />
 
             <Quickcontaineroffice />
 

@@ -12,12 +12,18 @@
  
  export default function Customhead() {
 
+  // const ReactComment = ({ text }) => {
+  //   return <span dangerouslySetInnerHTML={{ __html: `<!-- ${text} -->` }}/>
+  // }
+
   
    return (
 
 
  
 <Head>
+{/* <ReactComment text={'My beautiful HTML comment'}/> */}
+
         <title>Gabriel Orozco: Spacetime</title>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
         <link rel="icon" href="/favicon.png" />
