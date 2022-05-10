@@ -490,7 +490,7 @@ p {
   flex-wrap: wrap;
   z-index: 20;
   background-color: rgb(11 7 7);
-  animation: fade 0s linear 4s forwards;
+  animation: fade 0s linear 6s forwards;
   pointer-events:none;
 
 }
