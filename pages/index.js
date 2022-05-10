@@ -66,6 +66,7 @@ const IndexPage = ({ properties }) => {
   }, []); //No dependency to trigger in each page load
 
   return (
+    <html lang="en" className="notranslate" translate="no">
     <div className=" Home wrapper fullhog fullhogv2">
       <Customhead />
 
@@ -130,6 +131,7 @@ const IndexPage = ({ properties }) => {
       })()}
 
     </div>
+    </html>
   )
 
 }
