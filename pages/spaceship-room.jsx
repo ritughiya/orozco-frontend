@@ -56,6 +56,7 @@ const Room4 = ({ properties }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
+    <html lang="en" className="notranslate" translate="no">
     <div className="wrapper fullhog fullhogv2 Room4detail">
       
       <Customhead />
@@ -196,10 +197,12 @@ const Room4 = ({ properties }) => {
           </div>
           <Footer />
         </div>
+        
 
       ))}
 
     </div>
+    </html>
   )
 
 }

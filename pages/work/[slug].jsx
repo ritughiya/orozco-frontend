@@ -96,7 +96,7 @@ const Work = ({
     
 
   return (
-    
+    <html lang="en" className="notranslate" translate="no">
     <div className="itemContainer Workpage">
       <Customhead />
       <Quicklogo2 />
@@ -831,6 +831,8 @@ const Work = ({
     <Footer />
 
     </div>
+    </html>
+
   )
 }
 

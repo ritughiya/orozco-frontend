@@ -51,6 +51,7 @@ const serializers = {
 
 const archive = ({ properties }) => {
   return (
+    <html lang="en" className="notranslate" translate="no">
     <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
       <Head>
@@ -87,6 +88,7 @@ const archive = ({ properties }) => {
 
 
     </div>
+    </html>
   )
 
 }

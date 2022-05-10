@@ -49,6 +49,7 @@ const serializers = {
 
 const room1 = ({ properties }) => {
   return (
+    <html lang="en" className="notranslate" translate="no">
     <div className="wrapper fullhog fullhogv2 Room1detail">
       <Customhead />
       <Head>
@@ -94,6 +95,7 @@ const room1 = ({ properties }) => {
       ))}
 
     </div>
+    </html>
   )
 
 }

@@ -106,7 +106,7 @@ const Book = ({
 
 
   return (
-
+    <html lang="en" className="notranslate" translate="no">
     <div className="itemContainer Bookpage">
       <Customhead />
       <Quicklogo2 />
@@ -954,6 +954,7 @@ const Book = ({
       <Footer />
 
     </div>
+    </html>
   )
 }
 

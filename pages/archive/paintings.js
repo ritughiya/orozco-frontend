@@ -52,7 +52,7 @@ const serializers = {
 
 const paintings = ({ properties }) => {
   return (
-
+    <html lang="en" className="notranslate" translate="no">
     <div className="Archive wrapper fullhog fullhogv2">
       <Customhead />
       <Head>
@@ -92,6 +92,7 @@ const paintings = ({ properties }) => {
 
 
     </div>
+    </html>
   )
 
 }
