@@ -2477,7 +2477,7 @@ max-width:100%
 }
 
 .worksreferenced .bookimage{
-  margin-right: 7px;
+  margin-right: 3px;
   margin-bottom:7px;
 }
 
@@ -3069,13 +3069,12 @@ svg #room3 text:hover .m5{
     .worksreferenced .bookimage{
       margin-bottom: 6px;
       margin-left: 0px;
-      margin-right: 0px;
+      margin-right: 3px;
     }
 
     .worksreferenced .img{
-      margin: 0 auto;
-      width: 390px;
-      justify-content: space-evenly;
+      margin: 0 12vw;
+      justify-content: center;
 
     }
 
