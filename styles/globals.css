@@ -2412,12 +2412,10 @@ cursor: e-resize;
 }
 
 .Bookpage .desktop .bookdetail{
-  padding: 2em 10em 15px 10em;
-}
+  margin: 0 10vw;}
 
 .Bookpage .info{
-    margin: 15px 10em 0rem 10em; 
-
+  margin: 15px 10vw;
 }
 
 .workcontainer .info,
@@ -2441,7 +2439,6 @@ cursor: e-resize;
 }
 
 .bookdetail{
-  padding: 0px 15px 25px 15px;  
   font-size: 0.75em;
   color: #FFFDF3;
   line-height: 1.5;
@@ -2463,27 +2460,28 @@ cursor: e-resize;
 display: flex;
 flex-wrap: wrap;
 flex-direction:column;
-/* align-items: center; */
-margin-right: 35px;
-width: min-content;
+margin-right: 25px;
+max-width:100%
 }
 
 .worksreferenced .img{
   display:flex;
   flex-shrink:1;
+  flex-wrap:wrap;
 }
 
 .worksreferencedcontainer{
+  width:80vw;
   display:flex;
   flex-wrap:wrap;
 }
 
 .worksreferenced .bookimage{
   margin-right: 7px;
+  margin-bottom:7px;
 }
 
 .excerptlink{
-  margin-top:7px;
   font-size:0.75em;
   flex-shrink: 2;
   /* width:5.5rem; */
@@ -3069,13 +3067,15 @@ svg #room3 text:hover .m5{
     }
 
     .worksreferenced .bookimage{
-      margin-bottom:0px;
-      margin-left: 3px;
-    margin-right: 3px;
+      margin-bottom: 6px;
+      margin-left: 0px;
+      margin-right: 0px;
     }
 
     .worksreferenced .img{
       margin: 0 auto;
+      width: 390px;
+      justify-content: space-evenly;
 
     }
 

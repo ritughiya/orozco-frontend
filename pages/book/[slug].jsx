@@ -434,7 +434,7 @@ const Book = ({
           <div className="bookdetail">
             {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>}
             <div className="worksreferencedcontainer">
-              <div className="worksreferenced">
+            {worksreferenced &&  <div className="worksreferenced"> 
                 <div className="img">
                   {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                     <div key={_id}>
@@ -463,8 +463,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced2 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced2 && worksreferenced2.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -490,8 +490,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced3 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced3 && worksreferenced3.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -517,8 +517,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced4 &&  <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced4 && worksreferenced4.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -544,8 +544,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced5 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced5 && worksreferenced5.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -571,8 +571,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced6 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced6 && worksreferenced6.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -598,8 +598,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div>}
+              {worksreferenced7 && <div className="worksreferenced">
                 <div className="img">
                   {worksreferenced7 && worksreferenced7.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
                     <div key={_id}>
@@ -616,7 +616,7 @@ const Book = ({
 
                       </Link>
                     </div>))}
-                </div>
+                </div> 
                 {excerptlink7 && <div className="excerptlink">
                   <PortableText
                     blocks={excerptlink7}
@@ -624,8 +624,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced8 &&  <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced8 && worksreferenced8.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -651,8 +651,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced9 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced9 && worksreferenced9.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -678,8 +678,8 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
-              <div className="worksreferenced">
+              </div> }
+              {worksreferenced10 && <div className="worksreferenced">
                 <div className="img">
 
                   {worksreferenced10 && worksreferenced10.map(({ _id, slug = '', mainImage = '', caption = '' }) => (
@@ -705,7 +705,7 @@ const Book = ({
 
                   />
                 </div>}
-              </div>
+              </div> }
 
             </div>
 
