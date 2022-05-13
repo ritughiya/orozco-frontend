@@ -3219,21 +3219,25 @@ svg #room3 text:hover .m5{
   .container.pointer.v1{
     background-image: url("/room1.png");
     background-size:80vh;
+    background-position:center;
   }
 
   .container.pointer.v2{
     background-image: url("/room2.png");
     background-size:80vh;
+    background-position:center;
   }
 
   .container.pointer.v3{
     background-image: url("/room3.png");
     background-size:80vh;
+    background-position:center;
   }
 
   .container.pointer.v4{
     background-image: url("/room4.png");
     background-size:80vh;
+    background-position:center;
   }
     
   .embed-container{
