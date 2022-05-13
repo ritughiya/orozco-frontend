@@ -12,7 +12,6 @@ import Head from 'next/head'
 import PortableText from '@sanity/block-content-to-react'
 
 
-
 import { If, Elif, Else } from 'rc-if-else';
 
 // Import Swiper styles
@@ -318,6 +317,137 @@ const Work = ({
       </div>
       </If>
       <div className="fullitem">
+
+      {(() => {
+        if (slideshowAmount > 1 ) {
+          return (
+            <>
+<div className="singlecontainer mobile">
+
+
+<div className="workcontainer">
+{relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
+            
+            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
+      </div>
+                  
+                  {caption2 && <div className="info">
+            <div className="infocopy">
+
+                     <PortableText
+                  blocks={caption2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />,&#8200;
+                <PortableText
+                  blocks={year2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                /><br></br>
+                <PortableText
+                  blocks={medium2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                /><br></br>
+                <PortableText
+                  blocks={dimensions2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />
+                <br></br>
+                <PortableText
+                  blocks={editionDetails2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />
+                      
+                      </div> 
+     
+              </div>  }
+              </div>
+
+        ))}              
+         </div>
+        </div>
+      
+            
+      </>
+
+
+          )
+        
+        } else {
+          return (
+            <>
+
+            
+            <div className="singlecontainer2 mobile">
+
+              
+
+<div className="workcontainer">
+            {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
+         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
+            
+            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
+      </div>
+
+{caption2 && <div className="info">
+            <div className="infocopy">
+
+                     <PortableText
+                  blocks={caption2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />,&#8200;
+                <PortableText
+                  blocks={year2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                /><br></br>
+                <PortableText
+                  blocks={medium2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                /><br></br>
+                <PortableText
+                  blocks={dimensions2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />
+                <br></br>
+                <PortableText
+                  blocks={editionDetails2}
+                  onMissingComponent={false}
+                  serializers={serializers} 
+                />
+                      
+                      </div> 
+     
+              </div>  }
+                    
+              </div>
+                           
+        ))}
+            </div>
+                            </div>
+                  
+      
+                  
+            </>
+      
+      
+            
+            
+
+          )
+        }
+      })()}
+      
+
        <>
       <div className="singlecontainer desktop">
       {(() => {
@@ -557,135 +687,7 @@ const Work = ({
           </div>
       </div>
       
-      {(() => {
-        if (slideshowAmount > 1 ) {
-          return (
-            <>
-<div className="singlecontainer mobile">
-
-
-<div className="workcontainer">
-{relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
-         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
-            
-            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
-      </div>
-                  
-                  {caption2 && <div className="info">
-            <div className="infocopy">
-
-                     <PortableText
-                  blocks={caption2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />,&#8200;
-                <PortableText
-                  blocks={year2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                /><br></br>
-                <PortableText
-                  blocks={medium2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                /><br></br>
-                <PortableText
-                  blocks={dimensions2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />
-                <br></br>
-                <PortableText
-                  blocks={editionDetails2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />
-                      
-                      </div> 
-     
-              </div>  }
-              </div>
-
-        ))}              
-         </div>
-        </div>
-      
-            
-      </>
-
-
-          )
-        
-        } else {
-          return (
-            <>
-
-            
-            <div className="singlecontainer2 mobile">
-
-              
-
-<div className="workcontainer">
-            {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
-         <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
-            
-            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
-      </div>
-
-{caption2 && <div className="info">
-            <div className="infocopy">
-
-                     <PortableText
-                  blocks={caption2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />,&#8200;
-                <PortableText
-                  blocks={year2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                /><br></br>
-                <PortableText
-                  blocks={medium2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                /><br></br>
-                <PortableText
-                  blocks={dimensions2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />
-                <br></br>
-                <PortableText
-                  blocks={editionDetails2}
-                  onMissingComponent={false}
-                  serializers={serializers} 
-                />
-                      
-                      </div> 
-     
-              </div>  }
-                    
-              </div>
-                           
-        ))}
-            </div>
-                            </div>
-                  
-      
-                  
-            </>
-      
-      
-            
-            
-
-          )
-        }
-      })()}
-      
+    
 
 
 
