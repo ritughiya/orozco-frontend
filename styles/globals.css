@@ -2312,6 +2312,14 @@ cursor: e-resize;
   justify-content: space-evenly;
 }
 
+
+
+.Bookpage .workcontainer{
+  width:100%;
+  margin-top: 25px;
+
+}
+
 .Bookpage .title p{
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -2577,7 +2585,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .bookcontainer.desktop{
   display:flex;
-  margin-top: 15px;
+  margin: 0 15px 15px 15px;
 
 }
 
@@ -2995,7 +3003,11 @@ svg #room3 text:hover .m5{
   .Bookpage .workcontainer{
     position:unset;
     transform:none;
-    margin-top: 45px;
+  }
+
+  .Bookpage .workposition{
+    width:86vw !important;
+  
   }
 
     .singlecontainer.mobile .workcontainer{

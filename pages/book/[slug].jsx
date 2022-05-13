@@ -130,82 +130,8 @@ const Book = ({
         </div>
       </div>
       <div className="fullitem">
-        <>
-
-          <div className="singlecontainer desktop">
-          <>
-                    <Swiper
-                      style={{
-                        "--swiper-navigation-color": "#fff",
-                        "--swiper-pagination-color": "#fff",
-                      }}
-                      slidesPerView='auto'
-                      speed={500}
-                      watchOverflow={true}
-                      centeredSlides={true}
-                      height={300}
-                      navigation={true}
-                      modules={[EffectFade, FreeMode, Navigation, Thumbs]}
-                      thumbs={{ swiper: thumbsSwiper }}
-                      className="mySwiper2"
-                      effect="fade"
-                      pagination={{ clickable: true, dynamicBullets: true }}
-                      fadeEffect={{
-                        crossFade: true // enables slides to cross fade
-                      }}
-                    >
-                      {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-                        <SwiperSlide key={_id}>
-                          <div className="workcontainer">
-                            <div className="workcontainersub">
-                              <div style={{ position: 'relative', width: '42vw', height: '100%' }}>
-
-                                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
-                                  blurDataURL={rgbDataURL(73, 71, 63)} alt={caption} />}
-                              </div>
-                            </div>
-
-                          </div>
-                        </SwiperSlide>))}
-                    </Swiper>
 
 
-
-
-
-
-                  </>
-
-
-            <div className="info">
-              <div className="title">
-                {aboutbook && <PortableText
-                  blocks={aboutbook}
-                  serializers={serializers}
-                />}</div>
-              <div className="publishing">
-                {aboutbook3 && <PortableText
-                  blocks={aboutbook3}
-                  serializers={serializers}
-                />}</div>
-              <div className="desc">
-                {aboutbook2 && <PortableText
-                  blocks={aboutbook2}
-                  serializers={serializers}
-                />}
-                <div className="links">
-                  {aboutbook4 && <PortableText
-                    blocks={aboutbook4}
-                    serializers={serializers}
-                  />}</div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </>
         <>
 
 
@@ -224,123 +150,58 @@ const Book = ({
             </div>
           </div>
 
-          {(() => {
-            if (slideshowAmount > 1) {
-              return (
-                <>
-                  <div className="singlecontainer mobile">
+          <>
 
 
-                    <div className="workcontainer">
-                      {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-                        <div key={_id}> <div className="workposition" style={{ position: 'relative', width: '86vw', height: '60vh' }}>
-
-                          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-                            blurDataURL={rgbDataURL(73, 71, 63)} alt={caption} />}
-                        </div>
-
-                        </div>
-
-                      ))}
-
-                    </div>
-
-                    <div className="info">
-                      <div className="title">
-                        {aboutbook && <PortableText
-                          blocks={aboutbook}
-                          serializers={serializers}
-                        />}</div>
-                      <div className="publishing">
-                        {aboutbook3 && <PortableText
-                          blocks={aboutbook3}
-                          serializers={serializers}
-                        />}</div>
-                      <div className="desc">
-                        {aboutbook2 && <PortableText
-                          blocks={aboutbook2}
-                          serializers={serializers}
-                        />}
-                        <div className="links">
-                          {aboutbook4 && <PortableText
-                            blocks={aboutbook4}
-                            serializers={serializers}
-                          />}</div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-
-                </>
-
-
-              )
-
-            } else {
-              return (
-                <>
-
-
-                  <div className="singlecontainer2 mobile">
+<div className="singlecontainer2 singlecontainer">
 
 
 
-                    <div className="workcontainer">
-                      {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-                        <div key={_id}> <div className="workposition" style={{ position: 'relative', width: '86vw', height: '28rem' }}>
+  <div className="workcontainer">
+    {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
+      <div key={_id}> <div className="workposition" style={{ position: 'relative', width: '50vw', height: '85vh' }}>
 
-                          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-                            blurDataURL={rgbDataURL(73, 71, 63)} alt={caption} />}
+        {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" alt={caption} />}
 
-                        </div>
+      </div>
 
-                        </div>
+      </div>
 
-                      ))}
+    ))}
 
-                    </div>
+  </div>
 
-                    <div className="info">
-                      <div className="title">
-                        {aboutbook && <PortableText
-                          blocks={aboutbook}
-                          serializers={serializers}
+  <div className="info">
+    <div className="title">
+      {aboutbook && <PortableText
+        blocks={aboutbook}
+        serializers={serializers}
 
-                        />}</div>
-                      <div className="publishing">
-                        {aboutbook3 && <PortableText
-                          blocks={aboutbook3}
-                          serializers={serializers}
-                        />}</div>
-                      <div className="desc">
-                        {aboutbook2 && <PortableText
-                          blocks={aboutbook2}
-                          serializers={serializers}
-                        />}
-                        <div className="links">
-                          {aboutbook4 && <PortableText
-                            blocks={aboutbook4}
-                            serializers={serializers}
-                          />}</div>
-                      </div>
+      />}</div>
+    <div className="publishing">
+      {aboutbook3 && <PortableText
+        blocks={aboutbook3}
+        serializers={serializers}
+      />}</div>
+    <div className="desc">
+      {aboutbook2 && <PortableText
+        blocks={aboutbook2}
+        serializers={serializers}
+      />}
+      <div className="links">
+        {aboutbook4 && <PortableText
+          blocks={aboutbook4}
+          serializers={serializers}
+        />}</div>
+    </div>
 
-                    </div>
+  </div>
 
-                  </div>
-
-
-
-                </>
+</div>
 
 
 
-
-
-              )
-            }
-          })()}
+</>
 
 
 
