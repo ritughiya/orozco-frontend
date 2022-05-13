@@ -10,7 +10,7 @@ import Footer from "../../components/Footer"
 import Customhead from "../../components/Customhead"
 import Head from 'next/head'
 import PortableText from '@sanity/block-content-to-react'
-import useNextBlurhash from "use-next-blurhash";
+
 
 
 import { If, Elif, Else } from 'rc-if-else';
@@ -94,7 +94,6 @@ const Work = ({
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     
-    const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
 
   return (
     <html lang="en" className="notranslate" translate="no">
@@ -332,8 +331,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-               blurDataURL={blurDataUrl}
-               alt={alt} priority/>  }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt} priority/>  }
       </div>
                   
                   {caption2 && <div className="info">
@@ -395,7 +393,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={blurDataUrl} alt={alt} priority/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt} priority/> }
       </div>
 
 {caption2 && <div className="info">
@@ -485,7 +483,7 @@ const Work = ({
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt}  layout="fill" objectFit="contain" placeholder="blur"
-            blurDataURL={blurDataUrl} /> } </div>
+            blurDataURL={rgbDataURL(73, 71, 63)} /> } </div>
             </div>
             
             {caption2 && <div className="info">
@@ -543,7 +541,7 @@ const Work = ({
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
           {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
-      blurDataURL={blurDataUrl} alt="Click for more photos" /> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt="Click for more photos" /> }
               
         </SwiperSlide> ))}
       </Swiper>
@@ -586,7 +584,7 @@ const Work = ({
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-            blurDataURL={blurDataUrl} alt={alt}/> }
+            blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
             </div>
             </div>
             {caption2 && <div className="info">
