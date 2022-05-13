@@ -2479,6 +2479,12 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 }
 
+.Bookpage .bookcontainer.desktop{
+  margin: 0 !important;
+
+}
+
+
 .bookinfo{
   padding-bottom:15px;
 }
