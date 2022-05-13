@@ -351,7 +351,7 @@ const Work = ({
                   <div className="workcontainersub">
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt}  layout="fill" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} /> } </div>
             </div>
             
@@ -452,7 +452,7 @@ const Work = ({
                   <div className="workcontainersub">
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
             </div>
             </div>
@@ -568,7 +568,7 @@ const Work = ({
 {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
-            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
       </div>
                   
@@ -630,7 +630,7 @@ const Work = ({
             {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 =''}) => (
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
-            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="100%" height="100%" layout="fill" objectFit="contain" placeholder="blur"
+            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
       blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
       </div>
 
@@ -702,7 +702,7 @@ const Work = ({
           
           <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain" alt="Click to see book" /> 
             </div></Link>
           </div> ) )}
@@ -718,7 +718,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/>
             </div>
            </Link>
@@ -735,7 +735,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -751,7 +751,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '160px', width: '120px', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -770,7 +770,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -787,7 +787,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -802,7 +802,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -817,7 +817,7 @@ const Work = ({
           
             <div className="bookimage pointer" style={{height: '240px', width: '100%', position: 'relative'}}>
       <br></br>
-      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()} width="120px" height="160px" layout="fill" placeholder="blur"
+      <Image className="bookimg placeholder" draggable="false" onDragStart="return false;"  onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" placeholder="blur"
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
@@ -901,5 +901,4 @@ export const getServerSideProps = async (pageContext) => {
   
 
 export default Work
-
 

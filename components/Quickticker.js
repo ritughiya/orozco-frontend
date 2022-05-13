@@ -31,7 +31,7 @@ import 'react-modern-drawer/dist/index.css'
       setShow(!show);
   } 
   return (
- <div className="tickerquick2">
+ <div className="tickerquick">
 <div className="h1">
   <>
   <Link href="https://go-spacetime.com">

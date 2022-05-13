@@ -33,7 +33,7 @@
       setShow(!show);
   } 
   return (
- <div className={`tickerquick2 ${isActive ? 'black': null}`}>
+ <div className={`tickerquick ${isActive ? 'black': null}`}>
 <div className="h1">
   <>
   <Link href="https://go-spacetime.com">

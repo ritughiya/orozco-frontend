@@ -1144,28 +1144,9 @@ ul li ul.dropdown li{
   
 }
 
+
+
 .tickerquick{
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.616));
-  padding: 10px 20px 10px 15px;
-    font-size: 0.7em;
-    position: fixed;
-    top:0px ;
-    left: 0;
-    z-index: 10000;
-    display: flex;
-    color: #FFFDF3;
-    letter-spacing: 0.2em;
-    align-items: center;
-}
-
-.tickerquick svg{
-  width: 10px;
-  height:10px;
-  fill: #FFFDF3;
-  margin:0 10px;
-}
-
-.tickerquick2{
   filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.616));
   margin: 10px 20px 10px 10px;
   padding: 0 0.5em;
@@ -1181,7 +1162,7 @@ ul li ul.dropdown li{
   
 }
 
-.tickerquick2 svg{
+.tickerquick svg{
   width: 10px;
   height:10px;
   fill: #FFFDF3;
@@ -1189,21 +1170,18 @@ ul li ul.dropdown li{
 
 }
 
-/* .submenu{
-  display:none;
-} */
 
 .h1{
   line-height:22px;
 }
 
-.Archive .tickerquick2{
+.Archive .tickerquick{
   background-color:  rgb(11 7 7 / 33%);
   color:#FFFDF3;
 }
 
 
-.Archive .tickerquick2 svg{
+.Archive .tickerquick svg{
   fill: #FFFDF3;
 }
 
@@ -1405,7 +1383,7 @@ ul li ul.dropdown li{
   width:80vw;
   animation: fade 7s linear 1s infinite;
   /* animation: 10s 0s fade  linear infinite; */
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
   opacity:0;
   z-index:1000;
   left:50%;
@@ -1716,37 +1694,7 @@ bounce{
   fill: none;
 }
 
-/* Updated Logo styling */
 
-.Logo-knight svg{
-  position: absolute;
-  z-index: 300;
-  width: 8vw;
-  top: 25px;
-  right: 25px;
-  animation: 3s 1s spin, 4s 4s float infinite ease-in-out;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616));
-}
-
-.Logo-knight .cls-1 {
-  fill: #1d2587;
-}
-
-.Logo-knight .cls-2 {
-  fill: #fa251b;
-}
-
-.Logo-knight .cls-3 {
-  fill: #a49567;
-}
-
-.Logo-knight .cls-4 {
-  fill: #fffdf3;
-}
-
-.Logo-knight .cls-5 {
-  fill: none;
-}
 
 /* Updated Logo2 styling */
 
@@ -1778,7 +1726,7 @@ bounce{
   }
   }
 
-.Logo-knight2{
+.Logo-knight{
   top: 0px;
   position: absolute;
   animation: 1s 0s senddown ease-in forwards,  6s 1s float infinite ease-in-out !important;
@@ -1788,16 +1736,16 @@ bounce{
   right: 15px;
 }
 
-.Logo-knight2quick{
+.Logo-knightquick{
   animation: none !important;
 }
 
-.Logo-knight2quick .logocontainer{
+.Logo-knightquick .logocontainer{
   animation: 6s 1s float infinite ease-in-out !important;
 
 }
 
-.Logo-knight2 svg{
+.Logo-knight svg{
   /* animation: 5s 2
   s spin, 6s 4s float infinite ease-in-out; */
   margin-top:25px;
@@ -1808,7 +1756,7 @@ bounce{
   pointer-events:none;
 }
 
-.Logo-knight2 svg:active{
+.Logo-knight svg:active{
   pointer-events:none;
 }
 
@@ -1899,19 +1847,8 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   opacity:100%;
 }
 
-/* .logo-label1:hover,
-.logo-label2:hover{
-  background-color:#000;
-  color: #FFFDF3;
-} */
 
-
-/* .Archive .Logo-knight2 svg,
-.Sophie .Logo-knight2 svg{
-  width: 8vw;
-} */
-
-.Logo-knight2 svg:hover{
+.Logo-knight svg:hover{
   -webkit-animation-play-state:paused;
   -moz-animation-play-state:paused;
   -o-animation-play-state:paused;
@@ -1920,7 +1857,7 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.616)); */
 }
 
-.Logo-knight2quick .logocontainer:hover{
+.Logo-knightquick .logocontainer:hover{
   -webkit-animation-play-state:paused;
   -moz-animation-play-state:paused;
   -o-animation-play-state:paused;
@@ -1928,31 +1865,31 @@ path.cls-1, path.cls-2, path.cls-3, line.cls-4 {
   cursor: pointer;  
 }
 
-.Logo-knight2 .cls-1 {
+.Logo-knight .cls-1 {
   fill: #1d2587;
 }
 
-.Logo-knight2 .cls-1:hover {
+.Logo-knight .cls-1:hover {
   fill: #a49567;
 }
 
-.Logo-knight2 .cls-2 {
+.Logo-knight .cls-2 {
   fill: #fa251b;
 }
 
-.Logo-knight2 .cls-2:hover {
+.Logo-knight .cls-2:hover {
   fill: #1d2587;
 }
 
-.Logo-knight2 .cls-3 {
+.Logo-knight .cls-3 {
   fill: #a49567;
 }
 
-.Logo-knight2 .cls-3:hover {
+.Logo-knight .cls-3:hover {
   fill: #fa251b;
 }
 
-.Logo-knight2 .cls-4 {
+.Logo-knight .cls-4 {
   fill: none;
 }
 
@@ -2315,7 +2252,7 @@ cursor: e-resize;
 
  
   .swiper.mySwiper2{
-    padding: 5vh 0 0 0;
+    padding: 1vh 0 0 0;
   }
 
 
@@ -3025,7 +2962,7 @@ svg #room3 text:hover .m5{
   }
 
   #Orozcoanimation3{
-    padding-top: 80px;
+    padding-top: 150px;
   }
 
     /* WORK PAGE */
@@ -3299,7 +3236,7 @@ svg #room3 text:hover .m5{
   display:none;
 }
 
-.Logo-knight2{
+.Logo-knight{
   display:none;
 }
 
@@ -3318,12 +3255,12 @@ svg #room3 text:hover .m5{
   }
 }
 
-.Home .tickerquick2{
+.Home .tickerquick{
   background-color: transparent;
   animation: 7s .25s turnblack ease-in forwards;
 }
 
-.tickerquick2{
+.tickerquick{
   padding: 10px 8px 0px 15px;
     width: 100vw;
   background-color: rgb(11,7,7);
@@ -3352,7 +3289,7 @@ svg #room3 text:hover .m5{
 
 
 
-  .tickerquick2{
+  .tickerquick{
     justify-content: space-between;    
     border-bottom: 1px solid #FFFDF3;
   }
@@ -3377,7 +3314,7 @@ svg #room3 text:hover .m5{
 
   /* MOBILE MENU */
 
-  .tickerquick2 button{
+  .tickerquick button{
     background-color: transparent;
     border-style: none;
   }
@@ -3484,18 +3421,18 @@ svg #room3 text:hover .m5{
     content: "-";
   }
 
-  .black.tickerquick2{
+  .black.tickerquick{
     background-color: rgb(11,7,7) !important;
   }
 
-  .tickerquick2 button{
+  .tickerquick button{
     height: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .tickerquick2 button.open{
+  .tickerquick button.open{
     height:16px;
   }
 
@@ -3543,13 +3480,13 @@ svg #room3 text:hover .m5{
 
   /* Mobile Archive Page */
 
-  .Archive .tickerquick2{
+  .Archive .tickerquick{
     background-color: rgb(11 7 7);
     color: #FFFDF3;
   }
   
   
-  .Archive .tickerquick2 svg{
+  .Archive .tickerquick svg{
     fill: #FFFDF3;
   }
 
@@ -3799,7 +3736,7 @@ svg #room3 text:hover .m5{
     top:35%;
   }
 
-  .tickerquick2 button.open{
+  .tickerquick button.open{
     height:16px;
   }
 
@@ -3814,7 +3751,7 @@ svg #room3 text:hover .m5{
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .tickerquick2 button.open{
+  .tickerquick button.open{
     height:16px;
   }
 
@@ -3831,7 +3768,7 @@ svg #room3 text:hover .m5{
 
   
 
-  .tickerquick2 button.open{
+  .tickerquick button.open{
     height:15px;
   }
 

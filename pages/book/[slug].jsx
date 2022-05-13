@@ -133,58 +133,7 @@ const Book = ({
         <>
 
           <div className="singlecontainer desktop">
-            {(() => {
-              if (slideshowAmount > 1) {
-                return (
-                  <>
-                    <Swiper
-                      style={{
-                        "--swiper-navigation-color": "#fff",
-                        "--swiper-pagination-color": "#fff",
-                      }}
-                      slidesPerView='auto'
-                      speed={500}
-                      height={300}
-                      loop={false}
-                      navigation={true}
-                      modules={[EffectFade, FreeMode, Navigation, Thumbs]}
-                      thumbs={{ swiper: thumbsSwiper }}
-                      className="mySwiper2"
-                      effect="fade"
-                      pagination={{ clickable: true, dynamicBullets: true }}
-                      fadeEffect={{
-                        crossFade: true // enables slides to cross fade
-                      }}
-                    >
-                      {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-                        <SwiperSlide key={_id}>
-                          <div className="workcontainer">
-                            <div style={{ position: 'relative', width: '42vw', height: '100%' }}>
-
-                              {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout=
-                                "fill"
-                                objectFit="contain" placeholder="blur"
-                                blurDataURL={rgbDataURL(73, 71, 63)} alt={caption} />}
-
-                            </div>
-
-                          </div>
-                        </SwiperSlide>))}
-                    </Swiper>
-
-
-
-
-
-
-                  </>
-
-
-                )
-
-              } else {
-                return (
-                  <>
+          <>
                     <Swiper
                       style={{
                         "--swiper-navigation-color": "#fff",
@@ -222,42 +171,10 @@ const Book = ({
 
 
 
-                    <div className="thumbs none">
-
-
-                      <Swiper
-                        onSwiper={setThumbsSwiper}
-                        slidesPerView='auto'
-                        freeMode={true}
-                        watchSlidesProgress={true}
-                        modules={[FreeMode, Navigation, Thumbs]}
-                        className="mySwiper"
-                        height={120}
-                        spaceBetween={5}
-
-                      >
-                        {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-                          <SwiperSlide key={_id}>
-                            {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} layout="fill" placeholder="blur"
-                              blurDataURL={rgbDataURL(73, 71, 63)} alt={caption} />}
-
-                          </SwiperSlide>))}
-                      </Swiper>
-                    </div>
-
-
 
 
 
                   </>
-
-
-
-
-
-                )
-              }
-            })()}
 
 
             <div className="info">

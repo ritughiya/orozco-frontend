@@ -11,7 +11,7 @@ import ReactHoverObserver from 'react-hover-observer';
 const Logotransparent = () => {
 
     return (
-        <div className="Logo-knight2 Logo-knight2delay pointer">
+        <div className="Logo-knight Logo-knight2delay pointer">
            <div className="logocontainer">   
       
     <ReactHoverObserver

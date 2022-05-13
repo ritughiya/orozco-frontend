@@ -19,7 +19,7 @@ import { sanityClient, urlFor} from '../sanity'
 
   return (
     
-<div className="Logo-knight2 Logo-knight2quick pointer">
+<div className="Logo-knight Logo-knightquick pointer">
            <div className="logocontainer">   
       
     <ReactHoverObserver

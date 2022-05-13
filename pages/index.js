@@ -67,7 +67,7 @@ const IndexPage = ({ properties }) => {
 
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className=" Home wrapper fullhog fullhogv2">
+    <div className=" Home wrapper">
       <Customhead />
 
       {(() => {
