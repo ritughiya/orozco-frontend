@@ -1,1 +1,2 @@
 https://go-spacetime.netlify.app/ https://www.go-spacetime.com/ 301!
+https://go-spacetime.netlify.app/* https://www.go-spacetime.com/:splat 301!
