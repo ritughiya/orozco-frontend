@@ -1488,7 +1488,7 @@ ul li ul.dropdown li{
 .vimeo-wrapper, video{
   position:fixed;
   z-index:90;
-  width: 112vw;
+  width: 100vw;
     min-height:100vh;
     object-fit:cover;
   left: 50%;
@@ -3216,6 +3216,21 @@ svg #room3 text:hover .m5{
 
   }
 
+  .container.pointer.v1{
+    background-image: url("/room1.png");
+  }
+
+  .container.pointer.v2{
+    background-image: url("/room2.png");
+  }
+
+  .container.pointer.v3{
+    background-image: url("/room3.png");
+  }
+
+  .container.pointer.v4{
+    background-image: url("/room4.png");
+  }
     
   .embed-container{
     height: 50vh;
