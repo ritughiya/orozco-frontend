@@ -482,8 +482,8 @@ const Work = ({
                   <div className="workcontainersub">
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt}  layout="fill" objectFit="contain" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} /> } </div>
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt}  layout="fill" objectFit="contain" 
+             /> } </div>
             </div>
             
             {caption2 && <div className="info">
@@ -540,8 +540,8 @@ const Work = ({
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails =''}) => (
         <SwiperSlide key={_id}>
-          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px"  placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)} alt="Click for more photos" /> }
+          {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} width="120px" height="120px" 
+       alt="Click for more photos" /> }
               
         </SwiperSlide> ))}
       </Swiper>
@@ -583,8 +583,8 @@ const Work = ({
                   <div className="workcontainersub">
                 <div className="workposition" style={{ position: 'relative', width: '42vw', height: '80vh' }}>
                   
-                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-            blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
+                {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" objectFit="contain"
+             alt={alt}/> }
             </div>
             </div>
             {caption2 && <div className="info">
