@@ -330,7 +330,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt} priority/>  }
       </div>
                   
                   {caption2 && <div className="info">
@@ -392,7 +392,7 @@ const Work = ({
          <div key={_id}> <div className="workposition" style={{ position: 'relative',  width: '86vw', height: '28rem' }}>
             
             {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e)=> e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" placeholder="blur"
-      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt}/> }
+      blurDataURL={rgbDataURL(73, 71, 63)} alt={alt} priority/> }
       </div>
 
 {caption2 && <div className="info">
