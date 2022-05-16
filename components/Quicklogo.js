@@ -32,8 +32,7 @@ import { sanityClient, urlFor} from '../sanity'
 <svg alt="" className="Animationleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 1003.38">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
-        {/* <Link passHref href="/library"> */}
-        <Link passHref href="/archive">
+        <Link passHref href="/library">
             <path className="cls-1" d="M499,242.5V499H242.5C242.5,357.34,357.34,242.5,499,242.5Z" />
             </Link>
             <Link passHref href="/library">
