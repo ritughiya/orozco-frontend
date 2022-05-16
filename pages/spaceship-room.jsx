@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Script from 'next/script'
 import { sanityClient, urlFor } from '../sanity'
 import Image from 'next/image'
-import Quickcontainer4 from "../components/Quickcontainer4"
 import Room4Label from "../components/Room4Label"
 import Roomsdropdown from "../components/Roomsdropdown"
 import Quickticker from '../components/Quickticker'
