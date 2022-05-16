@@ -56,11 +56,12 @@ const Room4 = ({ properties }) => {
 
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className="wrapper fullhog fullhogv2 Room4detail">
+    <div className="wrapper Room4detail">
       
       <Customhead />
       <Head>
         <title>Spaceship Room | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Spaceship Room | Gabriel Orozco: Spacetime" key="title" />
       </Head>
       {properties.map(post => (
         <div className="flex" key={post._id}>

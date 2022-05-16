@@ -52,6 +52,7 @@ const room2 = ({ properties }) => {
       <Customhead />
       <Head>
         <title>Room Two | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Room Two | Gabriel Orozco: Spacetime" key="title" />
       </Head>
       {properties.map(post => (
         <div className="flex" key={post._id}>

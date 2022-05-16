@@ -698,7 +698,7 @@ const Work = ({
     </>
 
     <div className="bookcontainer desktop">
-    <div className="bookdetail">
+    {pagenumber1 &&    <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1}: </div>  }  
 
     {relatedbook1 && relatedbook1.map(({_id, slug = '', mainImage = ''}) => (
@@ -712,9 +712,9 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain" alt="Click to see book" /> 
             </div></Link>
           </div> ) )}
-          </div> 
+          </div> }
 
-          <div className="bookdetail">
+          {pagenumber2 &&     <div className="bookdetail">
     {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2}: </div>  }  
 
 
@@ -729,9 +729,9 @@ const Work = ({
             </div>
            </Link>
           </div> ) )}
-          </div> 
+          </div> }
 
-          <div className="bookdetail">
+          {pagenumber3 &&    <div className="bookdetail">
     {pagenumber3 &&     <div className="bookinfo">Referenced on page {pagenumber3}: </div>  }  
 
 
@@ -745,9 +745,9 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
+          </div>  }
 
-          <div className="bookdetail">
+          {pagenumber4 &&      <div className="bookdetail">
     {pagenumber4 &&     <div className="bookinfo">Referenced on page {pagenumber4}: </div>  }  
 
 
@@ -761,12 +761,12 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
+          </div> }
 
           </div>
     
     <div className="bookcontainer mobile">
-    <div className="bookdetail">
+    {pagenumber1 &&     <div className="bookdetail">
     {pagenumber1 &&     <div className="bookinfo">Referenced on page {pagenumber1}: </div>  }  
 
 
@@ -780,10 +780,10 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
+          </div>  }
 
 
-          <div className="bookdetail">
+          {pagenumber2 &&      <div className="bookdetail">
     {pagenumber2 &&     <div className="bookinfo">Referenced on page {pagenumber2}: </div>  }  
 
 
@@ -797,8 +797,8 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
-          <div className="bookdetail">
+          </div>  }
+          {pagenumber3 &&          <div className="bookdetail">
     {pagenumber3 &&     <div className="bookinfo">Referenced on page {pagenumber3}: </div>  }  
 
 
@@ -812,8 +812,8 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
-          <div className="bookdetail">
+          </div>  }
+          {pagenumber4 &&        <div className="bookdetail">
     {pagenumber4 &&     <div className="bookinfo">Referenced on page {pagenumber4}: </div>  }  
 
 
@@ -827,7 +827,7 @@ const Work = ({
             blurDataURL={rgbDataURL(73, 71, 63)} objectFit="contain"  alt="Click to see book"/></div>
            </Link>
           </div> ) )}
-          </div> 
+          </div>  }
 
           </div>
 

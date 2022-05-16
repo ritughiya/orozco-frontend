@@ -51,10 +51,11 @@ const serializers = {
 const room1 = ({ properties }) => {
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className="wrapper fullhog fullhogv2 Room1detail Bookshelfdetail">
+    <div className="wrapper Room1detail Bookshelfdetail">
       <Customhead />
       <Head>
         <title>Library | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Library | Gabriel Orozco: Spacetime" key="title" />
       </Head>
       {properties.map(post => (
         <div className="flex" key={post._id}>

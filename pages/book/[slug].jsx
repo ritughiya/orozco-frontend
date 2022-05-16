@@ -139,13 +139,13 @@ const Book = ({
             <div>&#8203;
               {previouswork && previouswork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
                 <div key={_id}>
-                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#60; </Link>
+                  <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> &#60; </Link>
                 </div>))}
             </div>
             <div>
               {nextwork && nextwork.map(({ _id, slug = '', mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
                 <div key={_id}>
-                  <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}> &#62; </Link>
+                  <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}> &#62; </Link>
                 </div>))}
             </div>
           </div>

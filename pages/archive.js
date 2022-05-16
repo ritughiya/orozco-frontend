@@ -52,42 +52,43 @@ const serializers = {
 const archive = ({ properties }) => {
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className="Archive wrapper fullhog fullhogv2">
-      <Customhead />
-      <Head>
-        <title>Index | Gabriel Orozco: Spacetime</title>
-      </Head>
-      <Quicklogo2 />
-      <Quickticker />
-      <div className="desktop"><Filtersdropdown /></div>
-      <div className="mobile"><Mobilefilters /></div>
+      <div className="Archive wrapper">
+        <Customhead />
+        <Head>
+          <title>Index | Gabriel Orozco: Spacetime</title>
+          <meta property="og:title" content="Index | Gabriel Orozco: Spacetime" key="title"/>
+        </Head>
+        <Quicklogo2 />
+        <Quickticker />
+        <div className="desktop"><Filtersdropdown /></div>
+        <div className="mobile"><Mobilefilters /></div>
 
 
 
-      {properties.map(post => (
-        <div className="rowof8" key={post._id}>
+        {properties.map(post => (
+          <div className="rowof8" key={post._id}>
 
-          {post.archivegallery && post.archivegallery.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '' }) => (
-            <div key={_id}>
-              {slug && <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
-                <div className="zoom-in">
-                  {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(73, 71, 63)} width="100%" height="100%" layout="responsive"
-                    alt={caption} />}
-                </div>
-              </Link>}
-            </div>
+            {post.archivegallery && post.archivegallery.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '' }) => (
+              <div key={_id}>
+                {slug && <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
+                  <div className="zoom-in">
+                    {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(73, 71, 63)} width="100%" height="100%" layout="responsive"
+                      alt={caption} />}
+                  </div>
+                </Link>}
+              </div>
 
-          ))
-          }
+            ))
+            }
 
-        </div>
-
-
-      ))}
-      <Footer />
+          </div>
 
 
-    </div>
+        ))}
+        <Footer />
+
+
+      </div>
     </html>
   )
 

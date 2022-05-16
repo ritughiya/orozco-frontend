@@ -57,6 +57,7 @@ const paintings = ({ properties }) => {
       <Customhead />
       <Head>
         <title>Index | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Index | Gabriel Orozco: Spacetime" key="title"/>
       </Head>
 
       <Quicklogo2 />

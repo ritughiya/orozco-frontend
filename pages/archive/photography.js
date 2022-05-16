@@ -56,7 +56,8 @@ const photography = ({ properties }) => {
     <div className="Archive wrapper">
       <Customhead />
       <Head>
-        <title>Index | Gabriel Orozco: Spacetime</title>
+      <title>Index | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Index | Gabriel Orozco: Spacetime" key="title"/>
       </Head>
       <Quicklogo2 />
       <Quickticker />

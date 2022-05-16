@@ -53,43 +53,44 @@ const serializers = {
 const worksonpaper = ({ properties }) => {
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className="Archive wrapper">
-      <Customhead />
-      <Head>
-        <title>Index | Gabriel Orozco: Spacetime</title>
-      </Head>
-      <Quicklogo2 />
-      <Quickticker />
-      <div className="desktop"><Filtersdropdown /></div>
-      <div className="mobile"><Mobilefilters /></div>
+      <div className="Archive wrapper">
+        <Customhead />
+        <Head>
+          <title>Index | Gabriel Orozco: Spacetime</title>
+          <meta property="og:title" content="Index | Gabriel Orozco: Spacetime" key="title" />
+        </Head>
+        <Quicklogo2 />
+        <Quickticker />
+        <div className="desktop"><Filtersdropdown /></div>
+        <div className="mobile"><Mobilefilters /></div>
 
-      <div className="archiveContainer">
-        {properties.map(post => (
-          <div className="rowof8" key={post._id}>
+        <div className="archiveContainer">
+          {properties.map(post => (
+            <div className="rowof8" key={post._id}>
 
-            {post.worksonpaper && post.worksonpaper.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '', filter = '' }) => (
-              <div key={_id}>
-                <Link href="/work/[slug]" as={`/work/${slug.current}`} passHref>
-                  <div className="zoom-in">
-                    {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" alt={caption} />}
+              {post.worksonpaper && post.worksonpaper.map(({ _id, slug = '', thumbImage = '', mainImage = '', caption = '', filter = '' }) => (
+                <div key={_id}>
+                  <Link href="/work/[slug]" as={`/work/${slug.current}`} passHref>
+                    <div className="zoom-in">
+                      {mainImage && <Image src={urlFor(mainImage).url()} placeholder="blur" blurDataURL={rgbDataURL(192, 192, 192)} width="100%" height="100%" layout="responsive" alt={caption} />}
 
-                  </div>
-                </Link>
-              </div>
-
-
-            ))
-            }
-
-          </div>
+                    </div>
+                  </Link>
+                </div>
 
 
-        ))}
+              ))
+              }
+
+            </div>
+
+
+          ))}
+        </div>
+        <Footer />
+
+
       </div>
-      <Footer />
-
-
-    </div>
     </html>
   )
 

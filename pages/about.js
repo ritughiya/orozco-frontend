@@ -55,47 +55,48 @@ const serializers = {
 const about = ({ properties }) => {
   return (
     <html lang="en" className="notranslate" translate="no">
-    <div className="Aboutpage wrapper fullhog fullhogv2 ">
-      <Customhead />
-      <Head>
-        <title>About | Gabriel Orozco: Spacetime</title>
-      </Head>
-      <Quicklogo2 />
-      <Quickticker />
-      {properties.map(post => (
-        <div className="aboutshow fadepage" key={post._id}>
-          <div className="about1">
-            <div className="subhead">ABOUT SPACETIME</div>
-            <div className="text">
-              <PortableText
-                blocks={post.aboutspacetime}
-                serializers={serializers}
-              />
+      <div className="Aboutpage wrapper ">
+        <Customhead />
+        <Head>
+          <title>About | Gabriel Orozco: Spacetime</title>
+          <meta property="og:title" content="About | Gabriel Orozco: Spacetime" key="title" />
+        </Head>
+        <Quicklogo2 />
+        <Quickticker />
+        {properties.map(post => (
+          <div className="aboutshow fadepage" key={post._id}>
+            <div className="about1">
+              <div className="subhead">ABOUT SPACETIME</div>
+              <div className="text">
+                <PortableText
+                  blocks={post.aboutspacetime}
+                  serializers={serializers}
+                />
 
 
-              <Floorplan />
+                <Floorplan />
 
 
 
+              </div>
+            </div>
+
+            <div className="about2 ">
+              <div className="subhead">ABOUT GO</div>
+              <div className="text">
+                <PortableText
+                  blocks={post.aboutGO}
+                  serializers={serializers}
+
+                /></div>
             </div>
           </div>
+        ))}
 
-          <div className="about2 ">
-            <div className="subhead">ABOUT GO</div>
-            <div className="text">
-              <PortableText
-                blocks={post.aboutGO}
-                serializers={serializers}
-
-              /></div>
-          </div>
-        </div>
-      ))}
-
-      <Footer />
+        <Footer />
 
 
-    </div>
+      </div>
     </html>
   )
 

@@ -2247,6 +2247,8 @@ cursor: e-resize;
 .Bookpage .desktop .bookdetail{
   margin: 0 10vw;}
 
+
+
 .Bookpage .info{
   margin: 15px 10vw;
 }
@@ -2278,7 +2280,6 @@ cursor: e-resize;
 }
 
 .desktop .bookdetail{
-  /* margin-top: 10px; */
     margin-right: 20px;
 }
 
@@ -2939,6 +2940,10 @@ svg #room3 text:hover .m5{
       margin-bottom:15px;
     }
 
+    .Workpage .bookdetail{
+      padding-bottom:15px;
+    }
+
     .worksreferenced .bookimage{
       margin-bottom: 6px;
       margin-left: 0px;
@@ -3138,25 +3143,25 @@ svg #room3 text:hover .m5{
 
   .container.pointer.v1{
     background-image: url("/room1.png");
-    background-size:80vh;
+    background-size:100vh;
     background-position:center;
   }
 
   .container.pointer.v2{
     background-image: url("/room2.png");
-    background-size:80vh;
+    background-size:100vh;
     background-position:center;
   }
 
   .container.pointer.v3{
     background-image: url("/room3.png");
-    background-size:80vh;
+    background-size:100vh;
     background-position:center;
   }
 
   .container.pointer.v4{
     background-image: url("/room4.png");
-    background-size:80vh;
+    background-size:100vh;
     background-position:center;
   }
     

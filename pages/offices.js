@@ -55,6 +55,7 @@ const Office = ({ properties }) => {
       <Customhead />
       <Head>
         <title>Offices | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Offices | Gabriel Orozco: Spacetime" key="title" />
       </Head>
       {properties.map(post => (
         <div className="flex" key={post._id}>
