@@ -159,7 +159,7 @@ const Book = ({
 
   <div className="workcontainer">
     {relatedworks && relatedworks.map(({ _id, mainImage = '', caption = '', year = '', medium = '', dimensions = '', editionDetails = '' }) => (
-      <div key={_id}> <div className="workposition" style={{ position: 'relative', width: '50vw', height: '85vh' }}>
+      <div key={_id}> <div className="workposition" style={{ position: 'relative', width: '50vw', height: '70vh' }}>
 
         {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu={(e) => e.preventDefault()} src={urlFor(mainImage).url()}  layout="fill" objectFit="contain" alt={caption} />}
 
@@ -210,7 +210,7 @@ const Book = ({
 
         <div className="bookcontainer desktop">
           <div className="bookdetail">
-            {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>}
+            {worksreferenced3 && <div className="bookinfo">Selection of works or series referenced: </div>}
             <div className="worksreferencedcontainer">
             {worksreferenced &&  <div className="worksreferenced"> 
                 <div className="img">
@@ -498,7 +498,7 @@ const Book = ({
 
         <div className="bookcontainer mobile">
           <div className="bookdetail">
-            {worksreferenced && <div className="bookinfo">Selection of works referenced: </div>}
+            {worksreferenced && <div className="bookinfo">Selection of works or series referenced: </div>}
             <div className="worksreferenced">
               <div className="img">
                 {worksreferenced && worksreferenced.map(({ _id, slug = '', mainImage = '', caption = '' }) => (

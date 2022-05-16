@@ -474,13 +474,16 @@ const Work = ({
       fadeEffect={{
         crossFade: true // enables slides to cross fade
       }}
+      observer={true}
+      observeSlideChildren={true}
+      observeParents={true}
       >
         {relatedworks && relatedworks.map(({_id, mainImage = '', caption2 = '', year2 = '', medium2 = '', dimensions2 = '', editionDetails2 ='', alt=''}) => (
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div>
                   <div className="workcontainersub">
-                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '82vh' }}>
+                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '77vh' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()} alt={alt}  layout="fill" objectFit="contain" 
              /> } </div>
@@ -581,7 +584,7 @@ const Work = ({
               <SwiperSlide key={_id}>
                 <div className="workcontainer">
                   <div className="workcontainersub">
-                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '82vh' }}>
+                <div className="workposition" style={{ position: 'relative', width: '42vw', height: '77vh' }}>
                   
                 {mainImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(mainImage).url()}  layout="fill" objectFit="contain"
              alt={alt}/> }

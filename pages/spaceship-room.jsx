@@ -87,9 +87,7 @@ const Room4 = ({ properties }) => {
                 modules={[EffectFade, FreeMode, Navigation, HashNavigation, Thumbs]}
                 className="mySwiper3"
                 effect="fade"
-                // Disable preloading of all images
                 preloadImages="false"
-                // Enable lazy loading
                 lazy={true}
                 loop={true}
                 hashNavigation={{ watchState: true, replaceState: true, }}
@@ -132,7 +130,10 @@ const Room4 = ({ properties }) => {
               // effect="fade"
               loop={true}
               navigation
-              pagination={{ clickable: true, dynamicBullets: true }}
+              preventInteractionOnTransition={true}
+              noSwiping={true}
+              noSwipingClass={'swiper-slide'}
+              simulateTouch={false}
             // fadeEffect={{
             //   crossFade: false // enables slides to cross fade
             // }}

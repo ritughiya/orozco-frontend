@@ -2197,7 +2197,7 @@ cursor: e-resize;
   flex-direction: column;
   width: 46vw;
   align-items:center;
-  min-height: 94vh;
+  min-height: 90vh;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -2388,6 +2388,10 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
   display:none;
 } */
 
+.mySwiper4 .swiper-button-next, 
+.mySwiper4 .swiper-button-prev {
+display:none;}
+
 .Bookshelfpage .embed-container{
   padding:0;
   margin-top: -30vh;
@@ -2475,7 +2479,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABCCAYAAAAVHYVwAAA
 
 .bookcontainer.desktop{
   display:flex;
-  margin: 0 15px 15px 15px;
+  margin: 30px 15px 15px 15px;
 
 }
 
