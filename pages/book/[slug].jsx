@@ -210,7 +210,7 @@ const Book = ({
 
         <div className="bookcontainer desktop">
           <div className="bookdetail">
-            {worksreferenced3 && <div className="bookinfo">Selection of works or series referenced: </div>}
+            {worksreferenced && <div className="bookinfo">Selection of works or series referenced: </div>}
             <div className="worksreferencedcontainer">
             {worksreferenced &&  <div className="worksreferenced"> 
                 <div className="img">
