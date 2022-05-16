@@ -28,8 +28,7 @@
         <link rel="icon" href="/favicon.png" />
         <meta property="og:title" content="Spacetime Library" />
 <meta property="og:url" content="https://go-spacetime.com/" />
-<meta property="og:url" content="https://go-spacetime.com/" />
-<meta property="og:image" content="/spacetime.png" />
+<meta property="og:image" href="/spacetime.png" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:description" 
