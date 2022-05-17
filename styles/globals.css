@@ -2280,7 +2280,7 @@ cursor: e-resize;
 }
 
 .desktop .bookdetail{
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .bookinfo{
@@ -2480,7 +2480,7 @@ display:none;}
 
 .bookcontainer.desktop{
   display:flex;
-  margin: 40px 15px 15px 15px;
+  margin: 30px 15px 15px 15px;
 
 }
 
