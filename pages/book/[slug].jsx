@@ -5,8 +5,6 @@ import Image from 'next/image'
 import Link from "next/link"
 import Quickticker from '../../components/Quickticker'
 import Quicklogo2 from '../../components/Quicklogo2'
-import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
 import Customhead from "../../components/Customhead"
 import Head from 'next/head'
@@ -14,12 +12,6 @@ import Head from 'next/head'
 
 import { If, Elif, Else } from 'rc-if-else';
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import "swiper/css/effect-fade";
 
 // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
 const keyStr =
@@ -100,7 +92,6 @@ const Book = ({
   })();
 
 
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
 
 

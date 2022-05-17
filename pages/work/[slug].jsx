@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link"
 import Quickticker from '../../components/Quickticker'
 import Quicklogo2 from '../../components/Quicklogo2'
-import { EffectFade, FreeMode, Navigation, Thumbs } from 'swiper';
+import { EffectFade, Navigation, Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../../components/Footer"
 import Customhead from "../../components/Customhead"
@@ -17,7 +17,6 @@ import { If, Elif, Else } from 'rc-if-else';
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
@@ -466,7 +465,7 @@ const Work = ({
                 height={300}
         loop={false}
         navigation={true}
-        modules={[EffectFade, FreeMode, Navigation, Thumbs]}
+        modules={[EffectFade, Navigation, Thumbs]}
         thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
         effect="fade"
@@ -533,9 +532,8 @@ const Work = ({
       <Swiper
         onSwiper={setThumbsSwiper}  
         slidesPerView="3"
-        freeMode={true}
         watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[Navigation, Thumbs]}
         className="mySwiper"
         height={60}
         spaceBetween={2}
@@ -571,7 +569,7 @@ const Work = ({
               centeredSlides={true}
               height={300}
               navigation={true}
-              modules={[EffectFade, FreeMode, Navigation, Thumbs]}
+              modules={[EffectFade, Navigation, Thumbs]}
               thumbs={{ swiper: thumbsSwiper }}
               className="mySwiper2"
               effect="fade"
@@ -637,9 +635,8 @@ const Work = ({
               onSwiper={setThumbsSwiper}  
                       slidesPerView= 'auto'
 
-              freeMode={true}
               watchSlidesProgress={true}
-              modules={[FreeMode, Navigation, Thumbs]}
+              modules={[Navigation, Thumbs]}
               className="mySwiper"
               height={120}
               spaceBetween={5}
