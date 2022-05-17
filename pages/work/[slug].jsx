@@ -102,7 +102,7 @@ const Work = ({
        <Quickticker />      
       <If condition={room === "room1"}>
       <div className="backcontainer">
-      <Link passHref href="/room-one">Back to Room </Link>
+      <Link passHref href="https://go-spacetime.com/room-one">Back to Room </Link>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -126,7 +126,7 @@ const Work = ({
       </If>
       <If condition={room === "room2"}>
       <div className="backcontainer">
-      <Link passHref href="/room-two">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/room-two">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -150,7 +150,7 @@ const Work = ({
       </If>
       <If condition={room === "room3"}>
       <div className="backcontainer">
-      <Link passHref href="/room-three">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/room-three">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -174,7 +174,7 @@ const Work = ({
       </If>
       <If condition={room === "room4"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceship-room">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/spaceship-room">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -198,7 +198,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall1"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceship-room#wall1">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/spaceship-room#wall1">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -222,7 +222,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall2"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceship-room#wall2">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/spaceship-room#wall2">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -246,7 +246,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall3"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceship-room#wall3">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/spaceship-room#wall3">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -270,7 +270,7 @@ const Work = ({
       </If>
       <If condition={room === "room4wall4"}>
       <div className="backcontainer">
-      <Link passHref href="/spaceship-room#wall4">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/spaceship-room#wall4">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 
@@ -294,7 +294,7 @@ const Work = ({
       </If>
       <If condition={room === "offices"}>
       <div className="backcontainer">
-      <Link passHref href="/offices">Back to Room </Link><br></br>
+      <Link passHref href="https://go-spacetime.com/offices">Back to Room </Link><br></br>
       {thumbImage && <div className="backimage" style={{height: '190px', position: 'relative'}}>
       <br></br>
       <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} 

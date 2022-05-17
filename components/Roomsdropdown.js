@@ -79,23 +79,23 @@ import ReactDOM from 'react-dom';
     <div className={isHovering ? "reveal" : ""}>
       <ul className="dropdown">
              <div className="dropspace"> 
-             <li><Link passHref href="/room-one">
+             <li><Link passHref href="https://go-spacetime.com/room-one">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room1thumbnail} alt="Room One" /> </div>Room One </span></div></Link>
               </li>
-              <li><Link passHref href="/room-two">
+              <li><Link passHref href="https://go-spacetime.com/room-two">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room2thumbnail} alt="Room Two" /> </div>Room Two </span></div></Link>
               </li>
-              <li><Link passHref href="/room-three">
+              <li><Link passHref href="https://go-spacetime.com/room-three">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room3thumbnail}  alt="Room Three" /> </div>Room Three </span></div></Link>
               </li>
-              <li><Link passHref href="/spaceship-room">
+              <li><Link passHref href="https://go-spacetime.com/spaceship-room">
                  <div className="roomrow pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Room4thumbnail}  alt="Spaceship Room" /> </div>Spaceship Room</span></div></Link>
               </li>
-              <li><Link passHref href="/offices">
+              <li><Link passHref href="https://go-spacetime.com/offices">
                  <div className="roomrowlast pointer">
                  <span className="roomflex"><div className="roomthumb"><Image src={Officesthumbnail}   alt="Offices" /> </div>Offices </span></div></Link>
               </li>

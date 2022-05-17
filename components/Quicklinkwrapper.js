@@ -15,10 +15,10 @@
     
   
       <div className="linkWrapper">
-      <div className="link1"><Link href="/room-one">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-       <div className="link2"><Link href="/room-two">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-       <div className="link3 "><Link href="/room-three">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
-        <div className="link4"><Link href="/spaceship-room">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+      <div className="link1"><Link href="https://go-spacetime.com/room-one">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+       <div className="link2"><Link href="https://go-spacetime.com/room-two">&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+       <div className="link3 "><Link href="https://go-spacetime.com/room-three">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
+        <div className="link4"><Link href="https://go-spacetime.com/spaceship-room">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link></div>
     </div>     
     </>
  
