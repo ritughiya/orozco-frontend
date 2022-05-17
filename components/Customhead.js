@@ -7,6 +7,7 @@ export default function Customhead() {
  
   return (
 <Head>
+
 <title>Gabriel Orozco: Spacetime</title>
         <meta property="og:title" name="twitter:title"  content="Gabriel Orozco: Spacetime" key="title" />
 
