@@ -70,6 +70,7 @@ const IndexPage = ({ properties }) => {
     <div className=" Home wrapper">
       <Customhead />
 
+
       {(() => {
         if (count > 1) {
           return (
