@@ -6,7 +6,6 @@
 
  import React, { useEffect, useState }  from "react";
  import Link from "next/link"
- import Clock from 'react-live-clock';
  import Circle from "../components/Circle"
  import Mobilefiltersbutton from "../components/Mobilefiltersbutton"
  import Menu from "../components/Menu"

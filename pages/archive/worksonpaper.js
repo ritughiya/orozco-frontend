@@ -9,7 +9,6 @@ import { urlFor, sanityClient } from "../../sanity"
 import Image from 'next/image'
 import Circle from "../../components/Circle"
 import Static from 'next/image'
-import Clock from 'react-live-clock';
 import Quicklogo2 from '../../components/Quicklogo2'
 import Quickticker from '../../components/Quickticker'
 import Footer from "../../components/Footer"

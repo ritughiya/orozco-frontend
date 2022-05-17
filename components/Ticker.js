@@ -9,7 +9,6 @@
  import Script from 'next/script'
  import { sanityClient, urlFor} from '../sanity'
  import Circle from "../components/Circle"
- import Clock from 'react-live-clock';
  import ReactDelayRender from 'react-delay-render';
  import Menu from "../components/Menu"
  //  import HamburgerDrawer from 'react-hamburger-drawer'
@@ -19,6 +18,39 @@
  
  //import styles 👇
  import 'react-modern-drawer/dist/index.css'
+
+ class Time extends React.Component {
+  
+
+  
+  constructor(props){
+    super(props);
+      this.timer = 0;
+    this.state = {
+        time: new Date()      };
+  }
+  componentDidMount(){
+    this.timer = setTimeout(() => {
+          this.setState({
+            time: new Date()
+          });
+          this.componentDidMount();
+      }, Math.floor(Date.now() / 1000) * 1000 + 1000 - Date.now());
+
+  }
+  componentWillUnmount(){
+    clearTimeout(this.timer);
+  }
+
+
+  
+  
+  render() {
+    var options = { hour12: false };
+      return this.state.time.toLocaleTimeString('en-GB', options);
+  }
+}
+ 
 
  
  const Ticker = () => {
@@ -41,9 +73,7 @@
   </Link>
 
   <Circle /> 
-  <Clock
-        format={'HH:mm:ss'}
-        ticking={true} />
+  <Time />
   </>
   </div>
   <div className="h2">

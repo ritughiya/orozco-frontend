@@ -8,7 +8,6 @@
  import Link from 'next/link'
 import Script from 'next/script'
 import { sanityClient, urlFor} from '../sanity'
- import Clock from 'react-live-clock';
  import Circle from "../components/Circle"
  import ReactHoverObserver from 'react-hover-observer';
 
