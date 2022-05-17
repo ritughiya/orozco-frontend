@@ -1,0 +1,12 @@
+Sitemap: https://www.go-spacetime.com/
+Sitemap: https://www.go-spacetime.com/about
+Sitemap: https://www.go-spacetime.com/archive
+Sitemap: https://www.go-spacetime.com/room-one
+Sitemap: https://www.go-spacetime.com/spaceship-room
+Sitemap: https://www.go-spacetime.com/room-two
+Sitemap: https://www.go-spacetime.com/room-three
+Sitemap: https://www.go-spacetime.com/offices
+Sitemap: https://www.go-spacetime.com/library
+
+User-agent: *
+Allow: /
