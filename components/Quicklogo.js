@@ -78,17 +78,17 @@ return (
 <div className={isHovering ? "reveal" : ""}>
   
 <div className="logo-label1">
-<Link passHref href="/library">
+<Link passHref href="https://go-spacetime.com/library">
     Library
 </Link>
 </div>
 <div className="logo-label2">
-<Link passHref href="/archive">
+<Link passHref href="https://go-spacetime.com/archive">
     Index
 </Link>
 </div>
 <div className="logo-label3">
-<Link passHref href="/about">
+<Link passHref href="https://go-spacetime.com/about">
     About
 </Link>
 </div>

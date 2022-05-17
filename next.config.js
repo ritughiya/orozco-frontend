@@ -12,8 +12,3 @@ module.exports = {
 		domains: ['cdn.sanity.io']	}
 };
 
-// const withBundleAnalyzer = require('@next/bundle-analyzer')({
-// 	enabled: process.env.ANALYZE === 'true'
-//   })
-  
-//   module.exports = withBundleAnalyzer({})
