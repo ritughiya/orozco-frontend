@@ -70,7 +70,7 @@ const room1 = ({ properties }) => {
                 <div key={_id}>
                   <Link passHref href="/book/[slug]" as={`/book/${slug.current}`}>
                     <div className="zoom-in held">
-                      {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" objectFit="contain" placeholder="blur"
+                      {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="200px" height="200px" layout="responsive" objectFit="contain" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}
                     </div>
                   </Link>

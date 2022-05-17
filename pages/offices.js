@@ -72,7 +72,7 @@ const Office = ({ properties }) => {
                 <div key={_id}>
                   <Link passHref href="/work/[slug]" as={`/work/${slug.current}`}>
                     <div className="zoom-in held">
-                      {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="400px" height="100%" layout="responsive" fit="max" placeholder="blur"
+                      {thumbImage && <Image className="placeholder" draggable="false" onDragStart="return false;" onContextMenu="return false;" src={urlFor(thumbImage).url()} width="200px" height="200px" layout="responsive" fit="max" placeholder="blur"
                         blurDataURL={rgbDataURL(73, 71, 63)} alt="Lo-res image of Gabriel Orozco's works" />}
                     </div>
                   </Link>
