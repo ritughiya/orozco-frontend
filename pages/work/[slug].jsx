@@ -98,6 +98,10 @@ const Work = ({
     <html lang="en" className="notranslate" translate="no">
     <div className="itemContainer Workpage">
       <Customhead />
+      <Head>
+        <title>Works | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Works | Gabriel Orozco: Spacetime" key="title"/>
+      </Head>
       <Quicklogo2 />
        <Quickticker />      
       <If condition={room === "room1"}>

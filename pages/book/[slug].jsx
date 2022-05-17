@@ -100,6 +100,10 @@ const Book = ({
     <html lang="en" className="notranslate" translate="no">
     <div className="itemContainer Bookpage">
       <Customhead />
+      <Head>
+        <title>Books | Gabriel Orozco: Spacetime</title>
+        <meta property="og:title" content="Books | Gabriel Orozco: Spacetime" key="title"/>
+      </Head>
       <Quicklogo2 />
       <Quickticker />
       <div className="backcontainer">
