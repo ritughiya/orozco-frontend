@@ -67,7 +67,9 @@ const IndexPage = ({ properties }) => {
 
   return (
     <html lang="en" className="notranslate" translate="no">
+ 
     <div className=" Home wrapper">
+    
       <Customhead />
       <Head>
       <meta name= "robots" content="index, follow" />

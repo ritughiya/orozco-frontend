@@ -6,8 +6,10 @@ export default function Customhead() {
 
  
   return (
+    
 <Head>
-
+<head dangerouslySetInnerHTML={{ __html: '<!--website BY ｒｉｔｕ ｇｈｉｙａ ~ ｗｗｗ.ｒ-ｉ-ｔ-ｕ.ｃｏｍ -->' }}>
+      </head>
 <title>Gabriel Orozco: Spacetime</title>
         <meta property="og:title" name="twitter:title"  content="Gabriel Orozco: Spacetime" key="title" />
 
