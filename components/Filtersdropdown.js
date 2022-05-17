@@ -57,7 +57,7 @@ import ReactDOM from 'react-dom';
               </li>
              <li><Link passHref href="/archive/paintings">
                  <div className="roomrow pointer">
-                 <span className="roomflex">Paintings</span></div></Link>
+                 <span className="roomflex">Painting</span></div></Link>
               </li>
               <li><Link passHref href="/archive/photography">
                  <div className="roomrow pointer">
@@ -69,7 +69,7 @@ import ReactDOM from 'react-dom';
               </li>
               <li><Link passHref href="/archive/worksonpaper">
                  <div className="roomrowlast pointer">
-                 <span className="roomflex">Works on Paper</span></div></Link>
+                 <span className="roomflex">Work on Paper</span></div></Link>
               </li>
               
              </div>

@@ -46,10 +46,10 @@ import 'react-modern-drawer/dist/index.css'
                   <div className="menubordertop">&nbsp;&nbsp;</div>
                     <li className="pointer">Browse By: </li>
                     <li  className="submenu" ><Link href="https://go-spacetime.com/archive/">All</Link></li>
-                    <li  className="submenu" ><Link href="https://go-spacetime.com/archive/paintings">Paintings</Link></li>
+                    <li  className="submenu" ><Link href="https://go-spacetime.com/archive/paintings">Painting</Link></li>
                     <li className="submenu"><Link href="https://go-spacetime.com/archive/photography">Photography</Link></li>
                     <li className="submenu"><Link href="https://go-spacetime.com/archive/sculptures">Sculpture</Link></li>
-                    <li className="submenu"><Link href="https://go-spacetime.com/archive/worksonpaper">Works on Paper</Link></li>
+                    <li className="submenu"><Link href="https://go-spacetime.com/archive/worksonpaper">Work on Paper</Link></li>
                   </ul>
                   
                 </div>
