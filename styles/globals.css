@@ -2197,7 +2197,7 @@ cursor: e-resize;
   flex-direction: column;
   width: 46vw;
   align-items:center;
-  min-height: 90vh;
+  min-height: 85vh;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -2480,7 +2480,7 @@ display:none;}
 
 .bookcontainer.desktop{
   display:flex;
-  margin: 50px 15px 15px 15px;
+  margin: 40px 15px 15px 15px;
 
 }
 
